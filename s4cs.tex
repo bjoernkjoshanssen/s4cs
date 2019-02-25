@@ -1,0 +1,108 @@
+\documentclass[10pt,openany]{book}
+ 
+\usepackage{geometry, graphicx, varioref, soul, verbatim, amsmath, calc, caption, wasysym, footmisc, makeidx, ifthen, subfigure, multicol, epstopdf, enumerate, wrapfig, textcomp, multirow, changepage, setspace, lscape, titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}  
+%\newcommand{\href}[2]{#2} \newcommand{\url}[1]{#1} \newcommand{\urlstyle}[1]{}
+\include{extraTeX/style/colorsV1}
+
+% _____ Online Version _____ %
+\usepackage[bookmarksnumbered, colorlinks = false, pdfborder = {0 0 0}, urlcolor = oiGB, colorlinks=true, linkcolor = oiGB, citecolor = oiGB, backref = true]{hyperref}
+\newcommand{\versiondate}[0]{February 21, 2019}
+\newcommand{\printlocation}[0]{}
+
+% _____ Print Version _____ %
+%\definecolor{oiB}{rgb}{0,0,0}\usepackage[colorlinks=false,pdfborder={0 0 0},urlcolor= black,colorlinks=black,linkcolor=black, citecolor=black,backref=true]{hyperref}
+
+% _____ COLOR PRINT Version _____ %
+%\usepackage[colorlinks=false,pdfborder={0 0 0},urlcolor= black,colorlinks=black,linkcolor=black, citecolor=black,backref=true]{hyperref} \renewcommand{\printlocation}[0]{\noindent Printed in China. \\}
+
+%bjoern start
+
+\usepackage{pgfplots}
+
+
+\usepackage{amsthm,amssymb}
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{pro}[thm]{Proposition}
+\newtheorem{nota}[thm]{Notation}
+\newtheorem{con}[thm]{Conjecture}
+\newtheorem{df}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{exa}[thm]{Example}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata, positioning}
+\usetikzlibrary{decorations.pathmorphing}
+\tikzset{snake it/.style={decorate, decoration=snake}}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\E}{\mathbb E}
+\DeclareMathOperator{\SE}{SE}
+\DeclareMathOperator{\SD}{SD}
+\DeclareMathOperator{\AIC}{AIC}
+\DeclareMathOperator{\BIC}{BIC}
+\DeclareMathOperator{\TSS}{TSS}
+\DeclareMathOperator{\ESS}{ESS}
+\DeclareMathOperator{\RSS}{RSS}
+\DeclareMathOperator{\TMS}{TSS}
+\DeclareMathOperator{\EMS}{EMS}
+\DeclareMathOperator{\RMS}{RMS}
+\DeclareMathOperator{\slope}{slope}
+\DeclareMathOperator{\intercept}{intercept}
+\DeclareMathOperator{\vari}{var}
+\DeclareMathOperator{\cov}{cov}
+\renewcommand{\P}{\mathbb P}
+\newcommand{\sheets}[1]{
+\begin{quote}
+\texttt{#1}
+\end{quote}
+}
+%bjoern end
+
+
+\usepackage[style=authortitle-ibid, maxnames=2,natbib=true,sortcites=true,block=space,backend=bibtex]{biblatex}
+\bibliography{eoce.bib}
+
+%EITHER:
+%\makeindex
+%OR:
+\usepackage{imakeidx}
+\makeindex[intoc]
+
+
+
+\include{extraTeX/style/style}
+%\include{extraTeX/style/tablet} %uncomment to make a tablet version. The tablet version doesn't have the margin notes
+\include{extraTeX/preamble/title}%_derivative}
+\date{}
+\setcounter{tocdepth}{1}
+
+\begin{document}
+\renewcommand{\thepage}{}
+\maketitle
+\include{extraTeX/preamble/copyright}%_derivative}
+\renewcommand{\thepage}{\arabic{page}}
+\tableofcontents
+\include{extraTeX/preamble/preface}
+\normalsize
+
+\includechapter{1}{ch_intro_to_data}
+\includechapter{2}{ch_probability}
+\includechapter{3}{ch_distributions}
+\includechapter{4}{ch_inference_foundations}
+\includechapter{5}{ch_inference_for_means}
+\includechapter{6}{ch_inference_for_props}
+\includechapter{7}{ch_regr_simple_linear}
+\includechapter{8}{ch_markov}
+
+\appendix
+\include{extraTeX/eoceSolutions/eoceSolutions}
+\include{extraTeX/index/index}
+\printindex
+
+\end{document}
