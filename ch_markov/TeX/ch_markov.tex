@@ -615,14 +615,23 @@ This is typically made precise, and proved, in multivariable calculus courses.
 
 \section{Shattering}
 \subsection{Support vector machines}
-Considering the set of points $F=\{(-1,0),(0,0),(1,1)\}$, you may wonder why we separated (1,1) from (0,0) and (-1,0) and not some other combination, like separating (0,0) from (1,1) and (-1,0).
-In fact, such a separation can always be done. However, with four points it is not always possible. Consider the four points $\{(0,0),(0,1),(1,0),(1,1)\}$. There is no (straight) line that separates $\{(1,0),(0,1)\}$ from $\{(0,0),(1,1)\}$. There is no way to get (1,0) and (0,1) to lie on one side of the separating line, and (0,0) and (1,1) on the other. This can be summarized by saying that our statistical model, involving finding parameters $(w_1,w_2,b)$, has \emph{Vapnik--Chervonenkis dimension} that is at least 3, but not at least 4; in other words, the VC dimension is exactly 3. A set of points of size 3 can be ``shattered'' but a set of points of size 4 sometimes cannot.
+	Consider the set of points $F=\{(-1,0),(0,0),(1,1)\}$.
+	You may wonder why we separated (1,1) from (0,0) and (-1,0) and not some other combination, like separating (0,0) from (1,1) and (-1,0).
+	In fact, such a separation can always be done. However, with four points it is not always possible.
+	Consider the four points $\{(0,0),(0,1),(1,0),(1,1)\}$. There is no (straight) line that separates $\{(1,0),(0,1)\}$ from $\{(0,0),(1,1)\}$.
+	There is no way to get (1,0) and (0,1) to lie on one side of the separating line, and (0,0) and (1,1) on the other.
+	This can be summarized by saying that our statistical model,
+	involving finding parameters $(w_1,w_2,b)$,
+	has \emph{Vapnik--Chervonenkis dimension} that is at least 3, but not at least 4.
+	In other words, the VC dimension is exactly 3. A set of points of size 3 can be ``shattered'' but a set of points of size 4 sometimes cannot.
 
 \subsection{Discrete shattering}
-Shattering also occurs in discrete settings.
-Find a set of three binary strings $\{x_1,x_2,x_3\}$ of length 4 such that the following nondeterministic automata shatter the set.
-This means that for each subset $F$ of $\{x_1,x_2,x_3\}$, there is an automaton $M$ in the list below such that $M$ accepts the strings in $F$, but not the strings in $\{x_1,x_2,x_3\}\setminus F$.
-Accepting means that there is a path through the automaton, starting at the state labeled ``start'', which consists of edges labeled according to the word $x_i$, and ends in the accepting state (the state having two circles).
+	Shattering also occurs in discrete settings.
+	Find a set of three binary strings $\{x_1,x_2,x_3\}$ of length 4 such that the following nondeterministic automata shatter the set.
+	This means that for each subset $F$ of $\{x_1,x_2,x_3\}$,
+	there is an automaton $M$ in the list below such that $M$ accepts the strings in $F$, but not the strings in $\{x_1,x_2,x_3\}\setminus F$.
+	Accepting means that there is a path through the automaton, starting at the state labeled ``start'',
+	which consists of edges labeled according to the word $x_i$, and ends in the accepting state (the state having two circles).
 	\begin{tikzpicture}[shorten >=1pt,node distance=1.5cm,on grid,auto]
 		\node[state, initial,accepting] (s_0) {$s_0$};
 		\path[->]
@@ -669,7 +678,7 @@ Accepting means that there is a path through the automaton, starting at the stat
 			(s_0) edge [loop below]  node {$1$} (s_0);
 	\end{tikzpicture}
 	\begin{exercise}
-	Show that
-	$\{x_1,x_2,x_3\}=\{0000,0101,1000\}$
-	is shattered by the set of automata above.\footnote{For instance, 0000 and 0101 have in common that they start with 0, whereas 1000 does not.}
+		Show that
+		$\{x_1,x_2,x_3\}=\{0000,0101,1000\}$
+		is shattered by the set of automata above.\footnote{For instance, 0000 and 0101 have in common that they start with 0, whereas 1000 does not.}
 	\end{exercise}
