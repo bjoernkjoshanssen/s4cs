@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 FEB 2019 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 FEB 2019 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1708,15 +1708,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 File: ch_probability/figures/dieProp/dieProp.pdf Graphic file (type pdf)
 <use ch_probability/figures/dieProp/dieProp.pdf>
 Package pdftex.def Info: ch_probability/figures/dieProp/dieProp.pdf  used on in
-put line 40.
+put line 44.
 (pdftex.def)             Requested size: 334.79298pt x 154.51842pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 [13 <./ch_probability/figures/dieProp/dieProp.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
@@ -1726,10 +1726,10 @@ File: ch_probability/figures/disjointSets/disjointSets.pdf Graphic file (type p
 df)
 <use ch_probability/figures/disjointSets/disjointSets.pdf>
 Package pdftex.def Info: ch_probability/figures/disjointSets/disjointSets.pdf  
-used on input line 125.
+used on input line 129.
 (pdftex.def)             Requested size: 216.6304pt x 51.23871pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
@@ -1804,7 +1804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 662--663
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 673--674
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
