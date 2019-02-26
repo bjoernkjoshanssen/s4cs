@@ -2,153 +2,146 @@
 \label{linRegrForTwoVar}
 
 
-For data that seems to have a nonlinear trend, we can often transform the variables to obtain a linear trend.
-Linear relationships have the pleasing feature that the correlation coefficient $\rho=\rho_{X,Y}$ is $\pm 1$ exactly when there is a perfect linear relationship between the variables $X$ and $Y$\footnote{A similar result for, say, quadratic or exponential relationships is not known to us.}.
-
-
+	For data that seems to have a nonlinear trend, we can often transform the variables to obtain a linear trend.
+	Linear relationships have the pleasing feature that the correlation coefficient $\rho=\rho_{X,Y}$ is $\pm 1$ exactly when
+	there is a perfect linear relationship between the variables $X$ and $Y$\footnote{
+		A similar result for, say, quadratic or exponential relationships is not known to us.
+	}.
 
 \section{Deriving formulas for linear regression}
-%To derive the formulas for linear regression we proceed as follows.
+	We seek that values $b_0$, $b_1$ that minimize the sum of squared errors $(y_i-(b_0+b_1x_i))^2$.
+	So we take the derivatives with respect to $b_0$ and $b_1$ and set them equal to zero.
+	For fixed $b_1$, let
+	\[
+		f(b_0) = \sum_{i=1}^n (y_i-(b_0+b_1x_i))^2
+	\]
+	and let us solve
+	\[
+		0 = f'(b_0) = -2 \sum_{i=1}^n (y_i-(b_0+b_1x_i))
+	\]
+	Dividing by $-2n$,
+	\[
+		0 = \overline y - b_0 - b_1\overline x
+	\]
+	which means $\overline y = b_0+b_1\overline x$.
+	In other words, the point of means $(\overline x,\overline y)$ lies on the regression line.
+	Now for fixed $b_0$, we want to solve for $b_1$.
+	It will be useful to use the notations
+	\begin{eqnarray*}
+	\overline{xy}  &=& \frac1n\sum_{i=1}^nx_iy_i,\quad\text{ and}\\
+	\overline{x^2}&=& \frac1n\sum_{i=1}^nx_i^2
+	\end{eqnarray*}
+	Let
+	\[
+		g(b_1) = \sum_{i=1}^n (y_i-(b_0+b_1x_i))^2
+	\]
+	Setting the derivative equal to zero:
+	\begin{eqnarray*}
+		0 &=& g'(b_1) = -2 \sum_{i=1}^n (y_i-(b_0+b_1x_i))(x_i)\\
+		0 &=& \overline{xy} - b_0\overline x - b_1\overline{x^2}\\
+		0 &=& \overline{xy} - (\overline y-b_1\overline x)\overline x - b_1\overline{x^2}\\
+		0 &=& \overline{xy} - (\overline y\cdot \overline x)+b_1[(\overline x)^2 - \overline{x^2}]
+	\end{eqnarray*}
+	\begin{equation}\label{b1}
+		b_1 = \frac{\overline{xy} - \overline x\cdot\overline y}{\overline{x^2}-(\overline x)^2}.
+	\end{equation}
 
-We seek that values $b_0$, $b_1$ that minimize the sum of squared errors $(y_i-(b_0+b_1x_i))^2$.
-So we take the derivatives with respect to $b_0$ and $b_1$ and set them equal to zero.
-For fixed $b_1$, let
-\[
-	f(b_0) = \sum_{i=1}^n (y_i-(b_0+b_1x_i))^2
-\]
-and let us solve
-\[
-	0 = f'(b_0) = -2 \sum_{i=1}^n (y_i-(b_0+b_1x_i))
-\]
-Dividing by $-2n$,
-\[
-	0 = \overline y - b_0 - b_1\overline x
-\]
-which means $\overline y = b_0+b_1\overline x$; in other words, the point of means $(\overline x,\overline y)$ lies on the regression line.
-Now for fixed $b_0$, we want to solve for $b_1$.
-It will be useful to use the notations
-\begin{eqnarray*}
-\overline{xy}  &=& \frac1n\sum_{i=1}^nx_iy_i,\quad\text{ and}\\
-\overline{x^2}&=& \frac1n\sum_{i=1}^nx_i^2
-\end{eqnarray*}
-Let
-\[
-	g(b_1) = \sum_{i=1}^n (y_i-(b_0+b_1x_i))^2
-\]
-Setting the derivative equal to zero:
-\begin{eqnarray*}
-	0 &=& g'(b_1) = -2 \sum_{i=1}^n (y_i-(b_0+b_1x_i))(x_i)\\
-	0 &=& \overline{xy} - b_0\overline x - b_1\overline{x^2}\\
-	0 &=& \overline{xy} - (\overline y-b_1\overline x)\overline x - b_1\overline{x^2}\\
-	0 &=& \overline{xy} - (\overline y\cdot \overline x)+b_1[(\overline x)^2 - \overline{x^2}]
-\end{eqnarray*}
-\begin{equation}\label{b1}
-	b_1 = \frac{\overline{xy} - \overline x\cdot\overline y}{\overline{x^2}-(\overline x)^2}.
-\end{equation}
+	%\textC{\newpage}
 
-%\textC{\newpage}
+	As taught in Calculus III, this is the beginning of the process of finding a maximum.
+	Let us compare our value of $b_1$ to that stated in \emph{OpenIntro Statistics}:
+	\begin{equation}
+		b_1 \overset{!}{=} \frac1{n-1}\sum (x_i-\overline x)(y_i-\overline y)/s_x^2
+		= \frac{\sum (x_i-\overline x)(y_i-\overline y)}{\sum_{i=1}^n (x_i-\overline x)^2}
+	\end{equation}
+	and we see that our calculation is correct.
 
-As taught in Calculus III, this is the beginning of the process of finding a maximum.
-Let us compare our value of $b_1$ to that stated in \emph{OpenIntro Statistics}:
-\begin{equation}
-	b_1 \overset{!}{=} \frac1{n-1}\sum (x_i-\overline x)(y_i-\overline y)/s_x^2 = \frac{\sum (x_i-\overline x)(y_i-\overline y)}{\sum_{i=1}^n (x_i-\overline x)^2}
-\end{equation}
-and we see that our calculation is correct.
+	\index{linear regression|textbf}
 
-\index{linear regression|textbf}
-
-Let us furthermore compare this to the correlation coefficient $r$. We shall have\footnote{In \emph{OpenIntro Statistics}, the symbol $R$ is used, but we shall use $r$; see \url{https://stats.stackexchange.com/questions/134167/is-there-any-difference-between-r2-and-r2} for a discussion of this issue.}
-\[
-	b_1=r s_y/s_x.
-\]
-In other words,
-\[
-	r = \frac{\sum (x_i-\overline x)(y_i-\overline y)}{\sqrt{\sum_{i=1}^n (x_i-\overline x)^2}\sqrt{\sum_{i=1}^n (y_i-\overline y)^2}}
-\]
-\begin{example}{Calculating a regression by hand and computer}
-For the data set $(-1,0), (0,0), (1,1)$, we have by forward reference to Example \ref{favExa} on page \pageref{favExa} that
-\[
-	r = b_1 s_x/s_y = (1/2) \frac{\sqrt{(-1-0)^2+(1-0)^2}}{\sqrt{2(0-1/3)^2+(1-1/3)^2}} = \frac12 \frac{\sqrt 2}{\sqrt{6/9}} = \frac{\sqrt{3}}{2}.
-\]
-We can verify this in Google Sheets by \texttt{=correl(B1:B3,A1:A3)} where \texttt{A1:A3} contains the $x$-coordinates $-1,0,1$ and \texttt{B1:B3} contains the $y$-coordinates $0,0,1$.
-\end{example}
-
-
-Linear regression assumes that the relationship between two variables, $x$ and $y$, can be modeled by a straight line:
-\begin{eqnarray}
-y = \beta_0 + \beta_1x
-\label{genLinModelWNoErrorTerm}
-\end{eqnarray}
-\marginpar[\raggedright\vspace{-10mm}
-
-$\beta_0, \beta_1$\vspace{0.7mm}\\\footnotesize Linear model\\ parameters]{\raggedright\vspace{-10mm}
-
-$\beta_0, \beta_1$\vspace{0.7mm}\\\footnotesize Linear model\\ parameters}where $\beta_0$ and $\beta_1$ represent two model parameters\index{parameter} ($\beta$ is the Greek letter \emph{beta}\index{Greek!beta@beta ($\beta$)}). These parameters are estimated using data, and we write their point estimates as $b_0$ and $b_1$. So far this leaves open whether $b_0$, $b_1$ are random variables or particular values of random variables.
-
-%The varying fit of the three graphs in Figure~\ref{imperfLinearModel} correspond to varying variances for the random variables at a given $x$-value. Or, if we do not assume that any linear model is appropriate at all, they just correspond to varying correlations between $x$ and $y$.
-
-%\begin{figure}
-%   \centering
-%   \includegraphics[width=\textwidth]{ch_regr_simple_linear/figures/imperfLinearModel/imperfLinearModel}
-%   \caption{Three data sets where a linear model may be useful even though the data do not all fall exactly on the line.}
-%   \label{imperfLinearModel}
-%\end{figure}
+	Let us furthermore compare this to the correlation coefficient $r$.
+	We shall have\footnote{
+		In \emph{OpenIntro Statistics}, the symbol $R$ is used, but we shall use $r$.
+		See \url{https://stats.stackexchange.com/questions/134167/is-there-any-difference-between-r2-and-r2} for a discussion of this issue.
+	}
+	\[
+		b_1=r s_y/s_x.
+	\]
+	In other words,
+	\[
+		r = \frac{\sum (x_i-\overline x)(y_i-\overline y)}{\sqrt{\sum_{i=1}^n (x_i-\overline x)^2}\sqrt{\sum_{i=1}^n (y_i-\overline y)^2}}
+	\]
+	\begin{example}{Calculating a regression by hand and computer}
+		For the data set $(-1,0), (0,0), (1,1)$, we have by forward reference to Example \ref{favExa} on page \pageref{favExa} that
+		\[
+			r = b_1 s_x/s_y = (1/2) \frac{\sqrt{(-1-0)^2+(1-0)^2}}{\sqrt{2(0-1/3)^2+(1-1/3)^2}} = \frac12 \frac{\sqrt 2}{\sqrt{6/9}} = \frac{\sqrt{3}}{2}.
+		\]
+		We can verify this in Google Sheets by \texttt{=correl(B1:B3,A1:A3)}
+		where \texttt{A1:A3} contains the $x$-coordinates $-1,0,1$ and \texttt{B1:B3} contains the $y$-coordinates $0,0,1$.
+	\end{example}
 
 
-\begin{example}{Influential point.}
-	In the example $(-1,0), (0,0), (1,1)$, which point is most influential?
-	We can investigate this by looking at how much $b_0$ and $b_1$ changes when the point is removed.
-	We are not so interested in $b_0$.
-	When none are removed the regression line is $y=\frac{x}2+\frac13$.
+	Linear regression assumes that the relationship between two variables, $x$ and $y$, can be modeled by a straight line:
+	\begin{eqnarray}
+	y = \beta_0 + \beta_1x
+	\label{genLinModelWNoErrorTerm}
+	\end{eqnarray}
+	\marginpar[\raggedright\vspace{-10mm}
 
-	\begin{table}
-	\centering
-	\begin{tabular}{r | r | r}
-	Point removed	& New $b_1$ 	& Change in $b_1$\\
-	\hline
-	(-1,0)		& 1			&  $\frac12$\\
-	(0,0)			& $\frac12$	& 0\\
-	(1,1)			& 0			& $-\frac12$\\
-	\hline
-	\end{tabular}
-	\caption{Influence on regression line for $(-1,0), (0,0), (1,1)$ upon removing a point.}\label{influential}
-	\end{table}
-	In this case, at least, the least influential (in the sense of $b_1$) point $(0,0)$ also has the least influential $x$-value (see Table \ref{influential}).
-\end{example}
+	$\beta_0, \beta_1$\vspace{0.7mm}\\\footnotesize Linear model\\ parameters]{\raggedright\vspace{-10mm}
 
-In general, we can investigate the difference between $b_1$ for three points $(x_1,y_1),(x_2,y_2),(x_3,y_3)$ and for just the two points $(x_1,y_1),(x_2,y_2)$.
+	$\beta_0, \beta_1$\vspace{0.7mm}\\\footnotesize Linear model\\ parameters}where $\beta_0$ and $\beta_1$ represent two model parameters\index{parameter} ($\beta$ is the Greek letter \emph{beta}\index{Greek!beta@beta ($\beta$)}). These parameters are estimated using data, and we write their point estimates as $b_0$ and $b_1$. So far this leaves open whether $b_0$, $b_1$ are random variables or particular values of random variables.
+
+	\begin{example}{Influential point.}
+		In the example $(-1,0), (0,0), (1,1)$, which point is most influential?
+		We can investigate this by looking at how much $b_0$ and $b_1$ changes when the point is removed.
+		We are not so interested in $b_0$.
+		When none are removed the regression line is $y=\frac{x}2+\frac13$.
+
+		\begin{table}
+		\centering
+		\begin{tabular}{r | r | r}
+		Point removed	& New $b_1$ 	& Change in $b_1$\\
+		\hline
+		(-1,0)		& 1			&  $\frac12$\\
+		(0,0)			& $\frac12$	& 0\\
+		(1,1)			& 0			& $-\frac12$\\
+		\hline
+		\end{tabular}
+		\caption{Influence on regression line for $(-1,0), (0,0), (1,1)$ upon removing a point.}\label{influential}
+		\end{table}
+		In this case, at least, the least influential (in the sense of $b_1$) point $(0,0)$ also has the least influential $x$-value.
+		See Table \ref{influential}.
+	\end{example}
+
+	In general, we can investigate the difference between $b_1$ for three points $(x_1,y_1),(x_2,y_2),(x_3,y_3)$ and for just the two points $(x_1,y_1),(x_2,y_2)$.
 
 
 %__________________
 \section{Line fitting, residuals, and correlation}
 \label{lineFittingResidualsCorrelation}
 
-%\textC{\newpage}
-
-
 \subsection{Residuals}
+	\index{residual|(}
 
-\index{residual|(}
+	\termsub{Residuals}{residual} are the leftover variation in the data after accounting for the model fit:
+	\begin{align*}
+	\text{Data} = \text{Fit} + \text{Residual}
+	\end{align*}
 
-\termsub{Residuals}{residual} are the leftover variation in the data after accounting for the model fit:
-\begin{align*}
-\text{Data} = \text{Fit} + \text{Residual}
-\end{align*}
-
-\begin{termBox}{\tBoxTitle{Residual: difference between observed and expected}
-The residual of the $i^{th}$ observation $(x_i, y_i)$ is the difference of the observed response ($y_i$) and the response we would predict based on the model fit ($\hat{y}_i$):\footnote{A ``hat'' on $y$, as in $\hat y$, is used to signify that this is an estimate, i.e., it is a value predicted by our regression.}
-
-\begin{eqnarray*}
-e_i = y_i - \hat{y}_i
-\end{eqnarray*}
-We typically identify $\hat{y}_i$ by plugging $x_i$ into the model.}
-\end{termBox}
-
-
+	\begin{termBox}{\tBoxTitle{Residual: difference between observed and expected}
+	The residual of the $i^{th}$ observation $(x_i, y_i)$ is the difference of
+	the observed response ($y_i$) and
+	the response we would predict based on the model fit ($\hat{y}_i$):\footnote{
+		A ``hat'' on $y$, as in $\hat y$, is used to signify that this is an estimate, i.e., it is a value predicted by our regression.
+	}
+	\begin{eqnarray*}
+		e_i = y_i - \hat{y}_i
+	\end{eqnarray*}
+	We typically identify $\hat{y}_i$ by plugging $x_i$ into the model.}
+	\end{termBox}
 
 
 \subsection{Describing linear relationships with correlation}
-
 \index{correlation|(}
 
 \begin{termBox}{\tBoxTitle{Correlation: strength of a linear relationship}
@@ -175,36 +168,40 @@ where $\bar{x}$, $\bar{y}$, $s_x$, and $s_y$ are the sample means and standard d
 
 \subsection{An objective measure for finding the best line}
 
-We choose the line that minimizes the sum of the squared residuals:
-\begin{eqnarray}
-e_{1}^2 + e_{2}^2 + \dots + e_{n}^2
-\label{sumOfSquaresForResiduals}
-\end{eqnarray}
-This corresponds to finding the closest vector in an $n$-dimensional space and so it fits well with other mathematical theory. For an analogy, the fact that the variance of a sum of independent random variables is equal to the sum of variances is directly due to the use of squares rather than some other mechanism. To demonstrate this with an example: imagine we just used the range, i.e., the difference between the maximum and minimum values of our random variables.
-\begin{exercise}
-	Is it true that
-	\[
-		\max(X+Y)-\min(X+Y)=\max(X)-\min(X)+\max(Y)-\min(Y)
-	\]
-	if $X$ and $Y$ are independent?\footnote{Yes: note that if $P(X=M_X)=\epsilon_1>0$ and $P(Y=M_Y)=\epsilon_2>0$ are the probabilities of achieving the maximum values then $P(X+Y=M_X+M_Y)=\epsilon_1\epsilon_2>0$.}
-\end{exercise}
-\begin{exercise}
-	Is it true that
-	\[
-		E(|X+Y|)=E(|X|) + E(|Y|)
-	\]
-	if $X$ and $Y$ are independent with $\mu_X=\mu_Y=0$?\footnote{No. Imagine that $X$, $Y$ can be either 0 or $\pm 1$. Then $|X|+|Y|>|X+Y|$ will happen with positive probability, namely when $X=-Y$. Also, $|X+Y|\le |X|+|Y|$ with probability 1.}
-\end{exercise}
+	We choose the line that minimizes the sum of the squared residuals:
+	\begin{eqnarray}
+	e_{1}^2 + e_{2}^2 + \dots + e_{n}^2
+	\label{sumOfSquaresForResiduals}
+	\end{eqnarray}
+	This corresponds to finding the closest vector in an $n$-dimensional space and so it fits well with other mathematical theory.
+	For an analogy, the fact that the variance of a sum of independent random variables is equal to the sum of variances is directly due to
+	the use of squares rather than some other mechanism.
+	To demonstrate this with an example: imagine we just used the range, i.e., the difference between the maximum and minimum values of our random variables.
+	\begin{exercise}
+		Is it true that
+		\[
+			\max(X+Y)-\min(X+Y)=\max(X)-\min(X)+\max(Y)-\min(Y)
+		\]
+		if $X$ and $Y$ are independent?\footnote{
+			Yes: note that if $P(X=M_X)=\epsilon_1>0$ and $P(Y=M_Y)=\epsilon_2>0$ are the probabilities of achieving the maximum values
+			then $P(X+Y=M_X+M_Y)=\epsilon_1\epsilon_2>0$.
+		}
+	\end{exercise}
+	\begin{exercise}
+		Is it true that
+		\[
+			E(|X+Y|)=E(|X|) + E(|Y|)
+		\]
+		if $X$ and $Y$ are independent with $\mu_X=\mu_Y=0$?\footnote{No. Imagine that $X$, $Y$ can be either 0 or $\pm 1$. Then $|X|+|Y|>|X+Y|$ will happen with positive probability, namely when $X=-Y$. Also, $|X+Y|\le |X|+|Y|$ with probability 1.}
+	\end{exercise}
 
 \subsection{Conditions for the least squares line}
 
-For the typical analysis of regression, the residuals are assumed to be normally distributed (with mean zero!), independent as we vary $x$ and as we draw repeated observations for a single $x$, with the same variance $\sigma^2$ for all $x$. If we are wondering how stock prices depend on temperature for instance, and our data also have time associated with them (so for instance, on Monday the stocks rose, and the temperature remained constant, and so forth), we may question the independence assumption.
-
-
-
-
-%\textC{\newpage}
-
+	For the typical analysis of regression, the residuals are assumed to be normally distributed (with mean zero!),
+	independent as we vary $x$ and as we draw repeated observations for a single $x$, with the same variance $\sigma^2$ for all $x$.
+	If we are wondering how stock prices depend on temperature for instance, and our data also have time associated with them
+	(so for instance, on Monday the stocks rose, and the temperature remained constant, and so forth),
+	we may question the independence assumption.
 
 \subsection{Finding the least squares line}
 \label{findingTheLeastSquaresLineSection}
