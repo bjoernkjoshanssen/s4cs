@@ -573,22 +573,22 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 \end{example}
 
 \begin{example}{Banking.}
-A bank portfolio contains a loan that has gone into default.
-Each time period a proportion $p_i$ of the outstanding balances are paid.
-Interest is not added to the outstanding balances (as that would be cruel, perhaps), but the bank loses money as the borrowers take a long time to repay.
-The proportion of funds recovered by the bank is, in terms of a discount rate $d=1/(1+r)$ (where $r>0$ is an interest rate),
-\[
-	s = p_0 + (1-p_0)p_1d + (1-p_0)(1-p_1)p_2d^2+\dots = \sum_{i=0}^\infty d^i p_i\prod_{j=0}^{i-1} (1-p_j)
-\]
-Suppose $p_i$ are independent random variables. Then
-\begin{eqnarray*}
-	\E(s)&=&\sum_{i=0}^\infty d^i \E\left(p_i\prod_{j=0}^{i-1} (1-p_j)\right)\\
-	&=& \sum_{i=0}^\infty d^i \E(p_i)\prod_{j=0}^{i-1} (1-\E(p_j)).
-\end{eqnarray*}
-Calculate $\E(s)$ when each $\E(p_i)=1/2$ and $r=1/2$.\footnote{We have $\prod_{j=0}^{i-1}(1-\E(p_j))=2^{-i}$ and $d=2/3$, so
-\[
-	\E(s)=\sum_{i=0}^\infty (2/3)^i (1/2)(1/2)^i = (1/2)\sum_{i=0}^\infty (1/3)^i = (1/2)\frac1{1-\frac13} = \frac34.
-\]
-}
+	A bank portfolio contains a loan that has gone into default.
+	Each time period a proportion $p_i$ of the outstanding balances are paid.
+	Interest is not added to the outstanding balances (as that would be cruel, perhaps), but the bank loses money as the borrowers take a long time to repay.
+	The proportion of funds recovered by the bank is, in terms of a discount rate $d=1/(1+r)$ (where $r>0$ is an interest rate),
+	\[
+		s = p_0 + (1-p_0)p_1d + (1-p_0)(1-p_1)p_2d^2+\dots = \sum_{i=0}^\infty d^i p_i\prod_{j=0}^{i-1} (1-p_j)
+	\]
+	Suppose $p_i$ are independent random variables. Then
+	\begin{eqnarray*}
+		\E(s)&=&\sum_{i=0}^\infty d^i \E\left(p_i\prod_{j=0}^{i-1} (1-p_j)\right)\\
+		&=& \sum_{i=0}^\infty d^i \E(p_i)\prod_{j=0}^{i-1} (1-\E(p_j)).
+	\end{eqnarray*}
+	Calculate $\E(s)$ when each $\E(p_i)=1/2$ and $r=1/2$.\footnote{We have $\prod_{j=0}^{i-1}(1-\E(p_j))=2^{-i}$ and $d=2/3$, so
+	\[
+		\E(s)=\sum_{i=0}^\infty (2/3)^i (1/2)(1/2)^i = (1/2)\sum_{i=0}^\infty (1/3)^i = (1/2)\frac1{1-\frac13} = \frac34.
+	\]
+	}
 \end{example}
 
