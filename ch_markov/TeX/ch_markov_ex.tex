@@ -1,89 +1,91 @@
 \section{Exercises}
 
-%________________
-%\subsection{Markov chains}
-
 % 1
-
+\eoce{\qt{Statistics algebra} 
+	Let $X$ and $Y$ be Bernoulli random variables, both with parameter $p$, and let $p_{ij}$ with $i, j \in \left\{0, 1 \right\}$ be defined as in 8.1
+	\begin{parts}
+		\item 
+			Explicitly calculate each value of $p_{ij}$ to directly verify the equalities listed in 8.1.
+		\item
+			Use part a to show that $p_{00}p_{01} - p_{01}^2 = 0$. Thus, a probability distribution of two Bernoulli variables can be expressed as a point in $\mathbb R^4$ that lies on the curve $xy - zw = 0, z=w$.
+		\item
+			Show that the converse of part b is true in some sense: that is, show that solutions of the curve $xy - zw = 0, z=w$ can be expressed as probability distributions of two Bernoulli variables by showing that they satisfy the equalities in part a.
+	\end{parts}
+}{}
 
 % 2
+\eoce{\qt{Change of parameter for likelihood}
+	Let $X$ be a binomial random variable with mean $\mu$. 
+	\begin{parts}
+		\item
+			Derive a formula $L(\mu)$ (so $\mu$ is acting as a parameter, instead of a probability $p$ as in 8.3).
+		\item
+			Find the maximum likelihood of the formula in part a and explain why it might or might not be surprising.
+	\end{parts}
+}{}
 
-%________________
-%\subsection{Model selection}
+% 3
+\eoce{\qt{Another variant on the likelihood parameter}
+	Same as the previous problem, but replace mean $\mu$ with variance $\sigma^2$.
+}{}
+
+% 4
+\eoce{\qt{Akaike}
+	Define the \textit{Akaike information criterion with correction} by
+	\[
+	AIC_C := AIC + \frac{2k^2+2k}{n-k-1}
+	\]
+	where $n$ is the number of samples and $k$ is the number of parameters.
+	\begin{parts}
+		\item
+			Show that as the number of samples increases, the $AIC_C$ approaches the $AIC$.
+		\item 
+			Derive the formula for the $AIC_C$ of a linear regression model with $n$ samples.
+		\item
+			For which sample sizes is the $AIC_C$ a more accurate criterion than the BIC? 
+	\end{parts}
+}{}
+
+% 5
+\eoce{\qt{Equivalence of HMMS: alphabet}
+	Show that any hidden Markov model is equivalent to one in which every state has exactly one transition for every symbol in the underlying language.
+	(This is equivalent to the statement that any nondeterministic finite automaton is equivalent to a deterministic finite automaton.)
+	Here, two hidden Markov models are equivalent if they accept the same symbols and output the same words with equal probabilities.
+	Additionally, give an informal algorithm for finding such a hidden Markov model and give an upper bound on the number of states in the new Markov model.
+}{}
+
+% 6
+\eoce{\qt{Functional margin}
+	Consider a cluster of points $\vec{x}_i = (x_{1i}, x_{2i})$ separated by a line
+	$\vec{w} \cdot \vec{x} - b = 0$ for some $b$ and $\vec{w} = (w_1, w_2)$.
+	Let $y_i = 1$ if $\vec{x}_i$ is above this line and let $y_i = -1$ if $\vec{x}_i$ is below this line.
+	Define the \textit{functional margin of $(w, b)$ with respect to $i$} by
+	\begin{center}
+		$\displaystyle{\gamma_i := y_i(w_1 x_1 + w_2 x_2 + b)}$
+	\end{center}
+	for $\vec{x} = (x_1, x_2)$. Fix $i$.
+	\begin{parts}
+		\item 
+			Show that $\gamma_i$ is orthogonal (i.e. perpendicular) to the line $\vec{w} \cdot \vec{x} - b = 0$.
+		\item
+			Show that $\gamma_i(\vec{x}_i) > 0$.
+	\end{parts}
+}{}
 
 % 7
-
-\eoce{\qt{Statistics algebra} 
-    Let $X$ and $Y$ be Bernoulli random variables, both with parameter $p$, and let $p_{ij}$ with $i, j \in \left\{0, 1 \right\}$ be defined as in 8.1
-        \begin{parts}
-            \item 
-                Explicitly calculate each value of $p_{ij}$ to directly verify the equalities listed in 8.1.
-            \item
-                Use part a to show that $p_{00}p_{01} - p_{01}^2 = 0$. Thus, a probability distribution of two Bernoulli variables can be expressed as a point in $\mathbb R^4$ that lies on the curve $xy - zw = 0, z=w$.
-            \item
-                Show that the converse of part b is true in some sense: that is, show that solutions of the curve $xy - zw = 0, z=w$ can be expressed as probability distributions of two Bernoulli variables by showing that they satisfy the equalities in part a.
-        \end{parts}
-}{}
-
-\eoce{\qt{Change of parameter for likelihood}
-        Let $X$ be a binomial random variable with mean $\mu$. 
-        \begin{parts}
-            \item
-                Derive a formula $L(\mu)$ (so $\mu$ is acting as a parameter, instead of a probability $p$ as in 8.3).
-            \item
-                Find the maximum likelihood of the formula in part a and explain why it might or might not be surprising.
-        \end{parts}
-}{}
-
-\eoce{\qt{Another variant on the likelihood parameter}
-        Same as the previous problem, but replace mean $\mu$ with variance $\sigma^2$.
-}{}
-
-\eoce{\qt{Akaike}
-        %Show that any hidden Markov model such that there exist transitions with probability 1 is equivalent to a Markov model such that all transitions have probability $< 1$ (this is equivalent to the statement that any nondeterministic finite automaton is equivalent to one without $\epsilon$-transitions).
-        Define the \textit{Akaike information criterion with correction} by
-        \[
-        AIC_C := AIC + \frac{2k^2+2k}{n-k-1}
-        \]
-        where $n$ is the number of samples and $k$ is the number of parameters.
-        \begin{parts}
-            \item
-                Show that as the number of samples increases, the $AIC_C$ approaches the $AIC$.
-            \item 
-                Derive the formula for the $AIC_C$ of a linear regression model with $n$ samples.
-            \item
-                For which sample sizes is the $AIC_C$ a more accurate criterion than the BIC? 
-        \end{parts}
-}{}
-
-\eoce{\qt{Equivalence of HMMS: alphabet}
-        Show that any hidden Markov model is equivalent to one in which every state has exactly one transition for every symbol in the underlying language (this is equivalent to the statement that any nondeterministic finite automaton is equivalent to a deterministic finite automaton). Here, two hidden Markov models are equivalent if they accept the same symbols and output the same words with equal probabilities. Additionally, give an informal algorithm for finding such a hidden Markov model and give an upper bound on the number of states in the new Markov model.
-}{}
-
-\eoce{\qt{Functional margin}
-        Consider a cluster of points $\vec{x}_i = (x_{1i}, x_{2i})$ separated by a line $\vec{w} \cdot \vec{x} - b = 0$ for some $b$ and $\vec{w} = (w_1, w_2)$. Let $y_i = 1$ if $\vec{x}_i$ is above this line and let $y_i = -1$ if $\vec{x}_i$ is below this line. Define the \textit{functional margin of $(w, b)$ with respect to $i$} by
-        \begin{center}
-            $\displaystyle{\gamma_i := y_i(w_1 x_1 + w_2 x_2 + b)}$
-        \end{center}
-        for $\vec{x} = (x_1, x_2)$. Fix $i$.
-        \begin{parts}
-            \item 
-                Show that $\gamma_i$ is orthogonal (i.e. perpendicular) to the line $\vec{w} \cdot \vec{x} - b = 0$.
-            \item
-                Show that $\gamma_i(\vec{x}_i) > 0$.
-        \end{parts}
-}{}
-
 \eoce{\qt{Geometric margin}
-        Again consider $\vec{x}_i$, $\vec{w}$, $b$, and $y_i$ from the previous problem. Define the \textit{geometric margin of $(w, b)$ with respect to $i$} by
-        \begin{center}
-            $\displaystyle{\hat{\gamma}_i := y_i \left(\frac{w_1 x_1 + w_2 x_2 + b}{\sqrt{w_1^2 + w_2^2}} \right)}$
-        \end{center}
-        for $\vec{x} = (x_1, x_2)$. Again as in the previous problem, fix $i$.
-        \begin{parts}
-            \item 
-                Show that the same properties of $\gamma_i$ in 6 also hold for $\hat{\gamma}_i$.
-            \item
-                Show that if $w_1, w_2$, and $b$ are replaced with $kw_1, kw_2$ and $kb$ for some constant $k$ in the formula for $\hat{\gamma_i}$, the resulting expression will still be equal to $\hat{\gamma}_i$. In other words, show that $\hat{\gamma}_i$ is \textit{invariant under rescaling of parameters}.
-        \end{parts}
+	Again consider $\vec{x}_i$, $\vec{w}$, $b$, and $y_i$ from the previous problem.
+	Define the \textit{geometric margin of $(w, b)$ with respect to $i$} by
+	\begin{center}
+		$\displaystyle{\hat{\gamma}_i := y_i \left(\frac{w_1 x_1 + w_2 x_2 + b}{\sqrt{w_1^2 + w_2^2}} \right)}$
+	\end{center}
+	for $\vec{x} = (x_1, x_2)$. Again as in the previous problem, fix $i$.
+	\begin{parts}
+		\item 
+			Show that the same properties of $\gamma_i$ in 6 also hold for $\hat{\gamma}_i$.
+		\item
+			Show that if $w_1, w_2$, and $b$ are replaced with $kw_1, kw_2$ and $kb$ for some constant $k$ in the formula for $\hat{\gamma_i}$,
+			the resulting expression will still be equal to $\hat{\gamma}_i$.
+			In other words, show that $\hat{\gamma}_i$ is \textit{invariant under rescaling of parameters}.
+	\end{parts}
 }{}
