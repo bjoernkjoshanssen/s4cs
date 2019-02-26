@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  21 FEB 2019 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 FEB 2019 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2127,12 +2127,12 @@ Overfull \vbox (1.48605pt too high) has occurred while \output is active []
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Overfull \hbox (0.63423pt too wide) in paragraph at lines 84--85
+Overfull \hbox (0.63423pt too wide) in paragraph at lines 78--79
 []\OT1/cmr/m/n/10 Thus, when draw-ing $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 sam-
 ples $\OML/cmm/m/it/10 ![]; [] ; ![]$ \OT1/cmr/m/n/10 or in an-other ex-pres-si
 on $(\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 !\OT1/cmr/m/n/10 )\O
@@ -2141,17 +2141,17 @@ ML/cmm/m/it/10 ; [] ; X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 !\OT1/cmr/m/n/10 ))$
  []
 
 [60]
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
@@ -2464,8 +2464,8 @@ runsystem(makeindex s4cs.idx)...executed safely (allowed).
 
 
 ]) [123]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./s4cs.aux (./extraTeX/preamble/copyright.aux)
 (./extraTeX/preamble/preface.aux) (./ch_intro_to_data/TeX/ch_intro_to_data.aux)
 (./ch_intro_to_data/TeX/ch_intro_to_data_ex.aux)
@@ -2483,14 +2483,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
 (./ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.aux)
 (./ch_markov/TeX/ch_markov.aux) (./ch_markov/TeX/ch_markov_ex.aux)
 (./extraTeX/eoceSolutions/eoceSolutions.aux) (./extraTeX/index/index.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `s4cs.out' has not changed.
 (rerunfilecheck)             Checksum: 013D2582F0D1B090AD2E5D8A663023DB;4206.
 Package logreq Info: Writing requests to 's4cs.run.xml'.
 \openout1 = `s4cs.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  )
 (\end occurred inside a group at level 1)
 

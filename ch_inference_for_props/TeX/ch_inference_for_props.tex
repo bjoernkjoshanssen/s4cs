@@ -1,10 +1,6 @@
-
 \chapter{Inference for categorical data}
 \label{inferenceForCategoricalData}
 
-%\textC{\newpage}
-
-%__________________
 \section{Inference for a single proportion}
 \label{singleProportion}
 
@@ -37,12 +33,6 @@ $\hat{p}$\vspace{0mm}\\\footnotesize sample\\proportion\vspace{3mm}\\\normalsize
 
 Typically we don't know the true proportion, $p$, so we substitute some value to check conditions and to estimate the standard error. For confidence intervals, usually the sample proportion $\hat{p}$ is used to check the success-failure condition and compute the standard error. For hypothesis tests, typically the null value -- that is, the proportion claimed in the null hypothesis -- is used in place of $p$. Examples are presented for each of these cases in Sections~\ref{confIntForPropSection} and~\ref{htForPropSection}.
 
-%\begin{tipBox}{\tipBoxTitle{Reminder on checking independence of observations}
-%If data come from a simple random sample and consist of less than 10\% of the population, then the independence assumption is reasonable. Alternatively, if the data come from a random process, we must evaluate the independence condition more carefully. (See also Section \ref{binomialModel}.)}
-%\end{tipBox}
-
-
-%\textC{\newpage}
 
 
 \subsection{Confidence intervals for a proportion}
@@ -75,56 +65,44 @@ So instead of seeking meta-confidence, we may just study the distribution of $L$
 \end{example}
 
 \subsection{Hypothesis testing for a proportion}
-\label{htForPropSection}
+	\label{htForPropSection}
 
-To apply the normal distribution framework in the context of a hypothesis test for a proportion, the independence and success-failure conditions must be satisfied. In a hypothesis test, the success-failure condition is checked using the null proportion: we verify $np_0$ and $n(1-p_0)$ are at least 10, where $p_0$ is the null value.
+	To apply the normal distribution framework in the context of a hypothesis test for a proportion, the independence and success-failure conditions must be satisfied. In a hypothesis test, the success-failure condition is checked using the null proportion: we verify $np_0$ and $n(1-p_0)$ are at least 10, where $p_0$ is the null value.
 
-\begin{termBox}{\tBoxTitle{Hypothesis test for a proportion}
-Set up hypotheses and verify the conditions using the null value, $p_0$, to ensure $\hat{p}$ is nearly normal under $H_0$. If the conditions hold, construct the standard error, again using $p_0$, and show the p-value in a drawing. Lastly, compute the p-value and evaluate the hypotheses.}
-\end{termBox}
+	\begin{termBox}{\tBoxTitle{Hypothesis test for a proportion}
+	Set up hypotheses and verify the conditions using the null value, $p_0$, to ensure $\hat{p}$ is nearly normal under $H_0$. If the conditions hold, construct the standard error, again using $p_0$, and show the p-value in a drawing. Lastly, compute the p-value and evaluate the hypotheses.}
+	\end{termBox}
 
 
 \subsection{Thinking deeper about standard errors}
-%SUMMARY OF OCTOBER 31
+	When the null hypothesis says $p=1/2$, our score can be
+	\[
+		\frac{\hat p - 1/2}{\sqrt{\hat p(1-\hat p)/n}}
+	\]
+	but actually we may substitute $\hat p=1/2$ here in the denominator in order to be fair to the null hypothesis, as mentioned in \emph{OpenIntro Statistics}.
 
-When the null hypothesis says $p=1/2$, our score can be
-\[
-	\frac{\hat p - 1/2}{\sqrt{\hat p(1-\hat p)/n}}
-\]
-but actually we may substitute $\hat p=1/2$ here in the denominator in order to be fair to the null hypothesis, as mentioned in \emph{OpenIntro Statistics}.
+	When we do not assume $p_1=p_2$, our best (in some sense) guess for the standard error is
+	\[
+		\sqrt{\frac{\hat p_1(1-\hat p_1)}{n_1} + \frac{\hat p_2(1-\hat p_2)}{n_2}}
+	\]
+	This may be best in a maximum-likelihood sense (Chapter \ref{chMarkov}) but we should not expect it to be unbiased. For instance:
+	\begin{exercise}
+	\[
+		\E(\hat p(1-\hat p)) = \left(1-\frac1n\right)(p-p^2)
+	\]\footnote{To get started, rewrite $\hat p=\overline X$ and show that $\E((\overline X)^2) = \frac1n (p+(n-1)p^2)$.}
+	\end{exercise}
+	And indeed, it is clear that when $n=1$, $p(1-\hat p) = 0$ for both outcomes, and $\E(0)=0$.
 
-When we do not assume $p_1=p_2$, our best (in some sense) guess for the standard error is
-\[
-	\sqrt{\frac{\hat p_1(1-\hat p_1)}{n_1} + \frac{\hat p_2(1-\hat p_2)}{n_2}}
-\]
-This may be best in a maximum-likelihood sense (Chapter \ref{chMarkov}) but we should not expect it to be unbiased. For instance:
-\begin{exercise}
-\[
-	\E(\hat p(1-\hat p)) = \left(1-\frac1n\right)(p-p^2)
-\]\footnote{To get started, rewrite $\hat p=\overline X$ and show that $\E((\overline X)^2) = \frac1n (p+(n-1)p^2)$.}
-\end{exercise}
-And indeed, it is clear that when $n=1$, $p(1-\hat p) = 0$ for both outcomes, and $\E(0)=0$.
+	On the other hand, when we do assume $p_1=p_2$, the best estimate of $p_1$ and $p_2$ is
+	\[
+		\frac{p_1n_1+p_2n_2}{n_1+n_2}
+	\]
+	which is just the proportion obtained by pooling the samples together. 
 
-On the other hand, when we do assume $p_1=p_2$, the best estimate of $p_1$ and $p_2$ is
-\[
-	\frac{p_1n_1+p_2n_2}{n_1+n_2}
-\]
-which is just the proportion obtained by pooling the samples together. 
-
-Note that if $n$ is small, a proportion $\hat p  = \frac1n\sum_{i=1}X_i$ with $X_i$ Bernoulli($p$) is in no way close to normal. Thus the $t$-distribution is never used in connection with proportions (it is only used when we have a small $n$ and $n$ is the number of independent normals available). When $n$ is large, we approximate a proportion using the normal distribution.
-%END OF SUMMARY OF OCTOBER 31
-
-
-%\subsection{Choosing a sample size when estimating a proportion}
-
-%\index{margin of error|(}
-
-%When collecting data, we choose a sample size suitable for the purpose of the study. Often times this means choosing a sample size large enough that the \term{margin of error} -- which is the part we add and subtract from the point estimate in a confidence interval -- is sufficiently small that the sample is useful. More explicitly, our task is to find a sample size $n$ so that the sample proportion is within some margin of error $m$ of the actual proportion with a certain level of confidence.
-
-
-
-%\textC{\newpage}
-
+	Note that if $n$ is small, a proportion $\hat p  = \frac1n\sum_{i=1}X_i$ with $X_i$ Bernoulli($p$) is in no way close to normal.
+	Thus the $t$-distribution is never used in connection with proportions
+	(it is only used when we have a small $n$ and $n$ is the number of independent normals available).
+	When $n$ is large, we approximate a proportion using the normal distribution.
 
 
 \subsection{Possible pitfall for pooled proportions}%Comment from the same class
@@ -150,9 +128,6 @@ From this being 0.01 (since the width of the 95\%, hence $1.96\approx 2$ standar
 $$\sqrt{\hat p(1-\hat p)/n}$$but this is treating $\hat p$ as a proportion. Note that $\hat p<0$ is possible, so $\hat p$ is not quite the same kind of beast as $\hat p_y$ and $\hat p_x$. 
 
 
-
-
-%__________________
 \section{Difference of two proportions}
 \label{differenceOfTwoProportions}
 
@@ -166,21 +141,21 @@ In our investigations, we first identify a reasonable point estimate of $p_1 - p
 We must check two conditions before applying the normal model to $\hat{p}_1 - \hat{p}_2$. First, the sampling distribution for each sample proportion must be nearly normal, and secondly, the samples must be independent. Under these two conditions, the sampling distribution of $\hat{p}_1 - \hat{p}_2$ may be well approximated using the normal model.
 
 \begin{termBox}{\tBoxTitle{Conditions for the sampling distribution of $\hat{p}_1 - \hat{p}_2$ to be normal}
-The difference $\hat{p}_1 - \hat{p}_2$ tends to follow a normal model when
-\begin{itemize}
-\setlength{\itemsep}{0mm}
-\item each proportion separately follows a normal model, and
-\item the two samples are independent of each other.
-\end{itemize}
-The standard error of the difference in sample proportions is
-\index{standard error (SE)!difference in proportions}
-\begin{eqnarray}
-\SE_{\hat{p}_1 - \hat{p}_2}
-	= \sqrt{\SE_{\hat{p}_1}^2 + \SE_{\hat{p}_2}^2}
-	= \sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}
-\label{seForDiffOfProp}
-\end{eqnarray}
-where $p_1$ and $p_2$ represent the population proportions, and $n_1$ and $n_2$ represent the sample sizes.}
+	The difference $\hat{p}_1 - \hat{p}_2$ tends to follow a normal model when
+	\begin{itemize}
+		\setlength{\itemsep}{0mm}
+		\item each proportion separately follows a normal model, and
+		\item the two samples are independent of each other.
+	\end{itemize}
+	The standard error of the difference in sample proportions is
+	\index{standard error (SE)!difference in proportions}
+	\begin{eqnarray}
+		\SE_{\hat{p}_1 - \hat{p}_2}
+			= \sqrt{\SE_{\hat{p}_1}^2 + \SE_{\hat{p}_2}^2}
+			= \sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}
+			\label{seForDiffOfProp}
+	\end{eqnarray}
+	where $p_1$ and $p_2$ represent the population proportions, and $n_1$ and $n_2$ represent the sample sizes.}
 \end{termBox}
 
 For the difference in two means, the standard error formula took the following form:
@@ -211,15 +186,10 @@ Here $\hat{p}_1n_1$ represents the number of successes in sample 1 since
 Similarly, $\hat{p}_2n_2$ represents the number of successes in sample 2.}
 \end{termBox}
 
-%\newpage
 
 \subsection{More on 2-proportion hypothesis tests (special topic)}
 
 When we conduct a 2-proportion hypothesis test, usually $H_0$ is $p_1 - p_2 = 0$. However, there are rare situations where we want to check for some difference in $p_1$ and $p_2$ that is some value other than 0. For example, maybe we care about checking a null hypothesis where $p_1 - p_2 = 0.1$.\footnote{We can also encounter a similar situation with a difference of two means, though no such example was given in Chapter~\ref{inferenceForNumericalData} since the methods remain exactly the same in the context of sample means. On the other hand, the success-failure condition and the calculation of the standard error vary slightly in different proportion contexts.} In contexts like these, we generally use $\hat{p}_1$ and $\hat{p}_2$ to check the success-failure condition and construct the standard error.
-
-
-%\Add{In Guided Practice~\ref{qualityCtrlEngHypothesisEval}, the null difference is 0.03. However, in the vast majority of applications for differences in means or proportions, the null difference is~0. While the details for a difference of means does not change if the null difference is zero or non-zero, that is not the case for a difference in proportions. As we'll see in Section~\ref{}, a hypothesis test for a difference in proportions where the null value is 0 requires additional~care.}
-
 
 In a hypothesis test where the null hypothesis is that $p_1 - p_2 = 0.03$, say, the sample proportions $\hat p_1$ and $\hat p_2$ are used for the standard error calculation rather than a pooled proportion. Actually one could imagine using something like
 \[
@@ -259,7 +229,6 @@ and the probability that a standard normal random variable $Z$ will have $|Z|\le
 If each year has a small $p$-value like this, we can be quite sure that curving occurs.
 If none of them do, we can be quite sure it doesn't.
 If some do and some don't, we are getting into a more subtle area: the ones that did may have just done so by coincidence.
-%ANOVA relevant here?
 
 
 Now let us try to construct an example for means rather than proportions.
@@ -291,29 +260,7 @@ Since grade points are at least 0.3 apart, the sum of grade points in a class mu
 On the other hand $\sqrt{10^k}=10^{k/2}$ so the $Z$-score (when the grand mean is an integer, say) must be an integer multiple of $10^{k/2-k-1}$. When $k=2$ this is $10^{-2}$. As $k\to\infty$ this does go to zero, meaning that we can make meaningful checks for curving.
 \end{example}
 
-%%__________________
-%\section{Determining a sample size for an experiment}
-%\label{SampleSizeFor2Proportions}
-%
-%So far we've been focused on controlling the Type~1 Error rate for hypothesis tests. However, when planning an experiment, we often are interested in determining if there is an effect.\footnote{Similar planning is also appropriate for a} There are often two competing considerations:
-%\begin{itemize}
-%\setlength{\itemsep}{0mm}
-%\item We want to collect enough data that we can detect important effects.
-%\item In many contexts, collecting data is expensive, so we don't want to collect more than what we need to detect effects we care about.
-%\end{itemize}
-%The first point is relatively simple: the more data we collect, the more precise our estimates will be, and so we'll be able to detect smaller effects. The second point is more subtle, since we need to determine the size of effects that we care about.
-%
-%%\begin{example}{Alzheimer's disease is a neurological disease. It affects patients mildly at the beginning and eventually leads to dementia. If an Alzheimer's patient lives long enough, the disease will begin affecting bodily functions and ultimately lead to death. It's an extremely serious condition that millions of people, has no cure, and is very expensive to research, partially due to its slow progression. A group of researchers is }
-%\begin{example}{}
-%
-%\end{example}
-%
-%
-%, even large ones, are difficult to detect with small samples, so we should want to collect a larger sample to detect such effects. If we take a very large sample, we might find a statistically significant difference but the magnitude might be so small that it is of no practical value. In this section we describe techniques for selecting an appropriate sample size based on these considerations.
 
-
-
-%__________________
 \section{Testing for goodness of fit using \texorpdfstring{$\chi^2$}{chi-square}}
 \label{oneWayChiSquare}
 
@@ -409,29 +356,15 @@ Failing to check conditions may affect the test's error rates.}
 
 When examining a table with just two bins, pick a single bin and use the one-proportion methods introduced in Section~\ref{singleProportion}.
 
-
-%\subsection{Evaluating goodness of fit for a distribution}
-
-%Section~\ref{geomDist} describes the geometric distribution. We can compare observed values to theoretical distributions like the geometric distribution. The theoretical distribution then gives the expected proportions, or if a large particular number of observations has been made, the expected counts (which will not be integers but can be rounded).
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.98\textwidth]{ch_inference_for_props/figures/geomFitEvaluationForSP500For1990To2011/geomFitEvaluationForSP500For1990To2011}
-%\caption{Side-by-side bar plot of the observed and expected counts for each waiting time.}
-%\label{geomFitEvaluationForSP500For1990To2011}
-%\end{figure}
-%\begin{exercise}
-%In Figure \ref{geomFitEvaluationForSP500For1990To2011}, because the expected counts are all at least~5, we can safely apply the $\chi^2$ distribution. However, how many degrees of freedom should we~use?\footnote{There are $k=7$ groups, so we use df$=k-1=6$.}
-%\end{exercise}
-
-
-%__________________
 \section{Testing for independence in two-way tables}
 \label{twoWayTablesAndChiSquare}
 
 \begin{termBox}{\tBoxTitle{Computing expected counts in a two-way table}
 To identify the expected count for the $i^{th}$ row and $j^{th}$ column, compute
-$$\text{Expected Count}_{\text{row }i,\text{ col }j} = \frac{(\text{row $i$ total}) \times  (\text{column $j$ total})}{\text{table total}}\vspace{2mm}$$}
+\[
+	\text{Expected Count}_{\text{row }i,\text{ col }j} = \frac{(\text{row $i$ total}) \times  (\text{column $j$ total})}{\text{table total}}\vspace{2mm}
+\]
+}
 \end{termBox}
 
 
@@ -456,8 +389,6 @@ When analyzing 2-by-2 contingency tables, we end up with 1 degree of freedom, i.
 \caption{A $p$-value represented as an area under the curve of the pdf for a $\chi^2$ with 2 df.}
 \label{googleHTForDiffAlgPerformancePValue}
 \end{figure}
-
-%\textC{\pagebreak}
 
 
 \subsection{The $\chi^2$ distribution with 1 degree of freedom}
@@ -488,8 +419,8 @@ Let $X$ be binomial with parameters $n$ and $p$, then
 \]
 so using $\chi^2$ in this case would be no different from using the binomial approximation to the normal distribution.
 \begin{exercise}
-Verify the computation just made.\footnote{The intermediate step is
-\[
-	\frac{(X-np)^2(1-p)+(np-X)^2p}{np(1-p)}.
-\]}
+	Verify the computation just made.\footnote{The intermediate step is
+	\[
+		\frac{(X-np)^2(1-p)+(np-X)^2p}{np(1-p)}.
+	\]}
 \end{exercise}
