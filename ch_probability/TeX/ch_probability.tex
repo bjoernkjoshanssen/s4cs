@@ -6,152 +6,152 @@
 \section{Law of large numbers}
 
 \subsection{Probability and the real world}
-Philosophically, probability can be connected to the real world via a principle from 1843:
+	Philosophically, probability can be connected to the real world via a principle from 1843:
 
 
-\begin{termBox}{\tBoxTitle{Cournot's principle}
-Very, very unlikely events simply do not happen.}
-\end{termBox}
+	\begin{termBox}{\tBoxTitle{Cournot's principle}
+	Very, very unlikely events simply do not happen.}
+	\end{termBox}
 
 
-Some philosophers and others may disagree with this principle; we shall not try to settle the debate. But note that if we just say
-\begin{quote}
-	Very, very unlikely events will happen very, very rarely...
-\end{quote}
-then it begs the question: what if they don't? What if 100 heads in a row occur when you toss a coin --- and the same happens to your friend? And your friend's friend? This should happen rarely indeed, but at what point do you put your foot down and declare it just should not happen? If we do not adopt Cournot's principle, probability theory is in danger of losing touch with reality.
+	Some philosophers and others may disagree with this principle; we shall not try to settle the debate. But note that if we just say
+	\begin{quote}
+		Very, very unlikely events will happen very, very rarely...
+	\end{quote}
+	then it begs the question: what if they don't? What if 100 heads in a row occur when you toss a coin --- and the same happens to your friend? And your friend's friend? This should happen rarely indeed, but at what point do you put your foot down and declare it just should not happen? If we do not adopt Cournot's principle, probability theory is in danger of losing touch with reality.
 
 
-\index{random process|(}
+	\index{random process|(}
 
-\begin{termBox}{\tBoxTitle{Probability}
-The \term{probability} of an outcome is the proportion of times the outcome would occur if we observed the random process an infinite number of times.}
-\end{termBox}
+	\begin{termBox}{\tBoxTitle{Probability}
+	The \term{probability} of an outcome is the proportion of times the outcome would occur if we observed the random process an infinite number of times.}
+	\end{termBox}
 
-Probability is defined as a proportion, and it always takes values between 0~and~1 (inclusively). It may also be displayed as a percentage between 0\% and 100\%.
+	Probability is defined as a proportion, and it always takes values between 0~and~1 (inclusively).
+	It may also be displayed as a percentage between 0\% and 100\%.
 
-Probability can be illustrated by rolling a die many times. Let $\hat{p}_n$ be the proportion of outcomes $X_1,\dots,X_n$ that are \resp{1} after the first $n$ rolls:
-\[
-\hat p_n = \frac1n\sum_{i=1}^n X_i.
-\]
-As the number of rolls increases, $\hat{p}_n$ will converge to the probability of rolling a \resp{1}, $p = 1/6$. Figure~\ref{dieProp} shows this convergence for 100,000 die rolls. The tendency of $\hat{p}_n$ to stabilize around $p$ is described by the \term{Law of Large Numbers}. 
+	Probability can be illustrated by rolling a die many times.
+	Let $\hat{p}_n$ be the proportion of outcomes $X_1,\dots,X_n$ that are \resp{1} after the first $n$ rolls:
+	\[
+		\hat p_n = \frac1n\sum_{i=1}^n X_i.
+	\]
+	As the number of rolls increases, $\hat{p}_n$ will converge to the probability of rolling a \resp{1}, $p = 1/6$.
+	Figure~\ref{dieProp} shows this convergence for 100,000 die rolls.
+	The tendency of $\hat{p}_n$ to stabilize around $p$ is described by the \term{Law of Large Numbers}. 
 
-\begin{figure}%[bt]
-\centering
-\includegraphics[width=0.85\textwidth]{ch_probability/figures/dieProp/dieProp}
-\caption{The fraction of die rolls that are 1 at each stage in a simulation. The proportion tends to get closer to the probability $1/6 \approx 0.167$ as the number of rolls increases.}
-\label{dieProp}
-\end{figure}
+	\begin{figure}%[bt]
+		\centering
+		\includegraphics[width=0.85\textwidth]{ch_probability/figures/dieProp/dieProp}
+		\caption{The fraction of die rolls that are 1 at each stage in a simulation.
+		The proportion tends to get closer to the probability $1/6 \approx 0.167$ as the number of rolls increases.}
+		\label{dieProp}
+	\end{figure}
 
-\begin{termBox}{\tBoxTitle{Law of Large Numbers}
-As more observations are collected, the proportion $\hat{p}_n$ of occurrences with a particular outcome converges to the probability $p$ of that outcome.}
-\end{termBox}
+	\begin{termBox}{\tBoxTitle{Law of Large Numbers}
+	As more observations are collected, the proportion $\hat{p}_n$ of occurrences with a particular outcome converges to the probability $p$ of that outcome.}
+	\end{termBox}
 
-Occasionally the proportion will veer off from the probability and appear to defy the Law of Large Numbers, as $\hat{p}_n$ does many times in Figure~\ref{dieProp}. However, these deviations become smaller as the number of rolls increases.
+	Occasionally the proportion will veer off from the probability and appear to defy the Law of Large Numbers, as $\hat{p}_n$ does many times in Figure~\ref{dieProp}. However, these deviations become smaller as the number of rolls increases.
 
-Above we write $p$ as the probability of rolling a \resp{1}. We can also write this probability as
-\begin{eqnarray*}
-\P(\text{rolling a \resp{1}})
-\end{eqnarray*}
-\marginpar[\raggedright\vspace{-13mm}
+	Above we write $p$ as the probability of rolling a \resp{1}. We can also write this probability as
+	\begin{eqnarray*}
+	\P(\text{rolling a \resp{1}})
+	\end{eqnarray*}
+	\marginpar[\raggedright\vspace{-13mm}
 
-$\P(A)$\vspace{1mm}\\\footnotesize Probability of\\outcome $A$]{\raggedright\vspace{-13mm}
+	$\P(A)$\vspace{1mm}\\\footnotesize Probability of\\outcome $A$]{\raggedright\vspace{-13mm}
 
-$\P(A)$\vspace{1mm}\\\footnotesize Probability of\\outcome $A$}As we become more comfortable with this notation, we will abbreviate it further. For instance, if it is clear that the process is ``rolling a die'', we could abbreviate $\P($rolling a \resp{1}$)$ as~$\P($\resp{1}$)$. 
+	$\P(A)$\vspace{1mm}\\\footnotesize Probability of\\outcome $A$}As we become more comfortable with this notation, we will abbreviate it further. For instance, if it is clear that the process is ``rolling a die'', we could abbreviate $\P($rolling a \resp{1}$)$ as~$\P($\resp{1}$)$. 
 
 
-The Law of Large Numbers (LLN) comes in two flavors. The \term{strong LLN} says that for an infinite sequence of observations, with probability 1 the sequence $\hat p_n$ converges to $p$:
-\[
-	\P(\lim_{n\to\infty}\hat p_n = p) = 1.
-\]
-The \term{weak LLN} says that as $n\to\infty$, the probability that $|\hat p_n-p|\ge\epsilon$ goes to 0, no matter how small $\epsilon$ is:
-\[
-	\lim_{n\to\infty}\P(\hat p_n-p|<\epsilon) = 1.
-\]
-Both are true. The strong LLN is stronger (it says more, and it implies the weak LLN) but the strong LLN requires consideration of infinite sequences of outcomes, hence in applications it is sometimes conceptual ``overkill''.
-For students familiar with $\epsilon$-$\delta$ proofs, we offer:
-\begin{thm}
-The strong LLN implies the weak LLN.
-\end{thm}
-\begin{proof}
-Let $\epsilon>0$ be given. Since $\P(\lim_{n\to\infty}\hat p_n = p) = 1$,
-we have
-\[
-	\P(\text{there is an $m$ such that for all $n\ge m$, $|\hat p_n-p|<\epsilon$})=1.
-\]
-Therefore for each $\delta>0$ there is an $m$ such that
-$\P(\text{for all $n\ge m$, $|\hat p_n-p|<\epsilon$})\ge 1-\delta$. In particular, for all $n\ge m$, $\P(|\hat p_n-p|<\epsilon)\ge 1-\delta$.
-\end{proof}
+	The Law of Large Numbers (LLN) comes in two flavors. The \term{strong LLN} says that for an infinite sequence of observations, with probability 1 the sequence $\hat p_n$ converges to $p$:
+	\[
+		\P(\lim_{n\to\infty}\hat p_n = p) = 1.
+	\]
+	The \term{weak LLN} says that as $n\to\infty$, the probability that $|\hat p_n-p|\ge\epsilon$ goes to 0, no matter how small $\epsilon$ is:
+	\[
+		\lim_{n\to\infty}\P(\hat p_n-p|<\epsilon) = 1.
+	\]
+	Both are true. The strong LLN is stronger (it says more, and it implies the weak LLN) but the strong LLN requires consideration of infinite sequences of outcomes, hence in applications it is sometimes conceptual ``overkill''.
+	For students familiar with $\epsilon$-$\delta$ proofs, we offer:
+	\begin{thm}
+	The strong LLN implies the weak LLN.
+	\end{thm}
+	\begin{proof}
+	Let $\epsilon>0$ be given. Since $\P(\lim_{n\to\infty}\hat p_n = p) = 1$,
+	we have
+	\[
+		\P(\text{there is an $m$ such that for all $n\ge m$, $|\hat p_n-p|<\epsilon$})=1.
+	\]
+	Therefore for each $\delta>0$ there is an $m$ such that
+	$\P(\text{for all $n\ge m$, $|\hat p_n-p|<\epsilon$})\ge 1-\delta$. In particular, for all $n\ge m$, $\P(|\hat p_n-p|<\epsilon)\ge 1-\delta$.
+	\end{proof}
 
-\index{random process|)}
+	\index{random process|)}
 
 \subsection{Disjoint or mutually exclusive outcomes}
+	\index{disjoint|(}
+	\index{mutually exclusive|(}
 
-\index{disjoint|(}
-\index{mutually exclusive|(}
+	\term{Events} are \term{sets} of \term{outcomes}\footnote{The \emph{OpenIntro Statistics 3rd edition} text is not sufficiently clear on this important distinction, nor are many other statistics texts.}. You have perhaps encountered basic set theory in earlier mathematics courses.
 
-\term{Events} are \term{sets} of \term{outcomes}\footnote{The \emph{OpenIntro Statistics 3rd edition} text is not sufficiently clear on this important distinction, nor are many other statistics texts.}. You have perhaps encountered basic set theory in earlier mathematics courses.
+	Two events $A$ and $B$ are called \term{disjoint} or \term{mutually exclusive} if they cannot both happen in the sense that they have no outcome in their intersection $A\cap B$ (``$A$ and $B$'').
+	In this case we have $A\cap B=\emptyset$, the empty set. Thus, with $\cup$ or union meaning ``(inclusive) or'', the \term{Addition Rule} says
+	\[
+		\P(A\cup B) = \P(A) + \P(B) - \P(A\cap B),
+	\]
+	and if $A\cap B=\emptyset$ then $\P(A\cap B)=\P(\emptyset)=0$.
 
-Two events $A$ and $B$ are called \term{disjoint} or \term{mutually exclusive} if they cannot both happen in the sense that they have no outcome in their intersection $A\cap B$ (``$A$ and $B$'').
-In this case we have $A\cap B=\emptyset$, the empty set. Thus, with $\cup$ or union meaning ``(inclusive) or'', the \term{Addition Rule} says
-\[
-	\P(A\cup B) = \P(A) + \P(B) - \P(A\cap B),
-\]
-and if $A\cap B=\emptyset$ then $\P(A\cap B)=\P(\emptyset)=0$.
+	We often abbreviate set notation in probability statements. Instead of
+	\[
+		\P(\{\omega: X(\omega)\le 3\})
+	\]
+	we may just write $\P(X\le 3)$ or even $\P(1\text{ or }2\text{ or }3)$ if the only possible outcomes that are at most 3 are 1, 2, and 3.
+	Here the outcomes $\omega$ are drawn from the \term{sample space} $\Omega$ which is a set consisting of all possible outcomes.
 
-We often abbreviate set notation in probability statements. Instead of
-\[
-	\P(\{\omega: X(\omega)\le 3\})
-\]
-we may just write $\P(X\le 3)$ or even $\P(1\text{ or }2\text{ or }3)$ if the only possible outcomes that are at most 3 are 1, 2, and 3.
-Here the outcomes $\omega$ are drawn from the \term{sample space} $\Omega$ which is a set consisting of all possible outcomes.
+	\begin{termBox}{\tBoxTitle{Addition Rule of disjoint outcomes} If $A_1$ and $A_2$ represent two disjoint outcomes, then the probability that one of them occurs is given by
+	\begin{eqnarray*}
+	\P(A_1\text{ or } A_2) = \P(A_1) + \P(A_2)
+	\end{eqnarray*}
+	If there are many disjoint outcomes $A_1,\dots,A_k$, then the probability that one of these outcomes will occur is
+	\begin{eqnarray}
+	\P(A_1) + \P(A_2) + \cdots + \P(A_k)
+	\end{eqnarray}
+	}
+	\end{termBox}
 
-\begin{termBox}{\tBoxTitle{Addition Rule of disjoint outcomes} If $A_1$ and $A_2$ represent two disjoint outcomes, then the probability that one of them occurs is given by
-\begin{eqnarray*}
-\P(A_1\text{ or } A_2) = \P(A_1) + \P(A_2)
-\end{eqnarray*}
-If there are many disjoint outcomes $A_1,\dots,A_k$, then the probability that one of these outcomes will occur is
-\begin{eqnarray}
-\P(A_1) + \P(A_2) + \cdots + \P(A_k)
-\end{eqnarray}
-}
-\end{termBox}
+	\index{event|(}
 
-\index{event|(}
+	Statisticians rarely work with individual outcomes and instead consider \indexthis{\emph{sets}}{sets} or \indexthis{\emph{collections}}{collections} of outcomes. Let $A$ represent the event where a die roll results in \resp{1} or \resp{2} and $B$~represent the event that the result is a \resp{4} or a \resp{6}. We write $A$ as the set of outcomes $\{$\resp{1},~\resp{2}$\}$ and $B=\{$\resp{4}, \resp{6}$\}$. These sets are commonly called \termsub{events}{event}. Because $A$ and $B$ have no elements in common, they are disjoint events. $A$ and $B$ are represented in Figure~\ref{disjointSets}.
 
-Statisticians rarely work with individual outcomes and instead consider \indexthis{\emph{sets}}{sets} or \indexthis{\emph{collections}}{collections} of outcomes. Let $A$ represent the event where a die roll results in \resp{1} or \resp{2} and $B$~represent the event that the result is a \resp{4} or a \resp{6}. We write $A$ as the set of outcomes $\{$\resp{1},~\resp{2}$\}$ and $B=\{$\resp{4}, \resp{6}$\}$. These sets are commonly called \termsub{events}{event}. Because $A$ and $B$ have no elements in common, they are disjoint events. $A$ and $B$ are represented in Figure~\ref{disjointSets}.
+	\begin{figure}%[hhh]
+	\centering
+	\includegraphics[width=0.55\textwidth]{ch_probability/figures/disjointSets/disjointSets}
+	\caption{Three events, $A$, $B$, and $D$, consist of outcomes from rolling a die. $A$ and $B$ are disjoint since they do not have any outcomes in common. $B$ and $D$ are also disjoint.}
+	\label{disjointSets}
+	\end{figure}
 
-\begin{figure}%[hhh]
-\centering
-\includegraphics[width=0.55\textwidth]{ch_probability/figures/disjointSets/disjointSets}
-\caption{Three events, $A$, $B$, and $D$, consist of outcomes from rolling a die. $A$ and $B$ are disjoint since they do not have any outcomes in common. $B$ and $D$ are also disjoint.}
-\label{disjointSets}
-\end{figure}
-
-\begin{exercise}\label{lara}
-Can you modify $D$ in Figure \ref{disjointSets} to make $A$, $B$, $D$ pairwise disjoint?\footnote{Yes, let $D=\{3,5\}$, or more generally $D\subseteq\{3,5\}$.}
-\end{exercise}
+	\begin{exercise}\label{lara}
+	Can you modify $D$ in Figure \ref{disjointSets} to make $A$, $B$, $D$ pairwise disjoint?\footnote{Yes, let $D=\{3,5\}$, or more generally $D\subseteq\{3,5\}$.}
+	\end{exercise}
 
 
-\index{event|)}
-\index{disjoint|)}
-\index{mutually exclusive|)}
+	\index{event|)}
+	\index{disjoint|)}
+	\index{mutually exclusive|)}
 
-\begin{termBox}{\tBoxTitle{General Addition Rule} If $A$ and $B$ are any two events, disjoint or not, then the probability that at least one of them will occur is
-\begin{eqnarray}
-\P(A\text{ or }B) = \P(A) + \P(B) - \P(A\text{ and }B)
-\label{generalAdditionRule}
-\end{eqnarray}
-where $\P(A$ and $B)$ is the probability that both events occur.}
-\end{termBox}
+	\begin{termBox}{\tBoxTitle{General Addition Rule} If $A$ and $B$ are any two events, disjoint or not, then the probability that at least one of them will occur is
+	\begin{eqnarray}
+	\P(A\text{ or }B) = \P(A) + \P(B) - \P(A\text{ and }B)
+	\label{generalAdditionRule}
+	\end{eqnarray}
+	where $\P(A$ and $B)$ is the probability that both events occur.}
+	\end{termBox}
 
-%\begin{tipBox}{\tipBoxTitle{``or'' is inclusive}
-%When we write ``or'' in statistics, we mean ``and/or'' unless we explicitly state otherwise. Thus, $A$ or $B$ occurs means $A$, $B$, or both $A$ and $B$ occur.}
-%\end{tipBox}
-
-\begin{example}%Thanks to Christian
-Suppose we toss two coins. Let $A$ be the event that the 1st coin is heads, and $B$ the event that the 2nd coin is heads.
-Then the probability that at least one coin is heads is $\P(A\cup B)=\P(A)+\P(B)-\P(A\cap B)=\frac12+\frac12-\frac14 = \frac34$.
-\end{example}
+	\begin{example}%Thanks to Christian
+	Suppose we toss two coins. Let $A$ be the event that the 1st coin is heads, and $B$ the event that the 2nd coin is heads.
+	Then the probability that at least one coin is heads is $\P(A\cup B)=\P(A)+\P(B)-\P(A\cap B)=\frac12+\frac12-\frac14 = \frac34$.
+	\end{example}
 
 \subsection{Probability distributions}
 
@@ -642,52 +642,51 @@ $\Var(X)$\vspace{1mm}\\\footnotesize Variance\\of $X$}
 
 \subsection{Linear combinations of random variables}
 
-Two important concepts concerning combinations of random variables have so far been introduced. First, a final value can sometimes be described as the sum of its parts in an equation. Second, intuition suggests that putting the individual average values into this equation gives the average value we would expect in total. This second point needs clarification -- it is guaranteed to be true in what are called \emph{linear combinations of random variables}.
+	Two important concepts concerning combinations of random variables have so far been introduced. First, a final value can sometimes be described as the sum of its parts in an equation. Second, intuition suggests that putting the individual average values into this equation gives the average value we would expect in total. This second point needs clarification -- it is guaranteed to be true in what are called \emph{linear combinations of random variables}.
 
-A \term{linear combination} of two random variables $X$ and $Y$ is a fancy phrase to describe a combination
-$$ aX + bY$$
-where $a$ and $b$ are some fixed and known numbers.
+	A \term{linear combination} of two random variables $X$ and $Y$ is a fancy phrase to describe a combination
+	$$ aX + bY$$
+	where $a$ and $b$ are some fixed and known numbers.
 
-When considering the average of a linear combination of random variables, it is safe to plug in the mean of each random variable and then compute the final result. For a few examples of nonlinear combinations of random variables -- cases where we cannot simply plug in the means -- see the footnote.\footnote{If $X$ and $Y$ are random variables, consider the following combinations: $X^{1+Y}$, $X\times Y$, $X/Y$. In such cases, plugging in the average value for each random variable and computing the result will not generally lead to an accurate average value for the end result.}
+	When considering the average of a linear combination of random variables, it is safe to plug in the mean of each random variable and then compute the final result. For a few examples of nonlinear combinations of random variables -- cases where we cannot simply plug in the means -- see the footnote.\footnote{If $X$ and $Y$ are random variables, consider the following combinations: $X^{1+Y}$, $X\times Y$, $X/Y$. In such cases, plugging in the average value for each random variable and computing the result will not generally lead to an accurate average value for the end result.}
 
-\begin{termBox}{\tBoxTitle{Linear combinations of random variables and the average result}
-If $X$ and $Y$ are random variables, then a linear combination of the random variables is given by
-\begin{align}\label{linComboOfRandomVariablesXAndY}
-aX + bY
-\end{align}
-where $a$ and $b$ are some fixed numbers. To compute the average value of a linear combination of random variables, plug in the average of each individual random variable and compute the result:
-\begin{align*}
-a\times \E(X) + b\times \E(Y)
-\end{align*}
-Recall that the expected value is the same as the mean, e.g. $\E(X) = \mu_X$.}
-\end{termBox}
+	\begin{termBox}{\tBoxTitle{Linear combinations of random variables and the average result}
+	If $X$ and $Y$ are random variables, then a linear combination of the random variables is given by
+	\begin{align}\label{linComboOfRandomVariablesXAndY}
+	aX + bY
+	\end{align}
+	where $a$ and $b$ are some fixed numbers. To compute the average value of a linear combination of random variables, plug in the average of each individual random variable and compute the result:
+	\begin{align*}
+	a\times \E(X) + b\times \E(Y)
+	\end{align*}
+	Recall that the expected value is the same as the mean, e.g. $\E(X) = \mu_X$.}
+	\end{termBox}
 
 \subsection{Variability in linear combinations of random variables}
 
+	\begin{termBox}{\tBoxTitle{Variability of linear combinations of random variables}
+	The variance of a linear combination of random variables may be computed by squaring the constants,
+	substituting in the variances for the random variables, and computing the result:
+	\begin{align*}
+		\Var(aX + bY) = a^2\times \Var(X) + b^2\times \Var(Y)
+	\end{align*}
+	This equation is valid as long as the random variables are independent of each other.
+	The standard deviation of the linear combination may be found by taking the square root of the variance.}
+	\end{termBox}
 
-\begin{termBox}{\tBoxTitle{Variability of linear combinations of random variables}
-The variance of a linear combination of random variables may be computed by squaring the constants, substituting in the variances for the random variables, and computing the result:
-\begin{align*}
-\Var(aX + bY) = a^2\times \Var(X) + b^2\times \Var(Y)
-\end{align*}
-This equation is valid as long as the random variables are independent of each other. The standard deviation of the linear combination may be found by taking the square root of the variance.}
-\end{termBox}
-
-In the independent case, assuming $\E(X)=\E(Y)=0$,
-\[
-	\Var(X\pm Y) = \E((X\pm Y)^2) = \E(X^2) \pm 2 \E(XY) + \E(Y^2) = \E(X^2)+\E(Y^2)
-\]
-is independent of the sign $\pm$. Here we are using the fact that the \term{covariance} $\E(XY)-\E(X)\E(Y)$ is zero for independent random variables. This can be verified by integration $\iint dx\,dy$ which is covered in multivariable calculus.
-\index{random variable|)}
-In the dependent case, thing are more complicated. For instance, $X-X$ and $X+X$ have quite different variances.
-
+	In the independent case, assuming $\E(X)=\E(Y)=0$,
+	\[
+		\Var(X\pm Y) = \E((X\pm Y)^2) = \E(X^2) \pm 2 \E(XY) + \E(Y^2) = \E(X^2)+\E(Y^2)
+	\]
+	is independent of the sign $\pm$.
+	Here we are using the fact that the \term{covariance} $\E(XY)-\E(X)\E(Y)$ is zero for independent random variables.
+	This can be verified by integration $\iint dx\,dy$ which is covered in multivariable calculus.
+	\index{random variable|)}
+	In the dependent case, thing are more complicated. For instance, $X-X$ and $X+X$ have quite different variances.
 
 %_________________
 \section{Continuous distributions and a review of calculus}
 \label{contDist}
-
-%\index{data!FCID|(}
-%\index{hollow histogram|(}
 
 The following subsections roughly correspond to chapters in a popular calculus text such as Stewart's \emph{Calculus} or Hass, Weir and Thomas' \emph{University Calculus}.
 
@@ -709,9 +708,7 @@ The following subsections roughly correspond to chapters in a popular calculus t
 \caption{The Cauchy distribution has ``heavier tails'' than the normal distribution.}
 \end{figure}
 
-%\section{Review of calculus}
 \label{calculus}
-
 \index{calculus|(}
 
 \subsection{Limits}
@@ -721,84 +718,85 @@ The concept is used to define derivatives and integrals, but is also used direct
 
 \subsection{Derivatives}
 
-The derivative $f'(x)=\frac{df}{dx}$ is defined by $\lim_{h\to 0}\frac{f(x+h)-f(x)}h$. The \term{Chain Rule} says that
-\[
-\frac{d}{dx}f(g(x))=f'(g(x))\cdot g'(x).
-\]
-The \term{Product Rule} says that
-\[
-\frac{d}{dx} f(x)g(x) = f'(x)g(x)+f(x)g'(x).
-\]
-Differentiation is a linear operation in the sense that
-\[
-\frac{d}{dx} cf(x)=cf'(x),\quad \frac{d}{dx}(f(x)+g(x)) = f'(x)+g'(x),
-\]
-where $c$ is a constant.
+	The derivative $f'(x)=\frac{df}{dx}$ is defined by $\lim_{h\to 0}\frac{f(x+h)-f(x)}h$. The \term{Chain Rule} says that
+	\[
+		\frac{d}{dx}f(g(x))=f'(g(x))\cdot g'(x).
+	\]
+	The \term{Product Rule} says that
+	\[
+		\frac{d}{dx} f(x)g(x) = f'(x)g(x)+f(x)g'(x).
+	\]
+	Differentiation is a linear operation in the sense that
+	\[
+		\frac{d}{dx} cf(x)=cf'(x),\quad \frac{d}{dx}(f(x)+g(x)) = f'(x)+g'(x),
+	\]
+	where $c$ is a constant.
 
 \subsection{Applications of derivatives}%: optimization}
 
-To find a maximum or minimum of $f(x)$, we solve the equation $f'(x)=0$ for $x$.
-If $f''(x)\ge 0$ (as is the case with the function $f(x)=x^2$) then we will have a minimum,
-and if $f''(x)\le 0$ (as with $f(x)=-x^2$) we will have a maximum.
+	To find a maximum or minimum of $f(x)$, we solve the equation $f'(x)=0$ for $x$.
+	If $f''(x)\ge 0$ (as is the case with the function $f(x)=x^2$) then we will have a minimum,
+	and if $f''(x)\le 0$ (as with $f(x)=-x^2$) we will have a maximum.
 
-For a continuous random variable with pdf $f_X$, we can naturally define a \term{mode} to be any point $x$ with $f'_X(x)=0$ and $f''_X(x)\le 0$, i.e., a local maximum of $f_X$.
+	For a continuous random variable with pdf $f_X$, we can naturally define a \term{mode} to be
+	any point $x$ with $f'_X(x)=0$ and $f''_X(x)\le 0$, i.e., a local maximum of $f_X$.
 
 \subsection{Integrals}
+	Integrals can be understood via the Fundamental Theorem of Calculus: $f(b)-f(a)=\int_a^b f'(x)\,dx$ and $\frac{d}{dx}\int_a^x f(t)\,dt=f(x)$.
 
-Integrals can be understood via the Fundamental Theorem of Calculus: $f(b)-f(a)=\int_a^b f'(x)\,dx$ and $\frac{d}{dx}\int_a^x f(t)\,dt=f(x)$.
-
-For discrete random variables with probability mass function $m(x)=\P(X=x)$, we require
-\[
-\sum_x m(x)=1,
-\]
-and analogously in the continuous case we need
-\[
-\int_{-\infty}^\infty f_X(x)\,dx=1
-\]
-when $f_X$ is the pdf of $X$.
+	For discrete random variables with probability mass function $m(x)=\P(X=x)$, we require
+	\[
+	\sum_x m(x)=1,
+	\]
+	and analogously in the continuous case we need
+	\[
+	\int_{-\infty}^\infty f_X(x)\,dx=1
+	\]
+	when $f_X$ is the pdf of $X$.
 \subsection{Applications of integrals}%: means}
 
-The mean of a random variable $X$ with pdf $f$ is $\int_{-\infty}^\infty x\,f(x)\,dx$.
+	The mean of a random variable $X$ with pdf $f$ is $\int_{-\infty}^\infty x\,f(x)\,dx$.
 
-The expectation of $X^2$ is $\int x^2\,f(x)\,dx$, similarly. The general rule is that if $f_X$ is the pdf of $X$, and $g$ is any (deterministic, i.e., non-random) function, then
-\[
-\E(g(X)) = \int_{-\infty}^\infty g(x)\,f_X(x)\,dx.
-\]
-
+	The expectation of $X^2$ is $\int x^2\,f(x)\,dx$, similarly.
+	The general rule is that if $f_X$ is the pdf of $X$, and $g$ is any (deterministic, i.e., non-random) function, then
+	\[
+		\E(g(X)) = \int_{-\infty}^\infty g(x)\,f_X(x)\,dx.
+	\]
 \subsection{Inverse and trigonometric functions}%: $e^x$ and $\ln x$}
 
-The normal distribution (Exercise \ref{normal_dist}) and the exponential distribution use the exponential function $e^x$, which is related to the natural logarithm $\ln$ via
-\[
-	y=e^x\iff \ln y=x
-\]
-where $y>0$.
+	The normal distribution (Exercise \ref{normal_dist}) and the exponential distribution use the exponential function $e^x$,
+	which is related to the natural logarithm $\ln$ via
+	\[
+		y=e^x\iff \ln y=x
+	\]
+	where $y>0$.
 
-By the Chain Rule, if $y=f(f^{-1}(y))$ then
-\[
-	1 = \frac{dy}{dy} = f'(f^{-1}(y))\cdot (f^{-1})'(y).
-\]
-This implies that, since $\frac{d}{dx} e^x=e^x$, using $f(x)=e^x$,
-\[
-\frac{d}{dy}\ln y = (f^{-1})'(y)=\frac1{f'(f^{-1}(y))} = \frac1{e^x} = \frac1y.
-\]
-Properties of logarithms generally follow from analogous ones for exponentials, e.g., the general rule
-\[
-\frac{\log_a x}{\log_a y} = \frac{\log_b x}{\log_b y}
-\]
-follows from the special case $b=y$:
-\[
-\frac{\log_a x}{\log_a y} = \frac{\log_y x}{\log_y y}
-\]
-(since this shows that the left hand side does not depend on $a$)
-which follows, using $a^{\log_a z}=z$, from
-\[
-\frac{\log_a x}{\log_a y} = \frac{\log_y x}{\log_y y}=\log_y x\iff \log_a y\log_y x = \log_a x
-\]
-\[
-\iff a^{\log_a y\log_y x} = a^{\log_a x}
-\iff (a^{\log_a y})^{\log_y x}=x
-\iff y^{\log_y x}=x.
-\]
+	By the Chain Rule, if $y=f(f^{-1}(y))$ then
+	\[
+		1 = \frac{dy}{dy} = f'(f^{-1}(y))\cdot (f^{-1})'(y).
+	\]
+	This implies that, since $\frac{d}{dx} e^x=e^x$, using $f(x)=e^x$,
+	\[
+		\frac{d}{dy}\ln y = (f^{-1})'(y)=\frac1{f'(f^{-1}(y))} = \frac1{e^x} = \frac1y.
+	\]
+	Properties of logarithms generally follow from analogous ones for exponentials, e.g., the general rule
+	\[
+		\frac{\log_a x}{\log_a y} = \frac{\log_b x}{\log_b y}
+	\]
+	follows from the special case $b=y$:
+	\[
+		\frac{\log_a x}{\log_a y} = \frac{\log_y x}{\log_y y}
+	\]
+	(since this shows that the left hand side does not depend on $a$)
+	which follows, using $a^{\log_a z}=z$, from
+	\[
+		\frac{\log_a x}{\log_a y} = \frac{\log_y x}{\log_y y}=\log_y x\iff \log_a y\log_y x = \log_a x
+	\]
+	\[
+		\iff a^{\log_a y\log_y x} = a^{\log_a x}
+		\iff (a^{\log_a y})^{\log_y x}=x
+		\iff y^{\log_y x}=x.
+	\]
 
 \subsection{Techniques of integration}
 
