@@ -1,0 +1,194 @@
+\indexentry{mode|textbf}{8}
+\indexentry{variance|textbf}{8}
+\indexentry{sample standard deviation|textbf}{8}
+\indexentry{pie chart|textbf}{9}
+\indexentry{probability|(}{12}
+\indexentry{random process|(}{12}
+\indexentry{probability|textbf}{12}
+\indexentry{Law of Large Numbers|textbf}{13}
+\indexentry{strong LLN|textbf}{13}
+\indexentry{weak LLN|textbf}{13}
+\indexentry{random process|)}{14}
+\indexentry{disjoint|(}{14}
+\indexentry{mutually exclusive|(}{14}
+\indexentry{Events|textbf}{14}
+\indexentry{sets|textbf}{14}
+\indexentry{outcomes|textbf}{14}
+\indexentry{disjoint|textbf}{14}
+\indexentry{mutually exclusive|textbf}{14}
+\indexentry{Addition Rule|textbf}{14}
+\indexentry{sample space|textbf}{14}
+\indexentry{event|(}{14}
+\indexentry{sets}{14}
+\indexentry{collections}{14}
+\indexentry{event|textbf}{14}
+\indexentry{event|)}{15}
+\indexentry{disjoint|)}{15}
+\indexentry{mutually exclusive|)}{15}
+\indexentry{probability distribution|textbf}{15}
+\indexentry{random variable|textbf}{15}
+\indexentry{probability density function|textbf}{15}
+\indexentry{cumulative distribution function|textbf}{15}
+\indexentry{cdf|(}{15}
+\indexentry{pdf|(}{15}
+\indexentry{sample space|textbf}{16}
+\indexentry{S@$S$}{16}
+\indexentry{complement|textbf}{16}
+\indexentry{Ac@$A^c$}{16}
+\indexentry{conditional probability|(}{17}
+\indexentry{Multiplication Rule|textbf}{18}
+\indexentry{marginal probability|(}{18}
+\indexentry{joint probability|(}{18}
+\indexentry{jointly distributed|textbf}{18}
+\indexentry{probability mass function|textbf}{18}
+\indexentry{marginal distribution|textbf}{18}
+\indexentry{joint probability mass function|textbf}{18}
+\indexentry{tree diagram|(}{19}
+\indexentry{tree diagram|textbf}{19}
+\indexentry{Bayes' Theorem|(}{20}
+\indexentry{Bayes' Theorem|textbf}{20}
+\indexentry{Bayes' Theorem|)}{20}
+\indexentry{tree diagram|)}{20}
+\indexentry{conditional probability|)}{20}
+\indexentry{probability|)}{20}
+\indexentry{sampling without replacement|textbf}{20}
+\indexentry{with replacement|textbf}{20}
+\indexentry{probability density function|textbf}{21}
+\indexentry{Frequentist statistics|textbf}{22}
+\indexentry{Bayesian statistics|textbf}{22}
+\indexentry{random variable|(}{22}
+\indexentry{expectation|(}{22}
+\indexentry{random variable|textbf}{22}
+\indexentry{expected value|textbf}{22}
+\indexentry{EX@$\E(X)$}{22}
+\indexentry{Greek!mu ($\mu $)}{23}
+\indexentry{expectation|)}{23}
+\indexentry{(sample) mean|textbf}{23}
+\indexentry{mean!average}{23}
+\indexentry{uniform distribution|textbf}{23}
+\indexentry{Greek!sigma ($\sigma $)}{25}
+\indexentry{linear combination|textbf}{25}
+\indexentry{covariance|textbf}{26}
+\indexentry{random variable|)}{26}
+\indexentry{calculus|(}{26}
+\indexentry{Chain Rule|textbf}{27}
+\indexentry{Product Rule|textbf}{27}
+\indexentry{mode|textbf}{27}
+\indexentry{distribution!normal|(}{31}
+\indexentry{empirical cdf|textbf}{34}
+\indexentry{normal probability plot|)}{34}
+\indexentry{distribution!normal|)}{34}
+\indexentry{distribution!Bernoulli|(}{35}
+\indexentry{sample proportion|textbf}{35}
+\indexentry{distribution!Bernoulli|)}{36}
+\indexentry{distribution!geometric|(}{36}
+\indexentry{distribution!geometric|textbf}{36}
+\indexentry{distribution!geometric|)}{36}
+\indexentry{distribution!binomial|(}{37}
+\indexentry{distribution!binomial|textbf}{37}
+\indexentry{n choose k|textbf}{37}
+\indexentry{factorial|textbf}{37}
+\indexentry{distribution!binomial!normal approximation|(}{39}
+\indexentry{10\% condition|textbf}{39}
+\indexentry{distribution!binomial!normal approximation|)}{39}
+\indexentry{distribution!binomial|)}{39}
+\indexentry{distribution!negative binomial|(}{39}
+\indexentry{distribution!negative binomial|textbf}{39}
+\indexentry{distribution!Poisson|(}{41}
+\indexentry{distribution!Poisson|)}{42}
+\indexentry{point estimate|(}{45}
+\indexentry{point estimate!single mean|(}{45}
+\indexentry{sampling distribution|textbf}{45}
+\indexentry{standard error (SE)|textbf}{45}
+\indexentry{SE}{45}
+\indexentry{standard error (SE)!single mean}{46}
+\indexentry{point estimate|)}{46}
+\indexentry{confidence interval|(}{46}
+\indexentry{confidence interval|textbf}{46}
+\indexentry{confidence interval!confidence level|)}{47}
+\indexentry{Central Limit Theorem}{47}
+\indexentry{confidence interval!confidence level|(}{47}
+\indexentry{margin of error|textbf}{48}
+\indexentry{confidence interval!interpretation|(}{48}
+\indexentry{confidence interval!interpretation|)}{48}
+\indexentry{confidence interval|)}{48}
+\indexentry{hypothesis testing|(}{48}
+\indexentry{null hypothesis ($H_0$)|textbf}{48}
+\indexentry{alternative hypothesis ($H_A$)|textbf}{48}
+\indexentry{hypothesis testing!decision errors|(}{49}
+\indexentry{Type\nobreakspace  {}1 Error|textbf}{49}
+\indexentry{Type\nobreakspace  {}2 Error|textbf}{49}
+\indexentry{hypothesis testing!decision errors|)}{49}
+\indexentry{significance level|textbf}{49}
+\indexentry{hypothesis testing!significance level}{49}
+\indexentry{Greek!alpha@alpha ($\alpha$)}{49}
+\indexentry{hypothesis testing!p-value|(}{49}
+\indexentry{p-value|textbf}{50}
+\indexentry{hypothesis testing!p-value|textbf}{50}
+\indexentry{hypothesis testing!p-value|)}{51}
+\indexentry{hypothesis testing!significance level|(}{52}
+\indexentry{significance level|(}{52}
+\indexentry{significance level|)}{52}
+\indexentry{hypothesis testing!significance level|)}{52}
+\indexentry{hypothesis testing|)}{52}
+\indexentry{Central Limit Theorem|(}{52}
+\indexentry{exponential distribution|textbf}{52}
+\indexentry{log-normal|textbf}{53}
+\indexentry{uniform|textbf}{53}
+\indexentry{skew!example: moderate}{53}
+\indexentry{skew!example: strong}{53}
+\indexentry{Central Limit Theorem|)}{55}
+\indexentry{skew!strongly skewed guideline}{55}
+\indexentry{unbiased|textbf}{55}
+\indexentry{confidence interval!using normal model|(}{55}
+\indexentry{margin of error}{55}
+\indexentry{hypothesis testing!using normal model|(}{56}
+\indexentry{test statistic|textbf}{56}
+\indexentry{hypothesis testing!using normal model|)}{57}
+\indexentry{statistically significant|textbf}{57}
+\indexentry{practically significant|textbf}{57}
+\indexentry{Central Limit Theorem!normal data|)}{59}
+\indexentry{t-distribution|(}{59}
+\indexentry{distribution!$t$|(}{59}
+\indexentry{T-score|textbf}{60}
+\indexentry{paired data|(}{60}
+\indexentry{data!textbooks|(}{60}
+\indexentry{point estimate!difference of means|(}{61}
+\indexentry{point estimate!difference of means|)}{61}
+\indexentry{standard error (SE)!difference in means}{61}
+\indexentry{standard error (SE)!difference in means}{61}
+\indexentry{pooled standard deviation|textbf}{63}
+\indexentry{unbiased estimator|textbf}{64}
+\indexentry{success|textbf}{67}
+\indexentry{failure|textbf}{67}
+\indexentry{success-failure condition|textbf}{67}
+\indexentry{standard error (SE)!single proportion}{67}
+\indexentry{point estimate!single proportion}{68}
+\indexentry{success-failure condition|textbf}{68}
+\indexentry{point estimate!difference of proportions}{70}
+\indexentry{standard error (SE)!difference in proportions}{70}
+\indexentry{chi-square statistic}{73}
+\indexentry{$\chi ^2$ distribution|textbf}{74}
+\indexentry{degrees of freedom (df)!chi-square|textbf}{74}
+\indexentry{$\chi ^2$ table|textbf}{74}
+\indexentry{linear regression|textbf}{81}
+\indexentry{parameter}{81}
+\indexentry{Greek!beta@beta ($\beta$)}{81}
+\indexentry{residual|(}{82}
+\indexentry{residual|textbf}{82}
+\indexentry{correlation|(}{82}
+\indexentry{correlation|textbf}{82}
+\indexentry{least squares regression|(}{83}
+\indexentry{point-slope|textbf}{84}
+\indexentry{least squares regression!interpreting parameters|(}{84}
+\indexentry{least squares regression!extrapolation|(}{84}
+\indexentry{least squares regression!r-squared ($r^2$)|(}{84}
+\indexentry{high leverage|textbf}{85}
+\indexentry{effect size|textbf}{87}
+\indexentry{mean squares|textbf}{88}
+\indexentry{$F$ distribution|textbf}{90}
+\indexentry{entropy!maximum|(}{101}
+\indexentry{states|textbf}{103}
+\indexentry{structure function|textbf}{104}
+\indexentry{learning!machine|(}{110}
+\indexentry{optimization!mathematical|(}{110}

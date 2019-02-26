@@ -1,0 +1,133 @@
+
+
+
+%_______________
+\section{Exercises}
+
+
+
+%_______________
+%\subsection{Data basics}
+
+% 3
+% 4
+% 5
+% 6
+% 7
+
+\eoce{\qt{Category of categories\label{catcat}}
+        Categorize the following statements as true or false and briefly explain why.
+        \begin{parts}
+            \item 
+                A variable can be either categorical or numerical but not both.
+            \item
+                A variable can be either discrete or continuous but not both.
+            \item
+                There exists a categorical variable that can be expressed as an equivalent continuous variable.
+        \end{parts}
+}{}
+
+
+% 8
+
+%\textC{\newpage}
+
+%_______________
+%\subsection{Overview of data collection principles}
+
+% 9
+
+%_______________
+%\subsection{Observational studies and sampling strategies}
+
+%_______________
+%\subsection{Experiments}
+
+% 30
+
+%_______________
+%\subsection{Examining numerical data}
+
+\eoce{\qt{Mean medians\label{mean_medians}}
+        Consider the following set of exam scores: 70, 55, 76, 64, 98, 71, 68, 70, 76, 59. 
+        \begin{parts}
+            \item 
+                Find the mean and median of the exam scores. Which more accurately describes the data set?
+            \item
+                Generalize this idea and discuss what conditions on a data set would result in a mean that does not fit the pattern of the given data.
+            \item
+                Similarly, in what data sets would the mean be higher than the median? Lower than the median?
+        \end{parts}
+}{}
+
+
+\eoce{\qt{Extra mean\label{extra_mean}}
+        Consider the exam scores from Problem \ref{mean_medians}. 
+        \begin{parts}
+            \item 
+                Assume the instructor added 10 points of extra credit to each student's score (and assume that exam scores can be greater than 100). What is the mean of the new scores?
+            \item
+                Assume that the instructor decided to make the exam out of 200 points instead of 100 and, consequently, doubled each student's raw score. What is the mean of the new scores?
+                Which way makes the greatest change to the mean, the one in (a) or (b)? %due to a Fall 2018 MATH 372 student
+            \item \label{c}
+                Generalize this pattern: if a constant $c_1$ is added to each of $x_1, \dots, x_n$, what will the new mean be? If each of $x_1, \dots, x_n$ is multiplied by a constant $c_2$, what will the new mean be?
+        \end{parts}
+}{}
+
+\eoce{\qt{Extra variance\label{extra_variance}}
+        Same as Problem \ref{extra_mean}, but with variance instead of mean.
+}{}
+
+\eoce{\qt{Harmonic mean\label{harmonic}}
+        There are several ways to define the ``average" of a set of data. Given data $x_1, \dots, x_n$, let $\bar{x}_A$ denote the arithmetic (or ``usual") mean: \\ 
+        \begin{center}
+        ${\displaystyle \bar{x}_A := \frac{x_1 + \dots + x_n}{n}}$ \\
+        \end{center}
+        Let $\bar{x}_G$ denote the geometric mean: \\
+        \begin{center}
+        ${\displaystyle \bar{x}_G := \sqrt[n]{x_1 \cdot x_2 \cdot \dots \cdot x_{n-1} \cdot x_n}}$ \\
+        \end{center}
+        Let $\bar{x}_H$ denote the harmonic mean: \\
+        \begin{center}
+            ${\displaystyle \bar{x}_H := \frac{n}{\frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_n}}}$
+        \end{center}
+        Show that $\bar{x}_A \ge \bar{x}_G \ge \bar{x}_H$ for any $x_1, \dots, x_n$, with
+        equality if and only if $x_i = x_j$ for all $i, j \le n$.
+}{}
+
+\eoce{\qt{Continuous averages\label{cont_ave}}
+        The average of a function $f: [a, b] \rightarrow \mathbb R$ (where $\mathbb R=(-\infty,\infty)$ is the set of all real numbers) can be defined via 
+        \begin{center}
+            ${\displaystyle \mathrm{avg}_f := \frac{1}{b-a} \int_a^b f(x) dx}$ \\
+        \end{center}
+        assuming this integral converges. Given data $x_1, \dots, x_n$, find a function $f$ such that $\mathrm{avg}_f = \bar{x}_A$.
+}{}
+
+\eoce{\qt{Invariant average\label{inv_ave}}
+        Let $f: [a,b] \rightarrow \mathbb R$ and assume ${\displaystyle \int_a^b f(x) dx}$ converges. Show that the properties of the mean from Problem \ref{extra_mean}(\ref{c}) hold for $\mathrm{avg}_f$ from Problem \ref{cont_ave}.
+}{}
+
+\eoce{\qt{A valuable theorem}
+        Let $f: [a,b] \rightarrow \mathbb R$ be continuous and assume ${\displaystyle \int_a^b f(x) dx}$ converges.
+        \begin{parts}
+            \item \label{inv_ave a}
+                Cite a well-known calculus theorem to conclude that there exists $c \in (a,b)$
+                such that $f(c) = \mathrm{avg}_f$.
+            \item
+                How does the existence of $c$ from part (\ref{inv_ave a}) agree with the intuition behind averages?
+        \end{parts}
+}{}
+
+\eoce{\qt{Musical means}
+Show that the geometric means (Exercise \ref{harmonic}) of $\{\frac43,\frac32\}$ and $\{2^{5/12}, 2^{7/12}\}$ are the same, but that
+\[
+	\frac43 < 2^{5/12} < 2^{7/12} < \frac32.
+\]
+The relationship between these particular numbers is important in music theory\footnote{
+See \url{https://math.stackexchange.com/questions/11669/mathematical-difference-between-white-and-black-notes-in-a-piano/11671}.
+}. For musical harmony, rational numbers like $\frac43, \frac32$ are desired, but for equally tempered scales, powers of $2^{1/12}$ are desired.
+}{}
+% 38
+
+\includegraphics[width=2in]{ch_intro_to_data/TeX/F}
+\includegraphics[width=2in]{ch_intro_to_data/TeX/G}

@@ -1,0 +1,126 @@
+This is makeindex, version 2.15 [TeX Live 2018] (kpathsea + Thai support).
+Scanning input file s4cs.idx....done (194 entries accepted, 0 rejected).
+Sorting entries.....done (1561 comparisons).
+Generating output file s4cs.ind....
+## Warning (input = s4cs.idx, line = 49; output = s4cs.ind, line = 17):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 73; output = s4cs.ind, line = 22):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 32; output = s4cs.ind, line = 23):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 150; output = s4cs.ind, line = 25):
+   -- Unmatched range closing operator ).
+
+## Warning (input = s4cs.idx, line = 107; output = s4cs.ind, line = 31):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 108; output = s4cs.ind, line = 32):
+   -- Unmatched range closing operator ).
+
+## Warning (input = s4cs.idx, line = 110; output = s4cs.ind, line = 32):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 143; output = s4cs.ind, line = 34):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 180; output = s4cs.ind, line = 35):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 179; output = s4cs.ind, line = 35):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 155; output = s4cs.ind, line = 42):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 17; output = s4cs.ind, line = 45):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 152; output = s4cs.ind, line = 47):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 88; output = s4cs.ind, line = 49):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 85; output = s4cs.ind, line = 51):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 96; output = s4cs.ind, line = 52):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 95; output = s4cs.ind, line = 52):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 190; output = s4cs.ind, line = 61):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 24; output = s4cs.ind, line = 62):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 127; output = s4cs.ind, line = 88):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 41; output = s4cs.ind, line = 94):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 193; output = s4cs.ind, line = 102):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 181; output = s4cs.ind, line = 103):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 184; output = s4cs.ind, line = 104):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 183; output = s4cs.ind, line = 105):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 185; output = s4cs.ind, line = 106):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 40; output = s4cs.ind, line = 115):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 18; output = s4cs.ind, line = 121):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 79; output = s4cs.ind, line = 126):
+   -- Unmatched range closing operator ).
+
+## Warning (input = s4cs.idx, line = 194; output = s4cs.ind, line = 132):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 154; output = s4cs.ind, line = 138):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 33; output = s4cs.ind, line = 140):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 100; output = s4cs.ind, line = 145):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 7; output = s4cs.ind, line = 150):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 61; output = s4cs.ind, line = 159):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 178; output = s4cs.ind, line = 160):
+   -- Inconsistent page encapsulator textbf within range.
+
+## Warning (input = s4cs.idx, line = 177; output = s4cs.ind, line = 160):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 15; output = s4cs.ind, line = 171):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = s4cs.idx, line = 151; output = s4cs.ind, line = 191):
+   -- Unmatched range opening operator (.
+
+## Warning (input = s4cs.idx, line = 47; output = s4cs.ind, line = 194):
+   -- Inconsistent page encapsulator textbf within range.
+done (214 lines written, 40 warnings).
+Output written in s4cs.ind.
+Transcript written in s4cs.ilg.

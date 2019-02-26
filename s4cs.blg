@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: s4cs.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: extraTeX/preamble/copyright.aux
+A level-1 auxiliary file: extraTeX/preamble/preface.aux
+A level-1 auxiliary file: ch_intro_to_data/TeX/ch_intro_to_data.aux
+A level-1 auxiliary file: ch_intro_to_data/TeX/ch_intro_to_data_ex.aux
+A level-1 auxiliary file: ch_probability/TeX/ch_probability.aux
+A level-1 auxiliary file: ch_probability/TeX/ch_probability_ex.aux
+A level-1 auxiliary file: ch_distributions/TeX/ch_distributions.aux
+A level-1 auxiliary file: ch_distributions/TeX/ch_distributions_ex.aux
+A level-1 auxiliary file: ch_inference_foundations/TeX/ch_inference_foundations.aux
+A level-1 auxiliary file: ch_inference_foundations/TeX/ch_inference_foundations_ex.aux
+A level-1 auxiliary file: ch_inference_for_means/TeX/ch_inference_for_means.aux
+A level-1 auxiliary file: ch_inference_for_means/TeX/ch_inference_for_means_ex.aux
+A level-1 auxiliary file: ch_inference_for_props/TeX/ch_inference_for_props.aux
+A level-1 auxiliary file: ch_inference_for_props/TeX/ch_inference_for_props_ex.aux
+A level-1 auxiliary file: ch_regr_simple_linear/TeX/ch_regr_simple_linear.aux
+A level-1 auxiliary file: ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.aux
+A level-1 auxiliary file: ch_markov/TeX/ch_markov.aux
+A level-1 auxiliary file: ch_markov/TeX/ch_markov_ex.aux
+A level-1 auxiliary file: extraTeX/eoceSolutions/eoceSolutions.aux
+A level-1 auxiliary file: extraTeX/index/index.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: s4cs-blx.bib
+Database file #2: eoce.bib
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 6 entries,
+            6268 wiz_defined-function locations,
+            1242 strings with 10426 characters,
+and the built_in function-call counts, 23207 in all, are:
+= -- 1357
+> -- 507
+< -- 141
++ -- 458
+- -- 189
+* -- 1653
+:= -- 2193
+add.period$ -- 0
+call.type$ -- 6
+change.case$ -- 66
+chr.to.int$ -- 30
+cite$ -- 10
+duplicate$ -- 2478
+empty$ -- 2326
+format.name$ -- 277
+if$ -- 4905
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 0
+newline$ -- 173
+num.names$ -- 225
+pop$ -- 1678
+preamble$ -- 1
+purify$ -- 83
+quote$ -- 0
+skip$ -- 875
+stack$ -- 0
+substring$ -- 2044
+swap$ -- 726
+text.length$ -- 140
+text.prefix$ -- 5
+top$ -- 1
+type$ -- 192
+warning$ -- 0
+while$ -- 289
+width$ -- 0
+write$ -- 168

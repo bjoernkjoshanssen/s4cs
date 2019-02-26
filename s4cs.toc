@@ -1,0 +1,265 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction to data}{7}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Continuous and discrete}{7}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Categorical variables}{7}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Examining numerical data}{8}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}About those pie charts}{9}{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Sampling}{9}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Exercises}{10}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Probability}{12}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Law of large numbers}{12}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Probability and the real world}{12}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Disjoint or mutually exclusive outcomes}{14}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Probability distributions}{15}{subsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.4}Complement of an event}{16}{subsection.2.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Independence and conditional probability}{17}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Conditional probability.}{17}{paragraph*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Marginal and joint probabilities}{18}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Independence considerations in conditional probability}{19}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Bayes' Theorem}{20}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Sampling from a small population}{20}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Bayesian statistics}{21}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Random variables}{22}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Expectation}{22}{subsection.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Variability in random variables}{25}{subsection.2.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.3}Linear combinations of random variables}{25}{subsection.2.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.4}Variability in linear combinations of random variables}{26}{subsection.2.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Continuous distributions and a review of calculus}{26}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Limits}{27}{subsection.2.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Derivatives}{27}{subsection.2.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.3}Applications of derivatives}{27}{subsection.2.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.4}Integrals}{27}{subsection.2.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.5}Applications of integrals}{28}{subsection.2.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.6}Inverse and trigonometric functions}{28}{subsection.2.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.7}Techniques of integration}{28}{subsection.2.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.8}Applications of integration to probability}{28}{subsection.2.5.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.9}Infinite sequences and series}{29}{subsection.2.5.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Exercises}{30}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Distributions of random variables}{31}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Normal distribution}{31}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Normal probability table}{32}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}68-95-99.7 rule}{33}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}Normal probability plots}{34}{subsection.3.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Bernoulli distribution}{35}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Geometric distribution}{36}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Binomial distribution}{37}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{The 10\% condition.}{39}{paragraph*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}More discrete distributions}{39}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Negative binomial distribution}{39}{subsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}Poisson distribution}{41}{subsection.3.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Applications}{42}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Exercises}{44}{section.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Foundations for inference}{45}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Variability in estimates}{45}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Confidence intervals}{46}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Hypothesis testing}{48}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Decision errors}{49}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Formal testing using p-values}{49}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Two-sided hypothesis testing with p-values}{51}{subsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}Choosing a significance level}{52}{subsection.4.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Examining the Central Limit Theorem}{52}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Inference for other estimators}{55}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}Confidence intervals for nearly normal point estimates}{55}{subsection.4.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.2}Hypothesis testing for nearly normal point estimates}{56}{subsection.4.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.3}Non-normal point estimates}{57}{subsection.4.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.4}Statistical significance versus practical significance}{57}{subsection.4.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Exercises}{58}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Inference for numerical data}{59}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}One-sample means with the $t$-distribution}{59}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Introducing the $t$-distribution}{59}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Paired data}{60}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Difference of two means}{60}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Confidence interval for a difference of means}{61}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}The Welch $t$-test}{61}{subsection.5.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Hypothesis tests based on a difference in means}{62}{subsection.5.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.4}Examining the standard error formula}{63}{subsection.5.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.5}Pooled standard deviation estimate}{63}{subsection.5.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Exercises}{66}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Inference for categorical data}{67}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Inference for a single proportion}{67}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Identifying when the sample proportion is nearly normal}{67}{subsection.6.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Confidence intervals for a proportion}{68}{subsection.6.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}Hypothesis testing for a proportion}{68}{subsection.6.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.4}Thinking deeper about standard errors}{69}{subsection.6.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.5}Possible pitfall for pooled proportions}{69}{subsection.6.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Difference of two proportions}{70}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Sample distribution of the difference of two proportions}{70}{subsection.6.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Confidence intervals for $p_1 -p_2$}{71}{subsection.6.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.3}Hypothesis tests for $p_1 -p_2$}{71}{subsection.6.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.4}More on 2-proportion hypothesis tests (special topic)}{71}{subsection.6.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Testing for goodness of fit using $\chi ^2$}{73}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}The $\chi ^2$ test statistic}{73}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}The $\chi ^2$ distribution and finding areas}{74}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}Finding a p-value for a $\chi ^2$ distribution}{75}{subsection.6.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Testing for independence in two-way tables}{75}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.1}The $\chi ^2$ test for two-way tables}{76}{subsection.6.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.2}The $\chi ^2$ distribution with 1 degree of freedom}{76}{subsection.6.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Exercises}{78}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Introduction to linear regression}{80}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Deriving formulas for linear regression}{80}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Line fitting, residuals, and correlation}{82}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}Residuals}{82}{subsection.7.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.2}Describing linear relationships with correlation}{82}{subsection.7.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Fitting a line by least squares regression}{83}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}An objective measure for finding the best line}{83}{subsection.7.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.2}Conditions for the least squares line}{83}{subsection.7.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.3}Finding the least squares line}{83}{subsection.7.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.4}Using $r^2$ to describe the strength of a fit}{84}{subsection.7.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Outliers}{84}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Inference for linear regression}{86}{section.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.1}Understanding regression output from software}{86}{subsection.7.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.2}Statistically significant slopes when correlation coefficient is bounded away from 1}{87}{subsection.7.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.3}Multiple regression}{91}{subsection.7.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.4}Adding the variation explained by $x$ and $y$}{93}{subsection.7.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.6}ANOVA}{94}{section.7.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.6.1}$2\times 2$ ANOVA}{95}{subsection.7.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{An example from marketing research.}{97}{paragraph*.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.7}Exercises}{99}{section.7.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Special topics}{100}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Algebraic statistics}{100}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Maximum entropy}{101}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Maximum likelihood}{102}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Hidden Markov chains}{103}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Overfitting and the complexity of a word}{104}{section.8.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.6}Akaike information criterion}{107}{section.8.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{An Akaike coincidence, maybe.}{108}{paragraph*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Bayesian information criterion}{110}{paragraph*.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.7}Support vector machines}{110}{section.8.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.8}Shattering}{111}{section.8.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.8.1}Support vector machines}{111}{subsection.8.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.8.2}Discrete shattering}{111}{subsection.8.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.9}Exercises}{113}{section.8.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}End of chapter exercise solutions}{115}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Index}{122}{section*.47}
