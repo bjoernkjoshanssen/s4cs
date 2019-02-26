@@ -1,77 +1,83 @@
 \section{Exercises} \vspace{-2mm}
 
-%__________________
-%\subsection{Inference for a single proportion}
-
 % 1
-
 \eoce{\qt{One-half factorial\label{factorial}}
-        Define the gamma function ${\displaystyle \Gamma(x) := \int_0^{\infty} t^{x-1} e^{-t}dt}$, where $x$ is a nonnegative real number.
-        \begin{parts}
-            \item 
-                Show that $\Gamma(x+1) = x \Gamma(x)$ for all $x$. Conclude that $\Gamma(n+1) = n!$ for all natural numbers $n$. \textit{Hint: use integration by parts for the first part, and calculate $\Gamma(1)$ and apply induction for the second}.
-            \item
-                Calculate $\Gamma \left(\frac{1}{2} \right)$.
-        \end{parts}
+	Define the gamma function ${\displaystyle \Gamma(x) := \int_0^{\infty} t^{x-1} e^{-t}dt}$, where $x$ is a nonnegative real number.
+	\begin{parts}
+		\item
+			Show that $\Gamma(x+1) = x \Gamma(x)$ for all $x$. Conclude that $\Gamma(n+1) = n!$ for all natural numbers $n$.
+			\textit{Hint: use integration by parts for the first part, and calculate $\Gamma(1)$ and apply induction for the second}.
+		\item
+			Calculate $\Gamma \left(\frac{1}{2} \right)$.
+	\end{parts}
 }{}
 
+% 2
 \eoce{\qt{Moments with $\chi^2$}
-        Let a random variable $X$ have the \textit{chi-square density with $r$ degrees of freedom}, or \textit{$X$ is $\chi^2(r)$} for short, if its probability density function is of the form
-        \begin{equation}\label{aeq}
-        		f(x) = \frac{1}{\Gamma \left(\frac{r}{2} \right) 2^{\frac{r}{2}} }x^{\frac{r}{2}-1} e^{-\frac{x}{2}}
+	Let a random variable $X$ have the \textit{chi-square density with $r$ degrees of freedom}, or \textit{$X$ is $\chi^2(r)$} for short, if
+	its probability density function is of the form
+	\begin{equation}\label{aeq}
+		f(x) = \frac{1}{\Gamma \left(\frac{r}{2} \right) 2^{\frac{r}{2}} }x^{\frac{r}{2}-1} e^{-\frac{x}{2}}
 	\end{equation}
-        \begin{parts}
-            \item 
-                Using Exercise \ref{factorial}(b), show that for any $r$, $f$ from (\ref{aeq}) is indeed a probability density function.
-            \item
-                If $X = \chi^2(r)$, show that $M_X(t) = \frac{1}{(1-2t)^{\frac{r}{2}}}$, where $M_X(t)$ is the moment generating function of $X$. 
-            \item
-                Use part (b) to show that if $X$ is a normal random variable with expected value 0 and variance 1, then $X^2$ is $\chi^2(1)$. 
-            \item
-                Use part (c) to show that if $X_1, \dots, X_n$ are mutually independent normal random variables, each with expected value 0 and variance 1, then $\sum_{i=1}^n X_i^2$ is $\chi^2(n)$.
-        \end{parts}
+	\begin{parts}
+		\item
+			Using Exercise \ref{factorial}(b), show that for any $r$, $f$ from (\ref{aeq}) is indeed a probability density function.
+		\item
+			If $X = \chi^2(r)$, show that $M_X(t) = \frac{1}{(1-2t)^{\frac{r}{2}}}$, where $M_X(t)$ is the moment generating function of $X$.
+		\item
+			Use part (b) to show that if $X$ is a normal random variable with expected value 0 and variance 1, then $X^2$ is $\chi^2(1)$.
+		\item
+			Use part (c) to show that if $X_1, \dots, X_n$ are mutually independent normal random variables,
+			each with expected value 0 and variance 1, then $\sum_{i=1}^n X_i^2$ is $\chi^2(n)$.
+	\end{parts}
 }{}
 
+% 3
 \eoce{\qt{Difference of $\chi^2$}
-        Let $X_1$ and $X_2$ be independent, let $X_1$ be $\chi^2(r_1)$, and let $X_1+X_2$ be $\chi^2(r)$ for some $r> r_1$. Show that $X_2$ is $\chi^2(r-r_1)$. 
+	Let $X_1$ and $X_2$ be independent, let $X_1$ be $\chi^2(r_1)$, and let $X_1+X_2$ be $\chi^2(r)$ for some $r> r_1$.
+	Show that $X_2$ is $\chi^2(r-r_1)$.
 }{}
 
-
+% 4
 \eoce{\qt{Gender and color preference\label{gender_color_preference_CI_concept}}
-(This is Exercise 6.25 from \emph{OpenIntro Statistics}, copied here because of Exercise \ref{zain_email} below.)
-A 2001 
-study asked 1,924 male and 3,666 female undergraduate college students their favorite 
-color. A 95\% confidence interval for the difference between the proportions of males 
-and females whose favorite color is black $(p_{male} - p_{female})$ was calculated to 
-be (0.02, 0.06). Based on this information, determine if the following statements are 
-true or false, and explain your reasoning for each statement you identify as 
-false.%\footfullcite{Ellis:2001}
-\begin{parts}
-\item We are 95\% confident that the true proportion of males whose favorite color is 
-black is 2\% lower to 6\% higher than the true proportion of females whose favorite 
-color is black.
-\item We are 95\% confident that the true proportion of males whose favorite color is 
-black is 2\% to 6\% higher than the true proportion of females whose favorite color is 
-black.
-\item 95\% of random samples will produce 95\% confidence intervals that include the 
-true difference between the population proportions of males and females whose favorite 
-color is black.
-\item We can conclude that there is a significant difference between the proportions of 
-males and females whose favorite color is black and that the difference between the two 
-sample proportions is too large to plausibly be due to chance.
-\item The 95\% confidence interval for $(p_{female} - p_{male})$ cannot be calculated 
-with only the information given in this exercise.
-\end{parts}
+	(This is Exercise 6.25 from \emph{OpenIntro Statistics}, copied here because of Exercise \ref{zain_email} below.)
+	A 2001
+	study asked 1,924 male and 3,666 female undergraduate college students their favorite
+	color. A 95\% confidence interval for the difference between the proportions of males
+	and females whose favorite color is black $(p_{male} - p_{female})$ was calculated to
+	be (0.02, 0.06). Based on this information, determine if the following statements are
+	true or false, and explain your reasoning for each statement you identify as
+	false.%\footfullcite{Ellis:2001}
+	\begin{parts}
+		\item We are 95\% confident that the true proportion of males whose favorite color is
+		black is 2\% lower to 6\% higher than the true proportion of females whose favorite
+		color is black.
+		\item We are 95\% confident that the true proportion of males whose favorite color is
+		black is 2\% to 6\% higher than the true proportion of females whose favorite color is
+		black.
+		\item 95\% of random samples will produce 95\% confidence intervals that include the
+		true difference between the population proportions of males and females whose favorite
+		color is black.
+		\item We can conclude that there is a significant difference between the proportions of
+		males and females whose favorite color is black and that the difference between the two
+		sample proportions is too large to plausibly be due to chance.
+		\item The 95\% confidence interval for $(p_{female} - p_{male})$ cannot be calculated
+		with only the information given in this exercise.
+	\end{parts}
 }{}
 
+% 5
 \eoce{\qt{Finding $\hat p_x$ and $\hat p_y$\label{zain_email}}
-In Exercise \ref{gender_color_preference_CI_concept}, let $p_y$ be the male proportion and $p_x$ female.
-We need the standard error of $\hat p_y-\hat p_x$ which will be
-$$\sqrt{(\hat p_y(1-\hat p_y)/1924)+(\hat p_x(1-\hat p_x)/3666)}.$$
-From this being 0.01 (since the width of the 95\%, hence $1.96\approx 2$ standard deviations, confidence interval is 0.02) and also $\hat p_y-\hat p_x=0.04$, deduce what they each are.
+	In Exercise \ref{gender_color_preference_CI_concept}, let $p_y$ be the male proportion and $p_x$ female.
+	We need the standard error of $\hat p_y-\hat p_x$ which will be
+	$$\sqrt{(\hat p_y(1-\hat p_y)/1924)+(\hat p_x(1-\hat p_x)/3666)}.$$
+	From this being 0.01 (since the width of the 95\%, hence $1.96\approx 2$ standard deviations, confidence interval is 0.02) and also $\hat p_y-\hat p_x=0.04$, deduce what they each are.
 }{}
 
+% 6
 \eoce{\qt{American climate perspectives}
-A 2018 survey\footnote{\url{https://ecoamerica.org/wp-content/uploads/2018/10/november-2018-american-climate-perspectives-survey.pdf}} found a value $\hat p=79\%$ and reported a margin of error of 3.5\%.
-The sample size was $n=800$ and the confidence level was 95\% as usual. Did they calculate their standard error using $\hat p=.79$ or using an assumed value $p=1/2$? What would the margin of error be with the other choice? %Answer: $1.96\sqrt{.79(1-.79)/800}=2.8\%$ whereas $1.96\sqrt{.5(1-.5)/800}=3.5\%$.
+	A 2018 survey\footnote{
+		\url{https://ecoamerica.org/wp-content/uploads/2018/10/november-2018-american-climate-perspectives-survey.pdf}
+	} found a value $\hat p=79\%$ and reported a margin of error of 3.5\%.
+	The sample size was $n=800$ and the confidence level was 95\% as usual. Did they calculate their standard error using $\hat p=.79$ or using an assumed value $p=1/2$? What would the margin of error be with the other choice? %Answer: $1.96\sqrt{.79(1-.79)/800}=2.8\%$ whereas $1.96\sqrt{.5(1-.5)/800}=3.5\%$.
 }{}
