@@ -1,47 +1,51 @@
 \section{Exercises}
 
-%__________________
-%%\subsection{Line fitting, residuals, and correlation}
-
 % 1
-
 \eoce{\qt{Extreme correlations}
-        Give specific numerical examples of observations with
-        \begin{parts}
-            \item 
-                $r = 1$
-                
-            \item
-                $r = 0$
-                
-            \item
-                $r = -1$
-        \end{parts}
-        \footnote{By ``specific numerical'' is meant that, for instance, $\{(1,2),(0,-3),(0,0)\}$ could be a possible answer --- although it will be wrong as $r$ will not be exactly 0, 1 or -1 for this particular choice!}
+	Give specific numerical examples of observations with
+	\begin{parts}
+		\item 
+			$r = 1$
+			
+		\item
+			$r = 0$
+			
+		\item
+			$r = -1$
+	\end{parts}
+	\footnote{
+		By ``specific numerical'' is meant that, for instance, $\{(1,2),(0,-3),(0,0)\}$ could be a possible answer --- although it will be wrong as $r$ will not be exactly 0, 1 or -1 for this particular choice!
+	}
 }{}
 
+% 2
 \eoce{\qt{Cauchy-Schwarz}
-        Let $u_1, u_2, \dots, u_n$ and $v_1, v_2, \dots, v_n$ be real numbers.
-        \begin{parts}
-            \item 
-                Rearrange the terms in $(u_1 x + v_1)^2 + (u_2 x + v_2)^2 + \dots + (u_n x + v_n)^2$ to obtain a quadratic polynomial $a x^2+b x+c$ in $x$.
-            \item
-                Note that the polynomial in part a has at most one real root and therefore that its discriminant $b^2-4ac$ is at most zero. Calculate this discriminant to conclude that $\left(\sum_{i=1}^n u_i v_i \right)^2 \le \left(\sum_{i=1}^n u_i^2\right) \left(\sum_{i=1}^n v_i^2\right)$. This inequality (and its various generalizations) is known as the \textit{Cauchy-Schwarz inequality}.
-        \end{parts}
+	Let $u_1, u_2, \dots, u_n$ and $v_1, v_2, \dots, v_n$ be real numbers.
+	\begin{parts}
+		\item 
+			Rearrange the terms in $(u_1 x + v_1)^2 + (u_2 x + v_2)^2 + \dots + (u_n x + v_n)^2$ to obtain a quadratic polynomial $a x^2+b x+c$ in $x$.
+		\item
+			Note that the polynomial in part a has at most one real root and therefore that its discriminant $b^2-4ac$ is at most zero.
+			Calculate this discriminant to conclude that
+			$\left(\sum_{i=1}^n u_i v_i \right)^2 \le \left(\sum_{i=1}^n u_i^2\right) \left(\sum_{i=1}^n v_i^2\right)$.
+			This inequality (and its various generalizations) is known as the \textit{Cauchy-Schwarz inequality}.
+	\end{parts}
 }{}
 
+% 3
 \eoce{\qt{Theory of extreme correlations}
-        Let $(x_1, y_1), (x_2, y_2), \dots (x_n, y_n)$ be observations.
-        \begin{parts}
-            \item 
-                Show that 
-                \begin{center}
-                    $\displaystyle{\frac{1}{n-1} \sum_{i=1}^n \frac{x_i - \bar{x}}{s_x} \frac{y_i - \bar{y}}{s_y} = \frac{\sum_{i=1}^n(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar{x})^2} \sqrt{\sum_{i=1}^n(y_i-\bar{y})^2}}}$
-                \end{center}
-                Conclude that the term on the right is an equivalent formula for $r$.
-                
-            \item
-                Apply the Cauchy-Schwarz inequality to $\left|\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y}) \right|$ to conclude that $|r| \le 1$ and therefore that $-1 \le r \le 1$.
-        \end{parts}
+	Let $(x_1, y_1), (x_2, y_2), \dots (x_n, y_n)$ be observations.
+	\begin{parts}
+		\item 
+			Show that 
+			\[
+				\frac{1}{n-1} \sum_{i=1}^n \frac{x_i - \bar{x}}{s_x} \frac{y_i - \bar{y}}{s_y}
+				= \frac{\sum_{i=1}^n(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar{x})^2} \sqrt{\sum_{i=1}^n(y_i-\bar{y})^2}}
+			\]
+			Conclude that the term on the right is an equivalent formula for $r$.
+		\item
+			Apply the Cauchy-Schwarz inequality to $\left|\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y}) \right|$
+			to conclude that $|r| \le 1$ and therefore that $-1 \le r \le 1$.
+	\end{parts}
 }{}
 
