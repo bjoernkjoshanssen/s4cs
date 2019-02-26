@@ -1,90 +1,78 @@
-
-
-
-%_______________
 \section{Exercises}
 
-
-\eoce{\qt{Sidedness}
-        \begin{parts}
-            \item 
-                Give an example where a one-sided test would be more appropriate.
-            \item
-                Give an example where a two-sided test would be more appropriate.
-        \end{parts}
-}{}
-
-\eoce{\qt{Infinite precision}
-        Using that the null hypothesis is intuitively a position that cannot be proven, only disproven, explain why a null hypothesis is expressed as an equality.
-}{}
-
-
-\eoce{\qt{Moment generating function}
-        Let $X$ be a random variable. Define the \textit{moment generating function} $M_X(t) := E(e^{tX})$ and assume this function is defined for some $t \in \mathbb R$.
-        \begin{parts}
-            \item 
-                If $X$ and $Y$ are independent variables and $c$ is a constant, show that
-                $M_{X+Y}(t) = M_X(t) M_Y(t)$ and $M_{cX}(t) = M_X(ct)$ for all $t$ where these expressions are defined.
-            \item
-                Use the power series of $e^t$ to show that $M_X(t) = \sum_0^{\infty} \frac{E(X^n)}{n!} t^n$.
-            \item
-                Use part b to show that $M_X^{(n)}(0) = E(X^n)$ for all $n$. 
-        \end{parts}
-}{}
-
-\eoce{\qt{Standard error}
-        Let $x_1, \dots, x_n$ be independent observations of a population with mean $\mu$ and standard deviation $\sigma$.
-        \begin{enumerate}
-            \item 
-                Calculate the variance of the total $X = x_1 + \dots + x_n$.
-            \item
-                Use part a to calculate the variance and standard deviation of $X/n$. 
-            \item
-                Discuss how your answer to part b is related to the standard error.
-        \end{enumerate}
-}{}
-
-\eoce{\qt{Cumulant generating function}
-        Let $X$ be a random variable. Define the \textit{cumulant generating function} $K_X(t) := \log M_X(t)$, where $M_X(t)$ is the moment generating function in the previous problem.
-        \begin{parts}
-            \item 
-                If $X$ and $Y$ are independent variables and $c$ is a constant, show that $K_{X+Y}(t) = K_X(t)+K_Y(t)$ and $K_{cX}(t) = K_X(ct)$ for all $t$. Conclude
-                that if $X_1, \dots, X_n$ are random variables,
-                \[
-                		K_{\frac{X_1+\dots+X_n}{\sqrt{n}}}(t)= K_{X_1}\left(\frac{t}{\sqrt{n}} \right) + \dots + K_{X_n} \left(\frac{t}{\sqrt{n}} \right).
-		\]
-            \item
-                Use the power series of $\log(t+1)$ to rewrite $K_X(t)$ as a power series such that the coefficient of the first term is $E(X)$ and the coefficient of the second term is $\mathrm{Var}(X)$. \textit{Hint: recall that $\mathrm{Var}(X) = E(X^2) - E(X)^2$.} 
-            \item
-                Define $K_n(X) := K^{(n)}_X(0)$ and let $X_i$ be random variables. Use parts (a) and (b) to show that
-                \[
-                		K_m\left(\frac{X_1 + \dots + X_n}{\sqrt{n}} \right) = \frac{K_m(X_1) + \dots + K_m (X_n)}{n^{\frac{m}2}}.
-		\]
-            \item
-                Use part (c) to show that if the cumulants of $X_i$ are all bounded, then for all $m > 2$,
-                \[
-                		K_m\left(\frac{X_1 + \dots + X_n}{\sqrt{n}} \right) \rightarrow 0\text{ as }n \rightarrow 0.
-		\]
-            \item
-                Conclude that the central limit theorem holds for random variables with bounded moment generating functions. 
-        \end{parts}
-}{}
-
-\eoce{\qt{Geometric mean of lognormal}
-Calculate the geometric mean (Exercise \ref{harmonic}) of a log-normal random variable (Definition \ref{lognormal}) with parameters $\mu=0$ and $\sigma=1$.
-}{}
-
-
-%_______________
-%\subsection{Variability in estimates}
 % 1
+\eoce{\qt{Sidedness}
+	\begin{parts}
+		\item 
+			Give an example where a one-sided test would be more appropriate.
+		\item
+			Give an example where a two-sided test would be more appropriate.
+	\end{parts}
+}{}
+
 % 2
-%_______________
-%\subsection{Confidence intervals}
-%_______________
-%\subsection{Hypothesis testing}
-%_______________
-%\subsection{Examining the Central Limit Theorem}
-%_______________
-%\subsection{Inference for other estimators}
-% 43
+\eoce{\qt{Infinite precision}
+	Using that the null hypothesis is intuitively a position that cannot be proven, only disproven, explain why a null hypothesis is expressed as an equality.
+}{}
+
+% 3
+\eoce{\qt{Moment generating function}
+	Let $X$ be a random variable. Define the \textit{moment generating function} $M_X(t) := E(e^{tX})$.
+	Assume this function is defined for some $t \in \mathbb R$.
+	\begin{parts}
+		\item 
+			If $X$ and $Y$ are independent variables and $c$ is a constant, show that
+			$M_{X+Y}(t) = M_X(t) M_Y(t)$ and $M_{cX}(t) = M_X(ct)$ for all $t$ where these expressions are defined.
+		\item
+			Use the power series of $e^t$ to show that $M_X(t) = \sum_0^{\infty} \frac{E(X^n)}{n!} t^n$.
+		\item
+			Use part b to show that $M_X^{(n)}(0) = E(X^n)$ for all $n$. 
+	\end{parts}
+}{}
+
+% 4
+\eoce{\qt{Standard error}
+	Let $x_1, \dots, x_n$ be independent observations of a population with mean $\mu$ and standard deviation $\sigma$.
+	\begin{enumerate}
+		\item 
+			Calculate the variance of the total $X = x_1 + \dots + x_n$.
+		\item
+			Use part a to calculate the variance and standard deviation of $X/n$. 
+		\item
+			Discuss how your answer to part b is related to the standard error.
+	\end{enumerate}
+}{}
+
+% 5
+\eoce{\qt{Cumulant generating function}
+	Let $X$ be a random variable. Define the \textit{cumulant generating function} $K_X(t) := \log M_X(t)$, where
+	$M_X(t)$ is the moment generating function in the previous problem.
+	\begin{parts}
+		\item 
+			If $X$ and $Y$ are independent variables and $c$ is a constant, show that $K_{X+Y}(t) = K_X(t)+K_Y(t)$ and $K_{cX}(t) = K_X(ct)$ for all $t$.
+			Conclude that if $X_1, \dots, X_n$ are random variables,
+			\[
+				K_{\frac{X_1+\dots+X_n}{\sqrt{n}}}(t)= K_{X_1}\left(\frac{t}{\sqrt{n}} \right) + \dots + K_{X_n} \left(\frac{t}{\sqrt{n}} \right).
+			\]
+		\item
+			Use the power series of $\log(t+1)$ to rewrite $K_X(t)$ as a power series such that the coefficient of the first term is $E(X)$ and
+			the coefficient of the second term is $\mathrm{Var}(X)$. \textit{Hint: recall that $\mathrm{Var}(X) = E(X^2) - E(X)^2$.} 
+		\item
+			Define $K_n(X) := K^{(n)}_X(0)$ and let $X_i$ be random variables. Use parts (a) and (b) to show that
+			\[
+				K_m\left(\frac{X_1 + \dots + X_n}{\sqrt{n}} \right) = \frac{K_m(X_1) + \dots + K_m (X_n)}{n^{\frac{m}2}}.
+			\]
+		\item
+			Use part (c) to show that if the cumulants of $X_i$ are all bounded, then for all $m > 2$,
+			\[
+				K_m\left(\frac{X_1 + \dots + X_n}{\sqrt{n}} \right) \rightarrow 0\text{ as }n \rightarrow 0.
+			\]
+		\item
+			Conclude that the central limit theorem holds for random variables with bounded moment generating functions. 
+	\end{parts}
+}{}
+
+% 6
+\eoce{\qt{Geometric mean of lognormal}
+	Calculate the geometric mean (Exercise \ref{harmonic}) of a log-normal random variable (Definition \ref{lognormal}) with parameters $\mu=0$ and $\sigma=1$.
+}{}
