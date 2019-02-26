@@ -11,15 +11,7 @@ The standard deviation of a sample mean is an important calculation. If the $X_i
 Thus the standard deviation of the sample mean is $\sigma/\sqrt{n}$.
 
 
-
-%__________________
-
 \index{point estimate|(}
-
-
-%\subsection{Point estimates}
-%\label{pointEstimates}
-
 \index{point estimate!single mean|(}
 
 \begin{figure}%[h]
@@ -29,9 +21,6 @@ Thus the standard deviation of the sample mean is $\sigma/\sqrt{n}$.
    \label{yrbssActiveRunningMean}
 \end{figure}
 
-
-%\subsection{Standard error of the mean}
-%\label{seOfTheMean}
 
 Theoretically, the \term{sampling distribution} is the probability distribution of the sample mean of a distribution. In practice, this means that if you observe many (say $m$ many) sample means $\sum_{i=1}^n X_{i,j}/n$, $1\le j\le m$, from a random variable $X$ with a given probability distribution, the observed distribution of these means will be close to the theoretical sampling distribution. Note that these means all have the same value of $n$, and indeed the sampling distribution depends on $n$.
 
@@ -73,7 +62,6 @@ For small $n$ like $n=2$ here, this SE may be zero, so we should not divide by i
 \end{example}
 
 
-%\textC{\pagebreak}
 
 \index{point estimate|)}
 
@@ -86,36 +74,14 @@ For small $n$ like $n=2$ here, this SE may be zero, so we should not divide by i
 
 A point estimate provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. Instead of supplying just a point estimate of a parameter, a next logical step would be to provide a plausible \emph{range of values} for the parameter.
 
-% In this section and in Section~\ref{hypothesisTesting}, we will emphasize the special case where the point estimate is a sample mean and the parameter is the population mean. In Section~\ref{aFrameworkForInference}, we generalize these methods for a variety of point estimates and population parameters that we will encounter in Chapter~\ref{inferenceForNumericalData} and beyond.
-
-%\subsection{Capturing the population parameter}
 
 A plausible range of values for the population parameter is called a \term{confidence interval}.
 
 
-%\textC{\pagebreak}
-
-
-%\subsection{An approximate 95\% confidence interval}
-
-
-%\begin{figure}%[hht]
-%   \centering
-%   \includegraphics[width=0.78\textwidth]{ch_inference_foundations/figures/95PercentConfidenceInterval/95PercentConfidenceInterval}
-%   \caption{The 95\% confidence interval is a random variable which usually, but not always, contains the mean $\mu$, which is itself not random.}
-%   \label{95PercentConfidenceInterval}
-%\end{figure}
-
-
-%\subsection{The sampling distribution for the mean}
 
 \begin{termBox}{\tBoxTitle{Central Limit Theorem, informal description}
 If a sample consists of at least 30 independent observations and the data are not strongly skewed, then the distribution of the sample mean is well approximated by a~normal model.\index{Central Limit Theorem}}
 \end{termBox}
-
-
-%\subsection{Changing the confidence level}
-%\label{changingTheConfidenceLevelSection}
 
 \index{confidence interval!confidence level|(}
 
@@ -148,10 +114,6 @@ Subjects in an experiment are considered independent if they undergo random assi
 If a sample is from a seemingly random process, e.g. the lifetimes of wrenches used in a particular manufacturing process, checking independence is more difficult. In~this case, use your best judgement.}
 \end{tipBox}
 
-%\begin{tipBox}{\tipBoxTitle[]{Checking for strong skew usually means checking for obvious outliers}
-%When there are prominent outliers present, the sample should contain at least 100 observations, and in some cases, much more. \\[2mm]
-%This is a first course in statistics, so you won't have perfect judgement on assessing skew. That's okay. If you're in a bind, either consult a statistician or learn about the studentized bootstrap (bootstrap-t) method.}
-%\end{tipBox}
 
 It is too much to ask but it may be worth remembering that 99\% confidence corresponds to 2.58 standard deviations and 90\% to 1.65.
 
@@ -170,11 +132,6 @@ Figure~\ref{choosingZForCI} provides a picture of how to identify $z^{\star}$ ba
 \label{marginOfErrorTermBox}In a confidence interval, $z^{\star}\times \SE$ is called the \term{margin of error}.}
 \end{termBox}
 
-%\textC{\newpage}
-
-%\subsection{Interpreting confidence intervals}
-%\label{interpretingCIs}
-
 \index{confidence interval!interpretation|(}
 \index{confidence interval!interpretation|)}
 \index{confidence interval|)}
@@ -190,29 +147,15 @@ If the null hypothesis asserts that $p=1/2$ then it is making a very bold assert
 \index{hypothesis testing|(}
 
 
-%\subsection{Hypothesis testing framework}
-
 \begin{termBox}{\tBoxTitle{Null and alternative hypotheses}
 {\small The \term{null hypothesis ($H_0$)} often represents either a skeptical perspective or a claim to be tested. The \term{alternative hypothesis ($H_A$)} represents an alternative claim under consideration and is often represented by a range of possible parameter values.}}
 \end{termBox}
 
 The null hypothesis often represents a skeptical position or a perspective of no difference. The alternative hypothesis often represents a new perspective, such as the possibility that there has been a change. 
 
-%\begin{tipBox}{\tipBoxTitle{Hypothesis testing framework}
-%The skeptic will not reject the null hypothesis ($H_0$), unless the evidence in favor of the alternative hypothesis ($H_A$) is so strong that she rejects $H_0$ in favor of $H_A$.}
-%\end{tipBox}
-
-%\subsection{Testing hypotheses using confidence intervals}
-\label{utilizingOurCI}
-
-%\begin{tipBox}{\tipBoxTitle[]{Evaluating the skew condition is challenging}
-%Don't despair if checking the skew condition is difficult or confusing. You aren't alone -- nearly all students get frustrated when checking skew. Properly assessing skew takes practice, and you won't be a pro, even at the end of this book. \\[2mm]
-%But this doesn't mean you should give up. Checking skew and the other conditions is extremely important for a responsible data analysis. However, rest assured that evaluating skew isn't something you need to be a master of by the end of the book, though by that time you should be able to properly assess clear cut cases.}
-%\end{tipBox}
 
 Note that the main text uses \emph{sample standard deviation} to refer to the standard deviation of the original distribution; so this is not the same as the standard deviation of the sample \emph{mean}, which is also called the standard error.
 
-%\textC{\newpage}
 
 \subsection{Decision errors}
 
@@ -277,11 +220,6 @@ The p-value is a way of quantifying the strength of the evidence against the nul
 The \term{p-value}\index{hypothesis testing!p-value|textbf} is the probability of observing data at least as favorable to the alternative hypothesis as our current data set, if the null hypothesis is true. We typically use a summary statistic of the data, in this chapter the sample mean, to help compute the p-value and evaluate the hypotheses.}
 \end{termBox}
 
-%\index{data!school sleep|(}
-
-%\begin{tipBox}{\tipBoxTitle{One-sided and two-sided tests}
-%When you are interested in checking for an increase or a decrease, but not both, use a one-sided test. When you are interested in any difference from the null value~--~an increase or decrease~--~then the test should be two-sided.\vspace{0.5mm}}
-%\end{tipBox}
 
 \begin{tipBox}{\tipBoxTitle{Always write the null hypothesis as an equality}
 We will find it most useful if we always list the null hypothesis as an equality, like:
@@ -313,9 +251,6 @@ The smaller the p-value, the stronger the data favor $H_A$ over $H_0$. A small p
 \index{hypothesis testing!p-value|)}
 \end{termBox}
 
-%\begin{tipBox}{\tipBoxTitle{It is useful to first draw a picture to find the p-value}
-%It is useful to draw a picture of the distribution of $\bar{x}$ as though $H_0$ was true (i.e.~$\mu$~equals the null value), and shade the region (or regions) of sample means that are at least as favorable to the alternative hypothesis. These shaded regions represent the p-value.}
-%\end{tipBox}
 
 \begin{figure}%[ht]
    \centering
@@ -332,7 +267,6 @@ The main text gives a video that doesn't really explain it. In fact, we can thin
 \subsection{Two-sided hypothesis testing with p-values}
 \label{twoSidedTestsWithPValues}
 
-%\index{data!school sleep|(}
 
 To compute a $p$-value for a two-sided test, consider Figure \ref{2ndSchSleepHTExample}.
 \begin{figure}
@@ -361,9 +295,6 @@ If making a Type~1 Error is dangerous or especially costly, we should choose a s
 
 If a Type~2 Error is relatively more dangerous or much more costly than a Type~1 Error, then we should choose a higher significance level (e.g. 0.10). Here we want to be cautious about failing to reject $H_0$ when the null is actually false.
 
-%\begin{tipBox}{\tipBoxTitle[]{Significance levels should reflect consequences of errors}
-%The significance level selected for a test should reflect the consequences associated with Type~1 and Type~2 Errors.}
-%\end{tipBox}
 
 \index{significance level|)}
 \index{hypothesis testing!significance level|)}
@@ -378,7 +309,6 @@ If a Type~2 Error is relatively more dangerous or much more costly than a Type~1
 
 \index{Central Limit Theorem|(}
 
-%supplement
 
 The \emph{OpenIntro} text gives an informal statement of the CLT. Here we shall not be so advanced as to prove the CLT; but we shall give a precise statement of it.
 
@@ -394,7 +324,6 @@ where
 \]
 
 
-%\begin{example}{Other continuous distribuions.}\label{lognormal}
 We ought to also explain the distributions in Figure \ref{cltSimulations}.
 
 The \term{exponential distribution} with parameter $\lambda$ is an important distribution omitted in \emph{OpenIntro}. It is the continuous-time analogue of the geometric distribution. It has pdf
@@ -414,8 +343,6 @@ The \term{uniform} distribution on an interval $[a,b]$ has a constant pdf on tha
 \[
 	f_X(x)=\frac1{b-a},\quad a\le x\le b.
 \]
-%\end{example}
-%supplement
 
 The normal model for the sample mean tends to be very good when the sample consists of at least 30 independent observations and the population data are not strongly skewed. The Central Limit Theorem provides the theory that allows us to make this assumption.
 
@@ -439,19 +366,6 @@ The left panel in the $n=2$ row represents the sampling distribution of $\bar{x}
 \begin{example}{Would the normal approximation be good in all applications where the sample size is at least 30?}
 Not necessarily. For example, the normal approximation for the log-normal example is questionable for a sample size of 30. Generally, the more skewed a population distribution or the more common the frequency of outliers, the larger the sample required to guarantee the distribution of the sample mean is nearly normal.
 \end{example}
-
-%\begin{tipBox}{\tipBoxTitle{With larger $n$, the sampling distribution of $\bar{x}$ becomes more normal}
-%As the sample size increases, the normal model for $\bar{x}$ becomes more reasonable. We can also relax our condition on skew when the sample size is very large.}
-%\end{tipBox}
-
-%We discussed in Section~\ref{seOfTheMean} that the sample standard deviation, $s$, could be used as a substitute of the population standard deviation, $\sigma$, when computing the standard error. This estimate tends to be reasonable when $n\geq30$. We will encounter alternative distributions for smaller sample sizes in Chapters~\ref{inferenceForNumericalData} and~\ref{inferenceForCategoricalData}.
-
-%\begin{figure}[ht]
-%   \centering
-%   \includegraphics[height=58mm]{ch_inference_foundations/figures/pokerProfitsCanApplyNormalToSampMean/pokerProfitsCanApplyNormalToSampMean}
-%   \caption{Sample distribution of poker winnings. These data include some very clear outliers. These are problematic when considering the normality of the sample mean. For example, outliers are often an indicator of very strong skew\index{skew!example: very strong}.}
-%   \label{pokerProfitsCanApplyNormalToSampMean}
-%\end{figure}
 
 \begin{caution}
 {Examine data structure when considering independence}
@@ -510,7 +424,6 @@ The variance of a sample mean $\sum_{i=1}^n X_i/n$, where the $X_i$ are iid with
 	 &=& \frac{n}{n^2}\Var(X_1) = \frac{\sigma^2}n.
 \end{eqnarray*}
 Consequently, the standard deviation of the sample mean is $\sigma/\sqrt{n}$. When $\sigma$ is unknown we approximate it by $s$, and hence our estimated standard deviation of the sample mean (the standard error of the mean) is $s/\sqrt{n}$.
-%In this section, we provide the computed standard error for each example and exercise without detailing where the values came from. In future chapters, you will learn to fill in these and other details for each situation.
 
 
 
@@ -520,14 +433,14 @@ Consequently, the standard deviation of the sample mean is $\sigma/\sqrt{n}$. Wh
 Just as the confidence interval method works with many other point estimates, we can generalize our hypothesis testing methods to new point estimates. Here we only consider the p-value approach, introduced in Section~\ref{pValue}, since it is the most commonly used technique and also extends to non-normal cases.
 
 \begin{termBox}{\tBoxTitle[]{Hypothesis testing using the normal model}
-\begin{enumerate}
-\setlength{\itemsep}{0mm}
-\item First write the hypotheses in plain language, then set them up in mathematical notation.
-\item Identify an appropriate point estimate of the parameter of interest.
-\item Verify conditions to ensure the standard error estimate is reasonable and the point estimate is nearly normal and unbiased.
-\item Compute the standard error. Draw a picture depicting the distribution of the estimate under the idea that $H_0$ is true. Shade areas representing the p-value.
-\item Using the picture and normal model, compute the \emph{test statistic} (Z-score) and identify the p-value to evaluate the hypotheses. Write a conclusion in plain language.
-\end{enumerate}}
+	\begin{enumerate}
+		\setlength{\itemsep}{0mm}
+		\item First write the hypotheses in plain language, then set them up in mathematical notation.
+		\item Identify an appropriate point estimate of the parameter of interest.
+		\item Verify conditions to ensure the standard error estimate is reasonable and the point estimate is nearly normal and unbiased.
+		\item Compute the standard error. Draw a picture depicting the distribution of the estimate under the idea that $H_0$ is true. Shade areas representing the p-value.
+		\item Using the picture and normal model, compute the \emph{test statistic} (Z-score) and identify the p-value to evaluate the hypotheses. Write a conclusion in plain language.
+	\end{enumerate}}
 \end{termBox}
 
 
@@ -541,22 +454,26 @@ A \emph{test statistic} is a summary statistic that is particularly useful for e
 
 \subsection{Non-normal point estimates}
 
-We may apply the ideas of confidence intervals and hypothesis testing to cases where the point estimate or test statistic is not necessarily normal. There are many reasons why such a situation may arise:
-\begin{itemize}
-\setlength{\itemsep}{0mm}
-\item the sample size is too small for the normal approximation to be valid;
-\item the standard error estimate may be poor; or
-\item the point estimate tends towards some distribution that is not the normal distribution.
-\end{itemize}
-For each case where the normal approximation is not valid, our first task is always to understand and characterize the sampling distribution of the point estimate or test statistic. Next, we can apply the general frameworks for confidence intervals and hypothesis testing to these alternative distributions.
-
-
-%\textC{\newpage}
+	We may apply the ideas of confidence intervals and hypothesis testing to cases where the point estimate or test statistic is not necessarily normal.
+	There are many reasons why such a situation may arise:
+	\begin{itemize}
+		\setlength{\itemsep}{0mm}
+		\item the sample size is too small for the normal approximation to be valid;
+		\item the standard error estimate may be poor; or
+		\item the point estimate tends towards some distribution that is not the normal distribution.
+	\end{itemize}
+	For each case where the normal approximation is not valid, our first task is always to understand and characterize the sampling distribution of the point estimate or test statistic. Next, we can apply the general frameworks for confidence intervals and hypothesis testing to these alternative distributions.
 
 
 \subsection{Statistical significance versus practical significance}
 
-When the sample size becomes larger, point estimates become more precise and any real differences in the mean and null value become easier to detect and recognize. Even a very small difference would likely be detected if we took a large enough sample. Sometimes researchers will take such large samples that even the slightest difference is detected. While we still say that difference is \term{statistically significant}, it might not be \term{practically significant}.
+	When the sample size becomes larger, point estimates become more precise and
+	any real differences in the mean and null value become easier to detect and recognize.
+	Even a very small difference would likely be detected if we took a large enough sample.
+	Sometimes researchers will take such large samples that even the slightest difference is detected.
+	While we still say that difference is \term{statistically significant}, it might not be \term{practically significant}.
 
-For instance, if a coin somehow has an inherent probability $\frac12+10^{-10}$ of landing heads, with a large enough sample size we may be able to convince ourselves that $p\ne 1/2$.
-If this sample size is larger than the number of times we would ever toss the coin in practice, it is not clear that we have established a practical significance.
+	For instance, if a coin somehow has an inherent probability $\frac12+10^{-10}$ of landing heads,
+	with a large enough sample size we may be able to convince ourselves that $p\ne 1/2$.
+	If this sample size is larger than the number of times we would ever toss the coin in practice,
+	it is not clear that we have established a practical significance.
