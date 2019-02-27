@@ -1000,9 +1000,9 @@ In our example we get $SS_A=\frac1{12}$, $SS_B=\frac{27}4$, $SS_{\text{within}}=
 for any particular $1\le ,j, k,\le 2$, i.e., the quantity does not depend on $j$ and $k$. This is an expression of the fact that $df_{A\times B}=1$.
 To test for $A\times B$ interaction, we compute
 \[
-	F = \frac{SS_{A\times B}/df_{A\times B}}{SS_{\text{within}}/df_{\text{within}}} = \frac{(10+\frac1{12})/1}{14/8} = 5+\frac{16}{21} > 5.8
+	F = \frac{SS_{A\times B}/df_{A\times B}}{SS_{\text{within}}/df_{\text{within}}} = \frac{(10+\frac1{12})/1}{14/8} = 5+\frac{16}{21} = 5.7619.
 \]
-and $F(1,8)=5.8$ gives a $p$-value of 4\%. Thus, the interaction between political party and number of terms for a U.S.~President is significant for height at the usual 5\% level.
+and $F(1,8)=5.7619$ gives a $p$-value of $.04315$. Thus, the interaction between political party and number of terms for a U.S.~President is significant for height at the usual 5\% level.
 
 \paragraph{An example from marketing research.}
 The data in Table \ref{RuckerHuGalinsky} is taken from \footfullcite[pages 386--387]{doi:10.1086/676598}.
@@ -1083,3 +1083,17 @@ which is fairly close to the stated 12.84.
 %	&+& [(1.39-1.7575)-(1.850-1.7575)-(1.780-1.7575)]^2\\
 %	&+& [(2.31-1.7575)-(1.850-1.7575)-(1.735-1.7575)]^2=0.4656125\\
 %\end{eqnarray*}
+
+\subsection{Permutation tests}%Thanks to Barb and Cherryle
+Permutation tests were introduced in Section 6.2.2 of \emph{OpenIntro Statistics} in the context of a difference of means. We can try to use them also for more complicated test statistics such as $SS_{A\times B}/SS_{\text{between}}$ above. We can ignore the degrees of freedom since they will be the same for all the permutations, and we are not claiming to be able to compare with any limiting distribution anymore. Then what we do is look at all $12!=479,001,600$ permutations of the 12 heights of U.S.~presidents, and calculate the statistics for them (or, to save time, take a random sample). The percentile that our value finds itself (in this case a computer calculation showed it to be $4.1\%$) then becomes the $p$-value.
+
+Permutation tests are in a way more satisfying than traditional $t$- and $z$-tests. They were introduced by Fisher about 100 years ago, but were impractical before the advent of computers. They remove the need to argue for approximate normality.
+
+On the other hand, we still have to argue that our test statistic like $SS_{A\times B}/SS_{\text{within}}$ measures what we want it to measure. If we get a low $p$-value, we can argue that the labels ``Democrat'', ``1-term'' and so on were not assigned to the heights uniformly at random.
+
+The fact that this is evident in the $SS_{A\times B}/SS_{\text{within}}$ statistic suggests that we can also rule out that they were assigned randomly and independently with given marginal distributions. In other words, there is an interaction of being Democrat and being 1-term on the variable \emph{height}. %Perhaps, however, we should only iterate over permutations with the given row and column averages. But that may be too strict as there may not be many permutations with exactly the same marginals. For binary variables (as in Fisher's lady tasting tea experiment) this is not an issue.
+The definition of $P$ and $Q$ having no \term{interaction} on $X$ is $E(X\mid P,Q)+E(X)= E(X\mid P)+E(X\mid Q)$. In other words, the effect of $P$ on $X$ is independent of $Q$: $E(X\mid P)-E(X) = E(X\mid P,Q)-E(X\mid Q)$. %The left-hand side is $\frac{E(X 1_P)-E(X)E(1_P)}{E(1_P)}$.
+%When $X$ is just an event $R$ this becomes
+%$P(A\mid B,C)+P(A)=P(A\mid B)+P(A\mid C)$
+%$P(ABC)/P(BC)+P(A)=P(AB)/P(B)+P(AC)/P(C)$
+%$P(ABC)P(B)P(C)+P(A)P(BC)P(B)P(C)=P(AB)P(C)P(BC)+P(AC)P(B)P(BC)$

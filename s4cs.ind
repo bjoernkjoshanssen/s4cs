@@ -58,7 +58,7 @@
   \item effect size, \textbf{87}
   \item empirical cdf, \textbf{34}
   \item entropy
-    \subitem maximum, 101
+    \subitem maximum, 102
   \item event, \textbf{14}, 14--15
   \item Events, \textbf{14}
   \item $\E(X)$, 22
@@ -91,6 +91,10 @@
 
   \indexspace
 
+  \item interaction, \textbf{99}
+
+  \indexspace
+
   \item joint probability, 18
   \item joint probability mass function, \textbf{18}
   \item jointly distributed, \textbf{18}
@@ -99,7 +103,7 @@
 
   \item Law of Large Numbers, \textbf{13}
   \item learning
-    \subitem machine, 110
+    \subitem machine, 111
   \item least squares regression, 83
     \subitem extrapolation, 84
     \subitem interpreting parameters, 84
@@ -129,7 +133,7 @@
   \indexspace
 
   \item optimization
-    \subitem mathematical, 110
+    \subitem mathematical, 111
   \item outcomes, \textbf{14}
 
   \indexspace
@@ -179,10 +183,10 @@
     \subitem difference in proportions, 70
     \subitem single mean, 46
     \subitem single proportion, 67
-  \item states, \textbf{103}
+  \item states, \textbf{104}
   \item statistically significant, \textbf{57}
   \item strong LLN, \textbf{13}
-  \item structure function, \textbf{104}
+  \item structure function, \textbf{105}
   \item success, \textbf{67}
   \item success-failure condition, \textbf{67, 68}
 

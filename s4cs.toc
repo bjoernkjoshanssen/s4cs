@@ -230,36 +230,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{An example from marketing research.}{97}{paragraph*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.7}Exercises}{99}{section.7.7}
+\contentsline {subsection}{\numberline {7.6.2}Permutation tests}{98}{subsection.7.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Special topics}{100}{chapter.8}
+\contentsline {section}{\numberline {7.7}Exercises}{100}{section.7.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Algebraic statistics}{100}{section.8.1}
+\contentsline {chapter}{\numberline {8}Special topics}{101}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Maximum entropy}{101}{section.8.2}
+\contentsline {section}{\numberline {8.1}Algebraic statistics}{101}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Maximum likelihood}{102}{section.8.3}
+\contentsline {section}{\numberline {8.2}Maximum entropy}{102}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Hidden Markov chains}{103}{section.8.4}
+\contentsline {section}{\numberline {8.3}Maximum likelihood}{103}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}Overfitting and the complexity of a word}{104}{section.8.5}
+\contentsline {section}{\numberline {8.4}Hidden Markov chains}{104}{section.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.6}Akaike information criterion}{107}{section.8.6}
+\contentsline {section}{\numberline {8.5}Overfitting and the complexity of a word}{105}{section.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{An Akaike coincidence, maybe.}{108}{paragraph*.44}
+\contentsline {section}{\numberline {8.6}Akaike information criterion}{108}{section.8.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Bayesian information criterion}{110}{paragraph*.45}
+\contentsline {paragraph}{An Akaike coincidence, maybe.}{109}{paragraph*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.7}Support vector machines}{110}{section.8.7}
+\contentsline {paragraph}{Bayesian information criterion}{111}{paragraph*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.8}Shattering}{111}{section.8.8}
+\contentsline {section}{\numberline {8.7}Support vector machines}{111}{section.8.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8.1}Support vector machines}{111}{subsection.8.8.1}
+\contentsline {section}{\numberline {8.8}Shattering}{112}{section.8.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8.2}Discrete shattering}{111}{subsection.8.8.2}
+\contentsline {subsection}{\numberline {8.8.1}Support vector machines}{112}{subsection.8.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.9}Exercises}{113}{section.8.9}
+\contentsline {subsection}{\numberline {8.8.2}Discrete shattering}{112}{subsection.8.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}End of chapter exercise solutions}{115}{appendix.A}
+\contentsline {section}{\numberline {8.9}Exercises}{114}{section.8.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{122}{section*.47}
+\contentsline {chapter}{\numberline {A}End of chapter exercise solutions}{116}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Index}{123}{section*.47}
