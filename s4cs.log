@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  26 FEB 2019 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 MAR 2019 11:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2076,41 +2076,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 282--283
 Underfull \vbox (badness 1253) has occurred while \output is active []
 
  [51 <./ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pVal
-ueOneSidedSleepStudyExplained.pdf>] [52 <./ch_inference_foundations/figures/2nd
-SchSleepHTExample/2ndSchSleepHTExample.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+ueOneSidedSleepStudyExplained.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
-<ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf, id=945, 49
+[52 <./ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExamp
+le.pdf>]
+<ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf, id=943, 49
 0.83376pt x 578.16pt>
 File: ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf Graphi
 c file (type pdf)
 <use ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf>
 Package pdftex.def Info: ch_inference_foundations/figures/cltSimulations/cltSim
-ulations.pdf  used on input line 359.
+ulations.pdf  used on input line 338.
 (pdftex.def)             Requested size: 393.87128pt x 463.9578pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
 
 [53] [54 <./ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf>
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
 
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+ [55]
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
-[56]) [57]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+[57]) [58]
 \openout2 = `ch_inference_foundations/TeX/ch_inference_foundations_ex.aux'.
 
  (./ch_inference_foundations/TeX/ch_inference_foundations_ex.tex)
-[58
+[59
 
 
 ]
@@ -2122,7 +2130,7 @@ Chapter 5.
 Overfull \vbox (1.48605pt too high) has occurred while \output is active []
 
 
-[59
+[60
 
 
 
@@ -2140,26 +2148,26 @@ ML/cmm/m/it/10 ; [] ; X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 !\OT1/cmr/m/n/10 ))$
 ,
  []
 
-[60]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-[61]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-[62]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
-[63] [64]) [65]
+[64] [65]) [66]
 \openout2 = `ch_inference_for_means/TeX/ch_inference_for_means_ex.aux'.
 
  (./ch_inference_for_means/TeX/ch_inference_for_means_ex.tex)
-[66
+[67
 
 
 ]
@@ -2172,7 +2180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[67
+[68
 
 
 
@@ -2186,19 +2194,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[68] [69]
+[69] [70]
 Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-[70]
+[71]
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[71] [72] [73]
+[72] [73] [74]
 <ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSquareD
-istributionWithInceasingDF.pdf, id=1164, 469.755pt x 216.81pt>
+istributionWithInceasingDF.pdf, id=1169, 469.755pt x 216.81pt>
 File: ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSq
 uareDistributionWithInceasingDF.pdf Graphic file (type pdf)
 <use ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSqu
@@ -2210,7 +2218,7 @@ thInceasingDF/chiSquareDistributionWithInceasingDF.pdf  used on input line 301.
 
 Underfull \vbox (badness 1603) has occurred while \output is active []
 
- [74 <./ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chi
+ [75 <./ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chi
 SquareDistributionWithInceasingDF.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
@@ -2234,13 +2242,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
 Underfull \vbox (badness 2512) has occurred while \output is active []
 
- [75]
+ [76]
 Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 <ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googleHTFor
-DiffAlgPerformancePValue.pdf, id=1188, 361.35pt x 162.6075pt>
+DiffAlgPerformancePValue.pdf, id=1193, 361.35pt x 162.6075pt>
 File: ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/google
 HTForDiffAlgPerformancePValue.pdf Graphic file (type pdf)
 <use ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googleH
@@ -2248,8 +2256,8 @@ TForDiffAlgPerformancePValue.pdf>
 Package pdftex.def Info: ch_inference_for_props/figures/googleHTForDiffAlgPerfo
 rmancePValue/googleHTForDiffAlgPerformancePValue.pdf  used on input line 388.
 (pdftex.def)             Requested size: 275.70868pt x 124.06929pt.
-[76 <./ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googl
-eHTForDiffAlgPerformancePValue.pdf>]) [77]
+[77 <./ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googl
+eHTForDiffAlgPerformancePValue.pdf>]) [78]
 \openout2 = `ch_inference_for_props/TeX/ch_inference_for_props_ex.aux'.
 
 
@@ -2260,15 +2268,15 @@ ds / 2018 / 10 / november-[]2018-[]american-[]climate-[]perspectives-[]survey .
 
  []
 
-[78
+[79
 
 
-]) [79]
+]) [80]
 \openout2 = `ch_regr_simple_linear/TeX/ch_regr_simple_linear.aux'.
 
  (./ch_regr_simple_linear/TeX/ch_regr_simple_linear.tex
 Chapter 7.
-[80
+[81
 
 
 
@@ -2281,7 +2289,7 @@ y[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y
 []\OT1/cmr/m/n/10 )$
  []
 
-[81]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
@@ -2291,12 +2299,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-[82] [83]
+[83] [84]
 Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
-[84]
+[85]
 Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
@@ -2306,7 +2314,7 @@ Overfull \hbox (42.79094pt too wide) in alignment at lines 323--327
  [][][] []
  []
 
-[85]
+[86]
 Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
@@ -2321,17 +2329,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
-[86]
+[87]
 Underfull \hbox (badness 1783) in paragraph at lines 449--449
 []\OT1/cmr/m/n/10 Table 7.3: |A sum-mary of least squares fit. The point is tha
 t
  []
 
-[87] [88]
+[88] [89]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [89]
-[90] [91] [92] [93] [94]
+ [90]
+[91] [92] [93] [94] [95]
 Overfull \hbox (10.07394pt too wide) in paragraph at lines 908--938
 [][]
  []
@@ -2341,11 +2349,11 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 908--938
 []$ $[]$ 
  []
 
-[95] [96] [97]) [98] [99]
+[96] [97] [98]) [99] [100]
 \openout2 = `ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.aux'.
 
 
-(./ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.tex) [100
+(./ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.tex) [101
 
 
 ]
@@ -2354,11 +2362,11 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 908--938
 
 (./ch_markov/TeX/ch_markov.tex
 Chapter 8.
-[101
+[102
 
 
 
-] [102] [103] [104] [105]
+] [103] [104] [105] [106]
 Overfull \hbox (2.18947pt too wide) detected at line 303
 \U/msb/m/n/10 P\OT1/cmr/m/n/10 ([]001; \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (1) = 
 \OML/cmm/m/it/10 s[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (2)) =
@@ -2372,18 +2380,18 @@ U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emit\OT1/cmr/m/n/10 1 \OMS/cmsy
 /m/n/10 j \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 )
  []
 
-[106] [107] [108] [109]
+[107] [108] [109] [110]
 Overfull \hbox (0.55713pt too wide) in alignment at lines 529--535
  [][][] []
  []
 
-[110] [111] [112]) [113]
+[111] [112] [113]) [114]
 \openout2 = `ch_markov/TeX/ch_markov_ex.aux'.
 
- (./ch_markov/TeX/ch_markov_ex.tex [114
+ (./ch_markov/TeX/ch_markov_ex.tex [115
 
 
-]) [115]
+]) [116]
 \openout2 = `extraTeX/eoceSolutions/eoceSolutions.aux'.
 
 
@@ -2401,15 +2409,15 @@ Overfull \hbox (6.75974pt too wide) in alignment at lines 57--57
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 116 might be wrong on input line 57
+(multicol)                Footnotes on page 117 might be wrong on input line 57
 .
 
-[116
+[117
 
 
 
-] [117]
-<extraTex/eoceSolutions/likelihoodprinciple.jpg, id=1647, 2055.68pt x 1541.76pt
+] [118]
+<extraTex/eoceSolutions/likelihoodprinciple.jpg, id=1652, 2055.68pt x 1541.76pt
 >
 File: extraTex/eoceSolutions/likelihoodprinciple.jpg Graphic file (type jpg)
 <use extraTex/eoceSolutions/likelihoodprinciple.jpg>
@@ -2419,15 +2427,15 @@ n input line 135.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 118 might be wrong on input line 17
+(multicol)                Footnotes on page 119 might be wrong on input line 17
 0.
 
-[118 <./extraTex/eoceSolutions/likelihoodprinciple.jpg>]
+[119 <./extraTex/eoceSolutions/likelihoodprinciple.jpg>]
 Overfull \hbox (26.24966pt too wide) in alignment at lines 186--186
  [][][] []
  []
 
-[119]
+[120]
 Overfull \hbox (3.40347pt too wide) in alignment at lines 298--298
  [][][] []
  []
@@ -2438,7 +2446,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--298
 %5Cfrac % 7B(u % 2B % 5Cfrac1 % 7B25 % 7D ) (1-[]u-[] % 5Cfrac1 %
  []
 
-[120]
+[121]
 Underfull \hbox (badness 10000) in paragraph at lines 392--392
 \OT1/cmr/m/n/9 (c) This is sim-i-lar to (a). Take
  []
@@ -2447,7 +2455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 392--392
 Overfull \vbox (13.0025pt too high) has occurred while \output is active []
 
 
-[121]
+[122]
 Overfull \hbox (0.40338pt too wide) detected at line 442
 [][] \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 b \OT1/cmr/m/n/9 = 0  =[]\OMS/cmsy/m/n
 /9 )  [][] \OT1/cmr/m/n/9 = \OML/cmm/m/it/9 b  \OT1/cmr/m/n/9 =[]\OMS/cmsy/m/n/
@@ -2455,22 +2463,22 @@ Overfull \hbox (0.40338pt too wide) detected at line 442
 /n/9 = 0
  []
 
-) [122]
+) [123]
 \openout2 = `extraTeX/index/index.aux'.
 
  (./extraTeX/index/index.tex)
 runsystem(makeindex s4cs.idx)...executed safely (allowed).
 
- (./s4cs.ind [123
+ (./s4cs.ind [124
 
 
 
-\indexentry{probability sample|see{sample}}{123}
-\indexentry{df|see{degrees of freedom (df)}}{123}
+\indexentry{probability sample|see{sample}}{124}
+\indexentry{df|see{degrees of freedom (df)}}{124}
 
 
 
-]) [124]
+]) [125]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./s4cs.aux (./extraTeX/preamble/copyright.aux)
@@ -2494,6 +2502,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `s4cs.out' has not changed.
 (rerunfilecheck)             Checksum: 013D2582F0D1B090AD2E5D8A663023DB;4206.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 's4cs.run.xml'.
 \openout1 = `s4cs.run.xml'.
 
@@ -2504,13 +2520,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
 ### simple group (level 1) entered at line 237 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 39522 strings out of 492649
- 895985 string characters out of 6129622
- 1412681 words of memory out of 5000000
+ 39524 strings out of 492649
+ 896009 string characters out of 6129622
+ 1411681 words of memory out of 5000000
  41902 multiletter control sequences out of 15000+600000
  24240 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,107p,932b,4361s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,19n,107p,932b,4367s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
@@ -2557,10 +2573,10 @@ ist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on s4cs.pdf (124 pages, 1736631 bytes).
+Output written on s4cs.pdf (125 pages, 1737176 bytes).
 PDF statistics:
- 2004 PDF objects out of 2073 (max. 8388607)
- 1772 compressed objects within 18 object streams
- 651 named destinations out of 1000 (max. 500000)
+ 2009 PDF objects out of 2073 (max. 8388607)
+ 1776 compressed objects within 18 object streams
+ 653 named destinations out of 1000 (max. 500000)
  600 words of extra memory for PDF output out of 10000 (max. 10000000)
 

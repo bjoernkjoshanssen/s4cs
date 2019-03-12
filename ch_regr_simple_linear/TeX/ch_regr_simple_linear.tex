@@ -1092,7 +1092,16 @@ Permutation tests are in a way more satisfying than traditional $t$- and $z$-tes
 On the other hand, we still have to argue that our test statistic like $SS_{A\times B}/SS_{\text{within}}$ measures what we want it to measure. If we get a low $p$-value, we can argue that the labels ``Democrat'', ``1-term'' and so on were not assigned to the heights uniformly at random.
 
 The fact that this is evident in the $SS_{A\times B}/SS_{\text{within}}$ statistic suggests that we can also rule out that they were assigned randomly and independently with given marginal distributions. In other words, there is an interaction of being Democrat and being 1-term on the variable \emph{height}. %Perhaps, however, we should only iterate over permutations with the given row and column averages. But that may be too strict as there may not be many permutations with exactly the same marginals. For binary variables (as in Fisher's lady tasting tea experiment) this is not an issue.
-The definition of $P$ and $Q$ having no \term{interaction} on $X$ is $E(X\mid P,Q)+E(X)= E(X\mid P)+E(X\mid Q)$. In other words, the effect of $P$ on $X$ is independent of $Q$: $E(X\mid P)-E(X) = E(X\mid P,Q)-E(X\mid Q)$. %The left-hand side is $\frac{E(X 1_P)-E(X)E(1_P)}{E(1_P)}$.
+To define interaction we first need conditional expectation.
+The conditional expectation of a random variable $X$ given an event $A$ is just
+\[
+	\sum_x x \P(X=x\mid A).
+\]
+Now, the definition of $P$ and $Q$ having no \term{interaction} on $X$ is $E(X\mid P,Q)+E(X)= E(X\mid P)+E(X\mid Q)$. In other words, the effect of $P$ on $X$ is independent of $Q$:
+\[
+	E(X\mid P)-E(X) = E(X\mid P,Q)-E(X\mid Q).
+\]
+%The left-hand side is $\frac{E(X 1_P)-E(X)E(1_P)}{E(1_P)}$.
 %When $X$ is just an event $R$ this becomes
 %$P(A\mid B,C)+P(A)=P(A\mid B)+P(A\mid C)$
 %$P(ABC)/P(BC)+P(A)=P(AB)/P(B)+P(AC)/P(C)$

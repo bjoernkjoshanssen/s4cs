@@ -1,6 +1,6 @@
 This is makeindex, version 2.15 [TeX Live 2018] (kpathsea + Thai support).
 Scanning input file s4cs.idx....done (195 entries accepted, 0 rejected).
-Sorting entries.....done (1546 comparisons).
+Sorting entries.....done (1557 comparisons).
 Generating output file s4cs.ind....
 ## Warning (input = s4cs.idx, line = 49; output = s4cs.ind, line = 17):
    -- Inconsistent page encapsulator textbf within range.

@@ -323,27 +323,6 @@ where
 	\Phi(z)=\P(Z\le z)=\frac1{\sqrt{2\pi}}\int_{-\infty}^z e^{-z^2/2}\,dz.
 \]
 
-
-We ought to also explain the distributions in Figure \ref{cltSimulations}.
-
-The \term{exponential distribution} with parameter $\lambda$ is an important distribution omitted in \emph{OpenIntro}. It is the continuous-time analogue of the geometric distribution. It has pdf
-\[
-	f_X(x)=\lambda\cdot e^{-\lambda x},\quad 0\le x<\infty.
-\]
-You can verify that it has a memory-less property shared with the geometric distribution, namely
-\[
-	\P(X\ge x+y\mid X\ge x) = \P(X\ge y).
-\]
-The \term{log-normal} distribution is important in finance. It can be used to model stock prices, which are always nonnegative.
-\begin{df}\label{lognormal}
-$X$ is a log-normal random variable with parameters $\mu$ and $\sigma$ if $X=e^W$ where the logarithm $W$ is normal with parameters $\mu$ and $\sigma$.
-\end{df}
-
-The \term{uniform} distribution on an interval $[a,b]$ has a constant pdf on that interval:
-\[
-	f_X(x)=\frac1{b-a},\quad a\le x\le b.
-\]
-
 The normal model for the sample mean tends to be very good when the sample consists of at least 30 independent observations and the population data are not strongly skewed. The Central Limit Theorem provides the theory that allows us to make this assumption.
 
 \begin{termBox}{\tBoxTitle{Central Limit Theorem, informal definition}
@@ -378,6 +357,29 @@ Not necessarily. For example, the normal approximation for the log-normal exampl
 \end{caution}
 
 \index{skew!strongly skewed guideline}
+
+
+\subsection{Exponential, log-normal, uniform}
+We explain the distributions in Figure \ref{cltSimulations}.
+
+The \term{exponential distribution} with parameter $\lambda$ is an important distribution omitted in \emph{OpenIntro}. It is the continuous-time analogue of the geometric distribution. It has pdf
+\[
+	f_X(x)=\lambda\cdot e^{-\lambda x},\quad 0\le x<\infty.
+\]
+You can verify that it has a memory-less property shared with the geometric distribution, namely
+\[
+	\P(X\ge x+y\mid X\ge x) = \P(X\ge y).
+\]
+The \term{log-normal} distribution is important in finance. It can be used to model stock prices, which are always nonnegative.
+\begin{df}\label{lognormal}
+$X$ is a log-normal random variable with parameters $\mu$ and $\sigma$ if $X=e^W$ where the logarithm $W$ is normal with parameters $\mu$ and $\sigma$.
+\end{df}
+
+The \term{uniform} distribution on an interval $[a,b]$ has a constant pdf on that interval:
+\[
+	f_X(x)=\frac1{b-a},\quad a\le x\le b.
+\]
+
 
 
 %__________________
