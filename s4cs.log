@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 MAR 2019 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 MAR 2019 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2349,7 +2349,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 908--938
 []$ $[]$ 
  []
 
-[96] [97] [98]) [99] [100]
+[96] [97] [98] [99]) [100]
 \openout2 = `ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.aux'.
 
 
@@ -2502,14 +2502,6 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `s4cs.out' has not changed.
 (rerunfilecheck)             Checksum: 013D2582F0D1B090AD2E5D8A663023DB;4206.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 's4cs.run.xml'.
 \openout1 = `s4cs.run.xml'.
 
@@ -2573,7 +2565,7 @@ ist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on s4cs.pdf (125 pages, 1737176 bytes).
+Output written on s4cs.pdf (125 pages, 1738307 bytes).
 PDF statistics:
  2009 PDF objects out of 2073 (max. 8388607)
  1776 compressed objects within 18 object streams

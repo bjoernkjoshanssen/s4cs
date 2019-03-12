@@ -1085,7 +1085,21 @@ which is fairly close to the stated 12.84.
 %\end{eqnarray*}
 
 \subsection{Permutation tests}%Thanks to Barb and Cherryle
-Permutation tests were introduced in Section 6.2.2 of \emph{OpenIntro Statistics} in the context of a difference of means. We can try to use them also for more complicated test statistics such as $SS_{A\times B}/SS_{\text{between}}$ above. We can ignore the degrees of freedom since they will be the same for all the permutations, and we are not claiming to be able to compare with any limiting distribution anymore. Then what we do is look at all $12!=479,001,600$ permutations of the 12 heights of U.S.~presidents, and calculate the statistics for them (or, to save time, take a random sample). The percentile that our value finds itself (in this case a computer calculation showed it to be $4.1\%$) then becomes the $p$-value.
+Permutation tests were introduced in Section 6.2.2 of \emph{OpenIntro Statistics} in the context of a difference of means.
+
+Consider our example of the heights of U.S.~Presidents. Is the mean height for Democrats large?
+Taking all the heights and considering all the permutations of them, there may seem to be $12!$ choices to consider. Doing so, we find that 
+\[
+	179365520/(179365520+299634480) = 37\%
+\]
+of the permutations give a larger mean. Thus we have a $p$-value of .37 for our alternative hypothesis that Democrats are taller. Not statistically significant.
+
+Did we really have to consider all $12!$ permutations? Clearly not, since in this case all that matters is which of the $12\choose 6$ sets of 6 Presidents was chosen. Searching through all such sets instead, we find that 578 have a smaller mean height, and 346 a larger mean height, for a total of $924={12\choose 6}$.
+The $p$-value is $346/924 = 37\%$, i.e., unchanged, but our computation much faster.
+
+
+
+We can try to permutation tests also for more complicated test statistics such as $SS_{A\times B}/SS_{\text{between}}$ above. We can ignore the degrees of freedom since they will be the same for all the permutations, and we are not claiming to be able to compare with any limiting distribution anymore. Then what we do is look at all $12!=479,001,600$ permutations of the 12 heights of U.S.~presidents, and calculate the statistics for them (or, to save time, take a random sample). The percentile that our value finds itself (in this case a computer calculation showed it to be $4.1\%$) then becomes the $p$-value.
 
 Permutation tests are in a way more satisfying than traditional $t$- and $z$-tests. They were introduced by Fisher about 100 years ago, but were impractical before the advent of computers. They remove the need to argue for approximate normality.
 
@@ -1101,6 +1115,8 @@ Now, the definition of $P$ and $Q$ having no \term{interaction} on $X$ is $E(X\m
 \[
 	E(X\mid P)-E(X) = E(X\mid P,Q)-E(X\mid Q).
 \]
+
+
 %The left-hand side is $\frac{E(X 1_P)-E(X)E(1_P)}{E(1_P)}$.
 %When $X$ is just an event $R$ this becomes
 %$P(A\mid B,C)+P(A)=P(A\mid B)+P(A\mid C)$
