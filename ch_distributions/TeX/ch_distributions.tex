@@ -592,3 +592,21 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 	}
 \end{example}
 
+\begin{example}{Earned premium.}
+	An insurance company offers flood insurance at a cost (premium) of $c=\$100$.
+	The insurance is good for one year. Each month there is a probability $p$ of a flood leading to a $\$100,000$ payout.
+	As the months go by, the insurance company considers that it is earning the premium in a linear fashion:
+	after $k$ months, $c\frac{k}{12}$ has been earned.
+	Assume that no more than one payout can be made in a year.
+	Find the probability distribution of the amounth earned after 6 months.
+	For which value of $p$ is the expected amount earned after 6 months equal to 0?\footnote{
+		$\$50$ will have been earned if there is no flood.
+		If there has been a flood, then $\$100-\$100,000$ will have been earned.
+		Thus, if $X$ is the amount earned then
+		$P(X=k)=(1-p)^6\cdot 1_{k=\$50} + (1-(1-p)^6)\cdot 1_{k=-\$99,900}$.
+		The expectation is $0=E(X)=\$50 (1-p)^6 - \$99,900\cdot (1-(1-p)^6)$.
+		This gives, for $\alpha=(1-p)^6$, that $0=50\alpha-99900(1-\alpha)$ and hence
+		$99900=99950\alpha$, $\alpha=\frac{99900}{99950}=\frac{9990}{9995}=\frac{1998}{1999}$.
+		Hence $p=1-\left(\frac{1998}{1999}\right)^{1/6}\approx 0.000083$.
+	}
+\end{example}
