@@ -592,12 +592,12 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 	}
 \end{example}
 
-\begin{example}{Earned premium.}
+\begin{example}{Earned premium.}\label{drc}
 	An insurance company offers flood insurance at a cost (premium) of $c=\$100$.
 	The insurance is good for one year. Each month there is a probability $p$ of a flood leading to a $\$100,000$ payout.
 	As the months go by, the insurance company considers that it is earning the premium in a linear fashion:
 	after $k$ months, $c\frac{k}{12}$ has been earned.
-	Assume that no more than one payout can be made in a year.
+	Assume that no more than one payout can be made in a year on the same policy.
 	Find the probability distribution of the amounth earned after 6 months.
 	For which value of $p$ is the expected amount earned after 6 months equal to 0?\footnote{
 		$\$50$ will have been earned if there is no flood.
@@ -609,4 +609,52 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 		$99900=99950\alpha$, $\alpha=\frac{99900}{99950}=\frac{9990}{9995}=\frac{1998}{1999}$.
 		Hence $p=1-\left(\frac{1998}{1999}\right)^{1/6}\approx 0.000083$.
 	}
+\end{example}
+\begin{example}{Earned premium, two policies.}
+	Suppose Kaden purchases the flood insurance in Example \ref{drc}. Kaden's friend Tamzin decides to purchase the same insurance
+	but have it be effective 6 months after Kaden's insurance becomes effective. She is in effect betting that there will be no
+	flood during the first 6 months.
+	What is the expected earned premium for the insurance company 9 months after Kaden purchased his insurance?
+	Is it 0 for the same $p$ as in the above example?
+	Assume that Kaden and Tamzin are neighbors, so that any flood affects them equally.
+	%\footnote{
+	Solution:
+		Let $X$ be now the amount earned after 9 months.
+		Let $F_1$ be the event of a flood in the first 6 months, and $F_2$ be the event of a flood in the subsequent 3 months.
+		There are three cases:
+		$F_1\cap F_2$,
+		$F_1\setminus F_2$,
+		$F_2\setminus F_1$,
+		$\bar{F_1}\cap\bar{F_2}$.
+		These have probability
+		$(1-(1-p)^6)(1-(1-p)^3)$,
+		$(1-(1-p)^6)(1-p)^3$,
+		$(1-p)^6(1-(1-p)^3)$, and
+		$(1-p)^6(1-p)^3=(1-p)^9$, respectively.
+		The respective earned premiums are
+		$2(100-100,000)$,
+		$100+25-100,000$,
+		$2(100-100,000)$,
+		$75+25$.
+		
+		The expected earned premium $E(X)$ is then, in terms of $\beta=(1-p)^3$, and $f=100-100,000$,
+		\[
+		2(100-100,000) (1-\beta^2)(1-\beta) +
+		(100+25-100,000) (1-\beta^2)\beta
+		\]
+		\[ +
+		2(100-100,000) \beta^2(1-\beta) +
+		(75+25)(\beta^3)
+		\]
+		\[
+			= 2f(1-\beta) + (25+f)(1-\beta^2)\beta + 100\beta^3.
+		\]
+		\[
+			= 2f + (25-f)\beta + (100-25-f)\beta^3
+		\]
+		which according to WolframAlpha (input:
+			\verb!(75+99900)x**3+(25+99900)x+2(-99900)!)
+		is 0 when $\beta\approx 0.99975$. In other words,
+		$p\approx 1-(0.99975)^{1/3}=0.0000833403$.
+	%}
 \end{example}

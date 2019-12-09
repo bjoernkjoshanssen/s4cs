@@ -96,100 +96,100 @@
 \indexentry{distribution!negative binomial|textbf}{39}
 \indexentry{distribution!Poisson|(}{41}
 \indexentry{distribution!Poisson|)}{42}
-\indexentry{point estimate|(}{45}
-\indexentry{point estimate!single mean|(}{45}
-\indexentry{sampling distribution|textbf}{45}
-\indexentry{standard error (SE)|textbf}{45}
-\indexentry{SE}{45}
-\indexentry{standard error (SE)!single mean}{46}
-\indexentry{point estimate|)}{46}
-\indexentry{confidence interval|(}{46}
-\indexentry{confidence interval|textbf}{46}
-\indexentry{confidence interval!confidence level|)}{47}
-\indexentry{Central Limit Theorem}{47}
-\indexentry{confidence interval!confidence level|(}{47}
-\indexentry{margin of error|textbf}{48}
-\indexentry{confidence interval!interpretation|(}{48}
-\indexentry{confidence interval!interpretation|)}{48}
-\indexentry{confidence interval|)}{48}
-\indexentry{hypothesis testing|(}{48}
-\indexentry{null hypothesis ($H_0$)|textbf}{48}
-\indexentry{alternative hypothesis ($H_A$)|textbf}{48}
-\indexentry{hypothesis testing!decision errors|(}{49}
-\indexentry{Type\nobreakspace  {}1 Error|textbf}{49}
-\indexentry{Type\nobreakspace  {}2 Error|textbf}{49}
-\indexentry{hypothesis testing!decision errors|)}{49}
-\indexentry{significance level|textbf}{49}
-\indexentry{hypothesis testing!significance level}{49}
-\indexentry{Greek!alpha@alpha ($\alpha$)}{49}
-\indexentry{hypothesis testing!p-value|(}{49}
-\indexentry{p-value|textbf}{50}
-\indexentry{hypothesis testing!p-value|textbf}{50}
-\indexentry{hypothesis testing!p-value|)}{51}
-\indexentry{hypothesis testing!significance level|(}{52}
-\indexentry{significance level|(}{52}
-\indexentry{significance level|)}{52}
-\indexentry{hypothesis testing!significance level|)}{52}
-\indexentry{hypothesis testing|)}{52}
-\indexentry{Central Limit Theorem|(}{52}
-\indexentry{skew!example: moderate}{53}
-\indexentry{skew!example: strong}{53}
-\indexentry{Central Limit Theorem|)}{53}
-\indexentry{skew!strongly skewed guideline}{53}
-\indexentry{exponential distribution|textbf}{53}
-\indexentry{log-normal|textbf}{55}
-\indexentry{uniform|textbf}{55}
-\indexentry{unbiased|textbf}{55}
-\indexentry{confidence interval!using normal model|(}{55}
-\indexentry{margin of error}{56}
-\indexentry{hypothesis testing!using normal model|(}{56}
-\indexentry{test statistic|textbf}{57}
-\indexentry{hypothesis testing!using normal model|)}{57}
-\indexentry{statistically significant|textbf}{58}
-\indexentry{practically significant|textbf}{58}
-\indexentry{Central Limit Theorem!normal data|)}{60}
-\indexentry{t-distribution|(}{60}
-\indexentry{distribution!$t$|(}{60}
-\indexentry{T-score|textbf}{61}
-\indexentry{paired data|(}{61}
-\indexentry{data!textbooks|(}{61}
-\indexentry{point estimate!difference of means|(}{62}
-\indexentry{point estimate!difference of means|)}{62}
-\indexentry{standard error (SE)!difference in means}{62}
-\indexentry{standard error (SE)!difference in means}{62}
-\indexentry{pooled standard deviation|textbf}{64}
-\indexentry{unbiased estimator|textbf}{65}
-\indexentry{success|textbf}{68}
-\indexentry{failure|textbf}{68}
-\indexentry{success-failure condition|textbf}{68}
-\indexentry{standard error (SE)!single proportion}{68}
-\indexentry{point estimate!single proportion}{69}
+\indexentry{point estimate|(}{46}
+\indexentry{point estimate!single mean|(}{46}
+\indexentry{sampling distribution|textbf}{46}
+\indexentry{standard error (SE)|textbf}{46}
+\indexentry{SE}{46}
+\indexentry{standard error (SE)!single mean}{47}
+\indexentry{point estimate|)}{47}
+\indexentry{confidence interval|(}{47}
+\indexentry{confidence interval|textbf}{47}
+\indexentry{confidence interval!confidence level|)}{48}
+\indexentry{Central Limit Theorem}{48}
+\indexentry{confidence interval!confidence level|(}{48}
+\indexentry{margin of error|textbf}{49}
+\indexentry{confidence interval!interpretation|(}{49}
+\indexentry{confidence interval!interpretation|)}{49}
+\indexentry{confidence interval|)}{49}
+\indexentry{hypothesis testing|(}{49}
+\indexentry{null hypothesis ($H_0$)|textbf}{49}
+\indexentry{alternative hypothesis ($H_A$)|textbf}{49}
+\indexentry{hypothesis testing!decision errors|(}{50}
+\indexentry{Type\nobreakspace  {}1 Error|textbf}{50}
+\indexentry{Type\nobreakspace  {}2 Error|textbf}{50}
+\indexentry{hypothesis testing!decision errors|)}{50}
+\indexentry{significance level|textbf}{50}
+\indexentry{hypothesis testing!significance level}{50}
+\indexentry{Greek!alpha@alpha ($\alpha$)}{50}
+\indexentry{hypothesis testing!p-value|(}{50}
+\indexentry{p-value|textbf}{51}
+\indexentry{hypothesis testing!p-value|textbf}{51}
+\indexentry{hypothesis testing!p-value|)}{52}
+\indexentry{hypothesis testing!significance level|(}{53}
+\indexentry{significance level|(}{53}
+\indexentry{significance level|)}{53}
+\indexentry{hypothesis testing!significance level|)}{53}
+\indexentry{hypothesis testing|)}{53}
+\indexentry{Central Limit Theorem|(}{53}
+\indexentry{skew!example: moderate}{54}
+\indexentry{skew!example: strong}{54}
+\indexentry{Central Limit Theorem|)}{54}
+\indexentry{skew!strongly skewed guideline}{54}
+\indexentry{exponential distribution|textbf}{54}
+\indexentry{log-normal|textbf}{56}
+\indexentry{uniform|textbf}{56}
+\indexentry{unbiased|textbf}{56}
+\indexentry{confidence interval!using normal model|(}{56}
+\indexentry{margin of error}{57}
+\indexentry{hypothesis testing!using normal model|(}{57}
+\indexentry{test statistic|textbf}{58}
+\indexentry{hypothesis testing!using normal model|)}{58}
+\indexentry{statistically significant|textbf}{59}
+\indexentry{practically significant|textbf}{59}
+\indexentry{Central Limit Theorem!normal data|)}{61}
+\indexentry{t-distribution|(}{61}
+\indexentry{distribution!$t$|(}{61}
+\indexentry{T-score|textbf}{62}
+\indexentry{paired data|(}{62}
+\indexentry{data!textbooks|(}{62}
+\indexentry{point estimate!difference of means|(}{63}
+\indexentry{point estimate!difference of means|)}{63}
+\indexentry{standard error (SE)!difference in means}{63}
+\indexentry{standard error (SE)!difference in means}{63}
+\indexentry{pooled standard deviation|textbf}{65}
+\indexentry{unbiased estimator|textbf}{66}
+\indexentry{success|textbf}{69}
+\indexentry{failure|textbf}{69}
 \indexentry{success-failure condition|textbf}{69}
-\indexentry{point estimate!difference of proportions}{71}
-\indexentry{standard error (SE)!difference in proportions}{71}
-\indexentry{chi-square statistic}{74}
-\indexentry{$\chi ^2$ distribution|textbf}{75}
-\indexentry{degrees of freedom (df)!chi-square|textbf}{75}
-\indexentry{$\chi ^2$ table|textbf}{75}
-\indexentry{linear regression|textbf}{82}
-\indexentry{parameter}{82}
-\indexentry{Greek!beta@beta ($\beta$)}{82}
-\indexentry{residual|(}{83}
-\indexentry{residual|textbf}{83}
-\indexentry{correlation|(}{83}
-\indexentry{correlation|textbf}{83}
-\indexentry{least squares regression|(}{84}
-\indexentry{point-slope|textbf}{85}
-\indexentry{least squares regression!interpreting parameters|(}{85}
-\indexentry{least squares regression!extrapolation|(}{85}
-\indexentry{least squares regression!r-squared ($r^2$)|(}{85}
-\indexentry{high leverage|textbf}{86}
-\indexentry{effect size|textbf}{88}
-\indexentry{mean squares|textbf}{89}
-\indexentry{$F$ distribution|textbf}{91}
-\indexentry{interaction|textbf}{100}
-\indexentry{entropy!maximum|(}{103}
-\indexentry{states|textbf}{105}
-\indexentry{structure function|textbf}{106}
-\indexentry{learning!machine|(}{112}
-\indexentry{optimization!mathematical|(}{112}
+\indexentry{standard error (SE)!single proportion}{69}
+\indexentry{point estimate!single proportion}{70}
+\indexentry{success-failure condition|textbf}{70}
+\indexentry{point estimate!difference of proportions}{72}
+\indexentry{standard error (SE)!difference in proportions}{72}
+\indexentry{chi-square statistic}{75}
+\indexentry{$\chi ^2$ distribution|textbf}{76}
+\indexentry{degrees of freedom (df)!chi-square|textbf}{76}
+\indexentry{$\chi ^2$ table|textbf}{76}
+\indexentry{linear regression|textbf}{83}
+\indexentry{parameter}{83}
+\indexentry{Greek!beta@beta ($\beta$)}{83}
+\indexentry{residual|(}{84}
+\indexentry{residual|textbf}{84}
+\indexentry{correlation|(}{84}
+\indexentry{correlation|textbf}{84}
+\indexentry{least squares regression|(}{85}
+\indexentry{point-slope|textbf}{86}
+\indexentry{least squares regression!interpreting parameters|(}{86}
+\indexentry{least squares regression!extrapolation|(}{86}
+\indexentry{least squares regression!r-squared ($r^2$)|(}{86}
+\indexentry{high leverage|textbf}{87}
+\indexentry{effect size|textbf}{89}
+\indexentry{mean squares|textbf}{90}
+\indexentry{$F$ distribution|textbf}{92}
+\indexentry{interaction|textbf}{101}
+\indexentry{entropy!maximum|(}{104}
+\indexentry{states|textbf}{106}
+\indexentry{structure function|textbf}{107}
+\indexentry{learning!machine|(}{113}
+\indexentry{optimization!mathematical|(}{113}
