@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 DEC 2019 13:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 DEC 2019 14:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1948,7 +1948,7 @@ Overfull \hbox (6.57195pt too wide) in paragraph at lines 654--660
 (./ch_inference_foundations/TeX/ch_inference_foundations.tex
 Chapter 4.
 <ch_inference_foundations/figures/yrbssActiveRunningMean/yrbssActiveRunningMean
-.pdf, id=854, 397.485pt x 194.7275pt>
+.pdf, id=859, 397.485pt x 194.7275pt>
 File: ch_inference_foundations/figures/yrbssActiveRunningMean/yrbssActiveRunnin
 gMean.pdf Graphic file (type pdf)
 <use ch_inference_foundations/figures/yrbssActiveRunningMean/yrbssActiveRunning
@@ -1982,7 +1982,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
 [47 <./ch_inference_foundations/figures/yrbssActiveRunningMean/yrbssActiveRunni
 ngMean.pdf>]
-<ch_inference_foundations/figures/choosingZForCI/choosingZForCI.pdf, id=873, 54
+<ch_inference_foundations/figures/choosingZForCI/choosingZForCI.pdf, id=878, 54
 6.04pt x 277.035pt>
 File: ch_inference_foundations/figures/choosingZForCI/choosingZForCI.pdf Graphi
 c file (type pdf)
@@ -2019,7 +2019,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--152
  []
 
 [49]
-<ch_inference_foundations/figures/whyWeWantPValue/whyWeWantPValue.pdf, id=898, 
+<ch_inference_foundations/figures/whyWeWantPValue/whyWeWantPValue.pdf, id=903, 
 454.69875pt x 180.675pt>
 File: ch_inference_foundations/figures/whyWeWantPValue/whyWeWantPValue.pdf Grap
 hic file (type pdf)
@@ -2038,7 +2038,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--236
  []
 
 <ch_inference_foundations/figures/pValueOneSidedSleepStudy/pValueOneSidedSleepS
-tudy.pdf, id=908, 487.8225pt x 190.7125pt>
+tudy.pdf, id=913, 487.8225pt x 190.7125pt>
 File: ch_inference_foundations/figures/pValueOneSidedSleepStudy/pValueOneSidedS
 leepStudy.pdf Graphic file (type pdf)
 <use ch_inference_foundations/figures/pValueOneSidedSleepStudy/pValueOneSidedSl
@@ -2050,7 +2050,7 @@ udy/pValueOneSidedSleepStudy.pdf  used on input line 240.
 /ch_inference_foundations/figures/pValueOneSidedSleepStudy/pValueOneSidedSleepS
 tudy.pdf>]
 <ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pValueOneSi
-dedSleepStudyExplained.pdf, id=926, 496.85625pt x 198.7425pt>
+dedSleepStudyExplained.pdf, id=931, 496.85625pt x 198.7425pt>
 File: ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pValue
 OneSidedSleepStudyExplained.pdf Graphic file (type pdf)
 <use ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pValueO
@@ -2064,7 +2064,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--264
  []
 
 <ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExample.pdf
-, id=928, 433.62pt x 172.645pt>
+, id=933, 433.62pt x 172.645pt>
 File: ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExampl
 e.pdf Graphic file (type pdf)
 <use ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExample
@@ -2088,7 +2088,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
 [53 <./ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExamp
 le.pdf>]
-<ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf, id=952, 49
+<ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf, id=957, 49
 0.83376pt x 578.16pt>
 File: ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf Graphi
 c file (type pdf)
@@ -2211,7 +2211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
 [73] [74] [75]
 <ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSquareD
-istributionWithInceasingDF.pdf, id=1178, 469.755pt x 216.81pt>
+istributionWithInceasingDF.pdf, id=1183, 469.755pt x 216.81pt>
 File: ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSq
 uareDistributionWithInceasingDF.pdf Graphic file (type pdf)
 <use ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSqu
@@ -2253,7 +2253,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--384
  []
 
 <ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googleHTFor
-DiffAlgPerformancePValue.pdf, id=1203, 361.35pt x 162.6075pt>
+DiffAlgPerformancePValue.pdf, id=1208, 361.35pt x 162.6075pt>
 File: ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/google
 HTForDiffAlgPerformancePValue.pdf Graphic file (type pdf)
 <use ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googleH
@@ -2422,7 +2422,7 @@ Package multicol Warning: I moved some lines to the next page.
 
 
 ] [119]
-<extraTex/eoceSolutions/likelihoodprinciple.jpg, id=1661, 2055.68pt x 1541.76pt
+<extraTex/eoceSolutions/likelihoodprinciple.jpg, id=1666, 2055.68pt x 1541.76pt
 >
 File: extraTex/eoceSolutions/likelihoodprinciple.jpg Graphic file (type jpg)
 <use extraTex/eoceSolutions/likelihoodprinciple.jpg>
@@ -2525,8 +2525,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
 ### simple group (level 1) entered at line 237 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 39529 strings out of 492649
- 896064 string characters out of 6129622
+ 39532 strings out of 492649
+ 896103 string characters out of 6129622
  1412681 words of memory out of 5000000
  41903 multiletter control sequences out of 15000+600000
  24240 words of font info for 91 fonts, out of 8000000 for 9000
@@ -2578,10 +2578,10 @@ ist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on s4cs.pdf (126 pages, 1745383 bytes).
+Output written on s4cs.pdf (126 pages, 1748121 bytes).
 PDF statistics:
- 2019 PDF objects out of 2073 (max. 8388607)
- 1785 compressed objects within 18 object streams
- 657 named destinations out of 1000 (max. 500000)
+ 2024 PDF objects out of 2073 (max. 8388607)
+ 1790 compressed objects within 18 object streams
+ 660 named destinations out of 1000 (max. 500000)
  600 words of extra memory for PDF output out of 10000 (max. 10000000)
 
