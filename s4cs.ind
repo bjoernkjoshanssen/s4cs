@@ -1,8 +1,8 @@
 \begin{theindex}
 
-  \item $F$ distribution, \textbf{92}
-  \item $\chi ^2$ distribution, \textbf{76}
-  \item $\chi ^2$ table, \textbf{76}
+  \item $F$ distribution, \textbf{93}
+  \item $\chi ^2$ distribution, \textbf{77}
+  \item $\chi ^2$ table, \textbf{77}
   \item (sample) mean, \textbf{23}
   \item 10\% condition, \textbf{39}
 
@@ -10,7 +10,7 @@
 
   \item $A^c$, 16
   \item Addition Rule, \textbf{14}
-  \item alternative hypothesis ($H_A$), \textbf{49}
+  \item alternative hypothesis ($H_A$), \textbf{50}
 
   \indexspace
 
@@ -21,30 +21,30 @@
 
   \item calculus, 26
   \item cdf, 15
-  \item Central Limit Theorem, 48, 53--54
-    \subitem normal data, 61
+  \item Central Limit Theorem, 49, 54--55
+    \subitem normal data, 62
   \item Chain Rule, \textbf{27}
-  \item chi-square statistic, 75
+  \item chi-square statistic, 76
   \item collections, 14
   \item complement, \textbf{16}
   \item conditional probability, 17--20
-  \item confidence interval, \textbf{47}, 47--49
-    \subitem confidence level, 48
-    \subitem interpretation, 49
-    \subitem using normal model, 56
-  \item correlation, \textbf{84}, 84
+  \item confidence interval, \textbf{48}, 48--50
+    \subitem confidence level, 49
+    \subitem interpretation, 50
+    \subitem using normal model, 57
+  \item correlation, \textbf{85}, 85
   \item covariance, \textbf{26}
   \item cumulative distribution function, \textbf{15}
 
   \indexspace
 
   \item data
-    \subitem textbooks, 62
+    \subitem textbooks, 63
   \item degrees of freedom (df)
-    \subitem chi-square, \textbf{76}
+    \subitem chi-square, \textbf{77}
   \item disjoint, \textbf{14}, 14--15
   \item distribution
-    \subitem $t$, 61
+    \subitem $t$, 62
     \subitem Bernoulli, 35--36
     \subitem binomial, \textbf{37}, 37--39
       \subsubitem normal approximation, 39
@@ -55,43 +55,43 @@
 
   \indexspace
 
-  \item effect size, \textbf{89}
+  \item effect size, \textbf{90}
   \item empirical cdf, \textbf{34}
   \item entropy
-    \subitem maximum, 104
+    \subitem maximum, 105
   \item event, \textbf{14}, 14--15
   \item Events, \textbf{14}
   \item $\E(X)$, 22
   \item expectation, 22--23
   \item expected value, \textbf{22}
-  \item exponential distribution, \textbf{54}
+  \item exponential distribution, \textbf{55}
 
   \indexspace
 
   \item factorial, \textbf{37}
-  \item failure, \textbf{69}
+  \item failure, \textbf{70}
   \item Frequentist statistics, \textbf{22}
 
   \indexspace
 
   \item Greek
-    \subitem alpha ($\alpha$), 50
-    \subitem beta ($\beta$), 83
+    \subitem alpha ($\alpha$), 51
+    \subitem beta ($\beta$), 84
     \subitem mu ($\mu $), 23
     \subitem sigma ($\sigma $), 25
 
   \indexspace
 
-  \item high leverage, \textbf{87}
-  \item hypothesis testing, 49--53
-    \subitem decision errors, 50
-    \subitem p-value, \textbf{51}, 50--52
-    \subitem significance level, 50, 53
-    \subitem using normal model, 57--58
+  \item high leverage, \textbf{88}
+  \item hypothesis testing, 50--54
+    \subitem decision errors, 51
+    \subitem p-value, \textbf{52}, 51--53
+    \subitem significance level, 51, 54
+    \subitem using normal model, 58--59
 
   \indexspace
 
-  \item interaction, \textbf{101}
+  \item interaction, \textbf{102}
 
   \indexspace
 
@@ -103,23 +103,23 @@
 
   \item Law of Large Numbers, \textbf{13}
   \item learning
-    \subitem machine, 113
-  \item least squares regression, 85
-    \subitem extrapolation, 86
-    \subitem interpreting parameters, 86
-    \subitem r-squared ($r^2$), 86
+    \subitem machine, 114
+  \item least squares regression, 86
+    \subitem extrapolation, 87
+    \subitem interpreting parameters, 87
+    \subitem r-squared ($r^2$), 87
   \item linear combination, \textbf{25}
-  \item linear regression, \textbf{83}
-  \item log-normal, \textbf{56}
+  \item linear regression, \textbf{84}
+  \item log-normal, \textbf{57}
 
   \indexspace
 
-  \item margin of error, \textbf{49}, 57
+  \item margin of error, \textbf{50}, 58
   \item marginal distribution, \textbf{18}
   \item marginal probability, 18
   \item mean
     \subitem average, 23
-  \item mean squares, \textbf{90}
+  \item mean squares, \textbf{91}
   \item mode, \textbf{8}, \textbf{27}
   \item Multiplication Rule, \textbf{18}
   \item mutually exclusive, \textbf{14}, 14--15
@@ -128,29 +128,29 @@
 
   \item n choose k, \textbf{37}
   \item normal probability plot, 34
-  \item null hypothesis ($H_0$), \textbf{49}
+  \item null hypothesis ($H_0$), \textbf{50}
 
   \indexspace
 
   \item optimization
-    \subitem mathematical, 113
+    \subitem mathematical, 114
   \item outcomes, \textbf{14}
 
   \indexspace
 
-  \item p-value, \textbf{51}
-  \item paired data, 62
-  \item parameter, 83
+  \item p-value, \textbf{52}
+  \item paired data, 63
+  \item parameter, 84
   \item pdf, 15
   \item pie chart, \textbf{9}
-  \item point estimate, 46--47
-    \subitem difference of means, 63
-    \subitem difference of proportions, 72
-    \subitem single mean, 46
-    \subitem single proportion, 70
-  \item point-slope, \textbf{86}
-  \item pooled standard deviation, \textbf{65}
-  \item practically significant, \textbf{59}
+  \item point estimate, 47--48
+    \subitem difference of means, 64
+    \subitem difference of proportions, 73
+    \subitem single mean, 47
+    \subitem single proportion, 71
+  \item point-slope, \textbf{87}
+  \item pooled standard deviation, \textbf{66}
+  \item practically significant, \textbf{60}
   \item probability, \textbf{12}, 12--20
   \item probability density function, \textbf{15}, \textbf{21}
   \item probability distribution, \textbf{15}
@@ -161,7 +161,7 @@
 
   \item random process, 12--14
   \item random variable, \textbf{15}, \textbf{22}, 22--26
-  \item residual, \textbf{84}, 84
+  \item residual, \textbf{85}, 85
 
   \indexspace
 
@@ -169,41 +169,41 @@
   \item sample proportion, \textbf{35}
   \item sample space, \textbf{14}, \textbf{16}
   \item sample standard deviation, \textbf{8}
-  \item sampling distribution, \textbf{46}
+  \item sampling distribution, \textbf{47}
   \item sampling without replacement, \textbf{20}
-  \item SE, 46
+  \item SE, 47
   \item sets, 14, \textbf{14}
-  \item significance level, \textbf{50}, 53
+  \item significance level, \textbf{51}, 54
   \item skew
-    \subitem example: moderate, 54
-    \subitem example: strong, 54
-    \subitem strongly skewed guideline, 54
-  \item standard error (SE), \textbf{46}
-    \subitem difference in means, 63
-    \subitem difference in proportions, 72
-    \subitem single mean, 47
-    \subitem single proportion, 69
-  \item states, \textbf{106}
-  \item statistically significant, \textbf{59}
+    \subitem example: moderate, 55
+    \subitem example: strong, 55
+    \subitem strongly skewed guideline, 55
+  \item standard error (SE), \textbf{47}
+    \subitem difference in means, 64
+    \subitem difference in proportions, 73
+    \subitem single mean, 48
+    \subitem single proportion, 70
+  \item states, \textbf{107}
+  \item statistically significant, \textbf{60}
   \item strong LLN, \textbf{13}
-  \item structure function, \textbf{107}
-  \item success, \textbf{69}
-  \item success-failure condition, \textbf{69, 70}
+  \item structure function, \textbf{108}
+  \item success, \textbf{70}
+  \item success-failure condition, \textbf{70, 71}
 
   \indexspace
 
-  \item t-distribution, 61
-  \item T-score, \textbf{62}
-  \item test statistic, \textbf{58}
+  \item t-distribution, 62
+  \item T-score, \textbf{63}
+  \item test statistic, \textbf{59}
   \item tree diagram, \textbf{19}, 19--20
-  \item Type\nobreakspace  {}1 Error, \textbf{50}
-  \item Type\nobreakspace  {}2 Error, \textbf{50}
+  \item Type\nobreakspace  {}1 Error, \textbf{51}
+  \item Type\nobreakspace  {}2 Error, \textbf{51}
 
   \indexspace
 
-  \item unbiased, \textbf{56}
-  \item unbiased estimator, \textbf{66}
-  \item uniform, \textbf{56}
+  \item unbiased, \textbf{57}
+  \item unbiased estimator, \textbf{67}
+  \item uniform, \textbf{57}
   \item uniform distribution, \textbf{23}
 
   \indexspace

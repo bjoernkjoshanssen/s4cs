@@ -41,44 +41,44 @@ Database file #2: eoce.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 6 entries,
+You've used 7 entries,
             6268 wiz_defined-function locations,
-            1242 strings with 10426 characters,
-and the built_in function-call counts, 23207 in all, are:
-= -- 1357
-> -- 507
-< -- 141
-+ -- 458
-- -- 189
-* -- 1653
-:= -- 2193
+            1248 strings with 10601 characters,
+and the built_in function-call counts, 28543 in all, are:
+= -- 1709
+> -- 616
+< -- 171
++ -- 570
+- -- 232
+* -- 2078
+:= -- 2714
 add.period$ -- 0
-call.type$ -- 6
-change.case$ -- 66
+call.type$ -- 7
+change.case$ -- 75
 chr.to.int$ -- 30
-cite$ -- 10
-duplicate$ -- 2478
-empty$ -- 2326
-format.name$ -- 277
-if$ -- 4905
+cite$ -- 12
+duplicate$ -- 3009
+empty$ -- 2841
+format.name$ -- 344
+if$ -- 6024
 int.to.chr$ -- 0
-int.to.str$ -- 11
+int.to.str$ -- 13
 missing$ -- 0
-newline$ -- 173
-num.names$ -- 225
-pop$ -- 1678
+newline$ -- 199
+num.names$ -- 266
+pop$ -- 2023
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 97
 quote$ -- 0
-skip$ -- 875
+skip$ -- 1037
 stack$ -- 0
-substring$ -- 2044
-swap$ -- 726
-text.length$ -- 140
-text.prefix$ -- 5
+substring$ -- 2675
+swap$ -- 858
+text.length$ -- 171
+text.prefix$ -- 6
 top$ -- 1
-type$ -- 192
+type$ -- 226
 warning$ -- 0
-while$ -- 289
+while$ -- 345
 width$ -- 0
-write$ -- 168
+write$ -- 193

@@ -98,172 +98,172 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.6}Applications}{42}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Exercises}{45}{section.3.7}
+\contentsline {section}{\numberline {3.7}Exercises}{46}{section.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Foundations for inference}{46}{chapter.4}
+\contentsline {chapter}{\numberline {4}Foundations for inference}{47}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Variability in estimates}{46}{section.4.1}
+\contentsline {section}{\numberline {4.1}Variability in estimates}{47}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Confidence intervals}{47}{section.4.2}
+\contentsline {section}{\numberline {4.2}Confidence intervals}{48}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Hypothesis testing}{49}{section.4.3}
+\contentsline {section}{\numberline {4.3}Hypothesis testing}{50}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Decision errors}{50}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Decision errors}{51}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Formal testing using p-values}{50}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}Formal testing using p-values}{51}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Two-sided hypothesis testing with p-values}{52}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Two-sided hypothesis testing with p-values}{53}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Choosing a significance level}{53}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.4}Choosing a significance level}{54}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Examining the Central Limit Theorem}{53}{section.4.4}
+\contentsline {section}{\numberline {4.4}Examining the Central Limit Theorem}{54}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Exponential, log-normal, uniform}{54}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Exponential, log-normal, uniform}{55}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Inference for other estimators}{56}{section.4.5}
+\contentsline {section}{\numberline {4.5}Inference for other estimators}{57}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Confidence intervals for nearly normal point estimates}{56}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.1}Confidence intervals for nearly normal point estimates}{57}{subsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Hypothesis testing for nearly normal point estimates}{57}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}Hypothesis testing for nearly normal point estimates}{58}{subsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}Non-normal point estimates}{58}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.3}Non-normal point estimates}{59}{subsection.4.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.4}Statistical significance versus practical significance}{58}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.4}Statistical significance versus practical significance}{59}{subsection.4.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Exercises}{60}{section.4.6}
+\contentsline {section}{\numberline {4.6}Exercises}{61}{section.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Inference for numerical data}{61}{chapter.5}
+\contentsline {chapter}{\numberline {5}Inference for numerical data}{62}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}One-sample means with the $t$-distribution}{61}{section.5.1}
+\contentsline {section}{\numberline {5.1}One-sample means with the $t$-distribution}{62}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Introducing the $t$-distribution}{61}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Introducing the $t$-distribution}{62}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Paired data}{62}{section.5.2}
+\contentsline {section}{\numberline {5.2}Paired data}{63}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Difference of two means}{62}{section.5.3}
+\contentsline {section}{\numberline {5.3}Difference of two means}{63}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Confidence interval for a difference of means}{63}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Confidence interval for a difference of means}{64}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}The Welch $t$-test}{63}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}The Welch $t$-test}{64}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Hypothesis tests based on a difference in means}{64}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.3}Hypothesis tests based on a difference in means}{65}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Examining the standard error formula}{65}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.4}Examining the standard error formula}{66}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.5}Pooled standard deviation estimate}{65}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.5}Pooled standard deviation estimate}{66}{subsection.5.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Exercises}{68}{section.5.4}
+\contentsline {section}{\numberline {5.4}Exercises}{69}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Inference for categorical data}{69}{chapter.6}
+\contentsline {chapter}{\numberline {6}Inference for categorical data}{70}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Inference for a single proportion}{69}{section.6.1}
+\contentsline {section}{\numberline {6.1}Inference for a single proportion}{70}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Identifying when the sample proportion is nearly normal}{69}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Identifying when the sample proportion is nearly normal}{70}{subsection.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Confidence intervals for a proportion}{70}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Confidence intervals for a proportion}{71}{subsection.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Hypothesis testing for a proportion}{70}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.3}Hypothesis testing for a proportion}{71}{subsection.6.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.4}Thinking deeper about standard errors}{71}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.4}Thinking deeper about standard errors}{72}{subsection.6.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.5}Possible pitfall for pooled proportions}{71}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.5}Possible pitfall for pooled proportions}{72}{subsection.6.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Difference of two proportions}{72}{section.6.2}
+\contentsline {section}{\numberline {6.2}Difference of two proportions}{73}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Sample distribution of the difference of two proportions}{72}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.1}Sample distribution of the difference of two proportions}{73}{subsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Confidence intervals for $p_1 -p_2$}{73}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.2}Confidence intervals for $p_1 -p_2$}{74}{subsection.6.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Hypothesis tests for $p_1 -p_2$}{73}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.3}Hypothesis tests for $p_1 -p_2$}{74}{subsection.6.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.4}More on 2-proportion hypothesis tests (special topic)}{73}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.4}More on 2-proportion hypothesis tests (special topic)}{74}{subsection.6.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Testing for goodness of fit using $\chi ^2$}{75}{section.6.3}
+\contentsline {section}{\numberline {6.3}Testing for goodness of fit using $\chi ^2$}{76}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}The $\chi ^2$ test statistic}{75}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.1}The $\chi ^2$ test statistic}{76}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}The $\chi ^2$ distribution and finding areas}{76}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.2}The $\chi ^2$ distribution and finding areas}{77}{subsection.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.3}Finding a p-value for a $\chi ^2$ distribution}{77}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.3}Finding a p-value for a $\chi ^2$ distribution}{78}{subsection.6.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Testing for independence in two-way tables}{77}{section.6.4}
+\contentsline {section}{\numberline {6.4}Testing for independence in two-way tables}{78}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.1}The $\chi ^2$ test for two-way tables}{78}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.1}The $\chi ^2$ test for two-way tables}{79}{subsection.6.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.2}The $\chi ^2$ distribution with 1 degree of freedom}{78}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.2}The $\chi ^2$ distribution with 1 degree of freedom}{79}{subsection.6.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Exercises}{80}{section.6.5}
+\contentsline {section}{\numberline {6.5}Exercises}{81}{section.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Introduction to linear regression}{82}{chapter.7}
+\contentsline {chapter}{\numberline {7}Introduction to linear regression}{83}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Deriving formulas for linear regression}{82}{section.7.1}
+\contentsline {section}{\numberline {7.1}Deriving formulas for linear regression}{83}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Line fitting, residuals, and correlation}{84}{section.7.2}
+\contentsline {section}{\numberline {7.2}Line fitting, residuals, and correlation}{85}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Residuals}{84}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.1}Residuals}{85}{subsection.7.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Describing linear relationships with correlation}{84}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.2}Describing linear relationships with correlation}{85}{subsection.7.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Fitting a line by least squares regression}{85}{section.7.3}
+\contentsline {section}{\numberline {7.3}Fitting a line by least squares regression}{86}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}An objective measure for finding the best line}{85}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.1}An objective measure for finding the best line}{86}{subsection.7.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.2}Conditions for the least squares line}{85}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.2}Conditions for the least squares line}{86}{subsection.7.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.3}Finding the least squares line}{85}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.3}Finding the least squares line}{86}{subsection.7.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.4}Using $r^2$ to describe the strength of a fit}{86}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.4}Using $r^2$ to describe the strength of a fit}{87}{subsection.7.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Outliers}{86}{section.7.4}
+\contentsline {section}{\numberline {7.4}Outliers}{87}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Inference for linear regression}{88}{section.7.5}
+\contentsline {section}{\numberline {7.5}Inference for linear regression}{89}{section.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.1}Understanding regression output from software}{88}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.1}Understanding regression output from software}{89}{subsection.7.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.2}Statistically significant slopes when correlation coefficient is bounded away from 1}{89}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.2}Statistically significant slopes when correlation coefficient is bounded away from 1}{90}{subsection.7.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.3}Multiple regression}{93}{subsection.7.5.3}
+\contentsline {subsection}{\numberline {7.5.3}Multiple regression}{94}{subsection.7.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.4}Adding the variation explained by $x$ and $y$}{95}{subsection.7.5.4}
+\contentsline {subsection}{\numberline {7.5.4}Adding the variation explained by $x$ and $y$}{96}{subsection.7.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}ANOVA}{96}{section.7.6}
+\contentsline {section}{\numberline {7.6}ANOVA}{97}{section.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.1}$2\times 2$ ANOVA}{97}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.1}$2\times 2$ ANOVA}{98}{subsection.7.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{An example from marketing research.}{99}{paragraph*.40}
+\contentsline {paragraph}{An example from marketing research.}{100}{paragraph*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.2}Permutation tests}{100}{subsection.7.6.2}
+\contentsline {subsection}{\numberline {7.6.2}Permutation tests}{101}{subsection.7.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.7}Exercises}{102}{section.7.7}
+\contentsline {section}{\numberline {7.7}Exercises}{103}{section.7.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Special topics}{103}{chapter.8}
+\contentsline {chapter}{\numberline {8}Special topics}{104}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Algebraic statistics}{103}{section.8.1}
+\contentsline {section}{\numberline {8.1}Algebraic statistics}{104}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Maximum entropy}{104}{section.8.2}
+\contentsline {section}{\numberline {8.2}Maximum entropy}{105}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Maximum likelihood}{105}{section.8.3}
+\contentsline {section}{\numberline {8.3}Maximum likelihood}{106}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Hidden Markov chains}{106}{section.8.4}
+\contentsline {section}{\numberline {8.4}Hidden Markov chains}{107}{section.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}Overfitting and the complexity of a word}{107}{section.8.5}
+\contentsline {section}{\numberline {8.5}Overfitting and the complexity of a word}{108}{section.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.6}Akaike information criterion}{110}{section.8.6}
+\contentsline {section}{\numberline {8.6}Akaike information criterion}{111}{section.8.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{An Akaike coincidence, maybe.}{111}{paragraph*.44}
+\contentsline {paragraph}{An Akaike coincidence, maybe.}{112}{paragraph*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Bayesian information criterion}{113}{paragraph*.45}
+\contentsline {paragraph}{Bayesian information criterion}{114}{paragraph*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.7}Support vector machines}{113}{section.8.7}
+\contentsline {section}{\numberline {8.7}Support vector machines}{114}{section.8.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.8}Shattering}{114}{section.8.8}
+\contentsline {section}{\numberline {8.8}Shattering}{115}{section.8.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8.1}Support vector machines}{114}{subsection.8.8.1}
+\contentsline {subsection}{\numberline {8.8.1}Support vector machines}{115}{subsection.8.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8.2}Discrete shattering}{114}{subsection.8.8.2}
+\contentsline {subsection}{\numberline {8.8.2}Discrete shattering}{115}{subsection.8.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.9}Exercises}{116}{section.8.9}
+\contentsline {section}{\numberline {8.9}Exercises}{117}{section.8.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}End of chapter exercise solutions}{118}{appendix.A}
+\contentsline {chapter}{\numberline {A}End of chapter exercise solutions}{119}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{125}{section*.47}
+\contentsline {chapter}{Index}{126}{section*.47}

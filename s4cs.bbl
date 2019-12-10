@@ -47,6 +47,34 @@
     \field{year}{1974}
   \endentry
 
+  \entry{coronaKim}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Corona},
+         familyi={C\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KTWR}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Tae Wook\bibnamedelima Ryan},
+         giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CCKTWR1}
+    \strng{fullhash}{CCKTWR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Hawaii Accounting Research Conference}
+    \field{title}{The Contract Disclosure Mandate and Earnings Management under
+  External Scrutiny}
+    \field{year}{2020}
+  \endentry
+
   \entry{degroot2011probability}{book}{}
     \name{author}{2}{}{%
       {{hash=DM}{%

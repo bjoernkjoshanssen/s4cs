@@ -658,8 +658,7 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 		$p\approx 1-(0.99975)^{1/3}=0.0000833403$.
 	%}
 	\begin{example}{CEO effort.}
-		This example is taken from the paper \emph{The Contract Disclosure Mandate and Earnings Management under External Scrutiny}
-		by Tae Wook Ryan Kim and Carlos Corona, \verb!http://hdl.handle.net/10125/64934!.
+		This example is taken from the paper \footfullcite{coronaKim} available at \verb!http://hdl.handle.net/10125/64934!.
 		\begin{quote}
 		We consider a single-period contracting setting with three kinds of players:
 		$N$ identical principals (or shareholders, referred to as ``she''),
@@ -676,5 +675,68 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 		From a table or from the command \texttt{=norminv(0.05,0,1)} we see that $\Phi^{-1}(1/20)=-1.645$.
 		Thus $a_i=2.645$.
 		}
+	\end{example}
+	\begin{example}{Principal's preferences}
+		\begin{quote}
+			The agent privately observes a true earnings and issues an earnings report $r_i = e_i + m_i$ ,
+			which he can manipulate by adding a bias $m_i$ to the true earnings number.
+			The contract, which can only be contingent on reported earnings, $r_i$, determines the agent’s compensation, $w_i(r_i)$.
+			After the principal remunerates the agent according to the terms of the contract, based on all the public information $\mathscr F$,
+			the inspector simultaneously scrutinizes all reports allocating resources optimally. The report of each firm $i$ is scrutinized with intensity $s_i$
+			to detect earnings management. 
+		\end{quote}
+		\begin{quote}
+		Each principal cares about her terminal terminal payoff $V_i$ at date 5. The principal offers $w_i (r_i)$ to the agent to maximize the expected payoff:
+		\[
+			\max_{w_i(r_i)} E_P[V_i]
+		\]
+		The terminal payoff $V_i$ reflects the true earnings of the firm, $e_i$, minus the penalty the principal pays for any detected earnings manipulation, $d_Pm_is_i$,
+		and minus the compensation $w_i(r_i)$ paid to the agent, i.e., $V_i = e_i - d_Pm_is_i - w_i(r_i)$,
+		where $d_P > 0$ is the intensity with which the principal is punished for earnings management.
+		For tractability, we restrict the contract to be linear, i.e., $w_i(r_i) = \alpha_i +\beta_ir_i$,
+		where $\alpha_i$ is the fixed part of the compensation and
+		$\beta_i$ measures the sensitivity of the compensation to reported earnings, $r_i$.
+		\end{quote}
+		We now consider our own simplified scenario (different from the Corono--Kim paper) and find the  optimal $\alpha_i$ and $\beta_i$:
+		\[
+			\max_{w_i(r_i)} E_P[V_i] = \max_{\alpha_i,\beta_i} E_P[e_i - d_Pm_is_i - w_i(r_i)]
+		\]
+		\[
+			= \max_{\alpha_i,\beta_i} E_P[e_i - d_Pm_is_i - \alpha_i - \beta_i r_i]
+		\]
+		\[
+			= \max_{\alpha_i,\beta_i} E_P[e_i - d_Pm_is_i - \alpha_i - \beta_i (e_i+m_i)]
+		\]
+		Assume the effort $a_i$, and hence $e_i$ as well, depends on the contract formula for $w_i(r_i)$ via $\alpha_i,\beta_i$.
+		We may also assume $m_i$ depends on $e_i$: if $e_i$ is small then $m_i$ is large.
+		For simplicity let us take $d_P=1$ and $s_i=1$ so that the amount of inspection is constant.
+		Let us also suppress $i$.
+		Then we have
+		\[
+			\max_{\alpha,\beta} E_P[ va+\epsilon - \alpha - \beta (va+\epsilon) - (\beta+1)m]
+		\]
+		where $a=a(\alpha,\beta)$.
+		Since $E_P(\epsilon)=0$ this simplifies to
+		\[
+			\max_{\alpha,\beta} E_P[ (1-\beta)va - \alpha - (\beta+1)m]
+		\]
+		%but this is no longer random, so it is
+		%\[
+		%	\max_{\alpha,\beta} (1-\beta)va - \alpha
+		%\]
+		%If now $a(\alpha,\beta)=\frac{\alpha+\hat a}{v(1-\beta)}$ where $\hat a$ is a particular effort level, then this is identically $\hat a$.
+		%If instead
+		Suppose that for some $\hat a$,
+		\[
+			a(\alpha,\beta)=\frac{\alpha+(\beta+1)m+\hat a+\frac1{(\alpha-1)^2+(\beta-1)^2}}{v(1-\beta)}.
+		\]
+		Then we see that $\alpha=\beta=1$ is optimal.
+		And if
+		\[
+			a(\alpha,\beta)=\frac{\alpha+(\beta+1)m+\hat a+\frac{\epsilon^2}{(\alpha-1)^2+(\beta-1)^2}}{v(1-\beta)}
+		\]
+		then we again see that, but now with a randomness intact. Here we are saying that the effort increases if the earnings are dramatically good or bad ($\epsilon^2$ big)
+		and we are close to a ``standard'' contract $\alpha=\beta=1$. That is, effort may be low if nothing special happens ($\epsilon^2\approx 0$) and at the same time the compensation package seems strange to the agent, making the agent doubt the efficacy of taking action.
+		We may also note that the $(\beta+1)m$ term suggests that earnings manipulation goes together with increased effort. After all, if we violate a rule we presumably care enough about the outcome to do so.
 	\end{example}
 \end{example}
