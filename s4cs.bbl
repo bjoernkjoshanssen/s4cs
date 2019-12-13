@@ -1,0 +1,190 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{coronaKim}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Corona},
+         familyi={C\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KTWR}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Tae Wook\bibnamedelima Ryan},
+         giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CCKTWR1}
+    \strng{fullhash}{CCKTWR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Hawaii Accounting Research Conference}
+    \field{title}{The Contract Disclosure Mandate and Earnings Management under
+  External Scrutiny}
+    \field{year}{2020}
+  \endentry
+
+  \entry{degroot2011probability}{book}{}
+    \name{author}{2}{}{%
+      {{hash=DM}{%
+         family={DeGroot},
+         familyi={D\bibinitperiod},
+         given={M.H.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schervish},
+         familyi={S\bibinitperiod},
+         given={M.J.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson Education}%
+    }
+    \strng{namehash}{DMSM1}
+    \strng{fullhash}{DMSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780321709707}
+    \field{title}{Probability and Statistics}
+    \verb{url}
+    \verb https://books.google.com/books?id=XHmitwAACAAJ
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{doi:10.1086/676598}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RDD}{%
+         family={Rucker},
+         familyi={R\bibinitperiod},
+         given={Derek\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Miao},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GAD}{%
+         family={Galinsky},
+         familyi={G\bibinitperiod},
+         given={Adam\bibnamedelima D.},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDDHMGAD1}
+    \strng{fullhash}{RDDHMGAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1086/676598
+    \endverb
+    \verb{eprint}
+    \verb /oup/backfile/content_public/journal/jcr/41/2/10.1086_676598/2/41-2-3
+    \verb 81.pdf
+    \endverb
+    \field{number}{2}
+    \field{pages}{381\bibrangedash 396}
+    \field{title}{The Experience versus the Expectations of Power: A Recipe for
+  Altering the Effects of Power on Behavior}
+    \verb{url}
+    \verb http://dx.doi.org/10.1086/676598
+    \endverb
+    \field{volume}{41}
+    \field{journaltitle}{Journal of Consumer Research}
+    \field{year}{2014}
+  \endentry
+
+  \entry{fewpaths}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KH}{%
+         family={Kjos-Hanssen},
+         familyi={K\bibinitperiod-H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KH1}
+    \strng{fullhash}{KH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Few paths, fewer words}
+    \field{journaltitle}{Experimental Mathematics}
+    \field{year}{2019}
+  \endentry
+
+  \entry{MR0423716}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AH}{%
+         family={Akaike},
+         familyi={A\bibinitperiod},
+         given={Hirotugu},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AH1}
+    \strng{fullhash}{AH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tac.1974.1100705
+    \endverb
+    \field{issn}{0018-9286}
+    \field{note}{System identification and time-series analysis}
+    \field{pages}{716\bibrangedash 723}
+    \field{title}{A new look at the statistical model identification}
+    \verb{url}
+    \verb https://doi.org/10.1109/tac.1974.1100705
+    \endverb
+    \field{volume}{AC-19}
+    \field{journaltitle}{IEEE Trans. Automatic Control}
+    \field{year}{1974}
+  \endentry
+
+  \entry{MR0468014}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SG}{%
+         family={Schwarz},
+         familyi={S\bibinitperiod},
+         given={Gideon},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SG1}
+    \strng{fullhash}{SG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issn}{0090-5364}
+    \field{number}{2}
+    \field{pages}{461\bibrangedash 464}
+    \field{title}{Estimating the dimension of a model}
+    \verb{url}
+    \verb http://links.jstor.org/sici?sici=0090-5364(197803)6:2<461:ETDOAM>2.0.
+    \verb CO;2-5&origin=MSN
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Ann. Statist.}
+    \field{year}{1978}
+  \endentry
+\enddatalist
+\endinput

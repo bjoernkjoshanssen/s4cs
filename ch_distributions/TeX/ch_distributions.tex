@@ -746,5 +746,43 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 		\]
 		Here $m^I(\mathscr F)$ is the inspector's conjecture about the level of manipulation by the agent, given the publicly available information, but before deciding on the level of scrutiny $s$.
 		Find the optimal choice of $s$.\footnote{Complete the square on $bm^I(\mathscr F)s-\frac{w}2s^2$.}
+		Now suppose there are two firms. We want to maximize
+		\[
+			b(m^I_0(\mathscr F)s_0+m^I_1(\mathscr F)s_1)-\frac{w}2(s_0^2+s_1^2)-\frac{\gamma}{2}(s_0s_1+s_1s_0).
+		\]
+		We have
+		\[
+			\frac{\partial}{\partial s_i}(\text{that}) = bm^I_i(\mathscr F)-ws_i-\gamma s_{1-i}.
+		\]
+		Setting the partial derivatives equal to zero, we have
+		\[
+			bm^I_0(\mathscr F)-ws_0-\gamma s_{1}=0,\quad bm^I_1(\mathscr F)-ws_1-\gamma s_{0}=0.
+		\]
+		\[
+			\begin{bmatrix} w & \gamma\\ \gamma & w\end{bmatrix}\begin{bmatrix}s_0\\ s_1\end{bmatrix} = b \begin{bmatrix}m^I_0(\mathscr F)\\ m^I_1(\mathscr F)\end{bmatrix}
+		\]
+		For three firms, we have
+		\[
+			bm^I_0(\mathscr F)-ws_0-\gamma (s_{1}+s_2)=0.
+		\]
+		\[
+			\begin{bmatrix}
+				w & \gamma & \gamma \\
+				\gamma & w & \gamma \\
+				\gamma & \gamma & w
+			\end{bmatrix}
+			\begin{bmatrix}
+				s_0\\
+				s_1\\
+				s_2
+			\end{bmatrix}
+			=b
+			\begin{bmatrix}
+				m^I_0(\mathscr F)\\
+				m^I_1(\mathscr F)\\
+				m^I_2(\mathscr F)
+			\end{bmatrix}
+		\]
+		For $N$ firms this is solvable as long as $w^2+(N-2)w\gamma-(N-1)\gamma^2\ne 0$.
 	\end{example}
 \end{example}
