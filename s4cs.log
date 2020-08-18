@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 AUG 2020 08:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 AUG 2020 09:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2397,11 +2397,19 @@ Chapter 8.
 
 
 ]
-Underfull \vbox (badness 1694) has occurred while \output is active []
+Overfull \hbox (5.12524pt too wide) in paragraph at lines 98--98
+[]   \OT1/cmtt/m/n/10 Position                     5    74   88   439  520  614
+  797  1176 1263[] 
+ []
 
- [108]
+[108]
+Overfull \hbox (68.1247pt too wide) in paragraph at lines 120--120
+[]\OT1/cmtt/m/n/10 AlaskaMarch24, AlaskaMarch25, AlaskaApril26, Illinois, Brazi
+lMarch20: children of Hawaii[] 
+ []
+
 [109] [110] [111] [112]
-Overfull \hbox (2.18947pt too wide) detected at line 334
+Overfull \hbox (2.18947pt too wide) detected at line 364
 \U/msb/m/n/10 P\OT1/cmr/m/n/10 ([]001; \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (1) = 
 \OML/cmm/m/it/10 s[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (2)) =
  \U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emit\OT1/cmr/m/n/10 0 \OMS/cm
@@ -2415,15 +2423,11 @@ U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emit\OT1/cmr/m/n/10 1 \OMS/cmsy
  []
 
 [113] [114] [115] [116]
-Overfull \hbox (0.55713pt too wide) in alignment at lines 560--566
+Overfull \hbox (0.55713pt too wide) in alignment at lines 590--596
  [][][] []
  []
 
-[117] [118]
-Underfull \vbox (badness 1132) has occurred while \output is active []
-
- [119])
-[120]
+[117] [118] [119]) [120]
 \openout2 = `ch_markov/TeX/ch_markov_ex.aux'.
 
  (./ch_markov/TeX/ch_markov_ex.tex [121
@@ -2604,7 +2608,7 @@ s/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/
 type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/public/wasy2-ps/wasy10.pfb>
-Output written on s4cs.pdf (131 pages, 1769645 bytes).
+Output written on s4cs.pdf (131 pages, 1773670 bytes).
 PDF statistics:
  2060 PDF objects out of 2073 (max. 8388607)
  1819 compressed objects within 19 object streams

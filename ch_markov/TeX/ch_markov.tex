@@ -91,7 +91,40 @@ We take the derivative with respect to $p$, after first taking the logarithm:
 	p = k/n = 1/1273
 \]
 Then $L(p)=1273 (1272/1273)^{1272}/1273 = (1-1/1273)^{1272}\approx 1/e\cdot (1-1/1273)\approx 1/e$.
+Then the probability of just the D614G change (amino acid D changes into amino acid G in position 614) is approximately $\epsilon := 1/(1273\cdot 20\cdot e)$ where $20$ is the number of possible choices for an amino acid.
 
+Now consider the following mutations.
+\begin{verbatim}
+   Position                     5    74   88   439  520  614  797  1176 1263
+ 1 YP_009724390 Wuhan RefSeq    L    N    D    N    A    D    F    V    P
+ 2 QIC53204 Sweden February 7   L    N    D    N    A    D    C    V    P
+ 3 QKT21230 Hawaii March 12     L    N    D    N    A    G    F    V    P
+ 4 QJU70329 Alaska March 24     L    N    A    N    A    G    F    V    P
+ 5 QJU70425 Alaska March 25     L    N    D    N    A    G    F    V    L
+ 6 QJU70545 Alaska April 26     L    N    D    N    S    G    F    V    P
+ 7 QIZ15981 Nevada March 9      F    N    D    N    A    D    F    V    P
+ 8 QLM06051 Illinois July 7     L    N    D    K    A    G    F    V    P
+ 9 QLF80256 Brazil March 20     L    N    D    N    A    G    F    F    P
+10 QJA41641 Brazil March 18     L    K    D    N    A    D    F    V    P
+\end{verbatim}
+It is given that the Wuhan Reference Sequence is the root of our phylogenetic (inheritance) tree.
+Moreover, the Hawaii sequence has the D614G mutation.
+Sequences that differ from Wuhan RefSeq by one mutation, but not in position 614, are:
+Sweden, Nevada, BrazilMarch18.
+Sequences that differ from the Hawaii sequence in one position, but not in position 614, are:
+AlaskaMarch24, AlaskaMarch25, AlaskaApril26, Illinois, BrazilMarch20.
+It is ``obvious'' that the tree should now be:
+\begin{verbatim}
+Wuhan RefSeq: root
+Hawaii, Sweden, Nevada, BrazilMarch18: children of the root
+AlaskaMarch24, AlaskaMarch25, AlaskaApril26, Illinois, BrazilMarch20: children of Hawaii
+\end{verbatim}
+This could be made precise by asking: which tree structure maximizes the relevant probability?
+For our ``obvious'' tree the probability is $\epsilon^9$ as each node differs in only one position from its parent.
+On the other hand, if we made a linear tree with Wuhan at the root and BrazilMarch18 at the leaf, we would need
+$\epsilon^{1+2+1+2+2+3+3+2+3}=\epsilon^{19}$ since Sweden differs from Wuhan in 1 position, then Hawaii from Sweden in 2 positions, and so on.
+
+In general, the probability associated with a tree is the product of probabilities along its edges.
 
 %\includegraphics{ch_markov/figures/wolfram-s4cs.png}
 \begin{tikzpicture}
