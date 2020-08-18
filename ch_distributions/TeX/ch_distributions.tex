@@ -754,22 +754,24 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 		\[
 			\frac{\partial}{\partial s_i}(\text{that}) = bm^I_i(\mathscr F)-ws_i-\gamma s_{1-i}.
 		\]
-		Setting the partial derivatives equal to zero, we have
+		Setting the partial derivatives equal to zero,
 		\[
 			bm^I_0(\mathscr F)-ws_0-\gamma s_{1}=0,\quad bm^I_1(\mathscr F)-ws_1-\gamma s_{0}=0.
 		\]
+		(The second partial derivatives form the Hessian matrix $f_{s_0s_1}=\partial_{s_1}(bm^I_0(\mathscr F)-ws_0-\gamma s_{1})=-\gamma$,
+		$f_{s_0s_0}=-w$. So the Hessian is just the negative of the coefficient matrix below. The determinant of $(a-b)I+b1_{\odot}$ is apparently $(a-b)^{N-1}(a+(N-1)b)$.)
 		\[
 			\begin{bmatrix} w & \gamma\\ \gamma & w\end{bmatrix}\begin{bmatrix}s_0\\ s_1\end{bmatrix} = b \begin{bmatrix}m^I_0(\mathscr F)\\ m^I_1(\mathscr F)\end{bmatrix}
 		\]
-		For three firms, we have
+		For $N=3$ (three) firms,  we replace $\gamma$ by $\gamma/(N-1)$ and have
 		\[
-			bm^I_0(\mathscr F)-ws_0-\gamma (s_{1}+s_2)=0.
+			bm^I_0(\mathscr F)-ws_0-\frac{\gamma}{2} (s_{1}+s_2)=0.
 		\]
 		\[
 			\begin{bmatrix}
-				w & \gamma & \gamma \\
-				\gamma & w & \gamma \\
-				\gamma & \gamma & w
+				w & \gamma/2 & \gamma/2 \\
+				\gamma/2 & w & \gamma/2 \\
+				\gamma/2 & \gamma/2 & w
 			\end{bmatrix}
 			\begin{bmatrix}
 				s_0\\
@@ -783,6 +785,111 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 				m^I_2(\mathscr F)
 			\end{bmatrix}
 		\]
-		For $N$ firms this is solvable as long as $w^2+(N-2)w\gamma-(N-1)\gamma^2\ne 0$.
+		This can be written in terms of the identity matri $I=[\delta_{ij}]$ and the Hadamard identity $1_{\odot}=[1]$:
+		\[
+			\left(\left(w-\frac{\gamma}{N-1}\right)I + \frac{\gamma}{N-1}1_{\odot}\right)s = b m^I(\mathscr F)
+		\]
+		Note that for a number $k$, %{\color{red}leave the coefficient of $I$ factored}
+		\begin{eqnarray*}
+			((a-b)I + b1_{\odot})
+			((a+kb)I - b1_{\odot})
+			&=& ((a-b)(a+kb)I + ((a+kb)b-(a-b)b)1_{\odot}-b^2 1_{\odot}^2\\
+			&=& (a-b)(a+kb)I + ((k+1)b^2)1_{\odot}-b^2 N 1_{\odot}\\
+			&=& (a-b)(a+kb)I
+		\end{eqnarray*}
+		if $k=N-1$.
+		Hence
+		\[
+			\left((a-b)I+b1_{\odot}\right)^{-1}=\frac{1}{(a-b)(a+(N-1)b)}((a+(N-1)b)I - b1_{\odot}).
+		\]
+		\[
+			\left(cI+b1_{\odot}\right)^{-1}=\frac{1}{c((b+c)+(N-1)b)}(((b+c)+(N-1)b)I - b1_{\odot}).
+		\]
+		\[
+			\left(cI+b1_{\odot}\right)^{-1}=\frac{1}{c(c+Nb)}((c+Nb)I - b1_{\odot}).
+		\]
+		\[
+			\left(cI+b1_{\odot}\right)^{-1}=\frac1c I - \frac{b}{c(c+Nb)}1_{\odot}.
+		\]
+		If $b=\gamma/(N-1)$ then this becomes
+		\begin{eqnarray*}
+			\left((a-\frac{\gamma}{N-1})I+\frac{\gamma}{N-1}1_{\odot}\right)^{-1}
+			&=&\frac{1}{(a-b)(a+(N-1)b)}\left((a+\gamma)I - \frac{\gamma}{N-1}1_{\odot}\right)\\
+			&=&\frac{N-1}{((N-1)a-\gamma)(a+\gamma)}\left((a+\gamma)I - \frac{\gamma}{N-1}1_{\odot}\right)\\
+			&=&\frac{1}{(N-1)a-\gamma}\left((N-1)I - \frac{\gamma}{a+\gamma}1_{\odot}\right)
+		\end{eqnarray*}
+		and so
+		\begin{eqnarray*}
+			s &=&   \left(\frac{1}{(N-1)a-\gamma}\left((N-1)I - \frac{\gamma}{a+\gamma}1_{\odot}\right)\right) b m^I(\mathscr F)
+		\end{eqnarray*}
+		So
+		\begin{eqnarray*}
+			s_i
+			  &=& b \left(\frac{1}{(N-1)a-\gamma}\left((N-1)m^I_i(\mathscr F) - \frac{\gamma}{a+\gamma}\sum_j m^I_j(\mathscr F)\right)\right)\\
+		\end{eqnarray*}
+		which agrees with formula \footfullcite[(6)]{coronaKim}.
+
+
+		The determinant of $aI_N+1_{\odot}$ is $(a-1)^{N-1}(a+(N-1))$ as can be showed by induction using Euler's recursive formula for
+		the number of permutations of $[N]$ that have no fixed point, $p_N= N p_{N-1} + (-1)^{N}$, $p_0=1$.
+
+		Applying this with $a=w/(\gamma/(N-1))=\frac{(N-1)w}{\gamma}$, we see that the determinant is positive, so that optimization makes sense, iff
+		\[
+			(a-1)^{N-1}(a+(N-1)) >0
+		\]
+		\[
+			\left(a-1\right)^{N-1}\left(\frac{a}{N-1}+1\right) >0
+		\]
+		\[
+			\left(\frac{(N-1)w}{\gamma}-1\right)^{N-1}\left(\frac{w}{\gamma}+1\right) >0
+		\]
+		\[
+			\left((N-1)w-\gamma\right)^{N-1}\left(\frac{w}{\gamma}+1\right) >0
+		\]
+		i.e., if $(N-1)w>\gamma$.
 	\end{example}
+	Now let us check equation (12) in Corona--Kim.
+	Let $B=[\beta_j]$, $S=[s_j]$, $M=[m_j]$.
+	We have $S=A M$ and $kM +d_A S = B$, so
+	\[
+		kM + d_A AM = B
+	\]
+	\[
+		(k+d_A A)M=B
+	\]
+	The good thing is that $A$ is a linear combination $\alpha I+\beta 1_{\odot}$ of $I_N$ and $1_{\odot}$, and so
+	\[
+		 k+d_A A = kI + d_A(\alpha I+\beta 1_{\odot}) =  
+	\]
+	Then
+	\[
+		M = \frac1k (B-d_A S)
+	\]
+	\[
+		S = \frac1k A (B - d_A S)
+	\]
+	\[
+		(1+\frac{d_A}kA)S = \frac1k A B
+	\]
+	\[
+		S = (1+\frac{d_A}k A)^{-1}
+	\]
+	Thus assuming $m^I=m$ is to be used,
+	\begin{eqnarray*}
+			s_i
+			  &=& b \left(\frac{1}{(N-1)w-\gamma}\left((N-1)m^I_i(\mathscr F) - \frac{\gamma}{w+\gamma}\sum_j m^I_j(\mathscr F)\right)\right)\\
+			s_i  &=& \frac1{k+d}b \left(\frac{1}{(N-1)w-\gamma}\left((N-1)\beta_i - \frac{\gamma}{w+\gamma}\sum_j \beta_j\right)\right)\\
+			&=^!& b\frac{(k(w+\gamma)+bd_A)(N-1)\beta_i - k\gamma\sum_{j=1}^N\beta_j}{(k(w+\gamma)+bd_A)(k((N-1)w-\gamma)+(N-1)bd_A)}
+	\end{eqnarray*}
+	This is equivalent to
+	\begin{eqnarray*}
+			&&\frac1{k+d} \left(\frac{1}{(N-1)w-\gamma}\left((N-1)\beta_i - \frac{\gamma}{w+\gamma}\sum_j \beta_j\right)\right)\\
+			&=^!& \frac{(k(w+\gamma)+bd_A)(N-1)\beta_i - k\gamma\sum_{j=1}^N\beta_j}{(k(w+\gamma)+bd_A)(k((N-1)w-\gamma)+(N-1)bd_A)}
+	\end{eqnarray*}
+	Let us just substitute $w=2,\gamma=1,N=2,d=1,k=1,b=1$ and get
+	\begin{eqnarray*}
+			&&\frac1{1+1} \left(\frac{1}{2-1}\left(\beta_i - \frac{1}{3}\sum_j \beta_j\right)\right)\\
+			&=^!& \frac{(3+1)(\beta_i - \sum_{j=1}^N\beta_j)}{(3+1)((1)+1)}
+	\end{eqnarray*}
+
 \end{example}

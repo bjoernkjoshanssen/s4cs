@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 DEC 2019 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 DEC 2019 08:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1425,23 +1425,7 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 \@quotelevel=\count362
 \@quotereset=\count363
 
-(./s4cs.aux (./extraTeX/preamble/copyright.aux)
-(./extraTeX/preamble/preface.aux) (./ch_intro_to_data/TeX/ch_intro_to_data.aux)
-(./ch_intro_to_data/TeX/ch_intro_to_data_ex.aux)
-(./ch_probability/TeX/ch_probability.aux)
-(./ch_probability/TeX/ch_probability_ex.aux)
-(./ch_distributions/TeX/ch_distributions.aux)
-(./ch_distributions/TeX/ch_distributions_ex.aux)
-(./ch_inference_foundations/TeX/ch_inference_foundations.aux)
-(./ch_inference_foundations/TeX/ch_inference_foundations_ex.aux)
-(./ch_inference_for_means/TeX/ch_inference_for_means.aux)
-(./ch_inference_for_means/TeX/ch_inference_for_means_ex.aux)
-(./ch_inference_for_props/TeX/ch_inference_for_props.aux)
-(./ch_inference_for_props/TeX/ch_inference_for_props_ex.aux)
-(./ch_regr_simple_linear/TeX/ch_regr_simple_linear.aux)
-(./ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.aux)
-(./ch_markov/TeX/ch_markov.aux) (./ch_markov/TeX/ch_markov_ex.aux)
-(./extraTeX/eoceSolutions/eoceSolutions.aux) (./extraTeX/index/index.aux))
+(./s4cs.aux)
 \openout1 = `s4cs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -1458,8 +1442,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 86.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -1595,7 +1578,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-<extraTex/preamble/88x31.png, id=252, 88.33pt x 31.11626pt>
+<extraTex/preamble/88x31.png, id=15, 88.33pt x 31.11626pt>
 File: extraTex/preamble/88x31.png Graphic file (type png)
 <use extraTex/preamble/88x31.png>
 Package pdftex.def Info: extraTex/preamble/88x31.png  used on input line 7.
@@ -1613,14 +1596,17 @@ l.89 \include{extraTeX/preamble/copyright}
                                           %_derivative} [2
 
 
- <./extraTex/preamble/88x31.png>] (./s4cs.toc [3
+ <./extraTex/preamble/88x31.png>]
 
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 
-])
 \tf@toc=\write8
 \openout8 = `s4cs.toc'.
 
- [4]
+[3
+
+
+]
 \openout2 = `extraTeX/preamble/preface.aux'.
 
  (./extraTeX/preamble/preface.tex
@@ -1628,15 +1614,19 @@ Overfull \hbox (0.10315pt too wide) in paragraph at lines 29--30
 []\OT1/cmr/m/n/10 An in-tro-duc-tion to re-gres-sion with two vari-ables. 
  []
 
-[5
+[4
 
 
-]) [6]
+]
+
+LaTeX Warning: Reference `eoceSolutions' on page 5 undefined on input line 56.
+
+) [5]
 \openout2 = `ch_intro_to_data/TeX/ch_intro_to_data.aux'.
 
  (./ch_intro_to_data/TeX/ch_intro_to_data.tex
 Chapter 1.
-[7
+[6
 
 
 
@@ -1645,19 +1635,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-[8]
-<ch_intro_to_data/figures/pie-chart-s4cs.png, id=389, 656.4525pt x 410.53375pt>
 
+LaTeX Warning: Reference `harmonic' on page 7 undefined on input line 72.
+
+[7]
+
+LaTeX Warning: Hyper reference `emailNumberPieChart' on page 8 undefined on inp
+ut line 93.
+
+
+LaTeX Warning: Reference `emailNumberPieChart' on page 8 undefined on input lin
+e 93.
+
+<ch_intro_to_data/figures/pie-chart-s4cs.png, id=88, 656.4525pt x 410.53375pt>
 File: ch_intro_to_data/figures/pie-chart-s4cs.png Graphic file (type png)
 <use ch_intro_to_data/figures/pie-chart-s4cs.png>
 Package pdftex.def Info: ch_intro_to_data/figures/pie-chart-s4cs.png  used on i
 nput line 98.
 (pdftex.def)             Requested size: 196.93564pt x 123.16107pt.
-) [9 <./ch_intro_to_data/figures/pie-chart-s4cs.png>]
+) [8 <./ch_intro_to_data/figures/pie-chart-s4cs.png>]
 \openout2 = `ch_intro_to_data/TeX/ch_intro_to_data_ex.aux'.
 
 
 (./ch_intro_to_data/TeX/ch_intro_to_data_ex.tex
+
+LaTeX Warning: Reference `eoce_sol_1_1' on page 9 undefined on input line 14.
+
+
+LaTeX Warning: Reference `eoce_sol_1_2' on page 9 undefined on input line 27.
+
+
+LaTeX Warning: Reference `eoce_sol_1_3' on page 9 undefined on input line 44.
+
+
+LaTeX Warning: Reference `mean_medians' on page 9 undefined on input line 44.
+
+
+LaTeX Warning: Reference `eoce_sol_1_4' on page 9 undefined on input line 48.
+
+
+LaTeX Warning: Reference `extra_mean' on page 9 undefined on input line 48.
+
+
+LaTeX Warning: Reference `eoce_sol_1_5' on page 9 undefined on input line 66.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 66--66
 
  []
@@ -1672,27 +1694,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--66
 
  []
 
-[10
+
+LaTeX Warning: Reference `eoce_sol_1_6' on page 9 undefined on input line 76.
+
+
+LaTeX Warning: Reference `eoce_sol_1_7' on page 9 undefined on input line 81.
+
+
+LaTeX Warning: Reference `extra_mean' on page 9 undefined on input line 81.
+
+
+LaTeX Warning: Reference `c' on page 9 undefined on input line 81.
+
+
+LaTeX Warning: Reference `cont_ave' on page 9 undefined on input line 81.
+
+
+LaTeX Warning: Reference `eoce_sol_1_8' on page 9 undefined on input line 92.
+
+[9
 
 
 ]
+
+LaTeX Warning: Reference `inv_ave a' on page 10 undefined on input line 92.
+
+
+LaTeX Warning: Reference `eoce_sol_1_9' on page 10 undefined on input line 102.
+
+
+
+LaTeX Warning: Reference `harmonic' on page 10 undefined on input line 102.
+
+
 Overfull \hbox (120.69139pt too wide) in paragraph at lines 102--102
 [][][] \OT1/cmr/m/n/8 See [][]$\OT1/cmtt/m/n/8 https : / / math . stackexchange
  . com / questions / 11669 / mathematical-[]difference-[]between-[]white-[]and-
 []black-[]notes-[]in-[]a-[]piano /
  []
 
-<ch_intro_to_data/TeX/F.jpg, id=454, 1541.76pt x 2055.68pt>
+<ch_intro_to_data/TeX/F.jpg, id=133, 1541.76pt x 2055.68pt>
 File: ch_intro_to_data/TeX/F.jpg Graphic file (type jpg)
 <use ch_intro_to_data/TeX/F.jpg>
 Package pdftex.def Info: ch_intro_to_data/TeX/F.jpg  used on input line 105.
 (pdftex.def)             Requested size: 144.54pt x 192.71953pt.
-<ch_intro_to_data/TeX/G.jpg, id=455, 1541.76pt x 2055.68pt>
+<ch_intro_to_data/TeX/G.jpg, id=134, 1541.76pt x 2055.68pt>
 File: ch_intro_to_data/TeX/G.jpg Graphic file (type jpg)
 <use ch_intro_to_data/TeX/G.jpg>
 Package pdftex.def Info: ch_intro_to_data/TeX/G.jpg  used on input line 106.
 (pdftex.def)             Requested size: 144.54pt x 192.71953pt.
-) [11 <./ch_intro_to_data/TeX/F.jpg> <./ch_intro_to_data/TeX/G.jpg>]
+) [10 <./ch_intro_to_data/TeX/F.jpg> <./ch_intro_to_data/TeX/G.jpg>]
 \openout2 = `ch_probability/TeX/ch_probability.aux'.
 
 
@@ -1708,12 +1759,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[12
+
+LaTeX Warning: Reference `dieProp' on page 11 undefined on input line 39.
+
+[11
 
 
 
 ]
-<ch_probability/figures/dieProp/dieProp.pdf, id=474, 469.755pt x 216.81pt>
+<ch_probability/figures/dieProp/dieProp.pdf, id=152, 469.755pt x 216.81pt>
 File: ch_probability/figures/dieProp/dieProp.pdf Graphic file (type pdf)
 <use ch_probability/figures/dieProp/dieProp.pdf>
 Package pdftex.def Info: ch_probability/figures/dieProp/dieProp.pdf  used on in
@@ -1724,12 +1778,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-[13 <./ch_probability/figures/dieProp/dieProp.pdf>]
+
+LaTeX Warning: Reference `dieProp' on page 12 undefined on input line 54.
+
+[12 <./ch_probability/figures/dieProp/dieProp.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-<ch_probability/figures/disjointSets/disjointSets.pdf, id=491, 241.90375pt x 57
+
+LaTeX Warning: Reference `disjointSets' on page 13 undefined on input line 125.
+
+
+<ch_probability/figures/disjointSets/disjointSets.pdf, id=166, 241.90375pt x 57
 .21375pt>
 File: ch_probability/figures/disjointSets/disjointSets.pdf Graphic file (type p
 df)
@@ -1738,17 +1799,21 @@ Package pdftex.def Info: ch_probability/figures/disjointSets/disjointSets.pdf
 used on input line 129.
 (pdftex.def)             Requested size: 216.6304pt x 51.23871pt.
 
+LaTeX Warning: Reference `disjointSets' on page 13 undefined on input line 135.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-[14]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
-[15 <./ch_probability/figures/disjointSets/disjointSets.pdf>]
-<ch_probability/figures/diceSumDist/diceSumDist.pdf, id=519, 397.485pt x 216.81
+[14 <./ch_probability/figures/disjointSets/disjointSets.pdf>]
+<ch_probability/figures/diceSumDist/diceSumDist.pdf, id=194, 397.485pt x 216.81
 pt>
 File: ch_probability/figures/diceSumDist/diceSumDist.pdf Graphic file (type pdf
 )
@@ -1756,7 +1821,19 @@ File: ch_probability/figures/diceSumDist/diceSumDist.pdf Graphic file (type pdf
 Package pdftex.def Info: ch_probability/figures/diceSumDist/diceSumDist.pdf  us
 ed on input line 187.
 (pdftex.def)             Requested size: 287.52434pt x 156.8342pt.
- [16 <./ch_probability/figures/diceSumDist/diceSumDist.pdf>]
+
+
+LaTeX Warning: Reference `diceSumDist' on page 15 undefined on input line 192.
+
+
+LaTeX Warning: Reference `complementSumTo1' on page 15 undefined on input line 
+227.
+
+
+LaTeX Warning: Reference `complementDisjointEquation' on page 15 undefined on i
+nput line 227.
+
+[15 <./ch_probability/figures/diceSumDist/diceSumDist.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
@@ -1769,7 +1846,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
 Underfull \vbox (badness 7832) has occurred while \output is active []
 
- [17]
+ [16]
+
+LaTeX Warning: Reference `eqForIndependentEvents' on page 17 undefined on input
+ line 279.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
@@ -1777,8 +1859,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
 Underfull \vbox (badness 1616) has occurred while \output is active []
 
- [18]
-<ch_probability/figures/smallpoxTreeDiagram/smallpoxTreeDiagram.pdf, id=560, 50
+ [17]
+
+LaTeX Warning: Reference `smallpoxTreeDiagram' on page 18 undefined on input li
+ne 362.
+
+<ch_probability/figures/smallpoxTreeDiagram/smallpoxTreeDiagram.pdf, id=231, 50
 5.89pt x 252.945pt>
 File: ch_probability/figures/smallpoxTreeDiagram/smallpoxTreeDiagram.pdf Graphi
 c file (type pdf)
@@ -1786,87 +1872,36 @@ c file (type pdf)
 Package pdftex.def Info: ch_probability/figures/smallpoxTreeDiagram/smallpoxTre
 eDiagram.pdf  used on input line 365.
 (pdftex.def)             Requested size: 366.2974pt x 183.15077pt.
+[18 <./ch_probability/figures/smallpoxTreeDiagram/smallpoxTreeDiagram.pdf>]
 
-[19 <./ch_probability/figures/smallpoxTreeDiagram/smallpoxTreeDiagram.pdf>]
-[20] [21]
+LaTeX Warning: Reference `142857' on page 19 undefined on input line 426.
+
+[19]
+
+LaTeX Warning: Reference `maxEnt' on page 20 undefined on input line 464.
+
+
+LaTeX Warning: Reference `contDist' on page 20 undefined on input line 469.
+
+[20]
+
+LaTeX Warning: Reference `learnBayes' on page 21 undefined on input line 509.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 549--550
 
  []
 
-[22]
-<ch_probability/figures/contBalance/contBalance.pdf, id=605, 289.08pt x 158.592
+[21]
+
+LaTeX Warning: Reference `contDist' on page 22 undefined on input line 552.
+
+<ch_probability/figures/contBalance/contBalance.pdf, id=272, 289.08pt x 158.592
 5pt>
 File: ch_probability/figures/contBalance/contBalance.pdf Graphic file (type pdf
 )
 <use ch_probability/figures/contBalance/contBalance.pdf>
-Package pdftex.def Info: ch_probability/figures/contBalance/contBalance.pdf  us
-ed on input line 561.
-(pdftex.def)             Requested size: 267.82957pt x 146.94257pt.
- [23 <./ch_probability/figures/contBalance/contBalance.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 662--663
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
-
- []
-
-[26] [27] [28]) [29]
-\openout2 = `ch_probability/TeX/ch_probability_ex.aux'.
-
- (./ch_probability/TeX/ch_probability_ex.tex) [30
-
-
-]
-\openout2 = `ch_distributions/TeX/ch_distributions.aux'.
-
-
-(./ch_distributions/TeX/ch_distributions.tex
-Chapter 3.
-<ch_distributions/figures/simpleNormal/simpleNormal.pdf, id=693, 289.08pt x 118
-.4425pt>
-File: ch_distributions/figures/simpleNormal/simpleNormal.pdf Graphic file (type
- pdf)
-<use ch_distributions/figures/simpleNormal/simpleNormal.pdf>
-Package pdftex.def Info: ch_distributions/figures/simpleNormal/simpleNormal.pdf
-  used on input line 22.
-(pdftex.def)             Requested size: 275.70868pt x 112.96974pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31
-
-
-
- <./ch_distributions/figures/simpleNormal/simpleNormal.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-[32]
-Underfull \vbox (badness 1895) has occurred while \output is active []
-
- [33]
-<ch_distributions/figures/6895997/6895997.pdf, id=717, 361.35pt x 180.675pt>
-File: ch_distributions/figures/6895997/6895997.pdf Graphic file (type pdf)
-<use ch_distributions/figures/6895997/6895997.pdf>
-Package pdftex.def Info: ch_distributions/figures/6895997/6895997.pdf  used on 
-input line 149.
-(pdftex.def)             Requested size: 274.62886pt x 137.31255pt.
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Pl \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
@@ -1950,654 +1985,128 @@ Overfull \hbox (45.1971pt too wide) in paragraph at lines 661--662
 at [][]\OT1/cmtt/m/n/10 http://hdl.handle.net/10125/64934[]\OT1/cmr/m/n/10 . 
  []
 
-[44] [45]) [46]
-\openout2 = `ch_distributions/TeX/ch_distributions_ex.aux'.
-
- (./ch_distributions/TeX/ch_distributions_ex.tex) [47
-
-
-]
-\openout2 = `ch_inference_foundations/TeX/ch_inference_foundations.aux'.
-
-
-(./ch_inference_foundations/TeX/ch_inference_foundations.tex
-Chapter 4.
-<ch_inference_foundations/figures/yrbssActiveRunningMean/yrbssActiveRunningMean
-.pdf, id=874, 397.485pt x 194.7275pt>
-File: ch_inference_foundations/figures/yrbssActiveRunningMean/yrbssActiveRunnin
-gMean.pdf Graphic file (type pdf)
-<use ch_inference_foundations/figures/yrbssActiveRunningMean/yrbssActiveRunning
-Mean.pdf>
-Package pdftex.def Info: ch_inference_foundations/figures/yrbssActiveRunningMea
-n/yrbssActiveRunningMean.pdf  used on input line 19.
-(pdftex.def)             Requested size: 283.5878pt x 138.93196pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-[48
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-[49 <./ch_inference_foundations/figures/yrbssActiveRunningMean/yrbssActiveRunni
-ngMean.pdf>]
-<ch_inference_foundations/figures/choosingZForCI/choosingZForCI.pdf, id=894, 54
-6.04pt x 277.035pt>
-File: ch_inference_foundations/figures/choosingZForCI/choosingZForCI.pdf Graphi
-c file (type pdf)
-<use ch_inference_foundations/figures/choosingZForCI/choosingZForCI.pdf>
-Package pdftex.def Info: ch_inference_foundations/figures/choosingZForCI/choosi
-ngZForCI.pdf  used on input line 92.
-(pdftex.def)             Requested size: 393.87128pt x 199.83281pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50 <./ch_inference_foundations/figures/choosingZForCI/choosingZForCI.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-
- []
-
-[51]
-<ch_inference_foundations/figures/whyWeWantPValue/whyWeWantPValue.pdf, id=918, 
-454.69875pt x 180.675pt>
-File: ch_inference_foundations/figures/whyWeWantPValue/whyWeWantPValue.pdf Grap
-hic file (type pdf)
-<use ch_inference_foundations/figures/whyWeWantPValue/whyWeWantPValue.pdf>
-Package pdftex.def Info: ch_inference_foundations/figures/whyWeWantPValue/whyWe
-WantPValue.pdf  used on input line 206.
-(pdftex.def)             Requested size: 295.40346pt x 117.37946pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
-
- []
-
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
-
- []
-
-<ch_inference_foundations/figures/pValueOneSidedSleepStudy/pValueOneSidedSleepS
-tudy.pdf, id=928, 487.8225pt x 190.7125pt>
-File: ch_inference_foundations/figures/pValueOneSidedSleepStudy/pValueOneSidedS
-leepStudy.pdf Graphic file (type pdf)
-<use ch_inference_foundations/figures/pValueOneSidedSleepStudy/pValueOneSidedSl
-eepStudy.pdf>
-Package pdftex.def Info: ch_inference_foundations/figures/pValueOneSidedSleepSt
-udy/pValueOneSidedSleepStudy.pdf  used on input line 240.
-(pdftex.def)             Requested size: 326.91388pt x 127.8058pt.
-[53 <./ch_inference_foundations/figures/whyWeWantPValue/whyWeWantPValue.pdf> <.
-/ch_inference_foundations/figures/pValueOneSidedSleepStudy/pValueOneSidedSleepS
-tudy.pdf>]
-<ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pValueOneSi
-dedSleepStudyExplained.pdf, id=946, 496.85625pt x 198.7425pt>
-File: ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pValue
-OneSidedSleepStudyExplained.pdf Graphic file (type pdf)
-<use ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pValueO
-neSidedSleepStudyExplained.pdf>
-Package pdftex.def Info: ch_inference_foundations/figures/pValueOneSidedSleepSt
-udyExplained/pValueOneSidedSleepStudyExplained.pdf  used on input line 257.
-(pdftex.def)             Requested size: 354.48174pt x 141.7935pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-<ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExample.pdf
-, id=948, 433.62pt x 172.645pt>
-File: ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExampl
-e.pdf Graphic file (type pdf)
-<use ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExample
-.pdf>
-Package pdftex.def Info: ch_inference_foundations/figures/2ndSchSleepHTExample/
-2ndSchSleepHTExample.pdf  used on input line 274.
-(pdftex.def)             Requested size: 354.48174pt x 141.14304pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
-
- []
-
-
-Underfull \vbox (badness 1253) has occurred while \output is active []
-
- [54 <./ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pVal
-ueOneSidedSleepStudyExplained.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-
- []
-
-[55 <./ch_inference_foundations/figures/2ndSchSleepHTExample/2ndSchSleepHTExamp
-le.pdf>]
-<ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf, id=974, 49
-0.83376pt x 578.16pt>
-File: ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf Graphi
-c file (type pdf)
-<use ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf>
-Package pdftex.def Info: ch_inference_foundations/figures/cltSimulations/cltSim
-ulations.pdf  used on input line 338.
-(pdftex.def)             Requested size: 393.87128pt x 463.9578pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-
- []
-
-[56] [57 <./ch_inference_foundations/figures/cltSimulations/cltSimulations.pdf>
-]
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
-
- []
-
-
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
- [58]
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59]
-[60]) [61]
-\openout2 = `ch_inference_foundations/TeX/ch_inference_foundations_ex.aux'.
-
- (./ch_inference_foundations/TeX/ch_inference_foundations_ex.tex)
-[62
-
-
-]
-\openout2 = `ch_inference_for_means/TeX/ch_inference_for_means.aux'.
-
- (./ch_inference_for_means/TeX/ch_inference_for_means.tex
-Chapter 5.
-
-Overfull \vbox (1.48605pt too high) has occurred while \output is active []
-
-
-[63
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-Overfull \hbox (0.63423pt too wide) in paragraph at lines 78--79
-[]\OT1/cmr/m/n/10 Thus, when draw-ing $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 sam-
-ples $\OML/cmm/m/it/10 ![]; [] ; ![]$ \OT1/cmr/m/n/10 or in an-other ex-pres-si
-on $(\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 !\OT1/cmr/m/n/10 )\O
-ML/cmm/m/it/10 ; [] ; X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 !\OT1/cmr/m/n/10 ))$
-,
- []
-
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-[65]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-[67] [68]) [69]
-\openout2 = `ch_inference_for_means/TeX/ch_inference_for_means_ex.aux'.
-
- (./ch_inference_for_means/TeX/ch_inference_for_means_ex.tex)
-[70
-
-
-]
-\openout2 = `ch_inference_for_props/TeX/ch_inference_for_props.aux'.
-
- (./ch_inference_for_props/TeX/ch_inference_for_props.tex
-Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-[71
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-[72] [73]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-[74]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-[75] [76] [77]
-<ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSquareD
-istributionWithInceasingDF.pdf, id=1199, 469.755pt x 216.81pt>
-File: ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSq
-uareDistributionWithInceasingDF.pdf Graphic file (type pdf)
-<use ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chiSqu
-areDistributionWithInceasingDF.pdf>
-Package pdftex.def Info: ch_inference_for_props/figures/chiSquareDistributionWi
-thInceasingDF/chiSquareDistributionWithInceasingDF.pdf  used on input line 301.
-
-(pdftex.def)             Requested size: 354.48174pt x 163.60619pt.
-
-Underfull \vbox (badness 1603) has occurred while \output is active []
-
- [78 <./ch_inference_for_props/figures/chiSquareDistributionWithInceasingDF/chi
-SquareDistributionWithInceasingDF.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
-
- []
-
-
-Underfull \vbox (badness 2512) has occurred while \output is active []
-
- [79]
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
-
- []
-
-<ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googleHTFor
-DiffAlgPerformancePValue.pdf, id=1224, 361.35pt x 162.6075pt>
-File: ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/google
-HTForDiffAlgPerformancePValue.pdf Graphic file (type pdf)
-<use ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googleH
-TForDiffAlgPerformancePValue.pdf>
-Package pdftex.def Info: ch_inference_for_props/figures/googleHTForDiffAlgPerfo
-rmancePValue/googleHTForDiffAlgPerformancePValue.pdf  used on input line 388.
-(pdftex.def)             Requested size: 275.70868pt x 124.06929pt.
-[80 <./ch_inference_for_props/figures/googleHTForDiffAlgPerformancePValue/googl
-eHTForDiffAlgPerformancePValue.pdf>]) [81]
-\openout2 = `ch_inference_for_props/TeX/ch_inference_for_props_ex.aux'.
-
-
-(./ch_inference_for_props/TeX/ch_inference_for_props_ex.tex
-Overfull \hbox (58.27385pt too wide) in paragraph at lines 83--83
-[][][] [][]$\OT1/cmtt/m/n/8 https : / / ecoamerica . org / wp-[]content / uploa
-ds / 2018 / 10 / november-[]2018-[]american-[]climate-[]perspectives-[]survey .
-
- []
-
-[82
-
-
-]) [83]
-\openout2 = `ch_regr_simple_linear/TeX/ch_regr_simple_linear.aux'.
-
- (./ch_regr_simple_linear/TeX/ch_regr_simple_linear.tex
-Chapter 7.
-[84
-
-
-
-]
-Overfull \hbox (35.24794pt too wide) in paragraph at lines 116--117
-[]\OT1/cmr/m/n/10 In gen-eral, we can in-ves-ti-gate the dif-fer-ence be-tween 
-$\OML/cmm/m/it/10 b[]$ \OT1/cmr/m/n/10 for three points $(\OML/cmm/m/it/10 x[];
- y[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; 
-y[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y
-[]\OT1/cmr/m/n/10 )$
- []
-
-[85]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-[86] [87]
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-
- []
-
-[88]
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-
- []
-
-
-Overfull \hbox (42.79094pt too wide) in alignment at lines 323--327
- [][][] []
- []
-
-[89]
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
-
- []
-
-[90]
-Underfull \hbox (badness 1783) in paragraph at lines 449--449
-[]\OT1/cmr/m/n/10 Table 7.3: |A sum-mary of least squares fit. The point is tha
-t
- []
-
-[91] [92]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [93]
-[94] [95] [96] [97] [98]
-Overfull \hbox (10.07394pt too wide) in paragraph at lines 908--938
-[][]
- []
-
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 908--938
-[]$ $[]$ 
- []
-
-[99] [100] [101] [102]) [103]
-\openout2 = `ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.aux'.
-
-
-(./ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.tex) [104
-
-
-]
-\openout2 = `ch_markov/TeX/ch_markov.aux'.
-
-
-(./ch_markov/TeX/ch_markov.tex
-Chapter 8.
-[105
-
-
-
-] [106] [107] [108] [109]
-Overfull \hbox (2.18947pt too wide) detected at line 303
-\U/msb/m/n/10 P\OT1/cmr/m/n/10 ([]001; \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (1) = 
-\OML/cmm/m/it/10 s[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (2)) =
- \U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emit\OT1/cmr/m/n/10 0 \OMS/cm
-sy/m/n/10 j \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 )\U/msb/m/n/10 P\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 s[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 )
-\U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emit\OT1/cmr/m/n/10 0 \OMS/cms
-y/m/n/10 j \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 )\U/msb/m/n/10 P\OT1/cmr/m/n/10 
-(\OML/cmm/m/it/10 s[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 )\
-U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emit\OT1/cmr/m/n/10 1 \OMS/cmsy
-/m/n/10 j \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 )
- []
-
-[110] [111] [112] [113]
-Overfull \hbox (0.55713pt too wide) in alignment at lines 529--535
- [][][] []
- []
-
-[114] [115] [116]) [117]
-\openout2 = `ch_markov/TeX/ch_markov_ex.aux'.
-
- (./ch_markov/TeX/ch_markov_ex.tex [118
-
-
-]) [119]
-\openout2 = `extraTeX/eoceSolutions/eoceSolutions.aux'.
-
-
-(./extraTeX/eoceSolutions/eoceSolutions.tex
-Appendix A.
-
-Overfull \hbox (13.03534pt too wide) in alignment at lines 36--36
+[44] [45]
+Overfull \hbox (51.75314pt too wide) in alignment at lines 793--799
  [][][] []
  []
 
 
-Overfull \hbox (6.75974pt too wide) in alignment at lines 57--57
- [][][] []
- []
+./ch_distributions/TeX/ch_distributions.tex:802: LaTeX Error: Environment lemma
+ undefined.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.802 		\begin{lemma}
+                     
+? 
+./ch_distributions/TeX/ch_distributions.tex:802: Emergency stop.
+ ...                                              
+                                                  
+l.802 		\begin{lemma}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 120 might be wrong on input line 57
-.
-
-[120
-
-
-
-] [121]
-<extraTex/eoceSolutions/likelihoodprinciple.jpg, id=1682, 2055.68pt x 1541.76pt
->
-File: extraTex/eoceSolutions/likelihoodprinciple.jpg Graphic file (type jpg)
-<use extraTex/eoceSolutions/likelihoodprinciple.jpg>
-Package pdftex.def Info: extraTex/eoceSolutions/likelihoodprinciple.jpg  used o
-n input line 135.
-(pdftex.def)             Requested size: 361.34999pt x 271.01183pt.
-
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 122 might be wrong on input line 17
-0.
-
-[122 <./extraTex/eoceSolutions/likelihoodprinciple.jpg>]
-Overfull \hbox (26.24966pt too wide) in alignment at lines 186--186
- [][][] []
- []
-
-[123]
-Overfull \hbox (3.40347pt too wide) in alignment at lines 298--298
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
-[][][][][]$\OT1/cmtt/m/n/8 https : / / www . wolframalpha . com / input / ?i = 
-%5Cfrac % 7B(u % 2B % 5Cfrac1 % 7B25 % 7D ) (1-[]u-[] % 5Cfrac1 %
- []
-
-[124]
-Underfull \hbox (badness 10000) in paragraph at lines 392--392
-\OT1/cmr/m/n/9 (c) This is sim-i-lar to (a). Take
- []
-
-
-Overfull \vbox (13.0025pt too high) has occurred while \output is active []
-
-
-[125]
-Overfull \hbox (0.40338pt too wide) detected at line 442
-[][] \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 b \OT1/cmr/m/n/9 = 0  =[]\OMS/cmsy/m/n
-/9 )  [][] \OT1/cmr/m/n/9 = \OML/cmm/m/it/9 b  \OT1/cmr/m/n/9 =[]\OMS/cmsy/m/n/
-9 )  \OT1/cmr/m/n/9 ([][])[] \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 b[] \OT1/cmr/m
-/n/9 = 0
- []
-
-) [126]
-\openout2 = `extraTeX/index/index.aux'.
-
- (./extraTeX/index/index.tex)
-runsystem(makeindex s4cs.idx)...executed safely (allowed).
-
- (./s4cs.ind [127
-
-
-
-\indexentry{probability sample|see{sample}}{127}
-\indexentry{df|see{degrees of freedom (df)}}{127}
-
-
-
-]) [128]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
- (./s4cs.aux (./extraTeX/preamble/copyright.aux)
-(./extraTeX/preamble/preface.aux) (./ch_intro_to_data/TeX/ch_intro_to_data.aux)
-(./ch_intro_to_data/TeX/ch_intro_to_data_ex.aux)
-(./ch_probability/TeX/ch_probability.aux)
-(./ch_probability/TeX/ch_probability_ex.aux)
-(./ch_distributions/TeX/ch_distributions.aux)
-(./ch_distributions/TeX/ch_distributions_ex.aux)
-(./ch_inference_foundations/TeX/ch_inference_foundations.aux)
-(./ch_inference_foundations/TeX/ch_inference_foundations_ex.aux)
-(./ch_inference_for_means/TeX/ch_inference_for_means.aux)
-(./ch_inference_for_means/TeX/ch_inference_for_means_ex.aux)
-(./ch_inference_for_props/TeX/ch_inference_for_props.aux)
-(./ch_inference_for_props/TeX/ch_inference_for_props_ex.aux)
-(./ch_regr_simple_linear/TeX/ch_regr_simple_linear.aux)
-(./ch_regr_simple_linear/TeX/ch_regr_simple_linear_ex.aux)
-(./ch_markov/TeX/ch_markov.aux) (./ch_markov/TeX/ch_markov_ex.aux)
-(./extraTeX/eoceSolutions/eoceSolutions.aux) (./extraTeX/index/index.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
-Package rerunfilecheck Info: File `s4cs.out' has not changed.
-(rerunfilecheck)             Checksum: 013D2582F0D1B090AD2E5D8A663023DB;4206.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
-Package logreq Info: Writing requests to 's4cs.run.xml'.
-\openout1 = `s4cs.run.xml'.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 237 ({)
-### bottom level 
+ 
 Here is how much of TeX's memory you used:
- 39569 strings out of 492649
- 896852 string characters out of 6129622
- 1412760 words of memory out of 5000000
- 41924 multiletter control sequences out of 15000+600000
- 25559 words of font info for 99 fonts, out of 8000000 for 9000
+ 38810 strings out of 492649
+ 881467 string characters out of 6129622
+ 1391760 words of memory out of 5000000
+ 41658 multiletter control sequences out of 15000+600000
+ 22956 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,107p,932b,4367s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm
--super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxt
-i10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcs
-c10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
-10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/
-cmex7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmext
-ra/cmex8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-extra/cmex9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2018/texmf-dist/font
-s/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/wasy2-ps/wasy10.pfb>
-Output written on s4cs.pdf (128 pages, 1760192 bytes).
-PDF statistics:
- 2045 PDF objects out of 2073 (max. 8388607)
- 1807 compressed objects within 19 object streams
- 666 named destinations out of 1000 (max. 500000)
- 600 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 62i,19n,107p,932b,3866s stack positions out of 5000i,500n,10000p,200000b,80000s
+./ch_distributions/TeX/ch_distributions.tex:802:  ==> Fatal error occurred, no 
+output PDF file produced!
+normApproxToBinomFail/normApproxToBinomFail.pdf 
+Graphic file (type pdf)
+<use ch_distributions/figures/normApproxToBinomFail/normApproxToBinomFail.pdf>
+Package pdftex.def Info: ch_distributions/figures/normApproxToBinomFail/normApp
+roxToBinomFail.pdf  used on input line 422.
+(pdftex.def)             Requested size: 393.87128pt x 136.39926pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+
+ []
+
+[38]
+
+LaTeX Warning: Reference `factorialDefinitionInTheBinomialSection' on page 39 u
+ndefined on input line 479.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39 <./ch_distributions/figures/normApproxToBinomFail/normApproxToBinomFail.pd
+f>]
+[40]
+<extraTeX/icons/video_camera.png, id=447, 156.1032pt x 150.5625pt>
+File: extraTeX/icons/video_camera.png Graphic file (type png)
+<use extraTeX/icons/video_camera.png>
+Package pdftex.def Info: extraTeX/icons/video_camera.png  used on input line 53
+4.
+(pdftex.def)             Requested size: 17.6978pt x 17.07164pt.
+
+
+LaTeX Warning: Reference `doris_kung' on page 41 undefined on input line 535.
+
+[41 <./extraTeX/icons/video_camera.png (PNG copy)>]
+
+LaTeX Warning: Reference `drc' on page 42 undefined on input line 614.
+
+[42]
+Overfull \hbox (6.57195pt too wide) in paragraph at lines 654--660
+\OT1/cmr/m/n/10 which ac-cord-ing to Wol-fra-mAl-pha (in-put: [][]\OT1/cmtt/m/n
+/10 (75+99900)x**3+(25+99900)x+2(-99900)[]\OT1/cmr/m/n/10 )
+ []
+
+
+Overfull \hbox (45.1971pt too wide) in paragraph at lines 661--662
+[]\OT1/cmr/m/n/10 This ex-am-ple is taken from the pa-per[][][][][] avail-able 
+at [][]\OT1/cmtt/m/n/10 http://hdl.handle.net/10125/64934[]\OT1/cmr/m/n/10 . 
+ []
+
+[43] [44]
+Overfull \hbox (51.75314pt too wide) in alignment at lines 793--799
+ [][][] []
+ []
+
+
+./ch_distributions/TeX/ch_distributions.tex:802: LaTeX Error: Environment theor
+em undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.802 		\begin{theorem}
+                       
+? 
+./ch_distributions/TeX/ch_distributions.tex:802: Emergency stop.
+ ...                                              
+                                                  
+l.802 		\begin{theorem}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ 
+Here is how much of TeX's memory you used:
+ 38389 strings out of 492649
+ 873444 string characters out of 6129622
+ 1392760 words of memory out of 5000000
+ 41353 multiletter control sequences out of 15000+600000
+ 22956 words of font info for 91 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,19n,107p,932b,3884s stack positions out of 5000i,500n,10000p,200000b,80000s
+./ch_distributions/TeX/ch_distributions.tex:802:  ==> Fatal error occurred, no 
+output PDF file produced!
