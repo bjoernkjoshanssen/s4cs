@@ -39,48 +39,46 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: s4cs-blx.bib
 Database file #2: eoce.bib
 Biblatex version: 3.8
-Warning--Version mismatch: biblatex.bst=2.9, biblatex.sty=2.7
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 7 entries,
             6268 wiz_defined-function locations,
             1248 strings with 10601 characters,
-and the built_in function-call counts, 26864 in all, are:
-= -- 1660
-> -- 557
-< -- 136
-+ -- 541
-- -- 212
-* -- 1894
-:= -- 2486
+and the built_in function-call counts, 28543 in all, are:
+= -- 1709
+> -- 616
+< -- 171
++ -- 570
+- -- 232
+* -- 2078
+:= -- 2714
 add.period$ -- 0
 call.type$ -- 7
-change.case$ -- 60
-chr.to.int$ -- 0
+change.case$ -- 75
+chr.to.int$ -- 30
 cite$ -- 12
-duplicate$ -- 2887
-empty$ -- 2702
-format.name$ -- 340
-if$ -- 5678
+duplicate$ -- 3009
+empty$ -- 2841
+format.name$ -- 344
+if$ -- 6024
 int.to.chr$ -- 0
 int.to.str$ -- 13
 missing$ -- 0
-newline$ -- 187
-num.names$ -- 248
-pop$ -- 2060
+newline$ -- 199
+num.names$ -- 266
+pop$ -- 2023
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 97
 quote$ -- 0
-skip$ -- 924
+skip$ -- 1037
 stack$ -- 0
-substring$ -- 2573
-swap$ -- 770
-text.length$ -- 128
-text.prefix$ -- 0
+substring$ -- 2675
+swap$ -- 858
+text.length$ -- 171
+text.prefix$ -- 6
 top$ -- 1
 type$ -- 226
-warning$ -- 1
-while$ -- 289
+warning$ -- 0
+while$ -- 345
 width$ -- 0
-write$ -- 181
-(There was 1 warning)
+write$ -- 193

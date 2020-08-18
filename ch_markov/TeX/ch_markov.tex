@@ -62,6 +62,37 @@ When $q=0$, we have $\P(X=1-Y)=1$. When $q=p$, we have $\P(X=Y)=1$.
 Moreover, the constraint on $q$ is that $0\le q\le p$ and $p-q\le 1-p$, i.e., $q\ge 2p-1$.
 In a sense, the joint distributions for fixed $p$ form a parametrized curve in $\mathbb R^4$.\footnote{For much more on algebraic statistics, see Seth Sullivant, Algebraic Statistics, \emph{Graduate Studies in Mathematics} \textbf{194}, 2018.}
 
+
+As another example, we consider phylogenetic trees.
+The spike protein of a SARS-CoV-2 virus contains $n=1273$ amino acids.
+The famous D614G mutation involved a change in position 614.
+Assume the positions are independent random variables that change value with time.
+Which value of $p$ will maximize the probability of exactly $k=1$ changes occurring? That is,
+\[
+	L(p) = \binom{n}{k} (1-p)^{n-k}p^k
+\]
+We take the derivative with respect to $p$, after first taking the logarithm:
+\[
+	\ln L(p) = \ln \binom{n}{k} + (n-k)\ln(1-p) + k\ln p
+\]
+\[
+	0 =^! \frac{d}{dp}\ln L(p) = \frac{k}p - \frac{n-k}{1-p}
+\]
+\[
+	\frac{k}p = \frac{n-k}{1-p}
+\]
+\[
+	k(1-p)=(n-k)p
+\]
+\[
+	np = k 
+\]
+\[
+	p = k/n = 1/1273
+\]
+Then $L(p)=1273 (1272/1273)^{1272}/1273 = (1-1/1273)^{1272}\approx 1/e\cdot (1-1/1273)\approx 1/e$.
+
+
 %\includegraphics{ch_markov/figures/wolfram-s4cs.png}
 \begin{tikzpicture}
   \begin{axis}[ 
