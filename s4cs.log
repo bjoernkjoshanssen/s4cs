@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 AUG 2020 09:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 AUG 2020 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2408,8 +2408,8 @@ Overfull \hbox (68.1247pt too wide) in paragraph at lines 120--120
 lMarch20: children of Hawaii[] 
  []
 
-[109] [110] [111] [112]
-Overfull \hbox (2.18947pt too wide) detected at line 364
+[109] [110] [111] [112] [113]
+Overfull \hbox (2.18947pt too wide) detected at line 420
 \U/msb/m/n/10 P\OT1/cmr/m/n/10 ([]001; \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (1) = 
 \OML/cmm/m/it/10 s[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (2)) =
  \U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emit\OT1/cmr/m/n/10 0 \OMS/cm
@@ -2422,18 +2422,18 @@ U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emit\OT1/cmr/m/n/10 1 \OMS/cmsy
 /m/n/10 j \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 )
  []
 
-[113] [114] [115] [116]
-Overfull \hbox (0.55713pt too wide) in alignment at lines 590--596
+[114] [115] [116] [117]
+Overfull \hbox (0.55713pt too wide) in alignment at lines 646--652
  [][][] []
  []
 
-[117] [118] [119]) [120]
+[118] [119] [120]) [121]
 \openout2 = `ch_markov/TeX/ch_markov_ex.aux'.
 
- (./ch_markov/TeX/ch_markov_ex.tex [121
+ (./ch_markov/TeX/ch_markov_ex.tex [122
 
 
-]) [122]
+]) [123]
 \openout2 = `extraTeX/eoceSolutions/eoceSolutions.aux'.
 
 
@@ -2451,15 +2451,15 @@ Overfull \hbox (6.75974pt too wide) in alignment at lines 57--57
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 123 might be wrong on input line 57
+(multicol)                Footnotes on page 124 might be wrong on input line 57
 .
 
-[123
+[124
 
 
 
-] [124]
-<extraTex/eoceSolutions/likelihoodprinciple.jpg, id=1696, 2055.68pt x 1541.76pt
+] [125]
+<extraTex/eoceSolutions/likelihoodprinciple.jpg, id=1700, 2055.68pt x 1541.76pt
 >
 File: extraTex/eoceSolutions/likelihoodprinciple.jpg Graphic file (type jpg)
 <use extraTex/eoceSolutions/likelihoodprinciple.jpg>
@@ -2469,15 +2469,15 @@ n input line 135.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 125 might be wrong on input line 17
+(multicol)                Footnotes on page 126 might be wrong on input line 17
 0.
 
-[125 <./extraTex/eoceSolutions/likelihoodprinciple.jpg>]
+[126 <./extraTex/eoceSolutions/likelihoodprinciple.jpg>]
 Overfull \hbox (26.24966pt too wide) in alignment at lines 186--186
  [][][] []
  []
 
-[126]
+[127]
 Overfull \hbox (3.40347pt too wide) in alignment at lines 298--298
  [][][] []
  []
@@ -2488,7 +2488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--298
 %5Cfrac % 7B(u % 2B % 5Cfrac1 % 7B25 % 7D ) (1-[]u-[] % 5Cfrac1 %
  []
 
-[127]
+[128]
 Underfull \hbox (badness 10000) in paragraph at lines 392--392
 \OT1/cmr/m/n/9 (c) This is sim-i-lar to (a). Take
  []
@@ -2497,7 +2497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 392--392
 Overfull \vbox (13.0025pt too high) has occurred while \output is active []
 
 
-[128]
+[129]
 Overfull \hbox (0.40338pt too wide) detected at line 442
 [][] \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 b \OT1/cmr/m/n/9 = 0  =[]\OMS/cmsy/m/n
 /9 )  [][] \OT1/cmr/m/n/9 = \OML/cmm/m/it/9 b  \OT1/cmr/m/n/9 =[]\OMS/cmsy/m/n/
@@ -2505,22 +2505,22 @@ Overfull \hbox (0.40338pt too wide) detected at line 442
 /n/9 = 0
  []
 
-) [129]
+) [130]
 \openout2 = `extraTeX/index/index.aux'.
 
  (./extraTeX/index/index.tex)
 runsystem(makeindex s4cs.idx)...executed safely (allowed).
 
- (./s4cs.ind [130
+ (./s4cs.ind [131
 
 
 
-\indexentry{probability sample|see{sample}}{130}
-\indexentry{df|see{degrees of freedom (df)}}{130}
+\indexentry{probability sample|see{sample}}{131}
+\indexentry{df|see{degrees of freedom (df)}}{131}
 
 
 
-]) [131]
+]) [132]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
  (./s4cs.aux (./extraTeX/preamble/copyright.aux)
@@ -2554,8 +2554,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
 ### simple group (level 1) entered at line 237 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 39574 strings out of 492649
- 896900 string characters out of 6129622
+ 39575 strings out of 492649
+ 896908 string characters out of 6129622
  1411760 words of memory out of 5000000
  41925 multiletter control sequences out of 15000+600000
  25559 words of font info for 99 fonts, out of 8000000 for 9000
@@ -2608,10 +2608,10 @@ s/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/
 type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/public/wasy2-ps/wasy10.pfb>
-Output written on s4cs.pdf (131 pages, 1773670 bytes).
+Output written on s4cs.pdf (132 pages, 1776293 bytes).
 PDF statistics:
- 2060 PDF objects out of 2073 (max. 8388607)
- 1819 compressed objects within 19 object streams
- 670 named destinations out of 1000 (max. 500000)
+ 2064 PDF objects out of 2073 (max. 8388607)
+ 1822 compressed objects within 19 object streams
+ 671 named destinations out of 1000 (max. 500000)
  600 words of extra memory for PDF output out of 10000 (max. 10000000)
 

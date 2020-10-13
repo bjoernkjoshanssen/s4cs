@@ -240,30 +240,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}Algebraic statistics}{107}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Maximum entropy}{109}{section.8.2}
+\contentsline {section}{\numberline {8.2}Maximum entropy}{110}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Maximum likelihood}{110}{section.8.3}
+\contentsline {section}{\numberline {8.3}Maximum likelihood}{111}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Hidden Markov chains}{111}{section.8.4}
+\contentsline {section}{\numberline {8.4}Hidden Markov chains}{112}{section.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}Overfitting and the complexity of a word}{112}{section.8.5}
+\contentsline {section}{\numberline {8.5}Overfitting and the complexity of a word}{113}{section.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.6}Akaike information criterion}{115}{section.8.6}
+\contentsline {section}{\numberline {8.6}Akaike information criterion}{116}{section.8.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{An Akaike coincidence, maybe.}{116}{paragraph*.44}
+\contentsline {paragraph}{An Akaike coincidence, maybe.}{117}{paragraph*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Bayesian information criterion}{118}{paragraph*.45}
+\contentsline {paragraph}{Bayesian information criterion}{119}{paragraph*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.7}Support vector machines}{118}{section.8.7}
+\contentsline {section}{\numberline {8.7}Support vector machines}{119}{section.8.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.8}Shattering}{119}{section.8.8}
+\contentsline {section}{\numberline {8.8}Shattering}{120}{section.8.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8.1}Support vector machines}{119}{subsection.8.8.1}
+\contentsline {subsection}{\numberline {8.8.1}Support vector machines}{120}{subsection.8.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8.2}Discrete shattering}{119}{subsection.8.8.2}
+\contentsline {subsection}{\numberline {8.8.2}Discrete shattering}{120}{subsection.8.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.9}Exercises}{121}{section.8.9}
+\contentsline {section}{\numberline {8.9}Exercises}{122}{section.8.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}End of chapter exercise solutions}{123}{appendix.A}
+\contentsline {chapter}{\numberline {A}End of chapter exercise solutions}{124}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{130}{section*.47}
+\contentsline {chapter}{Index}{131}{section*.47}

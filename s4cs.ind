@@ -58,7 +58,7 @@
   \item effect size, \textbf{93}
   \item empirical cdf, \textbf{34}
   \item entropy
-    \subitem maximum, 109
+    \subitem maximum, 110
   \item event, \textbf{14}, 14--15
   \item Events, \textbf{14}
   \item $\E(X)$, 22
@@ -103,7 +103,7 @@
 
   \item Law of Large Numbers, \textbf{13}
   \item learning
-    \subitem machine, 118
+    \subitem machine, 119
   \item least squares regression, 89
     \subitem extrapolation, 90
     \subitem interpreting parameters, 90
@@ -133,7 +133,7 @@
   \indexspace
 
   \item optimization
-    \subitem mathematical, 118
+    \subitem mathematical, 119
   \item outcomes, \textbf{14}
 
   \indexspace
@@ -183,10 +183,10 @@
     \subitem difference in proportions, 76
     \subitem single mean, 51
     \subitem single proportion, 73
-  \item states, \textbf{111}
+  \item states, \textbf{112}
   \item statistically significant, \textbf{63}
   \item strong LLN, \textbf{13}
-  \item structure function, \textbf{112}
+  \item structure function, \textbf{113}
   \item success, \textbf{73}
   \item success-failure condition, \textbf{73, 74}
 

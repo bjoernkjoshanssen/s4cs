@@ -126,6 +126,59 @@ $\epsilon^{1+2+1+2+2+3+3+2+3}=\epsilon^{19}$ since Sweden differs from Wuhan in 
 
 In general, the probability associated with a tree is the product of probabilities along its edges.
 
+
+In this virus example, it is plausible, or even convincing, that the ancestors of viruses in the data set are all also in the data set (except for the ancestors of the Wuhan virus).
+In other examples this is not so.
+Consider the following example from Sullivant.
+\begin{verbatim}
+Chimp    ACCTTGGAAGGTAAACGA
+Human    ACCGTGCAACGTGAACGA
+Gorilla  ACCGTGCAACGTAAACTA
+\end{verbatim}
+The fewest differences are 2 between Human and Gorilla.
+In both cases, where Human and Gorilla differ, one of them agrees with Chimp.
+This suggests a hypothetical common ancestor of Human and Gorilla given by
+\begin{verbatim}
+Ancestor ACCGTGCAACGTAAACGA
+\end{verbatim}
+This makes the distance Ancestor to Human 1, and Ancestor to Gorilla 1.
+The distance from Ancestor to Chimp is 3.
+Now we may wonder if there is one common ancestor
+\begin{verbatim}
+Common ACC?TG?AA?GTAAACGA
+\end{verbatim}
+
+to Ancestor and Chimp, or whether Chimp evolved from Ancestor as well.
+Let us consider these two models.
+With the common ancestor, the probability is a sum over all possible values for the three question marks ???:
+\begin{verbatim}
+??? Probability
+AAA epsilon^6
+AAC epsilon^5
+AAG epsilon^5
+AAT epsilon^6
+...
+\end{verbatim}
+Notice that Chimp has ???=TGG and Ancestor has ???=GCC.
+
+For instance, if the common ancestor has ???=AAA then to evolve into Chimp and Ancestor gives a factor of $\epsilon^{3+3}$.
+There will be $2^3$ choices with $\epsilon^6$ (nothing in common with TGG nor GCC).
+Let us use 0 for a symbol not in common with either and 1 for a symbol in common with one of them. Then the possibilities are
+000 for a probability $8\cdot \epsilon^6$;
+001,010,100 for a total probability $3\cdot 8\cdot \epsilon^5$;
+011, 101, 110 for a total probability $3\cdot 8\cdot \epsilon^4$;
+111 for a probability $8\cdot \epsilon^3$;
+for a total of
+\[
+	8 \epsilon^6 + 24 \epsilon^5 + 24 \epsilon^4 + 8\epsilon^3 = 8\epsilon^3(\epsilon^3+3\epsilon^2+3\epsilon+1)=8\epsilon^3(\epsilon+1)^3
+\]
+
+
+Without the common ancestor, there is no such sum and the probability is just $\epsilon^{3}$.
+
+So we see that the 5-species tree gives a higher probability than the 4-species tree.
+
+This is not quite right, however, since $\epsilon$ was the probability of exactly one change.
 %\includegraphics{ch_markov/figures/wolfram-s4cs.png}
 \begin{tikzpicture}
   \begin{axis}[ 
