@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 NOV 2021 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  11 DEC 2024 12:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1651,7 +1651,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 File: ch_intro_to_data/figures/pie-chart-s4cs.png Graphic file (type png)
 <use ch_intro_to_data/figures/pie-chart-s4cs.png>
 Package pdftex.def Info: ch_intro_to_data/figures/pie-chart-s4cs.png  used on i
-nput line 98.
+nput line 99.
 (pdftex.def)             Requested size: 196.93564pt x 123.16107pt.
 ) [9 <./ch_intro_to_data/figures/pie-chart-s4cs.png>]
 \openout2 = `ch_intro_to_data/TeX/ch_intro_to_data_ex.aux'.
