@@ -1,0 +1,32 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.ilg
+*.ind
+*.idx
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.dvi
+
+# Editors
+*~
+*.swp
+
