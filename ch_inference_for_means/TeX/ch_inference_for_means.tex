@@ -36,15 +36,15 @@ We can think about this as follows. We write out the $t$ statistic in the $n=2$,
 	T=(\overline X-\mu)/(S/\sqrt{n}) &=& \frac{\frac12(X_1+X_2)-\mu}{\frac1{\sqrt n}\sqrt{ \frac1{2-1}\sum_{i=1}^2 (X_i-\bar X)^2}}\\
 	&=&\frac{\frac12(X_1+X_2)-\mu}{\frac1{\sqrt 2}\sqrt{\sum_{i=1}^2 (X_i-\bar X)^2}}\\
 	&=&\frac{\frac12(X_1+X_2)-\mu}{\frac1{\sqrt 2}\sqrt{2(\frac{X_1-X_2}2)^2}}\\
-	&=& \frac{\frac12(X_1+X_2)-\mu}{|X_1-X_2|}
+	&=& \frac{\frac12(X_1+X_2)-\mu}{\frac12 |X_1-X_2|}
 \end{eqnarray*}
 For simplicity, take $\mu=0$. Then
 \[
-	T^2 = \frac{\frac14(X_1+X_2)^2}{(X_1-X_2)^2}
+	T^2 = \frac{(X_1+X_2)^2}{(X_1-X_2)^2}
 \]
 and $T^2\le t^2$ iff
 \[
-	\frac14(X_1+X_2)^2\le t^2(X_1-X_2)^2
+	(X_1+X_2)^2\le t^2(X_1-X_2)^2
 \]
 We would now have to perform a double integral over a region in $(X_1,X_2)$-plane, but we shall leave that for a course that requires multivariable calculus.
 
