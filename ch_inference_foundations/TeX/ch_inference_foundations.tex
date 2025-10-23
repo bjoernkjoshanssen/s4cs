@@ -77,8 +77,41 @@ A point estimate provides a single plausible value for a parameter. However, a p
 
 A plausible range of values for the population parameter is called a \term{confidence interval}.
 
+\subsection{Confidence interval for the exponential distribution}
+Suppose $X$ is a random variable that is exponentially distributed with parameter $\lambda$, so that $f_X(x)=\lambda e^{-\lambda x}$.
+Given one observation, what can we say about $\lambda$?
+Notice that $Y=\lambda X$ is exponentially distributed with parameter 1, since
+\[
+f_Y(y) = \frac{d}{dy}\mathbb P(Y \le y) = \frac{d}{dy}\mathbb P(\lambda X \le y) = \frac{d}{dy}F_X(y/\lambda) = \frac1{\lambda} f_X(y/\lambda)
+= e^{-y}.
+\]
+In order to obtain a 90\% confidence interval we choose $y_0, y_1$ such that $1-e^{-y_0}=\mathbb P(Y\le y_0)=5\%=\mathbb P(Y\ge y_1)=e^{-y_1}$.
+Thus, $y_0=\ln 20 - \ln 19 = 0.051$. (Notice that $y_0\approx 5\%$; this is because $e^{-x}\approx 1-x$ for small positive $x$.)
+Similarly, $y_1 = \ln 20 = 2.9957$. (It is a somewhat famous fact that $e^3\approx 20$.)
+Now we have
+\[
+90\% = \mathbb P(y_0 \le Y \le y_1) = \mathbb P(y_0 \le \lambda X \le y_1) = \mathbb P(y_0/X \le \lambda \le y_1/X) = \mathbb P(\lambda\in [y_0/X,y_1/X]).
+\]
+Now I'll secretly choose a value for $\lambda$ and draw some random values:
+\begin{equation}\label{eq:values}
+X(\omega_1) = 0.231,\quad X(\omega_2) = 0.6324,\quad X(\omega_3) = 0.03144.
+\end{equation}
+This can be done by first picking $r$ uniformly from the unit interval $[0,1]$, and then letting $x$ be such that $\mathbb P(X \le x) = r$, and reporting $x$ as the value of $X$.
 
+The interval $[y_0/x,y_1/x]$ is then a 90\% confidence interval for $\lambda$.
+For our particular values, the interval is
+\[
+\left[,\frac{0.051}{0.231}, \frac{2.9957}{0.231} \right] = \left[ 0.22, 13.03\right].
+\]
+For the other two values in \eqref{eq:values} the intervals are $[0.08, 4.74]$ and $[1.62, 95.3]$ (exercise: verify this).
+What is a value for $\lambda$ that lies in all of these intervals? In October 2025 a student guessed $\lambda=3$ and indeed, that is
+the value of $\lambda$ I had used. The fact that the correct value was in all the three confidence intervals is not something that will always happen,
+in fact the probability of it happening is $90\%^3 = 72.9\%$.
 
+The subtle and key point to observe here is that the confidence interval is random: it depends on the value of the random variable $X$.
+The parameter $\lambda$ is not random; it is constant, but unknown.
+
+\subsection{Normal distribution}
 \begin{termBox}{\tBoxTitle{Central Limit Theorem, informal description}
 If a sample consists of at least 30 independent observations and the data are not strongly skewed, then the distribution of the sample mean is well approximated by a~normal model.\index{Central Limit Theorem}}
 \end{termBox}
