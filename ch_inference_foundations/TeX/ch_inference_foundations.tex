@@ -169,6 +169,33 @@ Figure~\ref{choosingZForCI} provides a picture of how to identify $z^{\star}$ ba
 \index{confidence interval!interpretation|)}
 \index{confidence interval|)}
 
+\subsection{Election polls}\label{oct-24-2025}
+Alice and Bob are running for Mayor of Honolulu.
+In a simple random sample of $n=1000$ voters, Alice had the support of 510 and Bob of 490.
+Does this give us confidence that Alice will win?
+Let $X$ be a binomial random variable with parameters $n=1000$ and $p$ being the unknown support that Alice has
+in the population at large. Since Honolulu has around 1 million voters, it is reasonable to model using a binomial distribution.
+The mean of $X$ is $np$ and the standard deviation $\sigma(X)$ is $\sqrt{np(1-p)}$. Since $p$ is unknown, we approximate the standard deviation by $\sqrt{n}/2$, using $p\approx 1/2$. (To be a bit more precise we can use $p\approx \frac{510}{1000}$.)
+Now $X$ is approximately normal by the Central Limit Theorem, so if we let 
+\[
+Z = \frac{X - \mathbb E(X)}{\sigma(X)}
+\]
+then $Z$ is approximately standard normal, so that
+\[
+95\% \approx \mathbb P(|Z|\le 2).
+\]
+Note that $\sigma(X)\approx \sqrt{1000}/2=5\sqrt{10}<16$ (since upon squaring both sides, $250<256$)
+so $2\sigma(X)<32$.
+The statement that we have 95\% confidence in is that $-2\sigma(X) \le X-1000p \le 2\sigma(X)$,
+which has several equivalent forms:
+\[-2\sigma(X) \le 1000p-X \le 2\sigma(X)\]
+\[X-2\sigma(X) \le 1000p \le X+2\sigma(X)\]
+\[\frac{X-2\sigma(X)}{1000} \le p \le \frac{X+2\sigma(X)}{1000}\]
+\[\frac{510-2\sigma(X)}{1000} \le p \le \frac{X+2\sigma(X)}{1000}\]
+We are if anything \emph{more} confident that $p$ belongs to the wider interval
+\[\frac{510-32}{1000} \le p \le \frac{X+32}{1000}\]
+In other words $p \in [0.478, 0.542]$. This interval includes some values of $p$ for which Alice loses the election ($p<0.5$)
+so we cannot say with 95\% confidence that she will win.
 %__________________
 \section{Hypothesis testing}
 \label{hypothesisTesting}
