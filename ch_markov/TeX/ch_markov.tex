@@ -398,11 +398,11 @@ If we are lazy, Wolfram Alpha gives the solution $q=p^2$. In other words, no mat
 
 		We now exhibit a case where paths and words differ, in the sense that consider a single path and a single word give different results.
 		For definiteness, we assume that a HMM has a designated start state $s_0$ and immediately emits a symbol before considering whether to then move to a different state.
-		\begin{thm}\label{001}
+		\begin{theorem}\label{001}
 			There is a word $x$ and a number of states $q$ such that
 			the maximum probability of emitting $x$ by a HMM with $q$ states is strictly larger than
 			the maximum probability of emitting $x$ by a HMM with $q$ states along any particular single path.
-		\end{thm}
+		\end{theorem}
 		\begin{proof}
 		Let $x=001$ and $q=2$. Consider a general HMM with two states over the alphabet $\{0,1\}$ as in Figure \ref{HMMfig}, where $\bar \alpha=1-\alpha$.
 			Let $S(t)$ be the state after transitioning $t$ times, a random variable.
@@ -446,13 +446,13 @@ If we are lazy, Wolfram Alpha gives the solution $q=p^2$. In other words, no mat
 			Let $e$ be the base of the natural logarithm.
 			When using probability, it is better to consider the alphabet $\{a,b\}$ than $\{0,1\}$.
 			Extending Theorem \ref{001}, we have:
-			\begin{thm}
+			\begin{theorem}
 			Fix two distinct symbols $a$ and $b$.
 				For $x=a^{n-1}b$ and HMMs with $q=n-1$ states,
 				\[
 					\limsup_{n\rightarrow\infty} \max_{\vec p} \P(\text{emit }x)\ge  1/e.
 				\]
-			\end{thm}
+			\end{theorem}
 			\begin{proof}
 				Let the $q-1$ many states be ordered left-to-right, and let $p_i$ be the probability of moving to the right.
 				Assume only the rightmost state allows a $b$ to be output. For $n=4$ the automaton looks like this:
@@ -500,10 +500,10 @@ If we are lazy, Wolfram Alpha gives the solution $q=p^2$. In other words, no mat
 			On the other hand, the probability of $x$ being omitted along any particular path stays bounded below $1/4$, because we must include both a probability $p$ and its negation $1-p$, and $p(1-p)\le 1/4$.
 
 				Words of the form $0^{n-1}1$ are in a sense of maximal complexity: any binary string other than $0^{n-1}1$ and $1^{n-1}0$ can have probability 1 along a single path through an HMM with $n-1$ states, by the following results.
-		\begin{thm}\label{9th}
+		\begin{theorem}\label{9th}
 			The minimum number of states of an HMM such that $x$ occurs with probability 1 along a single path is
 			$\min\{\abs{u}+\abs{v}: x=u\,v^p,\,\exists u,v,p\}$.
-		\end{thm}
+		\end{theorem}
 		Here $p\in\mathbb Q$; for instance, $(abba)^{3/2}=abbaab$.
 \begin{figure}
 			\begin{tikzpicture}[shorten >=1pt,node distance=1.5cm,on grid,auto]
@@ -536,10 +536,10 @@ If we are lazy, Wolfram Alpha gives the solution $q=p^2$. In other words, no mat
 			\caption{Figure for Theorem \ref{9th}. The out-degree of a vertex is the number of edges whose tail is at that vertex.}\label{9thfig}
 \end{figure}
 		The idea of Theorem \ref{9th} is shown in Figure \ref{9thfig}: to always go to a fresh state except that we loop back when the second occurrence of $v$ starts. The probability 1 condition expresses that the out-degree is always 1.
-			\begin{thm}
+			\begin{theorem}
 				Any binary word of length $n$ starting with $0$, except $0^{n-1}1$,
 				can be written as $u\,v^p$ with $\abs{v}>0$ and $p>1$, $p\in\mathbb Q$.
-		\end{thm}
+		\end{theorem}
 		\begin{proof}
 			If the last bit of the word has occurred before, say $x=x_1\dots x_n$ where $x_n=x_k$, $k<n$,
 			then we may write $x=x_1\dots x_{k-1}(x_k\dots x_{n-1})^{1+\epsilon}$ where $\epsilon=1/(n-k)$.
@@ -712,9 +712,9 @@ If we are lazy, Wolfram Alpha gives the solution $q=p^2$. In other words, no mat
 		(x,y,z) = \argmin_{x\ge 0, y\ge 0, z\ge 0} m(x,y,z).
 	\]
 	Without discussing the precise assumption required, we have the following rule of thumb:
-	\begin{thm}
+	\begin{theorem}
 	The minimum of a function $f(\vec x)$ subject to constraints $\vec g(\vec x)\ge\vec c$ on $\vec x$ will be attained at a place where all the partial derivatives of $f$ are zero; or else, where applying as few constraints $g_i(\vec x)=c_i$ as possible, all the remaining partial derivatives are zero.
-	\end{thm}
+	\end{theorem}
 	This is typically made precise, and proved, in multivariable calculus courses.
 
 \begin{tikzpicture}

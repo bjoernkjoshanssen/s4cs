@@ -477,9 +477,9 @@ Thus $b_1/\SE(b_1)$ goes to $\infty$. On the other hand, $r =  b_1 s_x/s_y\appro
 %	Rounding errors may slightly change the results, but that is the only difference between these two ways of checking for the significance of the regression.
 %\end{quote}
 %but this doesn't deal with whether $r\approx 1$.
-\begin{thm}\label{frischwe}
+\begin{theorem}\label{frischwe}
 $\sum\hat y = \sum y$.
-\end{thm}
+\end{theorem}
 \begin{proof}
  We have
  \[
@@ -495,12 +495,12 @@ $\sum\hat y = \sum y$.
 	\RSS &=& \sum(y-\hat y)^2
  \end{eqnarray*}
  The term ``sum of squares'' may seem unhelpful, until you learn that it is to be compared to \term{mean squares}, which is a sum of squares divided by its number of degrees of freedom.
- \begin{thm}[Sum of squares decomposition]\label{ssethm}
+ \begin{theorem}[Sum of squares decomposition]\label{ssethm}
 	\[
 		\label{SSE}
 		\TSS = \sum(y-\overline y)^2 = \sum (\hat y-\overline y)^2 + \sum(y-\hat y)^2 = \ESS + \RSS.
 	\]
-\end{thm}
+\end{theorem}
 \begin{proof}
 	We need
 	%\[
@@ -527,9 +527,9 @@ $\sum\hat y = \sum y$.
 	which upon dividing by $b_1$ is our formula for $b_1$ from Equation (\ref{b1}).
 \end{proof}
 
-\begin{thm}\label{aid}
+\begin{theorem}\label{aid}
 $1-r^2= \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2}$.
-\end{thm}
+\end{theorem}
 \begin{proof}
 	\begin{eqnarray*}
 		1-r^2 												&\overset{!}{=}& \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2}\\
@@ -544,11 +544,11 @@ $1-r^2= \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2}$.
 	%good way: we claim the vectors $\hat y-\overline y$ and $y-\hat y$ are orthogonal.
 \end{proof}
 
-\begin{thm}\label{miao-hu}
+\begin{theorem}\label{miao-hu}
 \[
 r^2=\frac{\ESS}{\TSS}=\frac{\sum (\hat y-\bar y)^2}{\sum (y-\bar y)^2}.
 \]
-\end{thm}
+\end{theorem}
 \begin{proof}
 We have
 \[
@@ -556,12 +556,12 @@ We have
 \]
 \end{proof}
  
-\begin{thm}\label{https://www.andrews.edu/}
+\begin{theorem}\label{https://www.andrews.edu/}
 The $t$ statistic $t=b_1/\SE(b_1)$ is also given by
 	\[
 		t=r\sqrt{(n-2)/(1-r^2)}.
 	\]
-\end{thm}
+\end{theorem}
 
 Note that $r/\sqrt{1-r^2}$ goes to $\infty$ only when $r\to 1$, but $\sqrt{n-2}$ goes to infinity anyway. So if $r$ is a fixed value (there is a certain amount of spread around the regression line and it's not going away) then we should achieve statistical significance as $n\to \infty$. Namely, imagine that $X$ and $Y$ are correlated jointly normal random variables with a correlation coefficient $\rho$; for large $n$ we will have $r\approx\rho$.
 \begin{proof}[Proof of Theorem \ref{https://www.andrews.edu/}]
@@ -604,13 +604,13 @@ r^2 = \frac{F}{F+df_2/df_1}.
 \]
 
 There is an underlying algebraic lemma here:
-\begin{lem}
+\begin{lemma}
 Let $F$, $a$, $u_1$, $u_2$, $r$ be numbers.
 If $F=\frac{a/u_1}{b/u_2}$ and $r^2=\frac{a}{a+b}$, then $F$ and $r^2$ are related by
 \[
 	r^2 = \frac{F}{F+u_2/u_1}.
 \]
-\end{lem}
+\end{lemma}
 \begin{proof}
 We calculate:
 \[

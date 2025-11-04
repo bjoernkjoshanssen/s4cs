@@ -36,7 +36,7 @@
 		\hat p_n = \frac1n\sum_{i=1}^n X_i.
 	\]
 	As the number of rolls increases, $\hat{p}_n$ will converge to the probability of rolling a \resp{1}, $p = 1/6$.
-	Figure~\ref{dieProp} shows this convergence for 100,000 die rolls.
+	\Vref{dieProp} shows this convergence for 100,000 die rolls.
 	The tendency of $\hat{p}_n$ to stabilize around $p$ is described by the \term{Law of Large Numbers}. 
 
 	\begin{figure}%[bt]
@@ -51,7 +51,7 @@
 	As more observations are collected, the proportion $\hat{p}_n$ of occurrences with a particular outcome converges to the probability $p$ of that outcome.}
 	\end{termBox}
 
-	Occasionally the proportion will veer off from the probability and appear to defy the Law of Large Numbers, as $\hat{p}_n$ does many times in Figure~\ref{dieProp}. However, these deviations become smaller as the number of rolls increases.
+	Occasionally the proportion will veer off from the probability and appear to defy the Law of Large Numbers, as $\hat{p}_n$ does many times in \Vref{dieProp}. However, these deviations become smaller as the number of rolls increases.
 
 	Above we write $p$ as the probability of rolling a \resp{1}. We can also write this probability as
 	\begin{eqnarray*}
@@ -74,9 +74,9 @@
 	\]
 	Both are true. The strong LLN is stronger (it says more, and it implies the weak LLN) but the strong LLN requires consideration of infinite sequences of outcomes, hence in applications it is sometimes conceptual ``overkill''.
 	For students familiar with $\epsilon$-$\delta$ proofs, we offer:
-	\begin{thm}
+	\begin{theorem}
 	The strong LLN implies the weak LLN.
-	\end{thm}
+	\end{theorem}
 	\begin{proof}
 	Let $\epsilon>0$ be given. Since $\P(\lim_{n\to\infty}\hat p_n = p) = 1$,
 	we have
@@ -122,7 +122,7 @@
 
 	\index{event|(}
 
-	Statisticians rarely work with individual outcomes and instead consider \indexthis{\emph{sets}}{sets} or \indexthis{\emph{collections}}{collections} of outcomes. Let $A$ represent the event where a die roll results in \resp{1} or \resp{2} and $B$~represent the event that the result is a \resp{4} or a \resp{6}. We write $A$ as the set of outcomes $\{$\resp{1},~\resp{2}$\}$ and $B=\{$\resp{4}, \resp{6}$\}$. These sets are commonly called \termsub{events}{event}. Because $A$ and $B$ have no elements in common, they are disjoint events. $A$ and $B$ are represented in Figure~\ref{disjointSets}.
+	Statisticians rarely work with individual outcomes and instead consider \indexthis{\emph{sets}}{sets} or \indexthis{\emph{collections}}{collections} of outcomes. Let $A$ represent the event where a die roll results in \resp{1} or \resp{2} and $B$~represent the event that the result is a \resp{4} or a \resp{6}. We write $A$ as the set of outcomes $\{$\resp{1},~\resp{2}$\}$ and $B=\{$\resp{4}, \resp{6}$\}$. These sets are commonly called \termsub{events}{event}. Because $A$ and $B$ have no elements in common, they are disjoint events. $A$ and $B$ are represented in \Vref{disjointSets}.
 
 	\begin{figure}%[hhh]
 	\centering
@@ -132,7 +132,7 @@
 	\end{figure}
 
 	\begin{exercise}\label{lara}
-	Can you modify $D$ in Figure \ref{disjointSets} to make $A$, $B$, $D$ pairwise disjoint?\footnote{Yes, let $D=\{3,5\}$, or more generally $D\subseteq\{3,5\}$.}
+	Can you modify $D$ in \Vref{disjointSets} to make $A$, $B$, $D$ pairwise disjoint?\footnote{Yes, let $D=\{3,5\}$, or more generally $D\subseteq\{3,5\}$.}
 	\end{exercise}
 
 
@@ -148,7 +148,7 @@
 	where $\P(A$ and $B)$ is the probability that both events occur.}
 	\end{termBox}
 
-	\begin{example}%Thanks to Christian
+	\begin{example}{Probability with two coins}%Thanks to Christian
 	Suppose we toss two coins. Let $A$ be the event that the 1st coin is heads, and $B$ the event that the 2nd coin is heads.
 	Then the probability that at least one coin is heads is $\P(A\cup B)=\P(A)+\P(B)-\P(A\cap B)=\frac12+\frac12-\frac14 = \frac34$.
 	\end{example}
@@ -189,7 +189,7 @@ A probability distribution is a list of the possible outcomes with corresponding
 \label{diceSumDist}
 \end{figure}
 
-In the bar plots Figure \ref{diceSumDist}, the bar heights represent the probabilities of outcomes. If the outcomes are numerical and discrete, it is usually (visually) convenient to make a bar plot that resembles a histogram, as in the case of the sum of two dice.
+In the bar plots \Vref{diceSumDist}, the bar heights represent the probabilities of outcomes. If the outcomes are numerical and discrete, it is usually (visually) convenient to make a bar plot that resembles a histogram, as in the case of the sum of two dice.
 
 \subsection{Complement of an event}
 
@@ -224,7 +224,7 @@ That is, if the outcome is not in $A$, it must be represented in $A^c$. We use t
 \P(A\text{ or }A^c) = \P(A) + \P(A^c)
 \label{complementDisjointEquation}
 \end{eqnarray}
-Combining Equations~(\ref{complementSumTo1}) and~(\ref{complementDisjointEquation}) yields a very useful relationship between the probability of an event and its complement.
+Combining~\eqref{complementSumTo1} and~\eqref{complementDisjointEquation} yields a very useful relationship between the probability of an event and its complement.
 
 \begin{termBox}{\tBoxTitle{Complement}
 The complement of event $A$ is denoted $A^c$, and $A^c$ represents all outcomes not in~$A$. $A$ and $A^c$ are mathematically related: \vspace{-2mm}
@@ -276,7 +276,7 @@ Similarly, if there are $k$ events $A_1,\dots,A_k$ from $k$ independent processe
 \end{termBox}
 
 
-Sometimes we wonder if one outcome provides useful information about another outcome. The question we are asking is, are the occurrences of the two events independent? We say that two events $A$ and $B$ are independent if they satisfy Equation~\eqref{eqForIndependentEvents}.
+Sometimes we wonder if one outcome provides useful information about another outcome. The question we are asking is, are the occurrences of the two events independent? We say that two events $A$ and $B$ are independent if they satisfy~\eqref{eqForIndependentEvents}.
 
 
 %_________________
@@ -359,7 +359,7 @@ If two events are independent, then knowing the outcome of one should provide no
 %\index{data!smallpox|)}
 \index{tree diagram|(}
 
-\termsub{Tree diagrams}{tree diagram} are a tool to organize outcomes and probabilities around the structure of the data.  Figure~\ref{smallpoxTreeDiagram} shows the general idea.
+\termsub{Tree diagrams}{tree diagram} are a tool to organize outcomes and probabilities around the structure of the data.  \Vref{smallpoxTreeDiagram} shows the general idea.
 \begin{figure}%[ht]
 \centering
 \includegraphics[width=0.93\textwidth]{ch_probability/figures/smallpoxTreeDiagram/smallpoxTreeDiagram}
@@ -423,7 +423,7 @@ It is time to remind you of the notation
 	\bar w = www\dots
 \]
 used in repeated decimal expansions.
-In particular, you should find it useful to know the expansions in Table \ref{142857}.
+In particular, you should find it useful to know the expansions in \Cref{142857}.
 \begin{table}
 \centering
 \begin{tabular}{| l | l | l | l | l | l |} %weird mixture of L's and bars
@@ -461,12 +461,12 @@ which goes to zero as $n\to\infty$.
 \section{Bayesian statistics}
 
 Suppose we have a Bernoulli distribution with parameter $p$, which is unknown.
-Perhaps we should take $p=1/2$ as our starting assumption (this is consistent with the idea of maximum entropy from Section \ref{maxEnt}).
+Perhaps we should take $p=1/2$ as our starting assumption (this is consistent with the idea of maximum entropy from \Cref{maxEnt}).
 Now suppose we observe $X=1$ (heads). Then we can \emph{update} our estimate of $p$ as follows, in the spirit of Bayes' Theorem:
 \[
 	\P(p=p_0\mid X=1) = \frac{\P(X=1\mid p=p_0)\cdot \P(p=p_0)}{\P(X=1)}
 \]
-However, if we consider $p$ to be a random variable, then any particular value will have probability 0 and we should be considering the \term{probability density function} (see Section~\ref{contDist}) instead:
+However, if we consider $p$ to be a random variable, then any particular value will have probability 0 and we should be considering the \term{probability density function} (see \Cref{contDist}) instead:
 \begin{equation}\label{learnBayes}
 	f_p(p_0\mid X=1) = \frac{\P(X=1\mid p=p_0)\cdot f_p(p_0)}{\P(X=1)}.
 \end{equation}
@@ -506,7 +506,7 @@ We will not go deeply into Bayesian statistics in this book, but suffice it to s
 \item \term{Frequentist statistics} holds that probabilities like $p$ above are estimated from a sample $\hat p=\sum X_i/n$;
 \item \term{Bayesian statistics} holds that rather than an infinitely precise estimate value $\hat p$, we have a pdf representing our current beliefs about what $p$ might be. This pdf becomes more sharply peaked as we gather more sample points.
 \end{itemize}
-While the frequentist stance avoids the tricky issue ``what should our initial pdf, after seeing 0 values, be?'', the Bayesian stance is well-suited to machine learning, whereby a machine can be continuously updating its beliefs about the world using the method of (\ref{learnBayes}).
+While the frequentist stance avoids the tricky issue ``what should our initial pdf, after seeing 0 values, be?'', the Bayesian stance is well-suited to machine learning, whereby a machine can be continuously updating its beliefs about the world using the method of \eqref{learnBayes}.
 
 %_________________
 %_________________
@@ -549,7 +549,7 @@ If $X$ takes outcomes $x_1,\dots, x_k$ with probabilities $\P(X=x_1),\dots, \P(X
 The Greek letter $\mu$\index{Greek!mu ($\mu$)} may be used in place of the notation $\E(X)$.}
 \end{termBox}
 
-It is also possible to compute the expected value of a continuous random variable (see Section~\ref{contDist}):
+It is also possible to compute the expected value of a continuous random variable (see \Cref{contDist}):
 \[
 \mu = \int xf(x)dx
 \]
@@ -569,9 +569,9 @@ where $f(x)$, the probability density function, represents a function for the de
 The \term{(sample) mean}, sometimes called the (sample) \indexthis{average}{mean!average} of a data set $x_1,\dots,x_n$ is distinct from the mean of a random variable.
 
 However, we can ``freeze'' a data set and consider the uniform distribution on it.
-\begin{df}
+\begin{definition}
 The \term{uniform distribution} on a finite set of $n$ elements, $\{x_1,\dots,x_n\}$, is given by $\P(X=x_i)=\frac1n$. If some of the $x_i$ are identical (say $k$ many are equal to a particular $x_i$) this makes that element have probability $k/n$.
-\end{df}
+\end{definition}
 \begin{example}{The uniform distribution on $\{1.3, 2.0, -4\}$.}
 This distribution is such that if a variable $X$ has this distribution then $\P(X=1.3)=1/3$, $\P(X=2.0)=1/3$, and $\P(X=-4)=1/3$.
 \end{example}
@@ -582,9 +582,9 @@ In the sample standard deviation from Chapter 1, we divide by $n-1$, rather than
 \[
 	S^2 = \frac1n \sum_{i=1}^n (X_i-\bar X)^2.
 \]
-\begin{thm}
+\begin{theorem}
 $\E(S^2)=\sigma^2$.
-\end{thm}
+\end{theorem}
 \begin{proof}
 Let us make the simplifying assumption that $\E(X_i)=0$.
 The value of
@@ -818,7 +818,7 @@ The geometric distribution is understandable after studying infinite series and 
 \[
 	\sum_{n=0}^\infty x^n = \frac1{1-x},\quad |x|<1.
 \]
-When we check the 68-95-99.7 rule in Section \ref{997} we shall use Taylor series:
+When we check the 68-95-99.7 rule in \Cref{997} we shall use Taylor series:
 \[
 f(x)=\sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!}x^n.
 \]

@@ -15,7 +15,7 @@ In general, if $X$ is normal with mean $\mu$ and variance $\sigma^2$ then
 \[
 	f_X(x) = \frac1{\sqrt{2\pi}\cdot\sigma} e^{-((x-\mu)/\sigma)^2/2},\quad -\infty<z<\infty.
 \]
-See Figure~\ref{simpleNormal}.
+See~\Cref{simpleNormal}.
 
 \begin{figure}
 \centering
@@ -39,7 +39,7 @@ Z = \frac{x-\mu}{\sigma}
 
 Using Google Sheets' \sheets{normdist} and \sheets{norminv} is more practical than table look-up when a computer is handy.
 
-Let us see how to reproduce the values in Table~\ref{zTableShort} using Google Sheets.
+Let us see how to reproduce the values in~\Cref{zTableShort} using Google Sheets.
 
 \sheets{=normdist(0.01,0,1,TRUE)}
 
@@ -258,9 +258,9 @@ Then
 \P(1\le X<\infty) = \sum_{k=1}^\infty \P(X=k) &=& \sum_{k=1}^\infty (1-p)^{k-1}p\\
  &=& \sum_{t=0}^\infty (1-p)^t p = p\cdot \frac{1}{1-(1-p)} = 1.
 \end{eqnarray*}
-\begin{thm}
+\begin{theorem}
 The mean of a geometric random variable $X$ is $1/p$.
-\end{thm}
+\end{theorem}
 \begin{proof}
 First let us recall (or learn) another series from Calculus:
 \[
@@ -276,9 +276,9 @@ Therefore,
 &=&\frac{p}{1-p}\sum_{k=0}^\infty k(1-p)^k = \frac{p}{1-p} \cdot \frac{1-p}{p^2} = \frac1{p}.\qedhere
 \end{eqnarray*}
 \end{proof}
-\begin{thm}\label{varGeom}
+\begin{theorem}\label{varGeom}
 The variance of a geometric random variable $X$ is $\frac{1-p}{p^2}$.
-\end{thm}
+\end{theorem}
 \begin{proof}
 Let
 \[
@@ -307,7 +307,7 @@ The quantity
 \begin{eqnarray*}
 {n\choose k} = \frac{n!}{k!(n-k)!}
 \end{eqnarray*}
-is read \term{n choose k}.\footnote{Other notation for $n$ choose $k$ includes $_nC_k$, $C_n^k$, and $C(n,k)$.} The exclamation point notation (e.g. $k!$) denotes a \term{factorial}\label{factorialDefinitionInTheBinomialSection} expression (Table \ref{factorialTable}).
+is read \term{n choose k}.\footnote{Other notation for $n$ choose $k$ includes $_nC_k$, $C_n^k$, and $C(n,k)$.} The exclamation point notation (e.g. $k!$) denotes a \term{factorial}\label{factorialDefinitionInTheBinomialSection} expression (\Cref{factorialTable}).
 
 \begin{table}
 \centering
@@ -330,9 +330,9 @@ $n$ & $n!$\\
 and professors that $6!=720$.}\label{factorialTable}
 \end{table}
 
-\begin{thm}
+\begin{theorem}
 $\binom{n}{k}$ equals the number of subsets $F$ of an $n$-element set $[n]:=\{1,\dots,n\}$ such that $F$ has $k$ elements.
-\end{thm}
+\end{theorem}
 \begin{proof}[Proof idea]
 The number of sequences $(a_1,\dots,a_k)$ where all the $a_i$ are distinct and coming from $[n]$, is $n!/(n-k)!$. Indeed, we have $n$ choices for $a_1$, then $n-1$ choices for $a_2$ given a choice of $a_1$, and so on. A set $F$ is represented by $k!$ such sequences.
 \end{proof}
@@ -400,7 +400,7 @@ The binomial distribution with probability of success $p$ is nearly normal when 
 
 
 \paragraph{The 10\% condition.}
-When drawing a sample from a larger population, the \term{10\% condition} helps our samples to be independent. If our sample has more than 10\% of the individuals, then knowing that 5\% has a certain property may mean that the other 5\% cannot have this property. See also Section \ref{tenpercent}.
+When drawing a sample from a larger population, the \term{10\% condition} helps our samples to be independent. If our sample has more than 10\% of the individuals, then knowing that 5\% has a certain property may mean that the other 5\% cannot have this property. See also \Cref{tenpercent}.
 
 
 %\subsection{The normal approximation breaks down on small intervals}
@@ -621,37 +621,59 @@ property $Q$ ($\binom{K}{k}$ many sets of $k$) and which ones you chose without 
 	Solution:
 		Let $X$ be now the amount earned after 9 months.
 		Let $F_1$ be the event of a flood in the first 6 months, and $F_2$ be the event of a flood in the subsequent 3 months.
-		There are three cases:
-		$F_1\cap F_2$,
-		$F_1\setminus F_2$,
-		$F_2\setminus F_1$,
-		$\bar{F_1}\cap\bar{F_2}$.
-		These have probability
-		$(1-(1-p)^6)(1-(1-p)^3)$,
-		$(1-(1-p)^6)(1-p)^3$,
-		$(1-p)^6(1-(1-p)^3)$, and
-		$(1-p)^6(1-p)^3=(1-p)^9$, respectively.
-		The respective earned premiums are
-		$2(100-100,000)$,
-		$100+25-100,000$,
-		$2(100-100,000)$,
-		$75+25$.
-		
+		There are four cases, see \Cref{chatGPT}.
+		% $F_1\cap F_2$,
+		% $F_1\setminus F_2$,
+		% $F_2\setminus F_1$,
+		% $\bar{F_1}\cap\bar{F_2}$.
+		% These have probability
+		% $(1-(1-p)^6)(1-(1-p)^3)$,
+		% $(1-(1-p)^6)(1-p)^3$,
+		% $(1-p)^6(1-(1-p)^3)$, and
+		% $(1-p)^6(1-p)^3=(1-p)^9$, respectively.
+		% The respective earned premiums are
+		% $2(100-100,000)$,
+		% $100+25-100,000$,
+		% $2(100-100,000)$,
+		% $75+25$.
+\begin{table}[h!]
+\centering
+\begin{tabular}{clll}
+\hline
+\textbf{Case} & \textbf{Event} & \textbf{Probability} & \textbf{Earned Premium} \\
+\hline
+1 & $F_1 \cap F_2$ & $(1-(1-p)^6)(1-(1-p)^3)$ & $2(100 - 100{,}000)$ \\
+2 & $F_1 \setminus F_2$ & $(1-(1-p)^6)(1-p)^3$ & $100 + 25 - 100{,}000$ \\
+3 & $F_2 \setminus F_1$ & $(1-p)^6(1-(1-p)^3)$ & $2(100 - 100{,}000)$ \\
+4 & $\bar{F_1} \cap \bar{F_2}$ & $(1-p)^6(1-p)^3 = (1-p)^9$ & $75 + 25$ \\
+\hline
+\end{tabular}
+\caption{Probabilities and earned premiums for each case.}\label{chatGPT}
+\end{table}		
 		The expected earned premium $E(X)$ is then, in terms of $\beta=(1-p)^3$, and $f=100-100,000$,
-		\[
-		2(100-100,000) (1-\beta^2)(1-\beta) +
-		(100+25-100,000) (1-\beta^2)\beta
-		\]
-		\[ +
-		2(100-100,000) \beta^2(1-\beta) +
-		(75+25)(\beta^3)
-		\]
-		\[
-			= 2f(1-\beta) + (25+f)(1-\beta^2)\beta + 100\beta^3.
-		\]
-		\[
-			= 2f + (25-f)\beta + (100-25-f)\beta^3
-		\]
+		% \[
+		% 2(100-100,000) (1-\beta^2)(1-\beta) +
+		% (100+25-100,000) (1-\beta^2)\beta
+		% \]
+		% \[ +
+		% 2(100-100,000) \beta^2(1-\beta) +
+		% (75+25)(\beta^3)
+		% \]
+		% \[
+		% 	= 2f(1-\beta) + (25+f)(1-\beta^2)\beta + 100\beta^3.
+		% \]
+		% \[
+		% 	= 2f + (25-f)\beta + (100-25-f)\beta^3
+		% \]
+\begin{align}
+E(X)
+  &= 2(100 - 100{,}000)(1-\beta^2)(1-\beta)
+   + (100 + 25 - 100{,}000)(1-\beta^2)\beta \notag\\
+  &\quad + 2(100 - 100{,}000)\beta^2(1-\beta)
+   + (75 + 25)\beta^3 \notag\\[4pt]
+  &= 2f(1-\beta) + (25 + f)(1-\beta^2)\beta + 100\beta^3 \notag\\
+  &= 2f + (25 - f)\beta + (100 - 25 - f)\beta^3,
+\end{align}
 		which according to WolframAlpha (input:
 			\verb!(75+99900)x**3+(25+99900)x+2(-99900)!)
 		is 0 when $\beta\approx 0.99975$. In other words,

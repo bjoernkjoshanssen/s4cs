@@ -23,15 +23,16 @@
 
 
 \usepackage{amsthm,amssymb}
-\newtheorem{thm}{Theorem}[chapter]
-\newtheorem{cor}[thm]{Corollary}
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{pro}[thm]{Proposition}
-\newtheorem{nota}[thm]{Notation}
-\newtheorem{con}[thm]{Conjecture}
-\newtheorem{df}[thm]{Definition}
-\newtheorem{rem}[thm]{Remark}
-\newtheorem{exa}[thm]{Example}
+\usepackage{cleveref}
+\newtheorem{theorem}{Theorem}[chapter]
+% \newtheorem{cor}[thm]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{pro}[thm]{Proposition}
+% \newtheorem{nota}[thm]{Notation}
+% \newtheorem{con}[thm]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+% \newtheorem{rem}[thm]{Remark}
+% \newtheorem{example}[thm]{Example}
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata, positioning}
 \usetikzlibrary{decorations.pathmorphing}

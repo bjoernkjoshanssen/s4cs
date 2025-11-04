@@ -72,7 +72,7 @@ $n$\\\footnotesize sample size}\vspace{-2mm}
 This arithmetic mean has a very important property: suppose you want to load goods onto a ship, airplane, or car. If you know the mean weight of the goods, and you know how many there are of them, then you know the total weight. Some other kinds of ``mean'' are developed in Exercise \ref{harmonic}. The geometric mean studied there could be similarly applied: if you know the geometric mean of the factors by which a stock price changes, and you know the number of changes, then you know the overall change.
 
 
-A \term{mode} is represented by a prominent peak in the distribution. To be mathematically precise, we could let the mode be the value with the most occurrences. But it is common to have \emph{no} observations with the same value in a data set, which makes this other definition useless for many real data sets. See Chapter 2 for a definition of mode in that case.
+A \term{mode} is represented by a prominent peak in the distribution. To be mathematically precise, we could let the mode be the value with the most occurrences. But it is common to have \emph{no} observations with the same value in a data set, which makes this other definition useless for many real data sets. See \Cref{probability} for a definition of mode in that case.
 
 \label{variability}
 
@@ -80,9 +80,9 @@ We define as follows the sample \term{variance}\label{varianceIsDefined}, denote
 \begin{align*}
 s_{}^2 = \frac1{n-1}\sum_{i=1}^n (x_i-\overline x)^2
 \end{align*}
-We divide by $n-1$, rather than dividing by $n$. To see why, consult Chapter 2. The \term{sample standard deviation} is then $s=\sqrt{s^2}$.
+We divide by $n-1$, rather than dividing by $n$. To see why, consult \Cref{probability}. The \term{sample standard deviation} is then $s=\sqrt{s^2}$.
 
-The reason for using squares rather than, say, fourth powers in the definition of variance is related to Pythagoras Theorem and ideas about orthogonality.
+The reason for using squares rather than, say, fourth powers in the definition of variance is related to Pythagoras' Theorem and ideas about orthogonality.
 It turns out that for random variables $X$ and $Y$ that are independent (which is analogous to orthogonal), we have $\Var(X+Y)=\Var(X)+\Var(Y)$, analogously to how if $a$ and $b$ are side lengths of orthogonal sides in a triangle, then the length of the hypotenuse is $\sqrt{a^2+b^2}$.
 
 The standard deviation has an advantage over the variance in that, when used in physical examples, it has the same physical units as the original data. This also means that it should make sense to add a fixed number of standard deviations to the data points (where it would make little sense to add a number of variances).
@@ -94,7 +94,7 @@ Arguably it would look simpler if we used $\sqrt{2\pi}\sigma$ instead of $\sigma
 At some point, we just have to assert that what constant to put in front is a matter of convention.
 
 \subsection{About those pie charts}
-A \term{pie chart} is shown in Figure~\vref{emailNumberPieChart} alongside a bar plot.
+A \term{pie chart} is shown in \vref{emailNumberPieChart} alongside a bar plot.
 The much maligned pie charts are actually useful when you want to see at a glance if a proportion is close to 50\% or 25\%.
 
 \begin{figure}[h]
