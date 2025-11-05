@@ -317,6 +317,24 @@ $p_y=233/1924=.1211$ and $p_x=306/3666=.0835$ which gives the standard error $0.
 	For $13.39$ the p-value is is 2\% and for $15.09$ it is 1\% according to \Cref{chiSquareProbabilityTableShort}.
 	Therefore the p-value of 13.5 is between 2\% and 1\%.
 }
+
+\eocesol{We have $E_i=24/8=3$ for $i\in\{2,3,4,5,6\}$ and $E_1=24\cdot \frac38 = 9$. We obtain the table:
+
+	\begin{tabular}{l l}
+		$i$	&	$(O_i-E_i)^2/E_i$\\
+		1	& $(9-9)^2/9 = 0.00$\\
+		2	& $(5-3)^2/3 = 1.3\overline{3}$\\
+		3	& $(6-3)^2/3 = 3.00$\\
+		4	& $(2-3)^2/3 = 0.3\overline{3}$\\
+		5	& $(0-3)^2/3 = 3.00$\\
+		6	& $(2-3)^2/3 = 0.3\overline{3}$\\
+		$\sum$ & 8\\
+	\end{tabular}
+
+	What can be said about the p-value associated with a $\chi^2$ value of $8$ for a $\chi^2$ distribution with $6-1=5$ degrees of freedom?
+	From \Cref{chiSquareProbabilityTableShort} we see that the p-value is between 10\% and 20\%.
+	Therefore we cannot reject Steve's null hypothesis at the 5\% level of significance.
+}
 \end{multicols}
 
 \newpage
