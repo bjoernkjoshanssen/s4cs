@@ -20,7 +20,19 @@ The sampling distribution of the mean is normal when the sample observations are
 \index{distribution!$t$|(}
 
 We define precisely what the $t$-distribution is here in the supplement.
-It is simply the distribution of $(\overline X-\mu)/(S/\sqrt{n})$ where $S$ is the standard error. This depends on $n$ and is said to have $n-1$ degrees of freedom (df). (Note that if $n=1$, we have $S=0$ with probability 1, so there is no such thing as the $t$-distribution with 0 degrees of freedom.)
+It is simply the distribution of
+\[
+	T = (\overline X-\mu)/(S/\sqrt{n})
+\]
+where $S$ is the sample standard deviation given by
+\[
+	S^2 = \frac1{n-1}\sum_{i=1}^2 (X_i-\bar X)^2
+\]
+and $\overline X = \frac1n\sum_{i=1}^n X_i$, where $\{X_i\}_{i=1}^n$ are normal, identically distributed and independent.
+
+
+
+The distribution of $T$ is called the $t$-distribution with $n-1$ degrees of freedom (df). Note that if $n=1$, we have $S=0$ with probability 1, so there is no such thing as the $t$-distribution with 0 degrees of freedom.
 
 The pdfs get complicated at high df, but the $t$-distribution with 1 degree of freedom is also known as the Cauchy distribution and has pdf
 \[
