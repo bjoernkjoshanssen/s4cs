@@ -43,7 +43,7 @@ The pdfs get complicated at high df, but the $t$-distribution with 1 degree of f
 \end{exercise}
 %\textC{\pagebreak}
 
-We can think about this as follows. We write out the $t$ statistic in the $n=2$, $n-1$ df case as:
+We can think about this as follows. We write out the $t$ statistic in the $n=2$ case as:
 \begin{eqnarray*}
 	T=(\overline X-\mu)/(S/\sqrt{n}) &=& \frac{\frac12(X_1+X_2)-\mu}{\frac1{\sqrt n}\sqrt{ \frac1{2-1}\sum_{i=1}^2 (X_i-\bar X)^2}}\\
 	&=&\frac{\frac12(X_1+X_2)-\mu}{\frac1{\sqrt 2}\sqrt{\sum_{i=1}^2 (X_i-\bar X)^2}}\\
@@ -60,6 +60,34 @@ and $T^2\le t^2$ iff
 \]
 We would now have to perform a double integral over a region in $(X_1,X_2)$-plane, but we shall leave that for a course that requires multivariable calculus.
 
+% {\color{red}
+If we let $Z=X_1+X_2$ and $W=X_1-X_2$ then $Z$ and $W$ are both normal and their covariance is zero:
+\[
+\mathrm{Cov}(X_1+X_2,X_1-X_2)=\mathbb E((X_1+X_2)(X_1-X_2))=
+\mathbb E(X_1^2)
+-
+\mathbb E(X_2^2)=0.
+\]
+It is a fact that jointly normal random variables with covariance zero are independent, and that $X_1+X_2$ and $X_1-X_2$ are jointly normal when
+$X_1$ and $X_2$ are independent and normal. One definition of jointly normal is:
+$X$ and $Y$ are jointly normal if $aX+bY$ has a normal distribution for all $a,b\in\mathbb R$.
+
+Thus, $Z$ and $W$ are independent and we are looking at (when $\mu=0$) $T=Z/|W|$.
+Then
+\[
+\frac{d}{dt}\mathbb P(T\le t) = \frac{d}{dt}\mathbb P(Z \le t |W|) = \frac{d}{dt}\int_{-\infty}^\infty \int_{-\infty}^{t|w|}f_Z(z)f_W(w)\,dz\,dw
+\]
+\[
+=\int_{-\infty}^{\infty} |w| f_Z(t|w|)f_W(w)\, dw =\int_{-\infty}^{\infty} |w| \frac1{2\pi} e^{-(t|w|)^2/2} e^{-w^2/2}\, dw =
+\]
+Now use a $u$-substitution $u^2=(t^2+1)w^2$ and another one $v=u^2/2$ and get
+\[
+=\frac1{\pi}\int_0^{\infty} w e^{-(t^2+1)w^2/2}\,dw = \frac1{\pi} \int_0^{\infty} \frac{u e^{-u^2/2}}{t^2+1}\,du = \frac1{\pi(t^2+1)}\int_0^{\infty}e^{-v}\,dv
+\]
+\[
+=\frac1{\pi(t^2+1)}.
+\]
+% }
 %\subsection{One sample $t$-tests}
 \label{oneSampleTTests}
 
