@@ -362,3 +362,93 @@ So it is indeed $\frac{n_1-1}{n_1+n_2-2}$.
 	However, since we are using two semesters for 2017 and not just one, we need to compare to $0.098/\sqrt{2}$ instead of $0.098$.
 	This still doesn't make the impact of learning assistants on mean grades statistically significant, but it makes it closer to significance.
 \end{example}
+
+
+\section{Statistical power}
+
+The \emph{power function} of a hypothesis test is the probability of
+rejecting the null hypothesis $H_0: p = p_0$ as a function of the true
+value of $p$. Denote this probability by
+\[
+g(p) = P(\text{reject } H_0 \mid p).
+\]
+
+We want:
+\[
+\begin{cases}
+g(p)\ \text{large when } p \neq p_0,\\[4pt]
+g(p)\ \text{small when } p = p_0.
+\end{cases}
+\]
+
+\subsection*{Power Function Sketch}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+\draw[->] (-0.2,0) -- (5,0) node[right] {$p$};
+\draw[->] (0,-0.2) -- (0,2) node[above] { };
+
+% Vertical line at p0
+\draw[dashed] (2.5,0) -- (2.5,2);
+\node[below] at (2.5,0) {$p_0$};
+
+% A stylized curve
+\draw[blue, thick, domain=0.3:4.7, samples=200] 
+  plot(\x,{1.5 - 1.5*exp(-5*(\x-2.5)^2)});
+
+\node[right] at (4.8,1.5) {$g(p)$};
+\end{tikzpicture}
+\end{center}
+
+\section*{Example: Toss 2 coins}
+
+Let $p$ be the probability of \(\text{H}\) on each independent coin flip.  
+
+We test
+\[
+H_0: p = \tfrac{1}{2}.
+\]
+
+Suppose we reject \(H_0\) if the outcome is HH or TT.
+
+\subsection*{Compute the power}
+
+\[
+g(p) = P(\text{reject } H_0)
+     = P(\text{HH}) + P(\text{TT})
+     = p^2 + (1-p)^2.
+\]
+
+Expand:
+\[
+g(p) = p^2 + (1 - 2p + p^2)
+     = 2p^2 - 2p + 1.
+\]
+
+\subsection*{Minimum of \(g(p)\)}
+
+\[
+g'(p) = 4p - 2.
+\]
+
+Set to zero:
+\[
+4p - 2 = 0 \quad\Longleftrightarrow\quad p = \tfrac{1}{2}.
+\]
+
+Thus the power is minimized at the null value, as expected.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+\draw[->] (-0.2,0) -- (5,0) node[right] {$p$};
+\draw[->] (0,-0.2) -- (0,3) node[above] {$g(p)$};
+
+% Parabola for g(p) = 2p^2 - 2p + 1
+\draw[blue, thick, domain=0:5, samples=200] 
+  plot(\x,{2*(\x/5)^2 - 2*(\x/5) + 1});
+
+% Mark p=1/2
+\draw[dashed] (2.5,0) -- (2.5,3);
+\node[below] at (2.5,0) {$\tfrac12$};
+\end{tikzpicture}
+\end{center}
