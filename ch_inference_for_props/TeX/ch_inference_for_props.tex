@@ -94,9 +94,9 @@ So instead of seeking meta-confidence, we may just study the distribution of $L$
 	And indeed, it is clear that when $n=1$, $\hat p(1-\hat p) = 0$ for both outcomes, and $\E(0)=0$.
 
 	On the other hand, when we do assume $p_1=p_2$, the best estimate of $p_1$ and $p_2$ is
-	\[
-		\frac{\hat p_1n_1+\hat p_2n_2}{n_1+n_2}
-	\]
+	\begin{equation}\label{pool}
+		\hat p = \frac{\hat p_1n_1+\hat p_2n_2}{n_1+n_2}
+	\end{equation}
 	which is just the proportion obtained by pooling the samples together. 
 
 	Note that if $n$ is small, a proportion $\hat p  = \frac1n\sum_{i=1}X_i$ with $X_i$ Bernoulli($p$) is in no way close to normal.
@@ -107,9 +107,9 @@ So instead of seeking meta-confidence, we may just study the distribution of $L$
 
 \subsection{Possible pitfall for pooled proportions}%Comment from the same class
 When we're doing the standard error of $\hat p_1-\hat p_2$ under the assumption that $p_1=p_2$, we want to use the
-pooled proportion $\hat p$ and then the standard error
+pooled proportion $\hat p$ from \eqref{pool}, and then the standard error
 \[
-	\sqrt{\frac{\hat p(1-\hat p)}{n_1}+\frac{\hat p(1-\hat p)}{n_2}}
+	\sqrt{\frac{\hat p(1-\hat p)}{n_1}+\frac{\hat p(1-\hat p)}{n_2}},
 \]
 not just
 \[
@@ -124,7 +124,7 @@ We need the standard error of $\hat p_y-\hat p_x$ which will be
 	\sqrt{\frac{\hat p_y(1-\hat p_y)}{1924}+\frac{\hat p_x(1-\hat p_x)}{3666}}.
 \]
 
-From this being 0.01 (since the width of the 95\%, hence $1.96\approx 2$ standard deviations, confidence interval is 0.02) and also $\hat p_y-\hat p_x=0.04$ we can deduce what they each are (Exercise \ref{zain_email}). One student in Fall 2018 instead considered $\hat p = \hat p_y-\hat p_x$ and then
+From this being 0.01 (since the width of the 95\%, hence $1.96\approx 2$ standard deviations, confidence interval is 0.02) and also $\hat p_y-\hat p_x=0.04$ we can deduce what $\hat p_x$ and $\hat p_y$ are (Exercise \ref{zain_email}). One student in Fall 2018 instead considered $\hat p = \hat p_y-\hat p_x$ and then
 $$\sqrt{\hat p(1-\hat p)/n}$$but this is treating $\hat p$ as a proportion. Note that $\hat p<0$ is possible, so $\hat p$ is not quite the same kind of beast as $\hat p_y$ and $\hat p_x$. 
 
 
