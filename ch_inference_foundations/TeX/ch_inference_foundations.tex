@@ -8,7 +8,7 @@ The standard deviation of a sample mean is an important calculation. If the $X_i
 \[
 \Var^2\left(\frac1n\sum_{i=1}^nX_i\right) = \frac1{n^2}\sum_{i=1}^n\Var^2(X_i) = \frac1{n^2}\cdot n\cdot\sigma^2 = \sigma^2/n.
 \]
-Thus the standard deviation of the sample mean is $\sigma/\sqrt{n}$.
+Thus, the standard deviation of the sample mean is $\sigma/\sqrt{n}$.
 
 
 \index{point estimate|(}
@@ -148,7 +148,7 @@ If a sample is from a seemingly random process, e.g. the lifetimes of wrenches u
 \end{tipBox}
 
 
-It is too much to ask but it may be worth remembering that 99\% confidence corresponds to 2.58 standard deviations and 90\% to 1.65.
+It is too much to ask, but it may be worth remembering that 99\% confidence corresponds to 2.58 standard deviations and 90\% to 1.65.
 
 
 \begin{termBox}{\tBoxTitle{Confidence interval for any confidence level}
@@ -257,7 +257,7 @@ A confidence interval is, in one sense, simplistic in the world of hypothesis te
 \begin{itemize}
 \setlength{\itemsep}{0mm}
 \item The null value (the parameter value under the null hypothesis) is in the 95\% confidence interval but just barely, so we would not reject $H_0$. However, we might like to somehow say, quantitatively, that it was a close decision.
-\item The null value is very far outside of the interval, so we reject $H_0$. However, we want to communicate that, not only did we reject the null hypothesis, but it wasn't even close. Such a case is depicted in Figure~\ref{whyWeWantPValue}.
+\item The null value is very far outside the interval, so we reject $H_0$. However, we want to communicate that, not only did we reject the null hypothesis, but it wasn't even close. Such a case is depicted in Figure~\ref{whyWeWantPValue}.
 \end{itemize}
 In Section~\ref{pValue}, we introduce a tool called the \emph{p-value} that will be helpful in these cases. The p-value method also extends to hypothesis tests where confidence intervals cannot be easily constructed or applied.
 
@@ -315,7 +315,8 @@ The smaller the p-value, the stronger the data favor $H_A$ over $H_0$. A small p
 \begin{figure}%[ht]
    \centering
    \includegraphics[width=0.9\textwidth]{ch_inference_foundations/figures/pValueOneSidedSleepStudyExplained/pValueOneSidedSleepStudyExplained}
-   \caption{To identify the p-value, the distribution of the sample mean is considered as if the null hypothesis was true. Then the p-value is defined and computed as the probability of the observed $\bar{x}$ or an $\bar{x}$ even more favorable to $H_A$ under this distribution.}
+   \caption{To identify the p-value, the distribution of the sample mean is considered as if the null hypothesis was true.
+   Then the p-value is defined and computed as the probability of the observed $\bar{x}$ or an $\bar{x}$ even more favorable to $H_A$ under this distribution.}
    \label{pValueOneSidedSleepStudyExplained}
 \end{figure}
 
@@ -372,7 +373,7 @@ If a Type~2 Error is relatively more dangerous or much more costly than a Type~1
 
 The \emph{OpenIntro} text gives an informal statement of the CLT. Here we shall not be so advanced as to prove the CLT; but we shall give a precise statement of it.
 
-The CDF of the standardized sample mean $(\overline X-\mu)/\sigma$ of an IID sequence $X_i$ with $\E(X_i)<\infty$ and $\E(X^2)<\infty$ converges pointwise to the CDF of the standard normal distribution.
+The CDF of the standardized sample mean $(\overline X-\mu)/\sigma$ of an iid (independent and identically distributed) sequence $X_i$ with $\E(X_i)<\infty$ and $\E(X^2)<\infty$ converges pointwise to the CDF of the standard normal distribution.
 
 So
 \[

@@ -72,7 +72,7 @@ It is a fact that jointly normal random variables with covariance zero are indep
 $X_1$ and $X_2$ are independent and normal. One definition of jointly normal is:
 $X$ and $Y$ are jointly normal if $aX+bY$ has a normal distribution for all $a,b\in\mathbb R$.
 
-Thus, $Z$ and $W$ are independent and we are looking at (when $\mu=0$) $T=Z/|W|$.
+Thus, $Z$ and $W$ are independent, and we are looking at (when $\mu=0$) $T=Z/|W|$.
 Then
 \[
 \frac{d}{dt}\mathbb P(T\le t) = \frac{d}{dt}\mathbb P(Z \le t |W|) = \frac{d}{dt}\int_{-\infty}^\infty \int_{-\infty}^{t|w|}f_Z(z)f_W(w)\,dz\,dw
@@ -132,7 +132,7 @@ The variance of a difference of (independent) means $\overline X-\overline Y$ is
 	\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}.
 \]
 So far this concerns the normal case. The $t$-distribution is used when the sample sizes are small enough that we cannot trust that the sample standard deviation is close enough to the actual standard deviation.
-Thus we use the standard error,
+Thus, we use the standard error,
 \[
 	\SE = \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}.
 \]
@@ -167,14 +167,15 @@ We usually estimate this standard error using standard deviation estimates  base
 	&\approx \sqrt{\frac{s_{1}^2}{n_{1}} + \frac{s_{2}^2}{n_{2}}}
 	%= \sqrt{\frac{5.17^2}{9} + \frac{2.76^2}{9}} = 1.95
 \end{align*}
-Because we will use the $t$-distribution, we also must identify the appropriate degrees of freedom. This can be done using computer software. An alternative technique is to use the smaller of $n_1 - 1$ and $n_2 - 1$, which is the method we will typically apply in the examples and guided practice. This technique for degrees of freedom is conservative with respect to a Type~1 Error; it is more difficult to reject the null hypothesis using this df method.
+Because we will use the $t$-distribution, we also must identify the appropriate degrees of freedom. This can be done using computer software.
+An alternative technique is to use the smallest of $n_1 - 1$ and $n_2 - 1$, which is the method we will typically apply in the examples and guided practice. This technique for degrees of freedom is conservative with respect to a Type~1 Error; it is more difficult to reject the null hypothesis using this df method.
 
 %\newpage
 \subsection{The Welch $t$-test}
 %To explain this more fully here in \emph{Statistics for Calculus Students},
 Welch discovered that in the case of unequal variances, it is approximately correct to use a $t$-distribution with a peculiar count for degrees of freedom.
 
-The search for an exact test is ongoing and is called the \emph{Behrens-Fisher problem}. The problem is that, whereas Gosset (Student) showed that $(\overline X-\mu)/S$ has a distribution that does not depend on the unknown $\sigma$, the analogous quantity in the 2-sample case $(\overline X_1-\overline X_2-0)/\sqrt{S^2_1/n_1+S^2_2/n_2}$ has not that property. So we would want some function $f(\overline X_1,\overline X_2,S_1,S_2)$ which used the information given in a powerful way, and had a known distribution under the null hypothesis.
+The search for an exact test is called the \emph{Behrens--Fisher problem}. The problem is that, whereas Gosset (Student) showed that $(\overline X-\mu)/S$ has a distribution that does not depend on the unknown $\sigma$, the analogous quantity in the 2-sample case $(\overline X_1-\overline X_2-0)/\sqrt{S^2_1/n_1+S^2_2/n_2}$ has not that property. So we would want some function $f(\overline X_1,\overline X_2,S_1,S_2)$ which used the information given in a powerful way, and had a known distribution under the null hypothesis.
 
 Welch's number of degrees of freedom (which may not be an integer) is
 \[
@@ -244,8 +245,8 @@ when each sample mean can itself be modeled using a $t$-distribution and the sam
 
 \subsection{Hypothesis tests based on a difference in means}
 
-We use $\min(n_1-1,n_2-1)$ as our \emph{df}; this is conservative in the sense that it makes it harder to reject a null hypothesis. We can discuss the relationship with Welch's test.
-
+We use $\min(n_1-1,n_2-1)$ as our \emph{df}; this is conservative in the sense that it makes it harder to reject a null hypothesis.
+% We can discuss the relationship with Welch's test.
 We need the individual distributions of $n_1$ and $n_2$ points to be normal, in theory, in order to apply the $t$-test.
 %The Google Sheets code for $t$-tests:
 
@@ -436,7 +437,7 @@ Set to zero:
 4p - 2 = 0 \quad\Longleftrightarrow\quad p = \tfrac{1}{2}.
 \]
 
-Thus the power is minimized at the null value, as expected.
+Thus, the power is minimized at the null value, as expected.
 
 \begin{center}
 \begin{tikzpicture}[scale=1.2]

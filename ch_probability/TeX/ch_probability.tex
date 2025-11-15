@@ -18,7 +18,11 @@
 	\begin{quote}
 		Very, very unlikely events will happen very, very rarely...
 	\end{quote}
-	then it begs the question: what if they don't? What if 100 heads in a row occur when you toss a coin --- and the same happens to your friend? And your friend's friend? This should happen rarely indeed, but at what point do you put your foot down and declare it just should not happen? If we do not adopt Cournot's principle, probability theory is in danger of losing touch with reality.
+	then it begs the question: what if they don't?
+    What if 100 heads in a row occur when you toss a coin---and the same happens to your friend?
+    And your friend's friend?
+    This should happen rarely indeed, but at what point do you put your foot down and declare it just should not happen?
+    If we do not adopt Cournot's principle, probability theory is in danger of losing touch with reality.
 
 
 	\index{random process|(}
@@ -83,7 +87,7 @@
 	\[
 		\P(\text{there is an $m$ such that for all $n\ge m$, $|\hat p_n-p|<\epsilon$})=1.
 	\]
-	Therefore for each $\delta>0$ there is an $m$ such that
+	Therefore, for each $\delta>0$ there is an $m$ such that
 	$\P(\text{for all $n\ge m$, $|\hat p_n-p|<\epsilon$})\ge 1-\delta$. In particular, for all $n\ge m$, $\P(|\hat p_n-p|<\epsilon)\ge 1-\delta$.
 	\end{proof}
 
@@ -248,7 +252,8 @@ The probabilities in this space should be given by
 \[
 	\P(A\text{ given }B) = \P(A\mid B) = \frac{\P(A\cap B)}{\P(B)}
 \]
-since this represents the fraction of the ``probability mass'' in $B$ that is in $A$. To put it another way, if we run the probability experiment associated with $\Omega$ many times, this is the long-term fraction of times $A\cap B$ occurs, divided by the long-term fraction of time $B$ occurs. In other words, it is the long-term fraction of times that $A$ occurs, \emph{out of} the times that $B$ occurs\footnote{Here ``long-term'' should be understood in the context of Cournot's Principle and the Law of Large Numbers.}
+since this represents the fraction of the ``probability mass'' in $B$ that is in $A$. To put it another way, if we run the probability experiment associated with $\Omega$ many times, this is the long-term fraction of times $A\cap B$ occurs, divided by the long-term fraction of time $B$ occurs. In other words, it is the long-term fraction of times that $A$ occurs,
+\emph{out of} the times that $B$ occurs\footnote{Here ``long-term'' should be understood in the context of Cournot's Principle and the Law of Large Numbers.}
 
 Once we have this, independence of $A$ and $B$ is given by
 \[
@@ -363,7 +368,9 @@ If two events are independent, then knowing the outcome of one should provide no
 \begin{figure}%[ht]
 \centering
 \includegraphics[width=0.93\textwidth]{ch_probability/figures/smallpoxTreeDiagram/smallpoxTreeDiagram}
-\caption{A tree diagram of the \data{smallpox} data set. To make this abstract, consider $\P(X=1)=0.0392$ to be ``inoculated? yes, 0.0392'', $X=0$ to be ``no, not inoculated'', $\P(Y=1\mid X=1)=0.9754$ is then ``lived, 0.9754'' and so on.}
+\caption{A tree diagram of the \data{smallpox} data set.
+To make this abstract, consider $\P(X=1)=0.0392$ to be ``inoculated? Yes, 0.0392'',
+$X=0$ to be ``no, not inoculated'', $\P(Y=1\mid X=1)=0.9754$ is then ``lived, 0.9754'' and so on.}
 \label{smallpoxTreeDiagram}
 \end{figure}
 
@@ -394,7 +401,10 @@ Bayes' Theorem states that this conditional probability can be identified as the
 where $A_2, A_3, \dots, A_k$ represent all other possible outcomes of the first variable.}\index{Bayes' Theorem|textbf}
 \end{termBox}
 
-Bayes' Theorem is just a generalization of what we have done using tree diagrams. The numerator identifies the probability of getting both $A_1$ and $B$. The denominator is the marginal probability of getting $B$. This bottom component of the fraction appears long and complicated since we have to add up probabilities from all of the different ways to get $B$. We always completed this step when using tree diagrams. However, we usually did it in a separate step so it didn't seem as complex.
+Bayes' Theorem is just a generalization of what we have done using tree diagrams. The numerator identifies the probability of getting both $A_1$ and $B$. The denominator is the marginal probability of getting $B$.
+This bottom component of the fraction appears long and complicated since we have to add up probabilities from
+all the different ways to get $B$. We always completed this step when using tree diagrams.
+However, we usually did it in a separate step, so it didn't seem as complex.
 
 To apply Bayes' Theorem correctly, there are two preparatory steps:
 \begin{enumerate}
@@ -466,7 +476,8 @@ Now suppose we observe $X=1$ (heads). Then we can \emph{update} our estimate of 
 \[
 	\P(p=p_0\mid X=1) = \frac{\P(X=1\mid p=p_0)\cdot \P(p=p_0)}{\P(X=1)}
 \]
-However, if we consider $p$ to be a random variable, then any particular value will have probability 0 and we should be considering the \term{probability density function} (see \Cref{contDist}) instead:
+However, if we consider $p$ to be a random variable, then any particular value will have probability 0,
+and we should be considering the \term{probability density function} (see \Cref{contDist}) instead:
 \begin{equation}\label{learnBayes}
 	f_p(p_0\mid X=1) = \frac{\P(X=1\mid p=p_0)\cdot f_p(p_0)}{\P(X=1)}.
 \end{equation}
@@ -475,14 +486,15 @@ So let us not assume $p=1/2$ to start, but instead take $f_p(x)=1$ for each $0\l
 f_p(x)=1_{[0,1]}(x).
 \]
 This reflects us having no prior knowledge of what $p$ might be.
-Now $\P(X=1\mid p=p_0)$ is supposed to be $p_0$ (even though $p=p_0$ is a probability-zero event, which leads to dividing by zero if we literally using it in conditional probability)
-because, if $\P(X=1)=p=p_0$ if $p=p_0$. So we get
+Now $\P(X=1\mid p=p_0)$ is supposed to be $p_0$
+(even though $p=p_0$ is a probability-zero event, which leads to dividing by zero if we literally using it in conditional probability)
+because $\P(X=1)=p=p_0$ if $p=p_0$. So we get
 \[
 	f_p(p_0\mid X=1) = p_0 \cdot 1_{[0,1]}(p_0)/(1/2) = 2p_0\cdot 1_{[0,1]}(p_0).
 \]
 If we now make another observation, we can repeat this process starting with our new pdf and get yet another one.
 Namely, let's say $f_0(x)=1_{[0,1]}(x)$ and $f_1(x)=2x\cdot 1_{[0,1]}(x)$.
-Then if our next observation is $X=0$, we get
+Then, if our next observation is $X=0$, we get
 \begin{eqnarray*}
 	f_2(p_0) &=& f_1(p_0\mid X=0)\\
 	&=& \P(X=0\mid p=p_0)f_p(p_0)/\P(X=0) = (1-p_0) 2p_0 / (1/3) = 6p_0(1-p_0).
@@ -570,7 +582,8 @@ The \term{(sample) mean}, sometimes called the (sample) \indexthis{average}{mean
 
 However, we can ``freeze'' a data set and consider the uniform distribution on it.
 \begin{definition}
-The \term{uniform distribution} on a finite set of $n$ elements, $\{x_1,\dots,x_n\}$, is given by $\P(X=x_i)=\frac1n$. If some of the $x_i$ are identical (say $k$ many are equal to a particular $x_i$) this makes that element have probability $k/n$.
+The \term{uniform distribution} on a finite set of $n$ elements, $\{x_1,\dots,x_n\}$, is given by $\P(X=x_i)=\frac1n$.
+If some $x_i$ are identical (say $k$ many are equal to a particular $x_i$) this makes that $x_i$ have probability $k/n$.
 \end{definition}
 \begin{example}{The uniform distribution on $\{1.3, 2.0, -4\}$.}
 This distribution is such that if a variable $X$ has this distribution then $\P(X=1.3)=1/3$, $\P(X=2.0)=1/3$, and $\P(X=-4)=1/3$.
@@ -609,7 +622,7 @@ The third term is found using
 \[
 	= \E\left (\sum_i X_i^2 + 2\sum_{i<j} X_iX_j\right ) = n(\sigma^2)
 \]
-to be $\E((\bar X)^2) = \sigma^2/n$. Thus
+to be $\E((\bar X)^2) = \sigma^2/n$. Thus,
 \begin{eqnarray*}
 	\E((X_i-\bar X)^2) %= \E(X_i^2-2X_i\bar X + (\bar X)^2) = \sigma^2-2\E(X_i\bar X) + \sigma^2/n\\
 	= \sigma^2-2\sigma^2/n + \sigma^2/n = \sigma^2\left(1-\frac1n\right) = \sigma^2\cdot\frac{n-1}n.
@@ -688,7 +701,8 @@ $\Var(X)$\vspace{1mm}\\\footnotesize Variance\\of $X$}
 \section{Continuous distributions and a review of calculus}
 \label{contDist}
 
-The following subsections roughly correspond to chapters in a popular calculus text such as Stewart's \emph{Calculus} or Hass, Weir and Thomas' \emph{University Calculus}.
+The following subsections roughly correspond to chapters in a popular calculus text such as Stewart's \emph{Calculus} or
+Hass, Weir and Thomas' \emph{University Calculus}.
 
 \begin{figure}
 \begin{tikzpicture}
@@ -787,7 +801,7 @@ The concept is used to define derivatives and integrals, but is also used direct
 	\[
 		\frac{\log_a x}{\log_a y} = \frac{\log_y x}{\log_y y}
 	\]
-	(since this shows that the left hand side does not depend on $a$)
+	(since this shows that the left-hand side does not depend on $a$)
 	which follows, using $a^{\log_a z}=z$, from
 	\[
 		\frac{\log_a x}{\log_a y} = \frac{\log_y x}{\log_y y}=\log_y x\iff \log_a y\log_y x = \log_a x

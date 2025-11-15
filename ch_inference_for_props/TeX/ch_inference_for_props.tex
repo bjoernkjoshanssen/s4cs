@@ -31,7 +31,7 @@ $\hat{p}$\vspace{0mm}\\\footnotesize sample\\proportion\vspace{3mm}\\\normalsize
 
 $\hat{p}$\vspace{0mm}\\\footnotesize sample\\proportion\vspace{3mm}\\\normalsize$p$\vspace{0mm}\\\footnotesize population\\proportion}
 
-Typically we don't know the true proportion, $p$, so we substitute some value to check conditions and to estimate the standard error. For confidence intervals, usually the sample proportion $\hat{p}$ is used to check the success-failure condition and compute the standard error. For hypothesis tests, typically the null value -- that is, the proportion claimed in the null hypothesis -- is used in place of $p$. Examples are presented for each of these cases in Sections~\ref{confIntForPropSection} and~\ref{htForPropSection}.
+Typically, we do not know the true proportion $p$, so we substitute some value to check conditions and to estimate the standard error. For confidence intervals, usually the sample proportion $\hat{p}$ is used to check the success-failure condition and compute the standard error. For hypothesis tests, typically the null value -- that is, the proportion claimed in the null hypothesis -- is used in place of $p$. Examples are presented for each of these cases in Sections~\ref{confIntForPropSection} and~\ref{htForPropSection}.
 
 
 
@@ -77,7 +77,7 @@ So instead of seeking meta-confidence, we may just study the distribution of $L$
 \subsection{Thinking deeper about standard errors}
 	When the null hypothesis says $p=1/2$, our score can be
 	\[
-		\frac{\hat p - 1/2}{\sqrt{\hat p(1-\hat p)/n}}
+		\frac{\hat p - 1/2}{\sqrt{\hat p(1-\hat p)/n}},
 	\]
 	but actually we may substitute $\hat p=1/2$ here in the denominator in order to be fair to the null hypothesis, as mentioned in \emph{OpenIntro Statistics}.
 
@@ -100,12 +100,12 @@ So instead of seeking meta-confidence, we may just study the distribution of $L$
 	which is just the proportion obtained by pooling the samples together. 
 
 	Note that if $n$ is small, a proportion $\hat p  = \frac1n\sum_{i=1}X_i$ with $X_i$ Bernoulli($p$) is in no way close to normal.
-	Thus the $t$-distribution is never used in connection with proportions
+	Thus, the $t$-distribution is never used in connection with proportions
 	(it is only used when we have a small $n$ and $n$ is the number of independent normals available).
 	When $n$ is large, we approximate a proportion using the normal distribution.
 
 
-\subsection{Possible pitfall for pooled proportions}%Comment from the same class
+\subsection{Possible pitfall for pooled proportions} %Comment from the same class
 When we're doing the standard error of $\hat p_1-\hat p_2$ under the assumption that $p_1=p_2$, we want to use the
 pooled proportion $\hat p$ from \eqref{pool}, and then the standard error
 \[
@@ -124,8 +124,10 @@ We need the standard error of $\hat p_y-\hat p_x$ which will be
 	\sqrt{\frac{\hat p_y(1-\hat p_y)}{1924}+\frac{\hat p_x(1-\hat p_x)}{3666}}.
 \]
 
-From this being 0.01 (since the width of the 95\%, hence $1.96\approx 2$ standard deviations, confidence interval is 0.02) and also $\hat p_y-\hat p_x=0.04$ we can deduce what $\hat p_x$ and $\hat p_y$ are (Exercise \ref{zain_email}). One student in Fall 2018 instead considered $\hat p = \hat p_y-\hat p_x$ and then
-$$\sqrt{\hat p(1-\hat p)/n}$$but this is treating $\hat p$ as a proportion. Note that $\hat p<0$ is possible, so $\hat p$ is not quite the same kind of beast as $\hat p_y$ and $\hat p_x$. 
+From this being 0.01 (since the width of the 95\%, hence $1.96\approx 2$ standard deviations, confidence interval is 0.02) and also $\hat p_y-\hat p_x=0.04$ we can deduce what $\hat p_x$ and $\hat p_y$ are (Exercise \ref{zain_email}).
+
+{\tiny One student in Fall 2018 instead considered $\hat p = \hat p_y-\hat p_x$ and then
+the ``standard error'' $\sqrt{\hat p(1-\hat p)/n}$, but this is treating $\hat p$ as a proportion. Note that $\hat p<0$ is possible, so $\hat p$ is not quite the same kind of beast as $\hat p_y$ and $\hat p_x$. }
 
 
 \section{Difference of two proportions}
@@ -226,8 +228,8 @@ Now we can use $p=.6$ as our grand proportion (estimated). The $Z$-score for a p
 	\frac{.601-.6}{\sqrt{(.6)(1-.6)/1000}} = \frac{.001}{\sqrt{1/240}} = \sqrt{240}/1000 = \sqrt{2.4}/100 = 0.0155
 \]
 and the probability that a standard normal random variable $Z$ will have $|Z|\le 0.0155$ is quite small.
-If each year has a small $p$-value like this, we can be quite sure that curving occurs.
-If none of them do, we can be quite sure it doesn't.
+If each year has a small $p$-value like this, we can be quite sure that curving occurs, and
+if none of them do, we can be quite sure it doesn't.
 If some do and some don't, we are getting into a more subtle area: the ones that did may have just done so by coincidence.
 
 
@@ -256,7 +258,8 @@ which gives a $p$-value 0.007978712629 via
 \sheets{=normdist(0.01,0,1,TRUE)-normdist(-0.01,0,1,TRUE)}
 
 The problem now is that the only way to get the means that close together (without making them actually equal) may be to increase the sample size; so let us try to make a more specific example.
-Since grade points are at least 0.3 apart, the sum of grade points in a class must be an integer multiple of 0.1. Thus in a class of $10^k$ students, the mean is an integer multiple of $10^{-(k+1)}$.
+Since grade points are at least 0.3 apart, the sum of grade points in a class must be an integer multiple of 0.1.
+Thus, in a class of $10^k$ students, the mean is an integer multiple of $10^{-(k+1)}$.
 On the other hand $\sqrt{10^k}=10^{k/2}$ so the $Z$-score (when the grand mean is an integer, say) must be an integer multiple of $10^{k/2-k-1}$. When $k=2$ this is $10^{-2}$. As $k\to\infty$ this does go to zero, meaning that we can make meaningful checks for curving.
 \end{example}
 
@@ -403,7 +406,7 @@ For $a\ge 0$,
 \end{eqnarray*}
 Note that
 \[
-	\lim_{a\to 0^+} f(a) = \frac1{0\cdot 1}=+\infty.
+	\lim_{a\to 0^+} f(a) = \frac1{0\cdot 1}=+\infty,
 \]
 so the pdf has a vertical asymptote at $0$.
 
