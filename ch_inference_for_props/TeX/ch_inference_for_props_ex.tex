@@ -159,3 +159,75 @@ Mary Ann rolled a die 26 times and obtained:
 	can be rejected at the 5\% level of significance.
 	Find $(O_i-E_i)^2/E_i$ for $i=1,2,3,4,5,6$ and find the p-value.
 }{}
+
+\eoce{\qt{Alice and Bob both losing}
+Alice is running for Mayor of Honolulu, and Bob is running for Mayor of Maui County.
+The latest opinion polls gave Alice 10\% out of 1000 voters polled,
+and Bob 11\% out of 500 voters polled. (No voter was included in both polls.)
+
+Is there sufficient evidence to conclude, with 95\% confidence, that Bob has greater support than Alice?
+}{}
+
+\eoce{\qt{Alice and Bob both losing}
+Alice is running for Mayor of Honolulu, and Bob is running for Mayor of Maui County.
+The latest opinion polls gave Alice 10\% out of 1000 voters polled,
+and Bob 15\% out of 500 voters polled. (No voter was included in both polls.)
+
+Is there sufficient evidence to conclude, with 95\% confidence, that Bob has greater support than Alice?
+
+% Solution:
+%
+% We do an inference test for the difference between two proportions.
+% Thus $\hat p=10\%$ and $\hat q=15\%$, and the standard error is
+% \[
+% \mathrm{SE}=\sqrt{\hat p(1-\hat p)/1000 + \hat q(1-\hat q)/500}=0.01857
+% \]
+% The degrees of freedom is conservatively estimated by $\min\{1000-1, 500-1\}=499$.
+% Since this is large, we can use a normal distribution ($z$-test).
+% Thus
+% \[
+% Z = \frac{10\%-15\%}{\mathrm{SE}} = \frac{-0.05}{0.01857} = - \frac{5}{1.1857}.
+% \]
+% This \emph{is} enough to reject the null hypothesis that Alice and Bob have the same support.
+}{}
+
+\eoce{\qt{Soccer}
+When Manchester United, Manchester City, or Liverpool play a Premier League game, does the home team win, the away team, or is it a tie (regardless of whether the team in question is the home team)?
+Here are the data for the first 11 games for each team in the Premier League's 2025--2026 season.
+
+	\begin{tabular}{l l l l l}
+		Result		& MU & MC & LP & $\sum$\\
+		Home win	& 6	 & 7  & 8  & 21 \\
+		Tie			& 3	 & 1  & 0  4 \\
+		Away win	& 2	 & 3  & 3  8 \\
+		$\sum$		& 11 & 11 & 11&33  \\
+	\end{tabular}
+
+Conduct a $\chi^2$ test for independence to see whether which team among the three is involved is independent of whether the home team wins, the away team wins, or it's a tie.
+}{}
+
+\eoce{\qt{Soccer II}
+When Manchester United, Manchester City, or Liverpool play a Premier League game, do they win, lose, or is it a tie?
+Here are the data for the first 11 games for each team in the Premier League's 2025--2026 season.
+
+	\begin{tabular}{l l l l l}
+		Result		& MU & MC & LP & $\sum$\\
+		They win	& 5	 & 7  & 6  & 18 \\
+		Tie			& 3	 & 1  & 0  & 4  \\
+		They lose	& 3	 & 3  & 5  & 11 \\
+		$\sum$		& 11 & 11 & 11 & 33 \\
+	\end{tabular}
+
+Conduct a $\chi^2$ test for independence to see whether which team among the three is involved is independent of whether the home team wins, the away team wins, or it's a tie.
+% Solution:
+% Assuming independence the expected scores are
+%
+% 	\begin{tabular}{l l}
+% 		Result		& MU & MC  & LP & $\Sum$\\
+% 		Home win	& 6	 & 6   & 6	& 18\\
+% 		Tie			& 4/3& 4/3 & 4/3& 4\\
+% 		Away win	& 11/3& 11/3 & 11/3& 11\\
+% 		$\Sum$		& 11 & 11  & 11 & 33\\
+% 	\end{tabular}
+% This time the $\chi^2$ score is 4.56, corresponding to a probability of 33.5\%. So we cannot rule out independence.
+}{}

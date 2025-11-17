@@ -341,6 +341,57 @@ $p_y=233/1924=.1211$ and $p_x=306/3666=.0835$ which gives the standard error $0.
 	From \Cref{chiSquareProbabilityTableShort} we see that the p-value is between 10\% and 20\%.
 	Therefore we cannot reject Steve's null hypothesis at the 5\% level of significance.
 }
+
+\eocesol{
+We run an inference test for the difference between two proportions.
+Thus $\hat p_X=10\%$ and $\hat p_Y=11\%$.
+If we make the standard error
+\[
+\mathrm{SE}=\sqrt{\hat p_X(1-\hat p_X)/1000 + \hat p_Y(1-\hat p_Y)/500}=0.0169
+\]
+it is not too far off. However, under the null hypothesis that $p_X=p_Y$ we should use the pooled estimate
+\[
+\hat p = \frac{\hat p_X\cdot 1000 + \hat p_Y\cdot 500}{1000+500} = \frac{100 + 55}{1500}
+\]
+\[
+= \frac{155}{1500} = \frac{31}{300} = 10.\overline{3}\%,
+\]
+and then
+\[
+\mathrm{SE}=\sqrt{\hat p(1-\hat p)/1000 + \hat p(1-\hat p)/500}=0.0167
+\]
+The degrees of freedom is conservatively estimated by $\min\{1000-1, 500-1\}=499$.
+Since this is large, we can use a normal distribution ($z$-test).
+Thus
+\[
+Z = \frac{10\%-11\%}{\mathrm{SE}} = \frac{-0.01}{0.017} = - \frac{1}{1.7}.
+\]
+This \emph{is not} enough to reject the null hypothesis that Alice and Bob have the same support.
+}
+
+\eocesol{
+Assuming independence the expected scores are
+
+	\begin{tabular}{l l l l l}
+		Result		& MU & MC  & LP & $\sum$\\
+		Home win	& 7	 & 7   & 7	& 21\\
+		Tie			& 4/3& 4/3 & 4/3& 4\\
+		Away win	& 8/3& 8/3 & 8/3& 8\\
+		$\sum$		& 11 & 11  & 11 & 33\\
+	\end{tabular}
+For example, expected home wins when MU plays is
+(probability of home win) $\cdot$ (probability of a MU game) $\cdot$ (total number of games)
+$=(21/33)\cdot (11/33)\cdot 33 = \frac{21\cdot 11}{33} = 21/3=7$.
+
+We compare this to a $\chi^2$ distribution with $(3-1)\times (3-1) = 4$ degrees of freedom.
+The $\chi^2$ score is $\sum (\text{observed}-\text{expected})^2/\text{expected}$:
+\[
+(6-7)^2/7 + (7-7)^2/7 + (8-7)^2/7 + (3-4/3)^2/(4/3) + \dot (\text{nine terms total})
+\]
+\[= 2.5 + 0.\overline{285714}=2.8
+\]
+The corresponding probability is 59\%, so we cannot rule out independence.
+}
 \end{multicols}
 
 \newpage
