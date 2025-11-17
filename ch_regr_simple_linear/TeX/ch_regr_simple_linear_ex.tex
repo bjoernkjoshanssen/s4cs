@@ -47,3 +47,30 @@
 	\end{parts}
 }{}
 
+\eoce{\qt{Calculus on the $F$ distribution}
+The $F$ distribution with degrees of freedom $d_1=d_2=1$ has the pdf
+\[
+f(x)=\frac{\sqrt{x/(x+1)^2}}{x B(1/2,1/2)}
+\]
+where $B(\alpha,\beta)=\Gamma(\alpha)\Gamma(\beta)/\Gamma(\alpha+\beta)$, $\Gamma(1/2)=\sqrt\pi$, and the formula $\Gamma(n)=(n-1)!$ for $n\ge 1$ holds.
+Use your calculus knowledge to demonstrate that
+\[
+\int_0^{\infty} f(x)\,dx = 1.
+\]
+% Solution: it follows from (i)
+% \[
+% \int_0^\infty \frac{dx}{(x+1)\sqrt x} = \pi
+% \]
+% using the substitution $u=\sqrt x$ and (ii) $B(1/2,1/2)=\frac{\sqrt\pi \cdot \sqrt\pi}{(1-1)!} = \pi$.
+}{}
+
+\eoce{\qt{Calculus on the $F$ distribution II}
+The $F$ distribution with degrees of freedom $d_1=1$ and $d_2=2$ has the pdf
+\[
+f(x)=\frac{\sqrt{4x/(x+2)^3}}{x B(1/2,1)}.
+\]
+Use your calculus knowledge to demonstrate that
+\[
+\int_0^{\infty} f(x)\,dx = 1.
+\]
+}{}
