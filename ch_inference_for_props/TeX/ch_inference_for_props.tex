@@ -169,7 +169,7 @@ The standard error for the difference in two proportions takes a similar form. T
 
 \subsection{Confidence intervals for $p_1 -p_2$}
 
-In the setting of confidence intervals for a difference of two proportions, the two sample proportions are used to verify the success-failure condition and also compute the standard error, just as was the case with a single proportion.
+In the setting of confidence intervals for a difference of two proportions, the two sample proportions are used to verify the success-failure condition and also compute the standard error, just as was the case with a single proportion. \emph{We do not use a pooled sample proportion, since we are note assuming $p_1=p_2$.}
 
 
 
@@ -193,7 +193,7 @@ Similarly, $\hat{p}_2n_2$ represents the number of successes in sample 2.}
 
 When we conduct a 2-proportion hypothesis test, usually $H_0$ is $p_1 - p_2 = 0$. However, there are rare situations where we want to check for some difference in $p_1$ and $p_2$ that is some value other than 0. For example, maybe we care about checking a null hypothesis where $p_1 - p_2 = 0.1$.\footnote{We can also encounter a similar situation with a difference of two means, though no such example was given in Chapter~\ref{inferenceForNumericalData} since the methods remain exactly the same in the context of sample means. On the other hand, the success-failure condition and the calculation of the standard error vary slightly in different proportion contexts.} In contexts like these, we generally use $\hat{p}_1$ and $\hat{p}_2$ to check the success-failure condition and construct the standard error.
 
-In a hypothesis test where the null hypothesis is that $p_1 - p_2 = 0.03$, say, the sample proportions $\hat p_1$ and $\hat p_2$ are used for the standard error calculation rather than a pooled proportion. Actually one could imagine using something like
+\emph{In a hypothesis test where the null hypothesis is that $p_1 - p_2 = 0.03$, say, the sample proportions $\hat p_1$ and $\hat p_2$ are used for the standard error calculation rather than a pooled proportion.} Actually one could imagine using something like
 \[
 	\hat p(1-\hat p)/n_1 + (\hat p+0.03)(1-\hat p-0.03)/n_2\tag{*}
 \]
