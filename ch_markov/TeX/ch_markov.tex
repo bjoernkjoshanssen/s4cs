@@ -261,6 +261,34 @@ If we are lazy, Wolfram Alpha gives the solution $q=p^2$. In other words, no mat
     which value of the variance would make what we just observed ($X_1=x_1$) most likely,
     \end{quote}
     it is clear that the answer is: $\sigma^2=0$.
+
+	\subsection{Logistic regression}
+Suppose Erling Haaland, Alexander S{\o}rloth and Antonio Nusa were purchased by their current soccer clubs for
+transfer fees of 60 million euros, 30 million, and 20 million, respectively.
+Suppose that in the most recent Norway national team match, Haaland scored a goal but S{\o}rloth and Nusa did not.
+Let us try to infer how much it costs to purchase a player that will score a goal with probability $p$, as a function of $p$.
+If $p_1, p_2, p_3$ are the probabilities that Haaland, S{\o}rloth, and Nusa score in a given game,
+then we want to maximize $p_1(1-p_2)(1-p_3)$, the probability of what actually happened, according to the philosophy
+of maximum likelihood. We want $p_1=p(60), p_2=p(30)$, and $p_3=p(20)$, and we want to use a sigmoid function of the form
+\[
+p(x) = \frac1{1+e^{-(\beta_0+\beta_1x)}}
+\]
+This is not possible to solve with an exact formula, but we can use a tool available
+at \url{https://stats.blue/Stats_Suite/logistic_regression_calculator.html}.
+Entering the scores 1,0,0 in the ``Success/Failure'' column and 60,30,20 in the ``Explanatory variable $x_1$'' column,
+we obtain $\beta_0=-59.3709$ and $\beta_1=1.3214$.
+If we now ask, how much would we have to pay for a player who will more likely score than not, visual inspection of the ``Plot of Model and Data''
+suggests 45 million euros.
+
+Going beyond just the a single game, it so happens that Norway's national team did very well in the World Cup Qualifying and Nations League games of 2025,
+with Haaland scoring in 12/14 games, S{\o}rloth in 7/14, and Nusa in 4/14. Anecdotally, this seems to confirm that 45 million euros is a reasonable amount
+to get someone who will more often score than not.
+
+Note that $p(-\infty)=0$ (a player with a negative transfer fee will certainly not score a goal!) and $p(\infty)=1$ (a player with an arbitrarily large fee will most certainly score a goal). The probability that a player with a 0 euro fee will score in a game at the highest level is not quite zero, but very close:
+\[
+\frac1{1+e^{59.3709}}.
+\]
+
 \section{Hidden Markov chains}
 	A hidden Markov chain has a finite set of \term{states} with probabilities of transitions between them.
 	In each state there are probabilities of emitting (or writing) certain symbols.
