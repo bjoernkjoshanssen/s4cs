@@ -289,6 +289,21 @@ Note that $p(-\infty)=0$ (a player with a negative transfer fee will certainly n
 \frac1{1+e^{59.3709}}.
 \]
 
+\subsection{How not to do logistic regression}
+Over the course of 14 games, Haaland, S{\o}rloth and Nusa had 6/7, 1/2, and 2/7 scoring proportions.
+Since these numbers are strictly between 0 and 1 we can set them directly equal to $p(60), p(30), p(20)$.
+The resulting system sets a straight line equal to ``log odds'' $\ln(p/(1-p))$:
+\[
+\beta_0+60\beta_1 \approx \ln(6/1),\quad \beta_0+30\beta_1\approx \ln(1/1),\quad \beta_0+20\beta_1\approx \ln(2/5).
+\]
+This will not have a solution (three equations and only two unknowns!),
+but it will have a regression line that we can find using the methods of Chapter 7.
+Using Google Sheets with LINEST we find that $\beta_1=0.06699$ and $\beta_0=-2.1869$.
+The resulting function gives a 0 euros player around 10\% chance of scoring a goal in a given game. Perhaps not too unreasonable.
+Note however that this method has no theoretical basis for use with statistical inference, and
+if we start with proportions that are 0 or 1 (as we did for a single game) we run into trouble:
+$1 = 1/(1+e^{-\beta_0-\beta_1 x})$ has no solution so we cannot solve for $\beta_0+\beta_1x$ to get the regression started.
+
 \section{Hidden Markov chains}
 	A hidden Markov chain has a finite set of \term{states} with probabilities of transitions between them.
 	In each state there are probabilities of emitting (or writing) certain symbols.
