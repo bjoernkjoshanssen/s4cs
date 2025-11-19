@@ -541,4 +541,43 @@ Given
 Therefore the two are perpendicular because the dot product is zero.%\footnote{This is a solution to Functional Margin.}
 
 }{}
+
+\eocesol{
+The logistic probability density function is
+\[
+\frac{d}{dx}F(x) = \frac{d}{dx} \frac1{1+e^{-x}} = \frac{e^{-x}}{(1+e^{-x})^2}
+\]
+\[
+= \frac{e^x}{(1+e^x)^2} = \frac1{(1+e^{-x})(1+e^x)} = \frac1{2+e^x+e^{-x}}
+\]
+The mode is given by
+\[
+0 = \frac{d}{dx}\frac1{2+e^x+e^{-x}} = -(2+e^x+e^{-x})^{-2}\cdot (e^x - e^{-x})
+\]
+which implies $x=0$. The value at the mode is $\frac1{2+1+1}=1/4$.
+}
+
+\eocesol{
+This will be exactly the mode, but now our function is
+\[
+F(x) = \frac1{1+e^{-(\beta_0+\beta_1x)}}
+\]
+and so
+\[
+f(x) = \frac{dF}{dx} = - \frac{e^{-(\beta_0+\beta_1 x)}(-\beta_1)}{(1+e^{-(\beta_0+\beta_1x)})^2}
+\]
+\[
+= \frac{e^{-(\beta_0+\beta_1 x)}\beta_1}{(1+e^{-(\beta_0+\beta_1x)})^2}
+= \frac1{2+e^{\beta_0+\beta_1x} + e^{-(\beta_0+\beta_1x)}}
+\]
+The mode is given by
+\[
+0 = \frac{d}{dx} \frac1{2+e^{\beta_0+\beta_1x} + e^{-(\beta_0+\beta_1x)}}
+\]
+\[
+= -(2+e^{\beta_0+\beta_1x}+e^{-(\beta_0+\beta_1x)})^{-2}\cdot (e^{\beta_0+\beta_1x}\beta_1 -\beta_1 e^{-(\beta_0+\beta_1x)})
+\]
+which implies $\beta_0+\beta_1x = 0$ or $x = -\beta_0/\beta_1 = - \frac{-59.3709}{1.3214} = 44.93$.
+In other ords, at 44.93 million euros, the probability of a goal increases the fastest!
+}
 \end{multicols}
