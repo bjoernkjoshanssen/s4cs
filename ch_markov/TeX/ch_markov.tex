@@ -273,10 +273,13 @@ of maximum likelihood. We want $p_1=p(60), p_2=p(30)$, and $p_3=p(20)$, and we w
 \[
 p(x) = \frac1{1+e^{-(\beta_0+\beta_1x)}}
 \]
-This is not possible to solve with an exact formula, but we can use a tool available
-at \url{https://stats.blue/Stats_Suite/logistic_regression_calculator.html}.
+\includegraphics[width=10cm]{ch_markov/figures/logistic_regression.png}
+This is not possible to solve with an exact formula, but we can use a tool\footnote{\url{https://stats.blue/Stats_Suite/logistic_regression_calculator.html}}.
 Entering the scores 1,0,0 in the ``Success/Failure'' column and 60,30,20 in the ``Explanatory variable $x_1$'' column,
-we obtain $\beta_0=-59.3709$ and $\beta_1=1.3214$.
+we obtain $\beta_0=-59.3709$ and $\beta_1=1.3214$. Actually in this example, there is no solution, but the tool
+still returns an answer. So we have to be cautious! A solution will exist when there is no ``perfect separation'', say if Nusa had scored
+even though S{\o}rloth did not. This separability is related to support vector machines (Section 8.7).
+
 If we now ask, how much would we have to pay for a player who will more likely score than not, visual inspection of the ``Plot of Model and Data''
 suggests 45 million euros.
 
@@ -287,6 +290,15 @@ to get someone who will more often score than not.
 Note that $p(-\infty)=0$ (a player with a negative transfer fee will certainly not score a goal!) and $p(\infty)=1$ (a player with an arbitrarily large fee will most certainly score a goal). The probability that a player with a 0 euro fee will score in a game at the highest level is not quite zero, but very close:
 \[
 \frac1{1+e^{59.3709}}.
+\]
+
+Now suppose Haaland and Nusa scored, but S{\o}rloth did not.
+Then our tool predicts $\beta_0 = -0.6578$ and $\beta_1 = 0.0390$.
+The graph is now much more flat: Haaland's scoring probability is approximately 85\%, and Nusa's is around 55\%.
+Wolfram Alpha does not find an exact solution with the points $(60,1),(30,0),(20,1)$ but it does find one with
+$(6,1),(3,0),(2,1)$: -0.657824 and 0.390494. This is then the maximum $(x,y)$ for
+\[
+z=\frac{1}{1+e^{-\left(6y+x\right)}}\cdot\left(1-\frac{1}{1+e^{-\left(3y+x\right)}}\right)\cdot\left(\frac{1}{1+e^{-\left(2y+x\right)}}\right)
 \]
 
 \subsection{How not to do logistic regression}
