@@ -550,9 +550,9 @@ The logistic probability density function is
 \[
 = \frac{e^x}{(1+e^x)^2} = \frac1{(1+e^{-x})(1+e^x)} = \frac1{2+e^x+e^{-x}}
 \]
-The mode is given by
+The mode is given by \(0 = \frac{d}{dx}\frac1{2+e^x+e^{-x}}\)
 \[
-0 = \frac{d}{dx}\frac1{2+e^x+e^{-x}} = -(2+e^x+e^{-x})^{-2}\cdot (e^x - e^{-x})
+= -(2+e^x+e^{-x})^{-2}\cdot (e^x - e^{-x})
 \]
 which implies $x=0$. The value at the mode is $\frac1{2+1+1}=1/4$.
 }
@@ -579,5 +579,33 @@ The mode is given by
 \]
 which implies $\beta_0+\beta_1x = 0$ or $x = -\beta_0/\beta_1 = - \frac{-59.3709}{1.3214} = 44.93$.
 In other ords, at 44.93 million euros, the probability of a goal increases the fastest!
+}
+
+\eocesol{
+\[
+F(x) = \frac1{1+e^{-x}}
+\]
+has the following properties:
+\begin{enumerate}
+	\item $\lim_{x\to \infty} F(x) = 1$;
+	\item $\lim_{x\to -\infty} F(x) = 0$;
+	\item $F(x)\ge 0$ for all $x$;
+	\item $F(-x)=1-F(x)$.
+\end{enumerate}
+Indeed,
+\[
+	\lim_{x\to\infty}\frac1{1+e^{-x}} = \frac1{1+\lim_{x\to\infty} e^{-x}} = \frac1{1+0}=1,
+\]
+\[
+	\lim_{x\to-\infty}\frac1{1+e^{-x}} = \frac1{1+\lim_{x\to-\infty} e^{-x}} = \frac1{1+\lim_{x\to\infty} e^{x}} = [1/\infty] = 0.
+\]
+Since $e^{-x}>0$ for all $x$, so is $\frac1{1+e^{-x}}$.
+And
+\[
+1 - F(x) = 1 - \frac1{1+e^{-x}} = \frac{1+e^{-x}}{1+e^{-x}} - \frac1{1+e^{-x}} = \frac{e^{-x}}{1+e^{-x}}
+\]
+\[
+= \frac{1}{e^x + 1} = \frac1{1+e^{-(-x)}} = F(-x).
+\]
 }
 \end{multicols}

@@ -131,3 +131,26 @@ which the probability of scoring a goal is increasing the most (per euro).
 For the soccer example in logistic regression, find the exact transfer fee for
 which the probability of scoring a goal becomes 50\%.
 }
+
+\eoce{\qt{Reflective logistic}\label{reflect}
+Show that the logistic function
+\[
+F(x) = \frac1{1+e^{-x}}
+\]
+has the following properties:
+\begin{enumerate}
+	\item $\lim_{x\to \infty} F(x) = 1$;
+	\item $\lim_{x\to -\infty} F(x) = 0$;
+	\item $F(x)\ge 0$ for all $x$;
+	\item $F(-x)=1-F(x)$.
+\end{enumerate}
+}
+
+\eoce{\qt{Poor man's logistic}
+Which of the properties of the logistic function in \ref{reflect}
+does the function
+\[
+F(x) = \frac12\left(1 + \frac{x}{\sqrt{1+x^2}}\right)
+\]
+have?
+}
