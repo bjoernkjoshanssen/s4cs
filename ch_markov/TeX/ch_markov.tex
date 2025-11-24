@@ -286,9 +286,11 @@ even though S{\o}rloth did not. This separability is related to support vector m
 If we now ask, how much would we have to pay for a player who will more likely score than not, visual inspection of the ``Plot of Model and Data''
 suggests 45 million euros.
 
+{\tiny
 Going beyond just the a single game, it so happens that Norway's national team did very well in the World Cup Qualifying and Nations League games of 2025,
 with Haaland scoring in 12/14 games, S{\o}rloth in 7/14, and Nusa in 4/14. Anecdotally, this seems to confirm that 45 million euros is a reasonable amount
 to get someone who will more often score than not.
+}
 
 Note that $p(-\infty)=0$ (a player with a negative transfer fee will certainly not score a goal!) and $p(\infty)=1$ (a player with an arbitrarily large fee will most certainly score a goal). The probability that a player with a 0 euro fee will score in a game at the highest level is not quite zero, but very close:
 \[
@@ -304,7 +306,9 @@ $(6,1),(3,0),(2,1)$: -0.657824 and 0.390494. This is then the maximum $(x,y)$ fo
 z=\frac{1}{1+e^{-\left(6y+x\right)}}\cdot\left(1-\frac{1}{1+e^{-\left(3y+x\right)}}\right)\cdot\left(\frac{1}{1+e^{-\left(2y+x\right)}}\right)
 \]
 
+{\tiny
 \subsection{How not to do logistic regression}
+
 Over the course of 14 games, Haaland, S{\o}rloth and Nusa had 6/7, 1/2, and 2/7 scoring proportions.
 Since these numbers are strictly between 0 and 1 we can set them directly equal to $p(60), p(30), p(20)$.
 The resulting system sets a straight line equal to ``log odds'' $\ln(p/(1-p))$:
@@ -318,7 +322,7 @@ The resulting function gives a 0 euros player around 10\% chance of scoring a go
 Note however that this method has no theoretical basis for use with statistical inference, and
 if we start with proportions that are 0 or 1 (as we did for a single game) we run into trouble:
 $1 = 1/(1+e^{-\beta_0-\beta_1 x})$ has no solution so we cannot solve for $\beta_0+\beta_1x$ to get the regression started.
-
+}
 \section{Hidden Markov chains}
 	A hidden Markov chain has a finite set of \term{states} with probabilities of transitions between them.
 	In each state there are probabilities of emitting (or writing) certain symbols.
