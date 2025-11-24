@@ -49,19 +49,51 @@
 	%\textC{\newpage}
 
 	As taught in Calculus III, this is the beginning of the process of finding a maximum.
-	Next one finds the \emph{Jacobian} $J = g_{b_0b_0}g_{b_1b_1} - g_{b_0b_1}g_{b_1b_0}$
-	where $g_x$ means the derivative of $g$ with respect to $x$, and $g_{xy}$ means the derivative of $g_x$ with respect to $y$.
+	Let
+	\[
+		\ell(b_0,b_1) = \sum_{i=1}^n (y_i-(b_0+b_1x_i))^2
+	\]
+	
+	Next one finds the \emph{Hessian determinant}
+	\[
+		\det H_f =
+		\begin{vmatrix}
+			\ell_{b_0b_0} & \ell_{b_0b_1}\\
+			\ell_{b_1b_0} & \ell_{b_1b_1}\\
+		\end{vmatrix}
+		=
+		\ell_{b_0b_0}\ell_{b_1b_1} - \ell_{b_0b_1}\ell_{b_1b_0}
+	\]
+	where $\ell_x$ means the derivative of $\ell$ with respect to $x$, and $\ell_{xy}$ means the derivative of $\ell_x$ with respect to $y$.
 	In our case this becomes
 	\[
 		(2n) \cdot (2n(\overline{x^2})) - (2n\overline x)^2 = 4n^2 (\overline{x^2}-(\overline x)^2)
 	\]
 	We recognize $\overline{x^2}-(\overline x)^2$ as the variance of the uniform distribution on $\{x_1,\dots,x_n\}$,
-	hence it is nonnegative. According to further Calculus III theory this means that $g$ indeed has a minimum, i.e., we have
-	successfully minized the errors in our linear regression.
+	hence it is nonnegative. Moreover, $\ell_{b_0b_0}>0$. According to further Calculus III theory this means that $\ell$ indeed has a minimum, i.e., we have
+	successfully minized the errors (loss $\ell$) in our linear regression.
+	
+	According to a linear-algebraic extension of this multivariable calculus theory, we need the matrix
+	\[
+	\begin{bmatrix}
+		\ell_{b_0b_0} & \ell_{b_0b_1}\\
+		\ell_{b_1b_0} & \ell_{b_1b_1}\\
+	\end{bmatrix}
+	\]
+	to be of the form $L L^T$ where $T$ denotes the \emph{transpose} and
+	$L = \begin{bmatrix}
+			a & 0\\
+			b & c\\
+		\end{bmatrix}$ for some real numbers $a,b,c$.
+	This gives
+	$L L^T= \begin{bmatrix}
+			a^2 & ab\\
+			ab & b^2+c^2\\
+		\end{bmatrix}$
+	and we can take $a = 2n$, $b=\overline x$, and $c=\sqrt{\overline{x^2}-(\overline x)^2}$.
 
 
-
-	Let us compare our value of $b_1$ to that stated in \emph{OpenIntro Statistics}:
+	Now let us compare our value of $b_1$ to that stated in \emph{OpenIntro Statistics}:
 	\begin{equation}
 		b_1 \overset{!}{=} \frac1{n-1}\sum (x_i-\overline x)(y_i-\overline y)/s_x^2
 		= \frac{\sum (x_i-\overline x)(y_i-\overline y)}{\sum_{i=1}^n (x_i-\overline x)^2}
