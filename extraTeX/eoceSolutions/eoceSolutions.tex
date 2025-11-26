@@ -498,6 +498,44 @@ It follows from (i)
 \]
 using the substitution $u=\sqrt x$ and (ii) $B(1/2,1/2)=\frac{\sqrt\pi \cdot \sqrt\pi}{(1-1)!} = \pi$.
 }
+
+\eocesol{
+	One solution is $(x_i,y_i)=(i,0)$ for all $i$. Another is $(x_i,y_i)=(0,i)$ for all $i$.
+}
+
+\eocesol{
+	For a data set $(x_i,y_i)$, $1\le i \le n$, recall the correlation coefficient
+	\[
+		r = \frac{\sum (x_i-\overline x)(y_i-\overline y)}{\sqrt{\sum_{i=1}^n (x_i-\overline x)^2}\sqrt{\sum_{i=1}^n (y_i-\overline y)^2}}.
+	\]
+	Find $r$ as a function of $y$, $r(y)$, for the data set $\{(-1,0), (0,0), (1,y)\}$, and graph it.
+	We have $\overline x = 0$, $\overline y = y/3$, and hence
+	\[
+		r = \frac{\sum x_i(y_i-y/3)}{\sqrt{\sum_{i=1}^n x_i^2}\sqrt{\sum_{i=1}^n (y_i-y/3)^2}}.
+	\]
+	\[
+		r = \frac{
+		(-1)(0-y/3) + 0 + 1(y-y/3)
+		}{\sqrt{2}\sqrt{
+		2(0-y/3)^2 + (y-y/3)^2
+		}}.
+	\]
+	\[
+		r = \frac{
+		y/3 + (y-y/3)
+		}{\sqrt{2}\sqrt{
+		2(y/3)^2 + (2y/3)^2
+		}}.
+	\]
+	\[
+		r = \frac{
+		y
+		}{\sqrt{2}\sqrt{
+		6y^2/9
+		}} = \mathrm{sign}(y) \cdot \frac{\sqrt 3}2.
+	\]
+	Correlation is invariant under scaling so we should not be too surprised by this.
+}
 \end{multicols}
 
 
