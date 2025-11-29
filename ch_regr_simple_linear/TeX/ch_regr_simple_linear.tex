@@ -107,9 +107,9 @@
 		In \emph{OpenIntro Statistics}, the symbol $R$ is used, but we shall use $r$.
 		See \url{https://stats.stackexchange.com/questions/134167/is-there-any-difference-between-r2-and-r2} for a discussion of this issue.
 	}
-	\[
+	\begin{equation}\label{shall-have}
 		b_1=r s_y/s_x.
-	\]
+	\end{equation}
 	In other words,
 	\[
 		r = \frac{\sum (x_i-\overline x)(y_i-\overline y)}{\sqrt{\sum_{i=1}^n (x_i-\overline x)^2}\sqrt{\sum_{i=1}^n (y_i-\overline y)^2}}
@@ -494,7 +494,16 @@ family\_\hspace{0.3mm}income & $b_1$ & $\SE(b_1)$ & $t$ & 0.0002 \\
 \label{nov19}
 \end{table}
 
-
+\begin{definition}
+Let\footnote{See e.g. David E. Bock, Paul F. Velleman, and Richard D. De Veaux: \emph{Stats: Data and Models}, 4th edition.}
+\begin{equation}\label{do-not-forget}
+	\SE(b_1) = \frac{\sqrt{\sum (y_i-\hat y_i)^2/(n-2)}}{\sqrt{\sum (x_i-\overline x)^2}}.
+\end{equation}
+\end{definition}
+Of course, we can define $\SE(b_1)$ however we want but the point is that with the definition above \eqref{do-not-forget},
+\begin{theorem}
+$(b_1 - \beta_1) / \SE(b_1)$ has a $t$ distribution with $n-2$ degrees of freedom.
+\end{theorem}
 
 \subsection{Statistically significant slopes when correlation coefficient is bounded away from 1}%Discussion from November 21, 2018
 
@@ -503,12 +512,8 @@ A result may be statistically significant without being ``big''.
 In this section we show that the $p$-value associated with a slope can go to zero while the correlation $r^2$ is bounded away from 1.
 But first, a different example.
 \begin{example}{}
-Imagine points $(2n,2n+1)$ and $(2n+1,2n)$. The slope $b_1$ is 1 in the limit. We have\footnote{See e.g. David E. Bock, Paul F. Velleman, and Richard D. De Veaux: \emph{Stats: Data and Models}, 4th edition.}
-\[
-	\SE(b_1) = \frac{\sqrt{\sum (y_i-\hat y_i)^2/(n-2)}}{\sqrt{\sum (x_i-\overline x)^2}}.
-\]
-(Don't forget that denominator.)
-In our example, as the number of points increases, the numerator $\sqrt{\sum (y_i-\hat y_i)^2/(n-2)}$ may converge but the denominator $\sqrt{\sum (x_i-\overline x)^2}$ increases.
+Imagine points $(2n,2n+1)$ and $(2n+1,2n)$. The slope $b_1$ is 1 in the limit.
+As the number of points increases, the numerator $\sqrt{\sum (y_i-\hat y_i)^2/(n-2)}$ may converge but the denominator $\sqrt{\sum (x_i-\overline x)^2}$ increases.
 Thus, $b_1/\SE(b_1)$ goes to $\infty$. On the other hand, $r =  b_1 s_x/s_y\approx s_x/s_y$. Now since $y\approx x$ this should all converge to 1.
 \end{example}
 
@@ -542,7 +547,7 @@ $\sum\hat y = \sum y$.
  \begin{theorem}[Sum of squares decomposition]\label{ssethm}
 	\[
 		\label{SSE}
-		\TSS = \sum(y-\overline y)^2 = \sum (\hat y-\overline y)^2 + \sum(y-\hat y)^2 = \ESS + \RSS.
+		\TSS = \ESS + \RSS.
 	\]
 \end{theorem}
 \begin{proof}
@@ -552,11 +557,10 @@ $\sum\hat y = \sum y$.
 	%\]
 	%not a good way:
 	\begin{eqnarray*}
-		\sum y^2 - 2y\overline y + \overline y^2 &=& \sum \hat y^2-2\hat y\overline y + \overline y^2 + y^2 - 2y\hat y + \hat y^2\\
-		\sum  - 2y\overline y  &=& \sum 2\hat y^2-2\hat y\overline y   - 2y\hat y \\
-		-2n\overline y^2  &=& \sum 2\hat y^2- \sum 2\hat y\overline y   - \sum 2y\hat y \\
+		\sum (y^2 - 2y\overline y + \overline y^2) &=& \sum (\hat y^2-2\hat y\overline y + \overline y^2 + y^2 - 2y\hat y + \hat y^2)\\
+		\sum  - 2y\overline y  &=& \sum (2\hat y^2-2\hat y\overline y   - 2y\hat y) \\
 		-\sum y\overline y  &=& \sum \hat y^2- \sum \hat y\overline y   - \sum y\hat y \\
-		 \sum \hat y\overline y   + \sum y\hat y &=& \sum y\overline y   +  \sum \hat y^2
+		 \overline y\sum \hat y   + \sum y\hat y &=& \overline y\sum y   +  \sum \hat y^2
 	\end{eqnarray*}
 	Now by Theorem \ref{frischwe}, $\sum\hat y = \sum y$, so we just need
 	\begin{eqnarray*}
@@ -566,17 +570,18 @@ $\sum\hat y = \sum y$.
 		  (\overline y-b_1\overline x)\overline y + b_1 \overline {xy} &=& (\overline y-b_1\overline x)^2 + 2(\overline y-b_1\overline x)b_1\overline x +b_1^2 \overline{x^2}\\
 		  b_1 \overline {xy} &=& (\overline y-b_1\overline x)(-b_1\overline x) + 2(\overline y-b_1\overline x)b_1\overline x + b_1^2\overline{x^2}\\
 		  b_1 \overline {xy} &=& (\overline y-b_1\overline x)b_1\overline x +b_1^2 \overline{x^2}\\
-		b_1(\overline{xy} - \overline x\cdot\overline y) &=& b_1^2\overline{x^2} - b_1^2\overline{x}^2
+		b_1(\overline{xy} - \overline x\cdot\overline y) &=& b_1^2\overline{x^2} - b_1^2\overline{x}^2\\
+		\overline{xy} - \overline x\cdot\overline y &=& b_1(\overline{x^2} - \overline{x}^2)\\
 	\end{eqnarray*}
-	which upon dividing by $b_1$ is our formula for $b_1$ from Equation (\ref{b1}).
+	which is our formula for $b_1$ from Equation (\ref{b1}).
 \end{proof}
 
 \begin{theorem}\label{aid}
 $1-r^2= \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2}$.
 \end{theorem}
 \begin{proof}
+	Substituting \eqref{shall-have}, we must show any of the following equivalent statements:
 	\begin{eqnarray*}
-		1-r^2 												&\overset{!}{=}& \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2}\\
 		1-(b_1s_x/s_y)^2 										&\overset{!}{=}& \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2}\\
 		s_y^2-(b_1s_x)^2 										&\overset{!}{=}& \frac{\sum(y-\hat y)^2}{n-1}\\
 		\sum(y-\overline y)^2-b_1^2 \sum (x-\overline x)^2 				&\overset{!}{=}& \sum(y-\hat y)^2\\
@@ -584,7 +589,7 @@ $1-r^2= \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2}$.
 		\sum(y-\overline y)^2 - \sum (\hat y-\overline y)^2 				&\overset{!}{=}& \sum(y-\hat y)^2\\
 		\sum(y-\overline y)^2										&\overset{!}{=}& \sum (\hat y-\overline y)^2 + \sum(y-\hat y)^2
 	\end{eqnarray*}
-	which is true by Theorem \ref{ssethm}.
+	The last line is exactly \Cref{ssethm}.
 	%good way: we claim the vectors $\hat y-\overline y$ and $y-\hat y$ are orthogonal.
 \end{proof}
 
@@ -594,29 +599,37 @@ r^2=\frac{\ESS}{\TSS}=\frac{\sum (\hat y-\bar y)^2}{\sum (y-\bar y)^2}.
 \]
 \end{theorem}
 \begin{proof}
-We have
+By \Cref{aid} and \Cref{ssethm}, we have
 \[
 	1-r^2= \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2} = \frac{[\sum(y-\bar y)^2-\sum (\hat y-\bar y)^2]/(n-1)}{s_y^2} = 1-\frac{\sum (\hat y-\bar y)^2/(n-1)}{s_y^2}.
 \]
 \end{proof}
  
 \begin{theorem}\label{https://www.andrews.edu/}
-The $t$ statistic $t=b_1/\SE(b_1)$ is also given by
+The $t$ statistic $t=b_1/\SE(b_1)$ (corresponding to a null hypothesis $\beta_1=0$) is also given by
 	\[
 		t=r\sqrt{(n-2)/(1-r^2)}.
 	\]
 \end{theorem}
-
-Note that $r/\sqrt{1-r^2}$ goes to $\infty$ only when $r\to 1$, but $\sqrt{n-2}$ goes to infinity anyway.
-So if $r$ is a fixed value (there is a certain amount of spread around the regression line, and it's not going away) then we should achieve statistical significance as $n\to \infty$. Namely, imagine that $X$ and $Y$ are correlated jointly normal random variables with a correlation coefficient $\rho$; for large $n$ we will have $r\approx\rho$.
-\begin{proof}[Proof of Theorem \ref{https://www.andrews.edu/}]
+% Note that $r/\sqrt{1-r^2}$ goes to $\infty$ only when $r\to 1$, but $\sqrt{n-2}$ goes to infinity anyway.
+% So if $r$ is a fixed value (there is a certain amount of spread around the regression line, and it's not going away) then we should achieve statistical significance as $n\to \infty$. Namely, imagine that $X$ and $Y$ are correlated jointly normal random variables with a correlation coefficient $\rho$; for large $n$ we will have $r\approx\rho$.
+\begin{proof}%[Proof of Theorem \ref{https://www.andrews.edu/}]
+	Using $\SE(b_1)^2=\frac{\sum(y-\hat y)^2/(n-2)}{(n-1)s_x^2}$ \eqref{do-not-forget}
+	and $b_1=rs_y/s_x$ \eqref{shall-have},
+	% \[
+	% t^2 = \frac{b_1^2}{\SE(b_1)^2} = \frac{(rs_y/s_x)^2}{\frac{\sum(y-\hat y)^2/(n-2)}{(n-1)s_x^2}} =
+	% \frac{(rs_y)^2}{\frac{\sum(y-\hat y)^2/(n-2)}{(n-1)}} =
+	% \]
 	\begin{eqnarray*}
 		\frac{b_1}{\SE(b_1)}										&\overset{!}{=}& \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}\\
 		\frac{r s_y}{s_x \SE(b_1)} 									&\overset{!}{=}& \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}\\
 		\frac{s_y}{s_x \SE(b_1)}									&\overset{!}{=}& \frac{\sqrt{n-2}}{\sqrt{1-r^2}}\\
+	\end{eqnarray*}
+	Since both sides are positive, it is equivalent that
+	\begin{eqnarray*}
 		\frac{s_y^2}{s_x^2 \SE(b_1)^2}								&\overset{!}{=}& \frac{n-2}{1-r^2}\\
 		\frac{s_y^2}{s_x^2 \frac{\sum(y-\hat y)^2/(n-2)}{(n-1)s_x^2}}		&\overset{!}{=}& \frac{n-2}{1-r^2}\\
-		\frac{s_y^2}{\frac{\sum(y-\hat y)^2/(n-2)}{(n-1)}}					&\overset{!}{=}& \frac{n-2}{1-r^2}\\
+		% \frac{s_y^2}{\frac{\sum(y-\hat y)^2/(n-2)}{(n-1)}}					&\overset{!}{=}& \frac{n-2}{1-r^2}\\
 		\frac{s_y^2}{\sum(y-\hat y)^2/(n-1)} 							&\overset{!}{=}& \frac{1}{1-r^2}\\
 		1-r^2 												&\overset{!}{=}& \frac{\sum(y-\hat y)^2/(n-1)}{s_y^2}\\
 	\end{eqnarray*}
@@ -625,12 +638,12 @@ which is true by Theorem \ref{aid}.
 
 
 Consequently, we can also express $r^2$ in terms of $t$;
-\begin{eqnarray}
-	t&=&r\sqrt{(n-2)/(1-r^2)}\\
-\label{goat}	t^2&=&r^2(n-2)/(1-r^2)\\
-	(1-r^2)t^2&=&r^2(n-2)\\
-	t^2&=&r^2(n-2+t^2)\\
-	r^2 &=& \frac{t^2}{t^2+n-2}
+\begin{eqnarray}\label{goat}
+	t&=&r\sqrt{(n-2)/(1-r^2)}\nonumber\\
+	t^2&=&r^2(n-2)/(1-r^2)\\
+	(1-r^2)t^2&=&r^2(n-2)\nonumber\\
+	t^2&=&r^2(n-2+t^2)\nonumber\\
+	r^2 &=& \frac{t^2}{t^2+n-2}\nonumber
 \end{eqnarray}
 It is also instructive to express $t^2$ by
 \begin{equation}\label{hu}
