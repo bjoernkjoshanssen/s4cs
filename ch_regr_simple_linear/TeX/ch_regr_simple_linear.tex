@@ -387,11 +387,32 @@ Examine the set of points $(-1,0),(0,0),(n,n)$. Is $(n,n)$ influential?\footnote
 \section{Inference for linear regression}
 \label{inferenceForLinearRegression}
 
-We can conduct hypothesis tests for the null hypothesis of the slope being zero, $\beta_1=0$, for instance.
+
+\subsection{Prediction intervals}
+A prediction interval in simple linear regression provides a range in which we expect a future
+observation $Y_0$ to fall for a given predictor value $x_0$. If the fitted regression line is
+$\hat{y}(x) = \hat{\beta}_0 + \hat{\beta}_1 x$, then a $100(1-\alpha)\%$ prediction interval for $Y_0$
+is given by
+\[
+\hat{y}(x_0) \;\pm\; t_{n-2,\,1-\alpha/2} \cdot s \sqrt{ \,1 + \frac{1}{n} +
+\frac{(x_0 - \bar{x})^2}{\sum_{i=1}^n (x_i - \bar{x})^2} },
+\]
+where $s = \sqrt{\text{RSS}/(n-2)}$ is the residual standard error, $\bar{x}$ is the mean of the
+observed predictor values, and $t_{n-2,\,1-\alpha/2}$ is a critical value from the $t$-distribution
+with $n-2$ degrees of freedom. The square root term accounts both for uncertainty in estimating the
+regression line and the natural variability of new observations around the line.
+
+In Google Sheets, the needed quantities can be computed from the data using built-in functions.
+The predicted value $\hat{y}(x_0)$ can be obtained using \texttt{FORECAST.LINEAR}, the residual
+standard error $s$ using \texttt{STEYX}, the critical $t$-value using \texttt{T.INV.2T}, and the
+remaining parts of the standard error term using standard formulas for means, counts, and sums.
+Combining these values using the formula above allows one to construct the prediction interval
+directly in a spreadsheet.
 
 
 \subsection{Understanding regression output from software}
 \label{testStatisticForTheSlope}
+We can conduct hypothesis tests for the null hypothesis of the slope being zero, $\beta_1=0$, for instance.
 
 Just like other point estimates we have seen before, we can compute a standard error and test statistic for $b_1$. We will generally label the test statistic using a $T$, since it follows the $t$-distribution.
 
@@ -740,7 +761,7 @@ f_X(x) =
 \qquad x > 0.
 \]
 Why $d_1/2$ and $d_2/2$ as Beta parameters?
-The underlying reason is that if $Y=\frac{G_1}{G_1+G_2}$ where $G_i$ is Gamma$(a_i,1)$
+The underlying reason is that if $Y=\frac{G_1}{G_1+G_2}$ where the $G_i$ are independent and Gamma$(a_i,1)$
 then $Y$ is Beta$(a_1,a_2)$. Moreover, a $\chi^2(k)$ distribution is the same as a 
 Gamma$(k/2,2)$ distribution.
 }
