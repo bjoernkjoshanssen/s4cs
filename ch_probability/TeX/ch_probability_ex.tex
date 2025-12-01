@@ -2,73 +2,76 @@
 
 % 1
 \eoce{\qt{Normal distributions\label{normal_dist}}
-	The \textit{normal distribution} is a continuous probability distribution defined
-	by the probability density function $\varphi(x) = \frac{1}{\sqrt{2 \pi \sigma^2}}e^{-\frac{(x - \mu)^2}{2 \sigma^2}}$ for fixed constants $\mu$ and $\sigma$.
-	\begin{parts}
-		\item 
-			Use that ${\displaystyle \int_{-\infty}^{\infty} e^{-\frac{x^2}{2}} dx = \sqrt{2 \pi}}$ to show that $\varphi$ is indeed a probability density function.
-		\item 
-			Show that the mean, median, and mode of the normal distribution are all equal to $\mu$.
-		\item
-			Show that the variance of the normal distribution is equal to $\sigma^2$ and
-			therefore that the standard deviation of the normal distribution is equal to $\sigma$.
-	\end{parts}
+    The \textit{normal distribution} is a continuous probability distribution defined
+    by the probability density function $\varphi(x) = \frac{1}{\sqrt{2 \pi \sigma^2}}e^{-\frac{(x - \mu)^2}{2 \sigma^2}}$ for fixed constants $\mu$ and $\sigma$.
+    \begin{parts}
+        \item 
+            Use that ${\displaystyle \int_{-\infty}^{\infty} e^{-\frac{x^2}{2}} dx = \sqrt{2 \pi}}$ to show that $\varphi$ is indeed a probability density function.
+        \item 
+            Show that the mean, median, and mode of the normal distribution are all equal to $\mu$.
+        \item
+            Show that the variance of the normal distribution is equal to $\sigma^2$ and
+            therefore that the standard deviation of the normal distribution is equal to $\sigma$.
+    \end{parts}
 }{}
 
 % 2
 \eoce{\qt{Skewed normals\label{skewed}}
-	Let $\varphi$ be as in the previous problem with $\mu=0$ and $\sigma=1$ (the ``standard normal'' case).
-	Define $\Phi(x) := {\displaystyle \int_{-\infty}^x \varphi(t) dt}$, the \textit{cumulative distribution function of $\varphi$}. Fix $c \in \mathbb R$ and define the \textit{skewed normal distribution with skewness parameter $c$} by 
-	\begin{center}
-		${\displaystyle f_c(x) := \frac{\varphi(x) \Phi(cx)}{\Phi(0)}}$
-	\end{center}
-	Note that $f_c(x) = \varphi(x)$ when $c = 0$.
-	\begin{parts}
-	\item Show that $\int_{-\infty}^\infty f_c(x)\,dx<\infty$.
-		\item 
-			Show that $f_c$ is indeed a probability density function.
-			(Hint: This requires multivariable calculus.
-			$\int_{-\infty}^\infty f_c(x)\,dx$ is the probability that for two independent standard normal random variables $X$ and $Y$, we have $\P(Y\le cX)$:
-			\[
-				\P(Y\le cX) = \int_{-\infty}^\infty \varphi(x)\int_{-\infty}^{cx} \varphi(y)\,dy\,dx.
-			\]
-			This is $1/2=\Phi(0)$ because $\{(x,y): y\le cx\}$ is a half-plane and the joint pdf of $X$ and $Y$ is spherically symmetric.)
-		\item
-			Find the mean of $f_c(x)$. %, median, and mode of
-			(Hint: the mean is
-			\[
-				E(2X [Y\le cX]) = 2 \frac1{2\pi}\int_{-\infty}^\infty \int_{-\infty}^{cx} x e^{-r^2/2} \,dy\,dx.
-			\]
-			This is $\frac1\pi \int_0^\infty r^2 e^{-r^2/2}\,dr \int_{\tan^{-1}(c)-\pi}^{\tan^{-1}(c)}\cos\theta\,d\theta$ using polar coordinates in multiple integrals.
-			We have $\int_{\tan^{-1}(c)-\pi}^{\tan^{-1}(c)}\cos\theta\,d\theta = [\sin\theta]_{\tan^{-1}(c)-\pi}^{\tan^{-1}(c)} = 2\frac{c}{\sqrt{1+c^2}}$
-			since if $\tan\theta=c$ then $\sin\theta=c/\sqrt{1+c^2}$ (draw a triangle).
-            On the other hand
-			$\int_0^\infty r^2e^{-r^2/2}\,dr = \frac12 \int_{-\infty}^\infty x^2 e^{-x^2/2}\,dx = \frac12 \sqrt{2\pi}$ using the fact that $E(X^2)=1$ for a standard normal $X$.)
-			%For the median, the equation to solve for $m$ is $\P(X\le m, Y\le cX)=1/2$, but it appears tricky to solve exactly. There is also no analytic expression for the mode.
-		\item Show that the mode of $f_c(x)$ is unique (there is no simple analytic expression for it, however).
-		%\item
-		 %   For which $c$ is the mean of $f_c(x)$ greater than the median? Less than the median? Compare your answers to 2c.
-		 \item Show that $g(x)=\frac{d}{dx}(\Phi(x))^2$ is also a probability density function. (Hint: $\int_{-\infty}^\infty g(x)\,dx = 1^2-0^2=1$.) How does it relate to $f_c$?
-	\end{parts}
+    Let $\varphi$ be as in the previous problem with $\mu=0$ and $\sigma=1$ (the ``standard normal'' case).
+    Define $\Phi(x) := {\displaystyle \int_{-\infty}^x \varphi(t) dt}$, the \textit{cumulative distribution function of $\varphi$}. Fix $c \in \mathbb R$ and define the \textit{skewed normal distribution with skewness parameter $c$} by 
+    \begin{center}
+        ${\displaystyle f_c(x) := \frac{\varphi(x) \Phi(cx)}{\Phi(0)}}$
+    \end{center}
+    Note that $f_c(x) = \varphi(x)$ when $c = 0$.
+    \begin{parts}
+    \item Show that $\int_{-\infty}^\infty f_c(x)\,dx<\infty$.
+        \item 
+            Show that $f_c$ is indeed a probability density function.
+            (Hint: This requires multivariable calculus. …)
+        \item
+            Find the mean of $f_c(x)$.
+        \item Show that the mode of $f_c(x)$ is unique (there is no simple analytic expression for it, however).
+        \item Show that $g(x)=\frac{d}{dx}(\Phi(x))^2$ is also a probability density function. (Hint: $\int_{-\infty}^\infty g(x)\,dx = 1^2-0^2=1$.) How does it relate to $f_c$?
+    \end{parts}
 }{}
 
 % 3
 \eoce{\qt{Cauchy distribution\label{cauchy_dist}}
-	The \textit{Cauchy distribution} is a continuous probability distribution defined by the probability density function $f(x) = \frac{1}{\pi(1+x^2)}$
-	\begin{parts}
-		\item 
-			Show that $f$ is indeed a probability density function.
-		\item
-			Find the median and the mode of the Cauchy distribution.
-		\item
-			Show that the mean of the Cauchy distribution does not exist.
-		\item
-			Conclude that the weak (and therefore the strong) Law of Large Numbers fails for the Cauchy distribution. 
-	\end{parts}
+    The \textit{Cauchy distribution} is a continuous probability distribution defined by the probability density function $f(x) = \frac{1}{\pi(1+x^2)}$
+    \begin{parts}
+        \item 
+            Show that $f$ is indeed a probability density function.
+        \item
+            Find the median and the mode of the Cauchy distribution.
+        \item
+            Show that the mean of the Cauchy distribution does not exist.
+        \item
+            Conclude that the weak (and therefore the strong) Law of Large Numbers fails for the Cauchy distribution. 
+    \end{parts}
 }{}
 
 % 4
 \eoce{\qt{Bayesian statistics}
-	Suppose $X$ is a Bernoulli random variable with unknown parameter $p$. Your initial assumption is that $p$ is distributed uniformly on $[0,1]$.
-	Then you observe in sequence the values $X=1,X=0,X=0$. What is your new p.d.f. for $p$?
+    Suppose $X$ is a Bernoulli random variable with unknown parameter $p$. Your initial assumption is that $p$ is distributed uniformly on $[0,1]$.
+    Then you observe in sequence the values $X=1,X=0,X=0$. What is your new p.d.f. for $p$?
+}{}
+
+% 5 – NEW PROBLEM ADDED – Moments of the log-normal distribution
+\eoce{\qt{Log-normal distribution\label{lognormal}}
+    A random variable $Z$ is said to have a \textit{log-normal distribution} with parameters $\mu\in\mathbb R$ and $\sigma>0$ (written $Z\sim\mathrm{LogNormal}(\mu,\sigma^2)$) if $\log Z\sim N(\mu,\sigma^2)$.  
+    The pdf of $Z$ is therefore
+    \[
+        f_Z(z) = \frac{1}{z\sigma\sqrt{2\pi}}\exp\left(-\frac{(\log z-\mu)^2}{2\sigma^2}\right)\qquad (z>0).
+    \]
+    \begin{parts}
+        \item Show that $f_Z(z)$ is indeed a probability density function on $(0,\infty)$.
+        \item Show that the mean of $Z$ is $e^{\mu + \sigma^2/2}$.
+        \item Show that the second moment of $Z$ is $e^{2\mu + 2\sigma^2}$ and deduce that
+            \[
+                \Var(Z) = e^{2\mu + \sigma^2}(e^{\sigma^2}-1).
+            \]
+        \item Show that the median of $Z$ is $e^\mu$.  
+            (Thus the median is always smaller than the mean when $\sigma>0$, illustrating the heavy right tail of the log-normal.)
+        \item (Harder) Show that the mode of $Z$ is $e^{\mu - \sigma^2}$.
+    \end{parts}
 }{}
