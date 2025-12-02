@@ -572,6 +572,23 @@ Let $x_1=0$ and $x_2=1$. Then $\overline{x}=\overline{x^3}=1/2$ and $(\overline{
 
 }
 
+\eocesol{
+We know that $X$ can only take positive values and so $X/(X+1)$ can only take value in the open interval $(0,1)$.
+Note that $y/(1-y) = 1/(1-y) - 1$, so $\frac{d}{dy} y/(1-y) = 1/(1-y)^2$.
+We have
+\[
+	f_Y(y)=\frac{d}{dy}\mathbb P(Y\le y) = \frac{d}{dy}\mathbb P(X/(X+1)\le y)
+\]
+\[
+	= \frac{d}{dy}\mathbb P(X \le y/(1-y)) = f_X(y/(1-y))\cdot \frac{d}{dy} \frac{y}{1-y}
+\]
+\[
+f_X(y/(1-y))\cdot \frac{1}{(1-y)^2} =
+\frac{\sqrt{x/(x+1)^2}}{x B(1/2,1/2)} \cdot  \frac{1}{(1-y)^2}
+\]
+where $x=y//(1-y)$.
+}
+
 \end{multicols}
 
 
