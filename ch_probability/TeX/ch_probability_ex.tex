@@ -2,17 +2,17 @@
 
 % 1
 \eoce{\qt{Normal distributions\label{normal_dist}}
-	The \textit{normal distribution} is a continuous probability distribution defined
-	by the probability density function $\varphi(x) = \frac{1}{\sqrt{2 \pi \sigma^2}}e^{-\frac{(x - \mu)^2}{2 \sigma^2}}$ for fixed constants $\mu$ and $\sigma$.
-	\begin{parts}
-		\item 
-			Use that ${\displaystyle \int_{-\infty}^{\infty} e^{-\frac{x^2}{2}} dx = \sqrt{2 \pi}}$ to show that $\varphi$ is indeed a probability density function.
-		\item 
-			Show that the mean, median, and mode of the normal distribution are all equal to $\mu$.
-		\item
-			Show that the variance of the normal distribution is equal to $\sigma^2$ and
-			therefore that the standard deviation of the normal distribution is equal to $\sigma$.
-	\end{parts}
+    The \textit{normal distribution} is a continuous probability distribution defined
+    by the probability density function $\varphi(x) = \frac{1}{\sqrt{2 \pi \sigma^2}}e^{-\frac{(x - \mu)^2}{2 \sigma^2}}$ for fixed constants $\mu$ and $\sigma$.
+    \begin{parts}
+        \item 
+            Use that ${\displaystyle \int_{-\infty}^{\infty} e^{-\frac{x^2}{2}} dx = \sqrt{2 \pi}}$ to show that $\varphi$ is indeed a probability density function.
+        \item 
+            Show that the mean, median, and mode of the normal distribution are all equal to $\mu$.
+        \item
+            Show that the variance of the normal distribution is equal to $\sigma^2$ and
+            therefore that the standard deviation of the normal distribution is equal to $\sigma$.
+    \end{parts}
 }{}
 
 % 2
@@ -54,21 +54,41 @@
 
 % 3
 \eoce{\qt{Cauchy distribution\label{cauchy_dist}}
-	The \textit{Cauchy distribution} is a continuous probability distribution defined by the probability density function $f(x) = \frac{1}{\pi(1+x^2)}$
-	\begin{parts}
-		\item 
-			Show that $f$ is indeed a probability density function.
-		\item
-			Find the median and the mode of the Cauchy distribution.
-		\item
-			Show that the mean of the Cauchy distribution does not exist.
-		\item
-			Conclude that the weak (and therefore the strong) Law of Large Numbers fails for the Cauchy distribution. 
-	\end{parts}
+    The \textit{Cauchy distribution} is a continuous probability distribution defined by the probability density function $f(x) = \frac{1}{\pi(1+x^2)}$
+    \begin{parts}
+        \item 
+            Show that $f$ is indeed a probability density function.
+        \item
+            Find the median and the mode of the Cauchy distribution.
+        \item
+            Show that the mean of the Cauchy distribution does not exist.
+        \item
+            Conclude that the weak (and therefore the strong) Law of Large Numbers fails for the Cauchy distribution. 
+    \end{parts}
 }{}
 
 % 4
 \eoce{\qt{Bayesian statistics}
-	Suppose $X$ is a Bernoulli random variable with unknown parameter $p$. Your initial assumption is that $p$ is distributed uniformly on $[0,1]$.
-	Then you observe in sequence the values $X=1,X=0,X=0$. What is your new p.d.f. for $p$?
+    Suppose $X$ is a Bernoulli random variable with unknown parameter $p$. Your initial assumption is that $p$ is distributed uniformly on $[0,1]$.
+    Then you observe in sequence the values $X=1,X=0,X=0$. What is your new p.d.f. for $p$?
+}{}
+
+% 5
+\eoce{\qt{Log-normal distribution\label{lognormal}}
+    A random variable $Z$ is said to have a \textit{log-normal distribution} with parameters $\mu\in\mathbb R$ and $\sigma>0$ (written $Z\sim\mathrm{LogNormal}(\mu,\sigma^2)$) if $\log Z\sim N(\mu,\sigma^2)$.  
+    The pdf of $Z$ is therefore
+    \[
+        f_Z(z) = \frac{1}{z\sigma\sqrt{2\pi}}\exp\left(-\frac{(\log z-\mu)^2}{2\sigma^2}\right)\qquad (z>0).
+    \]
+    \begin{parts}
+        \item Show that $f_Z(z)$ is indeed a probability density function on $(0,\infty)$.
+        \item Show that the mean of $Z$ is $e^{\mu + \sigma^2/2}$.
+        \item Show that the second moment of $Z$ is $e^{2\mu + 2\sigma^2}$ and deduce that
+            \[
+                \Var(Z) = e^{2\mu + \sigma^2}(e^{\sigma^2}-1).
+            \]
+        \item Show that the median of $Z$ is $e^\mu$.  
+            (Thus the median is always smaller than the mean when $\sigma>0$, illustrating the heavy right tail of the log-normal.)
+        \item (Harder) Show that the mode of $Z$ is $e^{\mu - \sigma^2}$.
+    \end{parts}
 }{}
