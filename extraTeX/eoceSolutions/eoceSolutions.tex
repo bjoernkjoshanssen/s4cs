@@ -702,7 +702,8 @@ Indeed,
 	\lim_{x\to\infty}\frac1{1+e^{-x}} = \frac1{1+\lim_{x\to\infty} e^{-x}} = \frac1{1+0}=1,
 \]
 \[
-	\lim_{x\to-\infty}\frac1{1+e^{-x}} = \frac1{1+\lim_{x\to-\infty} e^{-x}} = \frac1{1+\lim_{x\to\infty} e^{x}} = [1/\infty] = 0.
+	\lim_{x\to-\infty}\frac1{1+e^{-x}} = \frac1{1+\lim_{x\to-\infty} e^{-x}}\]
+\[ = \frac1{1+\lim_{x\to\infty} e^{x}} = [1/\infty] = 0.
 \]
 Since $e^{-x}>0$ for all $x$, so is $\frac1{1+e^{-x}}$.
 And
@@ -759,4 +760,62 @@ With $u=t$ and $v'=2e^{-2t}$ this is
 \]
 }
 
+\eocesol{
+We determine $k$ from
+\[
+1 = \int_{-\infty}^{\infty} f(x)\,dx = \int_0^2 kx^2\,dx = k (2^3/3)
+\]
+which yields $k=3/8$.
+Then
+\[
+\mathbb{P}(1 \le X \le 2) = \int_1^2 f(x)\,dx = \frac38 \int_1^2 x^2\,dx = \frac38(2^3/3-1^3/3) = 7/8.
+\]
+
+The variance computation is tedious; we do not recommend assigning it on exams. %similar using $\mathrm{Var}(X)=\mathbb E((X-\mathbb EX)^2)=\int_{-\infty}^{\infty} (x-)$
+}
+
+\eocesol{
+The unconditional density \(f_L(t)\) is
+\[
+f_L(t) = 0.7 (e^{-t}) + 0.3 (3e^{-3t}),\quad t\ge 0.
+\]
+Then
+\[
+\mathbb{P}(L > 2)= \int_2^{\infty} f_L(t)\,dt = ...
+\]
+Finally, given the event $A$ that a device has lasted 2 hours, the conditional probability that it is in the first mode ($M_1$) is
+\[
+\mathbb P(M_1 \mid A) = \frac{\mathbb P(M_1 \cap A)}{\mathbb P(A)} = \frac{\mathbb P(A\mid M_1) \mathbb P(M_1)}{\mathbb P(A)}
+\]
+\[
+\frac{\mathbb P(A\mid M_1) \mathbb P(M_1)}{\mathbb P(A\mid M_1) \mathbb P(M_1) + \mathbb P(A\mid M_2) \mathbb P(M_2)}
+\]
+Here
+\[
+\mathbb P(A\mid M_1)= \int_A e^{-t}\,dt
+\]
+When $A$ is the event $L> 2$, this is
+\[
+\int_2^{\infty} e^{-t}\,dt = e^{-2}.
+\]
+And
+\[
+\mathbb P(A\mid M_2)= \int_A 3e^{-3t}\,dt
+\]
+When $A$ is the event $L> 2$, this is
+\[
+\int_2^{\infty} 3e^{-3t}\,dt = e^{-6}.
+\]
+So
+\[
+\mathbb P(M_1 \mid L>2) = 
+\]
+\[
+\frac{\mathbb P(L>2\mid M_1) \mathbb P(M_1)}{\mathbb P(L>2\mid M_1) \mathbb P(M_1) + \mathbb P(L>2\mid M_2) \mathbb P(M_2)}
+\]
+\[
+=\frac{e^{-2} 0.7}{e^{-2} 0.7 + e^{-6} 0.3}
+\]
+
+}
 \end{multicols}

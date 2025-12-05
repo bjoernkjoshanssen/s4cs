@@ -878,6 +878,19 @@ $1 = 1/(1+e^{-\beta_0-\beta_1 x})$ has no solution so we cannot solve for $\beta
 It is time for the hard truth. Has this book prepared you for standard topics in probability and statistics, for students who have studied single-variable calculus?
 Here, and in the end-of-chapter exercises, are some questions courtesy of ChatGPT.
 
+First, we should mention the \emph{Law of Total Probability}, continuous random variable version:
+
+\[
+f_X(x) = f_X(x\mid A)\mathbb P(A) + f_X(x\mid A^c)\mathbb P(A^c)
+\]
+where $A$ is an event and $A^c$ is its complement, and $f_X(x\mid A)$ is the conditional density of $X$ given that $A$ occurred.
+
+This can be justified by integrating both sides over an arbitrary event $B$: then it says
+\[
+\mathbb P(B) = \mathbb P(B\mid A) \mathbb P(A) + \mathbb P(B\mid A^c) \mathbb P(A^c)
+\]
+which is the discrete probability Law of Total Probability, easily proved.
+
 \begin{enumerate}
 
 % \item \textbf{Uniform distribution on an interval}
@@ -904,32 +917,32 @@ Here, and in the end-of-chapter exercises, are some questions courtesy of ChatGP
 % \item[(c)] Compute \(\mathbb{E}[T]\) using an integral.
 % \end{enumerate}
 
-\item \textbf{Basic probability with a continuous density}
+% \item % \textbf{Basic probability with a continuous density}
+%
+% A random variable \(X\) has density
+% \[
+% f(x)=
+% \begin{cases}
+% kx^2, & 0 \le x \le 2, \\
+% 0, & \text{otherwise}.
+% \end{cases}
+% \]
+%
+% \begin{enumerate}
+% \item[(a)] Determine the constant \(k\).
+% \item[(b)] Compute \(\mathbb{P}(1 \le X \le 2)\).
+% \item[(c)] Compute the variance \(\mathrm{Var}(X)\).
+% \end{enumerate}
 
-A random variable \(X\) has density
-\[
-f(x)=
-\begin{cases}
-kx^2, & 0 \le x \le 2, \\
-0, & \text{otherwise}.
-\end{cases}
-\]
-
-\begin{enumerate}
-\item[(a)] Determine the constant \(k\).
-\item[(b)] Compute \(\mathbb{P}(1 \le X \le 2)\).
-\item[(c)] Compute the variance \(\mathrm{Var}(X)\).
-\end{enumerate}
-
-\item \textbf{Law of total probability and conditional density}
-
-Suppose a device has two modes. With probability \(0.7\), the lifetime \(L\) has exponential density with parameter \(1\). With probability \(0.3\), the lifetime has exponential density with parameter \(3\).
-
-\begin{enumerate}
-\item[(a)] Write the unconditional density \(f_L(t)\).
-\item[(b)] Compute \(\mathbb{P}(L > 2)\).
-\item[(c)] A device has lasted 2 hours. Compute the conditional probability that it is in the first mode.
-\end{enumerate}
+% \item \textbf{Law of total probability and conditional density}
+%
+% Suppose a device has two modes. With probability \(0.7\), the lifetime \(L\) has exponential density with parameter \(1\). With probability \(0.3\), the lifetime has exponential density with parameter \(3\).
+%
+% \begin{enumerate}
+% \item[(a)] Write the unconditional density \(f_L(t)\).
+% \item[(b)] Compute \(\mathbb{P}(L > 2)\).
+% \item[(c)] A device has lasted 2 hours. Compute the conditional probability that it is in the first mode.
+% \end{enumerate}
 
 \item \textbf{Sample mean and standard deviation}
 
