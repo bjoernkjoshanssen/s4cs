@@ -678,7 +678,9 @@ The mode is given by
 0 = \frac{d}{dx} \frac1{2+e^{\beta_0+\beta_1x} + e^{-(\beta_0+\beta_1x)}}
 \]
 \[
-= -(2+e^{\beta_0+\beta_1x}+e^{-(\beta_0+\beta_1x)})^{-2}\cdot (e^{\beta_0+\beta_1x}\beta_1 -\beta_1 e^{-(\beta_0+\beta_1x)})
+= -(2+e^{\beta_0+\beta_1x}+e^{-(\beta_0+\beta_1x)})^{-2}
+\]
+\[\cdot (e^{\beta_0+\beta_1x}\beta_1 -\beta_1 e^{-(\beta_0+\beta_1x)})
 \]
 which implies $\beta_0+\beta_1x = 0$ or $x = -\beta_0/\beta_1 = - \frac{-59.3709}{1.3214} = 44.93$.
 In other ords, at 44.93 million euros, the probability of a goal increases the fastest!
@@ -711,4 +713,50 @@ And
 = \frac{1}{e^x + 1} = \frac1{1+e^{-(-x)}} = F(-x).
 \]
 }
+
+\eocesol{
+The probability density function is
+\[
+f_X(x) = \frac1{6-2}\cdot 1_{[2,6]}(x),
+\]
+or in plain language, $f_X(x)=1/4$ on the interval $[2,6]$ and 0 elsewhere.
+Then
+\[
+\mathbb P(3 \le X \le 5) = \int_{3}^{5} f_X(x)\,dx = \int_3^5 \frac14\,.dx = \frac{5-3}4 = \frac12.
+\]
+And
+\[
+\mathbb E(X) = \int_{-\infty}^{\infty} x f_X(x)\,dx = \frac14 \int_2^6 x\,dx = \frac14(6^2/2-2^2/2)=\frac{16}4=4.
+\]
+}
+
+\eocesol{
+The random variable \(T\) has density
+\[
+f_T(t) = 2 e^{-2 t}, \qquad t \ge 0,
+\]
+Thus, the cumulative distribution function
+\[
+F_T(t) = \int_0^{t} 2e^{-2s}\,ds = [-e^{-2s}]^{t}_0 = 1 - e^{-2t}.
+\]
+and
+\[
+\mathbb{P}(T > 1) = 1 - \mathbb P(T \le 1) = 1 - (1 - e^{-2}) = e^{-2}.
+\]
+Moreover,
+\[
+\mathbb{E}[T] = \int_0^\infty t \cdot 2 e^{-2t}\,dt.
+\]
+With $u=t$ and $v'=2e^{-2t}$ this is
+\[
+\int_0^{\infty} u(t)v'(t)\,dt = 
+[u(t)v(t)]_0^{\infty} -
+\int_0^{\infty} u'(t)v(t)\,dt =
+\]
+\[
+0 - \int_0^{\infty} (-e^{-2t})\,dt
+= - \left[\frac{e^{-2t}}{2}\right]_0^{\infty} = \frac12.
+\]
+}
+
 \end{multicols}
