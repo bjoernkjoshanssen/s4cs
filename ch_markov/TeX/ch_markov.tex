@@ -872,3 +872,123 @@ $1 = 1/(1+e^{-\beta_0-\beta_1 x})$ has no solution so we cannot solve for $\beta
 		$\{x_1,x_2,x_3\}=\{0000,0101,1000\}$
 		is shattered by the set of automata above.\footnote{For instance, 0000 and 0101 have in common that they start with 0, whereas 1000 does not.}
 	\end{exercise}
+
+\section{A sample final}
+
+It is time for the hard truth. Has this book prepared you for standard topics in probability and statistics, for students who have studied single-variable calculus?
+Here, and in the end-of-chapter exercises, are some questions courtesy of ChatGPT.
+
+First, we should mention the \emph{Law of Total Probability}, continuous random variable version:
+
+\[
+f_X(x) = f_X(x\mid A)\mathbb P(A) + f_X(x\mid A^c)\mathbb P(A^c)
+\]
+where $A$ is an event and $A^c$ is its complement, and $f_X(x\mid A)$ is the conditional density of $X$ given that $A$ occurred.
+
+This can be justified by integrating both sides over an arbitrary event $B$: then it says
+\[
+\mathbb P(B) = \mathbb P(B\mid A) \mathbb P(A) + \mathbb P(B\mid A^c) \mathbb P(A^c)
+\]
+which is the discrete probability Law of Total Probability, easily proved.
+
+\begin{enumerate}
+
+% \item \textbf{Uniform distribution on an interval}
+%
+% Let \(X\) be uniformly distributed on the interval \([2,6]\).
+%
+% \begin{enumerate}
+% \item[(a)] Find the probability density function \(f_X(x)\).
+% \item[(b)] Compute \(\mathbb{P}(3 \le X \le 5)\).
+% \item[(c)] Compute \(\mathbb{E}[X]\).
+% \end{enumerate}
+
+% \item \textbf{Exponential distribution and integration}
+%
+% A random variable \(T\) has density
+% \[
+% f_T(t) = \lambda e^{-\lambda t}, \qquad t \ge 0,
+% \]
+% with parameter \(\lambda = 2\).
+%
+% \begin{enumerate}
+% \item[(a)] Compute the cumulative distribution function \(F_T(t)\).
+% \item[(b)] Find \(\mathbb{P}(T > 1)\).
+% \item[(c)] Compute \(\mathbb{E}[T]\) using an integral.
+% \end{enumerate}
+
+% \item % \textbf{Basic probability with a continuous density}
+%
+% A random variable \(X\) has density
+% \[
+% f(x)=
+% \begin{cases}
+% kx^2, & 0 \le x \le 2, \\
+% 0, & \text{otherwise}.
+% \end{cases}
+% \]
+%
+% \begin{enumerate}
+% \item[(a)] Determine the constant \(k\).
+% \item[(b)] Compute \(\mathbb{P}(1 \le X \le 2)\).
+% \item[(c)] Compute the variance \(\mathrm{Var}(X)\).
+% \end{enumerate}
+
+% \item \textbf{Law of total probability and conditional density}
+%
+% Suppose a device has two modes. With probability \(0.7\), the lifetime \(L\) has exponential density with parameter \(1\). With probability \(0.3\), the lifetime has exponential density with parameter \(3\).
+%
+% \begin{enumerate}
+% \item[(a)] Write the unconditional density \(f_L(t)\).
+% \item[(b)] Compute \(\mathbb{P}(L > 2)\).
+% \item[(c)] A device has lasted 2 hours. Compute the conditional probability that it is in the first mode.
+% \end{enumerate}
+
+\item \textbf{Sample mean and standard deviation}
+
+A sample of five measurements is  
+\[
+12,\quad 15,\quad 11,\quad 14,\quad 18.
+\]
+
+\begin{enumerate}
+\item[(a)] Compute the sample mean \(\bar{x}\).
+\item[(b)] Compute the sample variance \(s^{2}\) and standard deviation \(s\).
+\item[(c)] Assuming normality, give a 95\% confidence interval for the population mean~\(\mu\).
+\end{enumerate}
+
+\item \textbf{Linear regression: slope and prediction}
+
+A dataset consists of points
+\[
+(1,3),\quad (2,4),\quad (3,7).
+\]
+
+\begin{enumerate}
+\item[(a)] Compute the least-squares slope \(b_1\) and intercept \(b_0\).
+\item[(b)] Give the equation of the fitted regression line.
+\item[(c)] Predict \(y\) when \(x = 4\).
+\end{enumerate}
+
+\item \textbf{Sampling distribution of the mean}
+
+Let \(X_1,\dots,X_{36}\) be an i.i.d.\ sample from a population with mean \(\mu=50\) and standard deviation \(\sigma=12\).
+
+\begin{enumerate}
+\item[(a)] State the mean and standard deviation of the sample mean \(\bar{X}\).
+\item[(b)] Use the Central Limit Theorem to approximate \(\mathbb{P}(\bar{X} > 53)\).
+\item[(c)] Solve for \(c\) such that \(\mathbb{P}(\bar{X} > c)=0.05\).
+\end{enumerate}
+
+\item \textbf{Hypothesis testing for a proportion}
+
+A poll of \(n = 200\) voters finds that \(118\) support a particular proposal.
+
+\begin{enumerate}
+\item[(a)] Compute the sample proportion \(\hat{p}\).
+\item[(b)] Test \(H_0 : p = 0.5\) versus \(H_a : p > 0.5\) at the 5\% significance level by computing the \(z\)-statistic.
+\item[(c)] State whether the null hypothesis should be rejected.
+\end{enumerate}
+
+\end{enumerate}
+

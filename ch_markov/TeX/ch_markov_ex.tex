@@ -125,12 +125,12 @@ is a probability density function. Find it and its median.
 \eoce{\qt{Soccer regression}
 For the soccer example in logistic regression, find the exact transfer fee for
 which the probability of scoring a goal is increasing the most (per euro).
-}
+}{}
 
 \eoce{\qt{Soccer regression II}
 For the soccer example in logistic regression, find the exact transfer fee for
 which the probability of scoring a goal becomes 50\%.
-}
+}{}
 
 \eoce{\qt{Reflective logistic}\label{reflect}
 Show that the logistic function
@@ -144,7 +144,7 @@ has the following properties:
 	\item $F(x)\ge 0$ for all $x$;
 	\item $F(-x)=1-F(x)$.
 \end{enumerate}
-}
+}{}
 
 \eoce{\qt{Poor man's logistic}
 Which of the properties of the logistic function in \ref{reflect}
@@ -153,4 +153,76 @@ does the function
 F(x) = \frac12\left(1 + \frac{x}{\sqrt{1+x^2}}\right)
 \]
 have?
+}{}
+
+\eoce{\qt{Sample exam: Uniform distribution on an interval}
+
+Let \(X\) be uniformly distributed on the interval \([2,6]\).
+
+\begin{enumerate}
+\item[(a)] Find the probability density function \(f_X(x)\).
+\item[(b)] Compute \(\mathbb{P}(3 \le X \le 5)\).
+\item[(c)] Compute \(\mathbb{E}[X]\).
+\end{enumerate}
+}{}
+
+\eoce{\qt{Fall 2025 EXAM QUESTION}
+...
+}{}
+
+\eoce{\qt{Exponential distribution and integration}
+
+A random variable \(T\) has density
+\[
+f_T(t) = \lambda e^{-\lambda t}, \qquad t \ge 0,
+\]
+with parameter \(\lambda = 2\).
+
+\begin{enumerate}
+\item[(a)] Compute the cumulative distribution function \(F_T(t)\).
+\item[(b)] Find \(\mathbb{P}(T > 1)\).
+\item[(c)] Compute \(\mathbb{E}[T]\) using an integral.
+\end{enumerate}
+}{}
+
+\eoce{\qt{Fall 2025 EXAM QUESTION}
+...
+}{}
+
+\eoce{\qt{Basic probability with a continuous density}
+
+A random variable \(X\) has density
+\[
+f(x)=
+\begin{cases}
+kx^2, & 0 \le x \le 2, \\
+0, & \text{otherwise}.
+\end{cases}
+\]
+
+\begin{enumerate}
+\item[(a)] Determine the constant \(k\).
+\item[(b)] Compute \(\mathbb{P}(1 \le X \le 2)\).
+\item[(c)] Compute the variance \(\mathrm{Var}(X)\).
+\end{enumerate}
 }
+
+\eoce{\qt{Fall 2025 EXAM QUESTION}
+...
+}{}
+
+\eoce{\qt{Law of total probability and conditional density}
+
+Suppose a device has two modes. With probability \(0.7\), the lifetime \(L\) has exponential density with parameter \(1\). With probability \(0.3\), the lifetime has exponential density with parameter \(3\).
+
+\begin{enumerate}
+\item[(a)] Write the unconditional density \(f_L(t)\).
+\item[(b)] Compute \(\mathbb{P}(L > 2)\).
+\item[(c)] A device has lasted 2 hours. Compute the conditional probability that it is in the first mode.
+\end{enumerate}
+
+}{}
+
+\eoce{\qt{Fall 2025 EXAM QUESTION}
+...
+}{}

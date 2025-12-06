@@ -185,6 +185,24 @@
 	\end{termBox}
 
 
+
+\[
+\text{(True model)}\qquad
+y_i = \beta_0 + \beta_1 x_i + \epsilon_i,
+\]
+where $\beta_0,\beta_1$ are the unknown population parameters and
+$\epsilon_i$ are the (unobservable) true errors.
+
+\[
+\text{(Fitted model)}\qquad
+\hat{y}_i = b_0 + b_1 x_i,
+\]
+and the residuals are defined by
+\[
+e_i = y_i - \hat{y}_i = y_i - (b_0 + b_1 x_i).
+\]
+
+
 \subsection{Describing linear relationships with correlation}
 \index{correlation|(}
 
@@ -387,11 +405,32 @@ Examine the set of points $(-1,0),(0,0),(n,n)$. Is $(n,n)$ influential?\footnote
 \section{Inference for linear regression}
 \label{inferenceForLinearRegression}
 
-We can conduct hypothesis tests for the null hypothesis of the slope being zero, $\beta_1=0$, for instance.
+
+\subsection{Prediction intervals}
+A prediction interval in simple linear regression provides a range in which we expect a future
+observation $Y_0$ to fall for a given predictor value $x_0$. If the fitted regression line is
+$\hat{y}(x) = \hat{\beta}_0 + \hat{\beta}_1 x$, then a $100(1-\alpha)\%$ prediction interval for $Y_0$
+is given by
+\[
+\hat{y}(x_0) \;\pm\; t_{n-2,\,1-\alpha/2} \cdot s \sqrt{ \,1 + \frac{1}{n} +
+\frac{(x_0 - \bar{x})^2}{\sum_{i=1}^n (x_i - \bar{x})^2} },
+\]
+where $s = \sqrt{\text{RSS}/(n-2)}$ is the residual standard error, $\bar{x}$ is the mean of the
+observed predictor values, and $t_{n-2,\,1-\alpha/2}$ is a critical value from the $t$-distribution
+with $n-2$ degrees of freedom. The square root term accounts both for uncertainty in estimating the
+regression line and the natural variability of new observations around the line.
+
+In Google Sheets, the needed quantities can be computed from the data using built-in functions.
+The predicted value $\hat{y}(x_0)$ can be obtained using \texttt{FORECAST.LINEAR}, the residual
+standard error $s$ using \texttt{STEYX}, the critical $t$-value using \texttt{T.INV.2T}, and the
+remaining parts of the standard error term using standard formulas for means, counts, and sums.
+Combining these values using the formula above allows one to construct the prediction interval
+directly in a spreadsheet.
 
 
 \subsection{Understanding regression output from software}
 \label{testStatisticForTheSlope}
+We can conduct hypothesis tests for the null hypothesis of the slope being zero, $\beta_1=0$, for instance.
 
 Just like other point estimates we have seen before, we can compute a standard error and test statistic for $b_1$. We will generally label the test statistic using a $T$, since it follows the $t$-distribution.
 
@@ -663,7 +702,7 @@ r^2 = \frac{F}{F+df_2/df_1}.
 
 There is an underlying algebraic lemma here:
 \begin{lemma}
-Let $F$, $a$, $u_1$, $u_2$, $r$ be numbers.
+Let $a, b, u_1, u_2$ be positive real numbers and let $r$ be a real number.
 If $F=\frac{a/u_1}{b/u_2}$ and $r^2=\frac{a}{a+b}$, then $F$ and $r^2$ are related by
 \[
 	r^2 = \frac{F}{F+u_2/u_1}.
@@ -705,7 +744,45 @@ We cannot recover $a$ and $b$ from $F$, $r^2$, $u_1$ and $u_2$, but we can recov
 	%	\sum 2\hat y \partial \hat y - 2y \partial\hat y =0
 	%\]
 
+{\small
+In general the $F$ distribution is that of $\frac{U_1/d_1}{U_2/d_2}$ where the $U_i$ are independent and $\chi^2$ with $d_i$ df.
+The $t$ dist with $d$ df is the distribution of $T=\frac{Z}{\sqrt{V/\nu}}$ where $Z$ is standard normal
+and $V$, independent of $Z$, is $\chi^2(\nu)$.
+Therefore $T^2$ has the $F(1,d)$ distribution,
+by letting $U_1=Z$ and $U_2 = V$.
 
+$r^2$ actually has a beta distribution with parameters $1/2$ and $(n-2)/2$.
+
+The general fact is that if $X$ has a $F(d_1,d_2)$ distribution then
+$\frac{d_1X}{d_1X+d_2}$ has a Beta$(d_1/2,d_2/2)$ distribution.
+Indeed, for a number $0<x<1$,
+$\frac{d_1X}{d_1X+d_2}\le x$ if and only if
+$X \le  \frac{d_2x}{(1-x)d_1}$,
+
+The $F$ distribution pdf is
+\[
+f_X(x) =
+\frac{\Gamma\!\left(\frac{d_1 + d_2}{2}\right)}
+     {\Gamma\!\left(\frac{d_1}{2}\right)\Gamma\!\left(\frac{d_2}{2}\right)}
+\left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}}
+\frac{x^{\frac{d_1}{2}-1}}
+     {\left(1 + \frac{d_1}{d_2}x\right)^{\frac{d_1 + d_2}{2}}},
+\qquad x > 0.
+\]
+Equivalently,
+\[
+f_X(x) =
+\frac{1}{\mathrm{B}\!\left(\frac{d_1}{2}, \frac{d_2}{2}\right)}
+\left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}}
+\frac{x^{\frac{d_1}{2}-1}}
+     {\left(1 + \frac{d_1}{d_2}x\right)^{\frac{d_1 + d_2}{2}}},
+\qquad x > 0.
+\]
+Why $d_1/2$ and $d_2/2$ as Beta parameters?
+The underlying reason is that if $Y=\frac{G_1}{G_1+G_2}$ where the $G_i$ are independent and Gamma$(a_i,1)$
+then $Y$ is Beta$(a_1,a_2)$. Moreover, a $\chi^2(k)$ distribution is the same as a 
+Gamma$(k/2,2)$ distribution.
+}
 
 \subsection{Multiple regression}
 In the multiple regression case $k>1$

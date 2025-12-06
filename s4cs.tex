@@ -76,6 +76,32 @@
 \usepackage{imakeidx}
 \makeindex[intoc]
 
+%BEGIN LEAN
+% \usepackage{fontspec}
+% \usepackage{minted}
+% % autogobble lets us indent the lean code to distinguish it from the latex
+% % \setminted{frame=single}
+% \newmintinline[lean]{lean}{breaklines,breakbefore={. },breakafter={_}}
+% \newminted[leancode]{lean}{autogobble}
+%
+% % Configure the appearance of minted.
+% % We adjust the spacing around minted environments, which stretches badly by default
+% \fvset{listparameters=\setlength{\topsep}{0pt}\setlength{\parsep}{0pt}}
+% \AtBeginEnvironment{minted}{\vspace{4pt}}
+% \renewcommand{\floatpagefraction}{.99}
+% \renewcommand{\bottomfraction}{.7}
+%
+% % JuliaMono has all the symbols needed for Lean code
+% \setmonofont[Scale=MatchLowercase]{JuliaMono}[
+%   Extension=.ttf,
+%   UprightFont=*-Regular,
+%   BoldFont=*-Bold,
+%   ItalicFont=*-RegularItalic,
+%   BoldItalicFont=*-BoldItalic,
+%   RawFeature={-calt},
+% ]
+
+%END LEAN
 
 
 \include{extraTeX/style/style}
